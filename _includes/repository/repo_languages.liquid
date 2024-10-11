@@ -1,7 +1,7 @@
 {% assign lang = site.active_lang | default: 'en-us' %}
 {% assign github_locale = 'en' %}
 {% case lang %}
-  {% when 'fr-ca' %}
+  {% when 'fr-ca', 'fr' %}
     {% assign github_locale = 'fr' %}
   {% else %}
     {% assign github_locale = 'en' %}
@@ -19,5 +19,5 @@
       alt="{{ include.username }}"
       src="https://github-readme-stats-nine-zeta-69.vercel.app/api/top-langs/?username={{ include.username }}&theme={{ site.repo_theme_dark }}&locale={{ github_locale }}&show_icons=true&size_weight=0&count_weight=1&layout=donut"
     >
-    </a>
+  </a>
 </div>
