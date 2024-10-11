@@ -657,10 +657,10 @@ third_party_libraries:
 # -----------------------------------------------------------------------------
 
 jekyll_get_json:
-  - data: resume_en
-    json: assets/json/en-us/resume_en.json # it can also be an url
-  - data: resume_fr
-    json: assets/json/fr-ca/resume_fr.json
+  - data: resume_en-us
+    json: assets/json/en-us/resume_en-us.json # it can also be an url
+  - data: resume_fr-ca
+    json: assets/json/fr-ca/resume_fr-ca.json
 jsonresume:
   - basics
   - profiles
