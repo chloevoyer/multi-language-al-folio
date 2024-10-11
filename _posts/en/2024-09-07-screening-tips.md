@@ -7,19 +7,7 @@ tags: literature-review strategies
 categories: research
 featured: true
 # bibliography: 2018-12-22-distill.bib
-toc:
-  - name: Participant Criteria
-  - name: Conference Proceedings
-  - name: Dissertations and Theses
-  - name: Books and Book Chapters
-  - name: Non-Peer-Reviewed Sources
-  - name: News Articles and Magazine Pieces
-  - name: Language and Accessibility
-  - name: Publication Status
-  - name: Year of Publication
-  - name: Non-Empirical Studies
-  - name: Case Studies
-  - name: Recommended Citation
+toc: true
 ---
 
 ### Tips for Quickly Identifying Abstracts to Exclude
