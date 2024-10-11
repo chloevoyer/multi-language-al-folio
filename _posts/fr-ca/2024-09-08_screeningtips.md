@@ -28,6 +28,7 @@ If your platform allows it (e.g., [Rayyan](https://www.rayyan.ai/), [COVIDENCE](
 ## Conference Proceedings
 
 Be cautious of articles with conference details, such as:
+
 > [...] _60th Annual National Conference of All India Occupational Therapists Association (AIOTA, 2023), February 2-5, 2023._
 
 Look for keywords like `proceedings`, `conference`, `symposium`, `meeting`, or `workshop`, along with abbreviations like `Conf`, `Symp`, or `Proc`, usually followed by a location and date.  
