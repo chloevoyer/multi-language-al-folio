@@ -3,7 +3,7 @@ layout: post
 title: "Screening Tips: Red Flags Edition <span class='iconlanguages'></span>🚩"
 date: 2024-10-07 11:12:00
 description: Tips for quickly identifying abstracts to exclude
-tags: literature-review
+tags: literature-review strategies
 categories: research
 ---
 
@@ -17,7 +17,7 @@ The participant criteria are typically the easiest elements to locate. I search 
 
 This is also where you can verify whether diagnostic or age criteria are met, especially when distinguishing between children and adults.
 
-If your platform allows it (e.g., Rayyan, COVIDENCE), use highlighting features to search for inclusion/exclusion criteria keywords. This technique can significantly speed up your screening process!
+If your platform allows it (e.g., [Rayyan](https://www.rayyan.ai/), [COVIDENCE](https://www.covidence.org/)), use highlighting features to search for inclusion/exclusion criteria keywords. This technique can significantly speed up your screening process!
 
 #### Conference Proceedings
 
@@ -27,7 +27,9 @@ Be cautious of articles with conference details, such as:
 
 Look for keywords like `proceedings`, `conference`, `symposium`, `meeting`, or `workshop`, along with abbreviations like `Conf`, `Symp`, or `Proc`, usually followed by a location and date.
 For example,
-> *Proceedings of the 23rd International Conference on...* or *Symposium on XYZ, held in...*
+> *Proceedings of the 23rd International Conference on...*
+or
+> *Symposium on XYZ, held in...*
 indicate conference proceedings.
 
 If the title starts with a session number (e.g., `T50`, `S49`), it’s often an abstract submitted for a conference presentation and should be excluded due to lack of peer review.
@@ -36,7 +38,8 @@ If the title starts with a session number (e.g., `T50`, `S49`), it’s often an 
 
 Identify keywords such as `dissertation`, `thesis`, `Ph.D.`, or `doctoral`.
 For example,
-> *Master’s Thesis, University of...* or *Ph.D. Dissertation, Department of...*
+> *Master’s Thesis, University of...*
+> *Ph.D. Dissertation, Department of...*
 indicate non-peer-reviewed material.
 
 #### Books and Book Chapters
@@ -82,7 +85,8 @@ For example, exclude studies published in 1999 if your review covers 2000-2023.
 #### Non-Empirical Studies
 
 Exclude theoretical papers, narrative reviews, or non-empirical discussions.
-Examples include *A theoretical exploration of...* or *Narrative review of...*
+Examples include
+*A theoretical exploration of...* or *Narrative review of...*
 
 #### Case Studies
 
