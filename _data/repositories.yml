@@ -9,8 +9,8 @@ github_repos:
     description:
       en: "Import data from GarminConnect to Notion database"
       fr: "Importer des données de GarminConnect vers la base de données Notion"
-  - name: chloevoyer.github.io
-    url: https://github.com/chloevoyer/chloevoyer.github.io
-    description:
-      en: "Academic Research Portfolio"
-      fr: "Portfolio de recherche académique"
+  # - name: chloevoyer.github.io
+  #   url: https://github.com/chloevoyer/chloevoyer.github.io
+  #   description:
+  #     en: "Academic Research Portfolio"
+  #     fr: "Portfolio de recherche académique"
