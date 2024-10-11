@@ -32,8 +32,7 @@ Be cautious of articles with conference details, such as:
 
 Look for keywords like `proceedings`, `conference`, `symposium`, `meeting`, or `workshop`, along with abbreviations like `Conf`, `Symp`, or `Proc`, usually followed by a location and date.  
 For example:
-> _Proceedings of the 23rd International Conference on..._
-> _Symposium on XYZ, held in..._
+> _Proceedings of the 23rd International Conference on..._ > _Symposium on XYZ, held in..._
 
 If the title starts with a session number (e.g., `T50`, `S49`), it’s often an abstract submitted for a conference presentation and should be excluded due to lack of peer review.
 
@@ -41,15 +40,13 @@ If the title starts with a session number (e.g., `T50`, `S49`), it’s often an 
 
 Identify keywords such as `dissertation`, `thesis`, `PhD`, or `doctoral`.  
 These 2 examples indicate non-peer-reviewed material.
-> _Master’s Thesis, University of..._
-> _PhD Dissertation, Department of..._
+> _Master’s Thesis, University of..._ > _PhD Dissertation, Department of..._
 
 ## Books & Book Chapters
 
 Look for terms like `chapter`, `section`, `handbook`, `guide`, or `edited by`.  
 Examples include:
-> _Chapter 4 in..._
-> _Handbook of Cognitive Science..._
+> _Chapter 4 in..._ > _Handbook of Cognitive Science..._
 
 Most books will not have a `doi` but will have an `ISSN` or `ISBN` number (unless very recent).  
 Be cautious of overly brief and non-descriptive titles, as journals typically require more detailed titles for articles.
@@ -58,8 +55,7 @@ Be cautious of overly brief and non-descriptive titles, as journals typically re
 
 Exclude materials that are labeled as `editorial`, `opinion`, `commentary`, `letter to the editor`, `perspective`, or `review` (if not systematic).  
 Examples include:
-> _Editorial: The Future of..._
-> _Letter to the Editor regarding..._
+> _Editorial: The Future of..._ > _Letter to the Editor regarding..._
 
 Non-peer-reviewed sources can also include `manuals`, `guides`, `resource lists`, `reports`, and `handbooks`.
 
@@ -67,8 +63,7 @@ Non-peer-reviewed sources can also include `manuals`, `guides`, `resource lists`
 
 Identify articles published in newspapers, magazines, or other media outlets.  
 Examples include:
-> _Published in The New York Times_
-> _Article in Time Magazine..._
+> _Published in The New York Times_ > _Article in Time Magazine..._
 
 Articles lacking a DOI (unless they are books) are red flags for exclusion.
 
@@ -80,8 +75,7 @@ Exclude abstracts in languages not covered by your review unless translation is 
 
 Exclude abstracts marked as `in press`, `forthcoming`, or `submitted`.  
 The next examples indicate that such studies have not yet been published.
-> _Article in press_
-> _Forthcoming in Journal of..._
+> _Article in press_ > _Forthcoming in Journal of..._
 
 Additionally, if the abstract is written in the future tense (e.g., _we will recruit 50 participants_) or includes the word `protocol`, it should be excluded, as it indicates that data collection has not occurred. Absence of quantitative data in the abstract is also a good indicator for exclusion, except for qualitative studies (e.g., _M_ = 39.9, _SD_ = 5.9).
 
@@ -94,8 +88,7 @@ For example, exclude studies published in 1999 if your review covers 2000-2023.
 
 Exclude theoretical papers, narrative reviews, or non-empirical discussions.  
 Examples include:
-> _A theoretical exploration of..._
-> _Narrative review of..._
+> _A theoretical exploration of..._ > _Narrative review of..._
 
 ## Case Studies
 
