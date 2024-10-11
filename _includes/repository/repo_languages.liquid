@@ -1,7 +1,13 @@
 {% assign lang = site.active_lang | default: 'en' %}
-{% if lang == 'fr' or lang == 'fr-ca' %}
-  {% assign github_locale = 'fr' %}
-{% endif %}
+{% assign github_locale = 'en' %}
+{% case lang %}
+  {% when 'fr' or 'fr-ca' %}
+    {% assign github_locale = 'fr' %}
+  {% when 'en' or 'en-us' %}
+    {% assign github_locale = 'en' %}
+  {% else %}
+    {% assign github_locale = 'en' %}
+{% endcase %}
 
 <div class="repo p-2 text-center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
