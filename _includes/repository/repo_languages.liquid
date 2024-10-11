@@ -1,10 +1,8 @@
-{% assign lang = site.active_lang | default: 'en' %}
+{% assign lang = site.active_lang | default: 'en-us' %}
 {% assign github_locale = 'en' %}
 {% case lang %}
-  {% when 'fr' or 'fr-ca' %}
+  {% when 'fr-ca' %}
     {% assign github_locale = 'fr' %}
-  {% when 'en' or 'en-us' %}
-    {% assign github_locale = 'en' %}
   {% else %}
     {% assign github_locale = 'en' %}
 {% endcase %}

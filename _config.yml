@@ -412,7 +412,7 @@ languages: ["en-us", "fr-ca"]
 default_lang: "en-us"
 exclude_from_localization: ["assets"]
 lang_from_path: true
-country_flag: true # set true for allowing flag symbol in language toggle
+country_flag: false # set true for allowing flag symbol in language toggle
 parallel_localization: false
 
 # -----------------------------------------------------------------------------
@@ -657,9 +657,9 @@ third_party_libraries:
 # -----------------------------------------------------------------------------
 
 jekyll_get_json:
-  - data: en-us/resume_en
+  - data: resume_en
     json: assets/json/en-us/resume_en.json # it can also be an url
-  - data: fr-ca/resume_fr
+  - data: resume_fr
     json: assets/json/fr-ca/resume_fr.json
 jsonresume:
   - basics

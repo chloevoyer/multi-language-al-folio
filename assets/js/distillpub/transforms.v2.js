@@ -990,7 +990,7 @@
 
     // set language to 'en'
     if (!dom.querySelector("html").getAttribute("lang")) {
-      dom.querySelector("html").setAttribute("lang", "en");
+      dom.querySelector("html").setAttribute("lang", "en-us");
     }
 
     // set charset to 'utf-8'
