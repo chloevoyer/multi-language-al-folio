@@ -8,7 +8,6 @@ middle_name:
 last_name: Voyer
 email: chloe.voyer@mail.mcgill.ca
 keywords: mental health, psychiatry, psychosis, ADHD # add your own keywords or leave empty
-lang: en-us # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: chloevoyer.com # the base hostname & protocol for your site
@@ -661,9 +660,9 @@ third_party_libraries:
 # -----------------------------------------------------------------------------
 
 jekyll_get_json:
-  - data: resume_en
+  - data: en-us/resume_en
     json: assets/json/en-us/resume_en.json # it can also be an url
-  - data: resume_fr
+  - data: fr-ca/resume_fr
     json: assets/json/fr-ca/resume_fr.json
 jsonresume:
   - basics
