@@ -5,6 +5,7 @@ date: 2024-10-07 11:12:00
 description: Tips for quickly identifying abstracts to exclude
 tags: literature-review strategies
 categories: research
+toc: true
 ---
 
 ### Tips for Quickly Identifying Abstracts to Exclude
@@ -44,7 +45,7 @@ indicate non-peer-reviewed material.
 
 #### Books and Book Chapters
 
-Look for terms like `chapter`, `section`, `handbook`, `guide`, or `edited by`. 
+Look for terms like `chapter`, `section`, `handbook`, `guide`, or `edited by`.
 Examples include
 > *Chapter 4 in...*
 or
