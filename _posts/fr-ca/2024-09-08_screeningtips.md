@@ -1,18 +1,18 @@
 ---
 layout: distill
-title: "Screening Tips: Red Flags Edition 🚩"
+title: "Revue de litérature : conseils & astuces <i class='fa-solid fa-file-magnifying-glass'></i>"
 date: 2024-10-07 11:12:00
-description: Tips for quickly identifying abstracts to exclude
-tags: literature-review strategies
-categories: research
+description: Conseils pour identifier rapidement les résumés à exclure et augmenter son efficacité
+tags: revue-litérature stratégies
+categories: recherche
 featured: true
 # bibliography: 2018-12-22-distill.bib
 toc: true
 authors:
-  - name: Chloe Voyer
+  - name: Chloé Voyer
     url: "https://www.researchgate.net/profile/Chloe-Voyer"
     affiliations:
-      name: McGill University
+      name: Université McGill
 
 ---
 
