@@ -72,7 +72,9 @@ Exclude abstracts in languages not covered by your review unless translation is 
 
 Exclude abstracts marked as `in press`, `forthcoming`, or `submitted`.
 For example,
-> *Article in press* or *Forthcoming in Journal of...*
+> *Article in press*
+or
+> *Forthcoming in Journal of...*
 indicates that the study has not yet been published.
 
 Additionally, if the abstract is written in the future tense (e.g., *we will recruit 50 participants*) or includes the word `protocol`, it should be excluded, as it indicates that data collection has not occurred. Absence of quantitative data in the abstract is also a good indicator for exclusion, except for qualitative studies (e.g., _M_ = 39.9, _SD_ = 5.9).
