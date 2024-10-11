@@ -84,11 +84,6 @@ jobs:
           pip3 install --upgrade jupyter
           export JEKYLL_ENV=production
           bundle exec jekyll build
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-            python-version: '3.12'
-            cache: 'pip' # caching pip dependencies
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
