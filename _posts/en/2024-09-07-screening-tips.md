@@ -1,11 +1,25 @@
 ---
-layout: post
+layout: distill
 title: "Screening Tips: Red Flags Edition <span class='iconlanguages'></span>🚩"
 date: 2024-10-07 11:12:00
 description: Tips for quickly identifying abstracts to exclude
 tags: literature-review strategies
 categories: research
-toc: true
+featured: true
+# bibliography: 2018-12-22-distill.bib
+toc:
+  - name: Participant Criteria
+  - name: Conference Proceedings
+  - name: Dissertations and Theses
+  - name: Books and Book Chapters
+  - name: Non-Peer-Reviewed Sources
+  - name: News Articles and Magazine Pieces
+  - name: Language and Accessibility
+  - name: Publication Status
+  - name: Year of Publication
+  - name: Non-Empirical Studies
+  - name: Case Studies
+  - name: Recommended Citation
 ---
 
 ### Tips for Quickly Identifying Abstracts to Exclude
