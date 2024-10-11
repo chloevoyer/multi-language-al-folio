@@ -46,7 +46,9 @@ indicate non-peer-reviewed material.
 
 Look for terms like `chapter`, `section`, `handbook`, `guide`, or `edited by`. 
 Examples include
-> *Chapter 4 in...* or *Handbook of Cognitive Science...*
+> *Chapter 4 in...*
+or
+> *Handbook of Cognitive Science...*
 
 Most books will not have a DOI but will have an ISSN or ISBN number (unless very recent). Be cautious of overly brief and non-descriptive titles, as journals typically require more detailed titles for articles.
 
@@ -54,14 +56,18 @@ Most books will not have a DOI but will have an ISSN or ISBN number (unless very
 
 Exclude materials that are labeled as `editorial`, `opinion`, `commentary`, `letter to the editor`, `perspective`, or `review` (if not systematic).
 Examples include
-> *Editorial: The Future of...* or *Letter to the Editor regarding...*
+> *Editorial: The Future of...*
+or
+> *Letter to the Editor regarding...*
 Non-peer-reviewed sources can also include manuals, guides, resource lists, reports, and handbooks.
 
 #### News Articles and Magazine Pieces
 
 Identify articles published in newspapers, magazines, or other media outlets.
-Examples include
-> *Published in The New York Times* or *Article in Time Magazine...*
+Examples include:
+> *Published in The New York Times*
+or
+> *Article in Time Magazine...*
 Articles lacking a DOI (unless they are books) are red flags for exclusion.
 
 #### Language and Accessibility
@@ -88,7 +94,9 @@ For example, exclude studies published in 1999 if your review covers 2000-2023.
 
 Exclude theoretical papers, narrative reviews, or non-empirical discussions.
 Examples include
-*A theoretical exploration of...* or *Narrative review of...*
+> *A theoretical exploration of...*
+or
+> *Narrative review of...*
 
 #### Case Studies
 
