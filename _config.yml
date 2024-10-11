@@ -8,7 +8,7 @@ middle_name:
 last_name: Voyer
 email: chloe.voyer@mail.mcgill.ca
 keywords: mental health, psychiatry, psychosis, ADHD # add your own keywords or leave empty
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+lang: en-us # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: chloevoyer.com # the base hostname & protocol for your site
@@ -412,11 +412,11 @@ external_links:
 # Jekyll Polyglot
 # -----------------------------------------------------------------------------
 
-languages: ["en", "fr"]
-default_lang: "en"
+languages: ["en-us", "fr-ca"]
+default_lang: "en-us"
 exclude_from_localization: ["assets"]
 lang_from_path: true
-country_flag: false # set true for allowing flag symbol in language toggle
+country_flag: true # set true for allowing flag symbol in language toggle
 parallel_localization: false
 
 # -----------------------------------------------------------------------------
@@ -662,9 +662,9 @@ third_party_libraries:
 
 jekyll_get_json:
   - data: resume_en
-    json: assets/json/en/resume_en.json # it can also be an url
+    json: assets/json/en-us/resume_en.json # it can also be an url
   - data: resume_fr
-    json: assets/json/fr/resume_fr.json
+    json: assets/json/fr-ca/resume_fr.json
 jsonresume:
   - basics
   - profiles

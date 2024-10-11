@@ -26,7 +26,7 @@ pretty_table: true
 <div class="conférences">
 
 <div class="table-responsive table-borderless">
-<table class="table-borderless" id="table" data-toggle="table" data-url="{{ '/assets/json/fr/table_data_fr.json' | relative_url }}">
+<table class="table-borderless" id="table" data-toggle="table" data-url="{{ '/assets/json/fr-ca/table_data_fr.json' | relative_url }}">
   <thead>
     <tr>
       <th data-field="date">Date</th>
