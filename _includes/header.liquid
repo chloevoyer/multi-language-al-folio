@@ -119,30 +119,38 @@
               </button>
             </li>
           {% endif %}
-        <!-- Toggle language -->
-        {% if site.languages.size >= 2 %}
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              {{ site.active_lang | slice: 0, 2 | upcase }}
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
-              {% for lang in site.languages %}
-                {% if lang != site.active_lang %}
-                  {% if lang == site.default_lang %}
-                    <a class="dropdown-item" {% static_href -%} href="{{ site.baseurl }}{{ page.url }}" {%- endstatic_href %}>
-                      {{ lang | slice: 0, 2 | upcase }}
-                    </a>
-                  {% else %}
-                    <a class="dropdown-item" {% static_href -%} href="{{ site.baseurl }}/{{ lang }}{{ page.url }}" {%- endstatic_href %}>
-                      {{ lang | slice: 0, 2 | upcase }}
-                    </a>
+          <!-- Toggle language -->
+          {% if site.languages.size >= 2 %}
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="languageDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                {{ site.active_lang | slice: 0, 2 | upcase }}
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+                {% for lang in site.languages %}
+                  {% if lang != site.active_lang %}
+                    {% if lang == site.default_lang %}
+                      <a class="dropdown-item" {% static_href -%} href="{{ site.baseurl }}{{ page.url }}" {%- endstatic_href %}>
+                        {{ lang | slice: 0, 2 | upcase }}
+                      </a>
+                    {% else %}
+                      <a class="dropdown-item" {% static_href -%} href="{{ site.baseurl }}/{{ lang }}{{ page.url }}" {%- endstatic_href %}>
+                        {{ lang | slice: 0, 2 | upcase }}
+                      </a>
+                    {% endif %}
                   {% endif %}
-                {% endif %}
-              {% endfor %}
-            </div>
-          </li>
-        {% endif %}
-        {% if site.enable_darkmode %}
+                {% endfor %}
+              </div>
+            </li>
+          {% endif %}
+          {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">
               <button id="light-toggle" title="Change theme">

@@ -32,6 +32,7 @@ Be cautious of articles with conference details, such as:
 
 Look for keywords like `proceedings`, `conference`, `symposium`, `meeting`, or `workshop`, along with abbreviations like `Conf`, `Symp`, or `Proc`, usually followed by a location and date.  
 For example:
+
 <!-- prettier-ignore-start -->
 > _Proceedings of the 23rd International Conference on..._
 > _Symposium on XYZ, held in..._
@@ -43,6 +44,7 @@ If the title starts with a session number (e.g., `T50`, `S49`), it’s often an 
 
 Identify keywords such as `dissertation`, `thesis`, `PhD`, or `doctoral`.  
 These 2 examples indicate non-peer-reviewed material.
+
 <!-- prettier-ignore-start -->
 > _Master’s Thesis, University of..._
 > _PhD Dissertation, Department of..._
@@ -52,6 +54,7 @@ These 2 examples indicate non-peer-reviewed material.
 
 Look for terms like `chapter`, `section`, `handbook`, `guide`, or `edited by`.  
 Examples include:
+
 <!-- prettier-ignore-start -->
 > _Chapter 4 in..._
 > _Handbook of Cognitive Science..._
@@ -64,6 +67,7 @@ Be cautious of overly brief and non-descriptive titles, as journals typically re
 
 Exclude materials that are labeled as `editorial`, `opinion`, `commentary`, `letter to the editor`, `perspective`, or `review` (if not systematic).  
 Examples include:
+
 <!-- prettier-ignore-start -->
 > _Editorial: The Future of..._
 > _Letter to the Editor regarding..._
@@ -75,6 +79,7 @@ Non-peer-reviewed sources can also include `manuals`, `guides`, `resource lists`
 
 Identify articles published in newspapers, magazines, or other media outlets.  
 Examples include:
+
 <!-- prettier-ignore-start -->
 > _Published in The New York Times_
 > _Article in Time Magazine..._
@@ -90,6 +95,7 @@ Exclude abstracts in languages not covered by your review unless translation is 
 
 Exclude abstracts marked as `in press`, `forthcoming`, or `submitted`.  
 The next examples indicate that such studies have not yet been published.
+
 <!-- prettier-ignore-start -->
 > _Article in press_
 > _Forthcoming in Journal of..._
@@ -106,6 +112,7 @@ For example, exclude studies published in 1999 if your review covers 2000-2023.
 
 Exclude theoretical papers, narrative reviews, or non-empirical discussions.  
 Examples include:
+
 <!-- prettier-ignore-start -->
 > _A theoretical exploration of..._
 > _Narrative review of..._
