@@ -8,10 +8,10 @@
   {% assign show_owner = true %}
 {% endif %}
 
-{% assign lang = site.active_lang | default: 'en' %}
+{% assign lang = site.active_lang | default: 'en-us' %}
 {% assign github_locale = 'en' %}
 {% case lang %}
-  {% when 'fr' %}
+  {% when 'fr-ca' %}
     {% assign github_locale = 'fr' %}
   {% else %}
     {% assign github_locale = 'en' %}

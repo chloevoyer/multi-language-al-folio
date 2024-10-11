@@ -7,8 +7,8 @@ github_repos:
   - name: garmin-to-notion
     url: https://github.com/chloevoyer/garmin-to-notion
     description:
-      en: "Import data from GarminConnect to Notion database"
-      fr: "Importer des données de GarminConnect vers la base de données Notion"
+      en-us: "Import data from GarminConnect to Notion database"
+      fr-ca: "Importer des données de GarminConnect vers la base de données Notion"
   # - name: chloevoyer.github.io
   #   url: https://github.com/chloevoyer/chloevoyer.github.io
   #   description:

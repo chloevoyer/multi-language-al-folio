@@ -1,6 +1,7 @@
 {% assign lang = site.active_lang | default: 'en' %}
-{% assign github_locale = 'en' %}
-{% if lang == 'fr' or lang == 'fr-FR' or lang == 'fr' %}
+{% if lang == 'en' or lang == 'en-US' or lang == 'en-us' %}
+  {% assign github_locale = 'en' %}
+{% if lang == 'fr' or lang == 'fr-FR' or lang == 'fr-ca' %}
   {% assign github_locale = 'fr' %}
 {% endif %}
 
