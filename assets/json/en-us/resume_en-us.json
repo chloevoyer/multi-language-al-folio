@@ -321,8 +321,13 @@
   "interests": [
     {
       "name": "Psychiatry",
-      "icon": "fa-solid fa-tag",
+      "icon": "fa-solid fa-brain",
       "keywords": ["workplace interventions", "ADHD", "severe mental illness", "theory of mind"]
+    },
+    {
+      "name": "Extra",
+      "icon": "fa-solid fa-hand-holding-seedling",
+      "keywords": ["running", "cycling", "gardening", "cooking"]
     }
   ],
   "references": [
@@ -330,13 +335,13 @@
       "name": "Geneviève Sauvé, PhD, PsyD",
       "icon": "fa-solid fa-user",
       "url": "https://www.researchgate.net/profile/Genevieve-Sauve",
-      "reference": "Assistant Professor of Education and Pedagogy, Université du Québec à Montréal <br/> Researcher, Douglas Research Centre <br/> Psychologist <br/> Head of the <a href=\"https://www.smart-lab.ca\">SMART Lab</a>"
+      "reference": "<a href='https://professeurs.uqam.ca/professeur/sauve.genevieve'>Assistant Professor of Education and Pedagogy</a>, Université du Québec à Montréal <br/> <a href='https://douglas.research.mcgill.ca/fr/genevieve-sauve-2/'>Researcher</a>, Douglas Research Centre <br/> Psychologist <br/> Head of the <a href=\"https://www.smart-lab.ca\">SMART Lab</a>"
     },
     {
       "name": "Ian Gold, PhD",
       "icon": "fa-solid fa-user",
       "url": "https://www.mcgill.ca/tcpsych/faculty/iangold",
-      "reference": "Professor of Philosophy, McGill University <br/> Chair of the Department of Philosophy, McGill University <br/> Head of the <a href='https://www.neurophilosophylab.org/'>Neurophilosophy Lab</a>"
+      "reference": "<a href='https://www.mcgill.ca/psychiatry/ian-gold'>Professor of Philosophy</a>, McGill University <br/> <a href='https://www.mcgill.ca/philosophy/ian-jeffrey-gold'>Chair of the Department of Philosophy</a>, McGill University <br/> Head of the <a href='https://www.neurophilosophylab.org/'>Neurophilosophy Lab</a>"
     }
   ]
 }

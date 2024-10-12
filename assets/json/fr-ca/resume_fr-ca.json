@@ -194,12 +194,12 @@
   "interests": [
     {
       "name": "Psychiatrie",
-      "icon": "fa-solid fa-tag",
+      "icon": "fa-solid fa-brain",
       "keywords": ["workplace interventions", "ADHD", "severe mental illness", "theory of mind"]
     },
     {
       "name": "Extra",
-      "icon": "fa-solid fa-tag",
+      "icon": "fa-solid fa-seedling",
       "keywords": ["course à pied", "cyclisme", "jardinage", "cuisine végane"]
     }
   ],
