@@ -33,7 +33,7 @@
     },
     {
       "institution": "Université McGill",
-      "area": "Psychologie, Sciences comportementales et environnement",
+      "area": "Psychologie, sciences comportementales et environnement",
       "studyType": "Baccalauréat en arts",
       "startDate": "2017-09-01",
       "endDate": "2021-10-01",
@@ -98,7 +98,7 @@
       "endDate": "2023-09-01",
       "summary": "Département d'éducation et pédagogie, Faculté des sciences de l'éducation,<br/> Université du Québec à Montréal",
       "highlights": [
-        "Aidé la chercheuse clinicienne et professeure Dr Geneviève Sauvé dans ses recherches multidisciplinaires sur Minds@Work, un programme d'intervention visant à améliorer la stabilité d'emploi chez les personnes atteintes de psychose",
+        "Aidé la chercheuse clinicienne et professeure Dr Geneviève Sauvé dans ses recherches multidisciplinaires sur Cerveaux@travail, un programme d'intervention visant à améliorer la stabilité d'emploi chez les personnes atteintes de psychose",
         "Tâches incluent des revues de littérature, la rédaction de documents, la soumission de projets de recherche au comité d'éthique, la collecte et l'analyse de données"
       ]
     },
@@ -159,7 +159,7 @@
       "highlights": []
     },
     {
-      "position": "Stage d'été -- agente administrative",
+      "position": "Stage d'été &mdash; agente administrative",
       "name": "Hôpital du Haut Richelieu",
       "url": "https://sante.gouv.qc.ca/repertoire-ressources/ressource/?nofiche=1222",
       "icon": "fa-solid fa-hospital-user",
@@ -170,13 +170,48 @@
     },
     {
       "position": "Animatrice",
-      "name": "La Zone Youhou !",
+      "name": "La zone Youhou !",
       "url": "https://youhou.zone/",
       "icon": "fa-solid fa-campground",
       "startDate": "2015-05-01",
       "endDate": "2019-05-01",
       "summary": "",
       "highlights": []
+    },
+    {
+      "position": "Animatrice/Accompagnatrice",
+      "name": "Camp de Jour de la Ville St-Jean-sur-Richelieu",
+      "icon": "fa-solid fa-campground",
+      "startDate": "2016-05-01",
+      "endDate": "2018-08-27",
+      "summary": "",
+      "highlights": [
+        "Assessed and applied social interventions among children with special needs ages 4-13",
+        "Integrated children with special needs in social and academic activities",
+        "e.g., autism, oppositional defiant disorder (ODD), physical handicaps, phobias, anxiety disorders, AD/HD, diabetes"
+      ]
+    },
+    {
+      "position": "Jeux d'évasion",
+      "name": "Sauve qui peut",
+      "icon": "fa-solid fa-puzzle-piece",
+      "startDate": "2017-09-01",
+      "endDate": "2018-06-30",
+      "url": "https://sauvequipeut.ca/",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "position": "Adjointe administrative",
+      "name": "Clinique de Physiothérapie du Fort",
+      "icon": "fa-solid fa-file-medical",
+      "startDate": "2013",
+      "endDate": "2017",
+      "summary": "",
+      "highlights": [
+        "Created a company website in the scope of a CEGEP course using cascading style sheets (.css) and html coding",
+        "Implemented a new digital filing system and accounting program for administrative tasks"
+      ]
     }
   ],
   "languages": [
