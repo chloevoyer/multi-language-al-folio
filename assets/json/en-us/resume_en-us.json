@@ -326,7 +326,7 @@
     },
     {
       "name": "Extra",
-      "icon": "fa-solid fa-hand-holding-seedling",
+      "icon": "fa-solid fa-seedling",
       "keywords": ["running", "cycling", "gardening", "cooking"]
     }
   ],
