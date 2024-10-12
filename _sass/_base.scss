@@ -730,6 +730,11 @@ footer.sticky-bottom {
         font-weight: bolder;
       }
 
+      .type {
+        font-weight: bolder;
+        font-family: "Courier", sans-serif;
+      }
+
       .author {
         a {
           border-bottom: 1px dashed var(--global-theme-color);
