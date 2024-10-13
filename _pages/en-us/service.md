@@ -13,8 +13,8 @@ toc:
 
 ---
 
-- Shulman, K., Hannon, M., Voyer, C., Gagliano, E., Hannaoui, N., Hotte-Meunier, A., Lavigne, K. M., Raucher-Chéné, D., & Sauvé, G. (2024). _Protocol for a scoping review on predictors of job tenure in people living with mental illness from a transdiagnostic perspective._ Open Science Framework. https://doi.org/10.17605/osf.io/bnjz3
-- Lavigne, K. M., Ph.D., Deng, J., Raucher-Chéné, D., Hotte-Meunier, A., Voyer, C., Sarraf, L., … Sauve, G. (2023, July 1). Transdiagnostic cognitive biases in psychiatric disorders: A systematic review and network meta-analysis. https://doi.org/10.31234/osf.io/te6fx
+- Shulman, K., Hannon, M., Voyer, C., Gagliano, E., Hannaoui, N., Hotte-Meunier, A., Lavigne, K. M., Raucher-Chéné, D., & Sauvé, G. (2024). _Protocol for a scoping review on predictors of job tenure in people living with mental illness from a transdiagnostic perspective._ Open Science Framework. <a href="https://doi.org/10.17605/osf.io/bnjz3">https://doi.org/10.17605/osf.io/bnjz3</a>
+- Lavigne, K. M., Ph.D., Deng, J., Raucher-Chéné, D., Hotte-Meunier, A., Voyer, C., Sarraf, L., … Sauve, G. (2023, July 1). Transdiagnostic cognitive biases in psychiatric disorders: A systematic review and network meta-analysis. <a href="https://doi.org/10.31234/osf.io/te6fx">https://doi.org/10.31234/osf.io/te6fx</a>
 
 <h2 style="padding-top: 25px;">knowledge mobilization activities</h2>
 
@@ -37,8 +37,8 @@ toc:
 
 ---
 
-- <a href="https://douglas.research.mcgill.ca/event/undergraduate-research-expo-3/">Douglas Research Centre Undergraduate Student Research Expo</a>
-- <a href="https://www.mcgill.ca/hbhl/funded-projects/undergraduate-summer-research-internship">Healthy Brains, Healthy Lives Undergraduate Student Summer Research Internship Awards</a>
+- Douglas Research Centre <a href="https://douglas.research.mcgill.ca/event/undergraduate-research-expo-3/">Undergraduate Student Research Expo</a>
+- <a href="https://www.mcgill.ca/hbhl/funded-projects/undergraduate-summer-research-internship">Healthy Brains, Healthy Lives</a> Undergraduate Student Summer Research Internship Awards
 - Annual <a href="https://douglas.research.mcgill.ca/annual-leo-and-rachel-hendlisz-awards/">Leo & Rachel Hendlisz Awards</a>
   - Assessed and selected the best research articles of the year published by students and postdoctoral fellows of the Douglas Research Centre.
 
