@@ -1,6 +1,12 @@
 archive_category: une archive des articles de cette catégorie
 archive_tag: une archive de messages avec ce tag
 archive_year: une archive des articles de cette année
+bibliography:
+  blog: blogue
+  conference: conférence
+  slides: diapositives
+  poster: affiche
+  video: vidéo
 blog: blogue
 navigation_title: blogue
 categories:
