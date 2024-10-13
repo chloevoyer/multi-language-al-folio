@@ -62,6 +62,9 @@ cv:
   volunteer: Volunteer
   work: Work
 filter: Type to filter
+footer:
+  copyright: "Copyright: "
+  last_updated: "Last updated: "
 latest_posts: latest posts
 months:
   long:

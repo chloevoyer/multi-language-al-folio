@@ -62,6 +62,9 @@ cv:
   volunteer: bénévolat
   work: travail
 filter: Tapez pour filtrer
+footer:
+  copyright: "Droits d'auteur : "
+  last_updated: "Dernière mise à jour : "
 latest_posts: derniers articles
 months:
   long:

@@ -9,7 +9,14 @@ nav_order: 5
 pretty_table: true
 ---
 
+<!-- _pages/publications.md -->
+
+<p>Please see my <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i>&nbsp;Google Scholar</a> for the most up-to-date list of publications.
+</p>
+
 <!-- Bibsearch Feature -->
+
+<p>Veuillez consulter mon <a href="https://scholar.google.fr/citations?user=g53kVKwAAAAJ&hl=fr&oi=sra" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i>&nbsp;Google Scholar</a> pour la liste la plus à jour des publications.</p>
 
 {% include bib_search.liquid %}
 
