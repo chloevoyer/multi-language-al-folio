@@ -4,9 +4,10 @@ archive_year: une archive des articles de cette année
 bibliography:
   blog: blogue
   conference: conférence
-  slides: diapositives
+  slides: diapos
   poster: affiche
   video: vidéo
+  website: site web
 blog: blogue
 navigation_title: blogue
 categories:
