@@ -1,6 +1,13 @@
 archive_category: an archive of posts in this category
 archive_tag: an archive of posts with this tag
 archive_year: an archive of posts from this year
+bibliography:
+  blog: blog
+  conference: conference
+  slides: slides
+  poster: poster
+  video: video
+  website: website
 blog:
   navigation_title: blog
 categories:
