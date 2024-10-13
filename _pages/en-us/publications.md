@@ -1,14 +1,12 @@
 ---
-page_id: publications
+page_id: papers
 layout: page
-permalink: /publications/
-title: publications
+permalink: /papers/
+title: papers
 description: "* denotes equal contribution and joint lead authorship."
 nav: true
 nav_order: 4
 ---
-
-<!-- _pages/publications.md -->
 
 <p>Please see my <a href="https://scholar.google.ca/citations?user=g53kVKwAAAAJ&hl" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i>&nbsp;Google Scholar</a> for the most up-to-date list of publications.</p>
 
