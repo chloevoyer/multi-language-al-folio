@@ -1,5 +1,5 @@
 ---
-page_id: papers
+page_id: publications
 layout: page
 permalink: /papers/
 title: papers
