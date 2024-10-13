@@ -5,6 +5,8 @@ title: service académique
 permalink: /service/
 nav: false
 nav_order: 7
+toc:
+  sidebar: left
 ---
 
 <h2 style="padding-top: 30px">contributions à la science ouverte</h2>
@@ -15,6 +17,8 @@ nav_order: 7
 - Lavigne, K. M., Ph.D., Deng, J., Raucher-Chéné, D., Hotte-Meunier, A., Voyer, C., Sarraf, L., … Sauve, G. (2023, July 1). Transdiagnostic cognitive biases in psychiatric disorders: A systematic review and network meta-analysis. <a href="https://doi.org/10.31234/osf.io/te6fx">https://doi.org/10.31234/osf.io/te6fx</a>
 
 <h2 style="padding-top: 25px">activités de mobilisation des connaissances</a>
+
+---
 
 <h4 style="padding-top: 25px">Membre d'un comité d'utilisateurs des connaissances pour (2) études :</h4>
 
@@ -38,7 +42,7 @@ nav_order: 7
 
 - Programme d'observation en psychiatrie clinique, _Institut universitaire de santé mentale Douglas_
   - Dr Jai Shah (Clinique des premiers épisodes psychotiques)
-    - Programme d'intervention précoce et de prévention des psychoses (PEPP-Montréal)
+    - Programme de prévention et d'intervention précoce pour la psychose (<a href="https://cusm.ca/pepp">PEPP-MUHC</a>)
   - Dr Ridha Joober (Clinique des premiers épisodes psychotiques)
-    - Programme d'intervention précoce et de prévention des psychoses (PEPP-Montréal)
+    - Programme de prévention et d'intervention précoce pour la psychose (<a href="https://cusm.ca/pepp">PEPP-MUHC</a>)
     - Santé mentale des jeunes et interventions précoces
