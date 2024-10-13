@@ -310,12 +310,12 @@
     {
       "language": "French",
       "fluency": "Native speaker",
-      "icon": "fa-solid fa-leaf-maple"
+      "icon": "fa-solid fa-canadian-maple-leaf"
     },
     {
       "language": "English",
       "fluency": "Native speaker",
-      "icon": "iconlanguages"
+      "icon": "fa-brands fa-canadian-maple-leaf"
     }
   ],
   "interests": [
