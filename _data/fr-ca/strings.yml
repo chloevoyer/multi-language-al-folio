@@ -117,7 +117,7 @@ months:
     october: oct
     november: nov
     december: déc
-  long:
+  longer:
     1: janvier
     2: février
     3: mars
@@ -130,7 +130,7 @@ months:
     10: octobre
     11: novembre
     12: décembre
-  short:
+  shorter:
     1: janv
     2: févr
     3: mars
