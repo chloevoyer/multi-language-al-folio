@@ -58,6 +58,7 @@ cv:
   phone: téléphone
   position: poste
   postalCode: code postal
+  present: présent
   profiles: profils
   projects: projets
   publications: publications
@@ -77,12 +78,12 @@ cv:
   username: nom d'utilisateur
   volunteer: bénévolat
   work: travail
-  basics:
+  basics_labels:
     name: "Nom"
     label: "Titre"
     email: "Courriel"
     phone: "Téléphone"
-    url: "Site web"
+    url: "URL"
     summary: "Résumé"
 filter: Tapez pour filtrer
 footer:
@@ -116,6 +117,32 @@ months:
     october: oct
     november: nov
     december: déc
+  long:
+    1: janvier
+    2: février
+    3: mars
+    4: avril
+    5: mai
+    6: juin
+    7: juillet
+    8: août
+    9: septembre
+    10: octobre
+    11: novembre
+    12: décembre
+  short:
+    1: janv
+    2: févr
+    3: mars
+    4: avr
+    5: mai
+    6: juin
+    7: juil
+    8: août
+    9: sept
+    10: oct
+    11: nov
+    12: déc
 news: actualités
 newsletter:
   back: retour
