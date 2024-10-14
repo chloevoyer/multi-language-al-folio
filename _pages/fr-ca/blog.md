@@ -147,7 +147,7 @@ pagination:
       <p>{{ post.description }}</p>
       <p class="post-meta">
         {{ read_time }}{{ page.read_time }} &nbsp; &middot; &nbsp;
-        {{ post.date | date: '%d %B, %Y' }}
+        {{ post.date | date: '%d %B, %Y' | slice: 1}}
         {% if post.external_source %}
         &nbsp; &middot; &nbsp; {{ post.external_source }}
         {% endif %}
