@@ -163,22 +163,22 @@ display_categories:
           &nbsp; &middot; &nbsp;
             {% for tag in post.tags %}
             <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
-              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
-              {% unless forloop.last %}
-                &nbsp;
-              {% endunless %}
-              {% endfor %}
+              <i class="fa-solid fa-hashtag fa-sm"></i> {{ site.data[site.active_lang].strings.blog.tags[tag] | default: tag }}</a>
+            {% unless forloop.last %}
+              &nbsp;
+            {% endunless %}
+            {% endfor %}
           {% endif %}
 
           {% if categories != "" %}
           &nbsp; &middot; &nbsp;
             {% for category in post.categories %}
             <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
-              <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
-              {% unless forloop.last %}
-                &nbsp;
-              {% endunless %}
-              {% endfor %}
+              <i class="fa-solid fa-tag fa-sm"></i> {{ site.data[site.active_lang].strings.blog.categories[category] | default: category }}</a>
+            {% unless forloop.last %}
+              &nbsp;
+            {% endunless %}
+            {% endfor %}
           {% endif %}
     </p>
 
