@@ -15,114 +15,114 @@ authors:
       name: Université McGill
 ---
 
-When conducting a literature review, I start by identifying the quickest elements to exclude an article. This approach allows me to streamline the process and focus on the most relevant studies.
+Lors de la réalisation d'une revue de littérature, je commence par identifier les éléments les plus rapides à exclure d'un article. Cette approche me permet de rationaliser le processus et de me concentrer sur les études les plus pertinentes.
 
-## Participant Criteria
+## Critères des participants
 
-The participant criteria are typically the easiest elements to locate. I search for sections labeled `Methods`, `Participants`, or `Sample`, and occasionally in `Objectives`/`Aim`. This section usually appears right after the introduction and often provides key figures, such as sample size or mean age, within the first 1-2 sentences of the abstract.
+Les critères des participants sont généralement les éléments les plus faciles à localiser. Je recherche les sections intitulées `Méthodes`, `Participants` ou `Échantillon`, et parfois dans `Objectifs`/`But`. Cette section apparaît généralement juste après l'introduction et fournit souvent des chiffres clés, tels que la taille de l'échantillon ou l'âge moyen, dans les 1-2 premières phrases du résumé.
 
-This is also where you can verify whether diagnostic or age criteria are met, especially when distinguishing between children and adults.
+C'est également là que vous pouvez vérifier si les critères de diagnostic ou d'âge sont respectés, en particulier lorsqu'il s'agit de distinguer les enfants des adultes.
 
-If your platform allows it (e.g., [Rayyan](https://www.rayyan.ai/), [COVIDENCE](https://www.covidence.org/)), use highlighting features to search for inclusion/exclusion criteria keywords. This technique can significantly speed up your screening process!
+Si votre plateforme le permet (par exemple, [Rayyan](https://www.rayyan.ai/), [COVIDENCE](https://www.covidence.org/)), utilisez les fonctions de surlignage pour rechercher les mots-clés des critères d'inclusion/exclusion. Cette technique peut considérablement accélérer votre processus de sélection !
 
-## Conference Proceedings
+## Actes de conférence
 
-Be cautious of articles with conference details, such as:
+Méfiez-vous des articles contenant des détails de conférence, tels que :
 
-> [...] _60th Annual National Conference of All India Occupational Therapists Association (AIOTA, 2023), February 2-5, 2023._
+> [...] _60e Conférence Nationale Annuelle de l'Association des Ergothérapeutes de l'Inde (AIOTA, 2023), du 2 au 5 février 2023._
 
-Look for keywords like `proceedings`, `conference`, `symposium`, `meeting`, or `workshop`, along with abbreviations like `Conf`, `Symp`, or `Proc`, usually followed by a location and date.  
-For example:
-
-<!-- prettier-ignore-start -->
-> _Proceedings of the 23rd International Conference on..._
-> _Symposium on XYZ, held in..._
-<!-- prettier-ignore-end -->
-
-If the title starts with a session number (e.g., `T50`, `S49`), it’s often an abstract submitted for a conference presentation and should be excluded due to lack of peer review.
-
-## Dissertations & Theses
-
-Identify keywords such as `dissertation`, `thesis`, `PhD`, or `doctoral`.  
-These 2 examples indicate non-peer-reviewed material.
+Recherchez des mots-clés comme `actes`, `conférence`, `symposium`, `réunion` ou `atelier`, ainsi que des abréviations comme `Conf`, `Symp` ou `Proc`, généralement suivis d'un lieu et d'une date.  
+Par exemple :
 
 <!-- prettier-ignore-start -->
-> _Master’s Thesis, University of..._
-> _PhD Dissertation, Department of..._
+> _Actes de la 23e Conférence Internationale sur..._
+> _Symposium sur XYZ, tenu à..._
 <!-- prettier-ignore-end -->
 
-## Books & Book Chapters
+Si le titre commence par un numéro de session (par exemple, `T50`, `S49`), il s'agit souvent d'un résumé soumis pour une présentation à une conférence et doit être exclu en raison de l'absence d'examen par les pairs.
 
-Look for terms like `chapter`, `section`, `handbook`, `guide`, or `edited by`.  
-Examples include:
+## Thèses et mémoires
+
+Identifiez les mots-clés tels que `thèse`, `mémoire`, `doctorat` ou `doctoral`.  
+Ces deux exemples indiquent du matériel non examiné par les pairs.
 
 <!-- prettier-ignore-start -->
-> _Chapter 4 in..._
-> _Handbook of Cognitive Science..._
+> _Mémoire de Master, Université de..._
+> _Thèse de doctorat, Département de..._
 <!-- prettier-ignore-end -->
 
-Most books will not have a `doi` but will have an `ISSN` or `ISBN` number (unless very recent).  
-Be cautious of overly brief and non-descriptive titles, as journals typically require more detailed titles for articles.
+## Livres et chapitres de livres
 
-## Non-Peer-Reviewed Sources
-
-Exclude materials that are labeled as `editorial`, `opinion`, `commentary`, `letter to the editor`, `perspective`, or `review` (if not systematic).  
-Examples include:
+Recherchez des termes comme `chapitre`, `section`, `manuel`, `guide` ou `édité par`.  
+Les exemples incluent :
 
 <!-- prettier-ignore-start -->
-> _Editorial: The Future of..._
-> _Letter to the Editor regarding..._
+> _Chapitre 4 dans..._
+> _Manuel de sciences cognitives..._
 <!-- prettier-ignore-end -->
 
-Non-peer-reviewed sources can also include `manuals`, `guides`, `resource lists`, `reports`, and `handbooks`.
+La plupart des livres n'auront pas de `doi` mais auront un numéro `ISSN` ou `ISBN` (sauf s'ils sont très récents).  
+Méfiez-vous des titres trop brefs et non descriptifs, car les revues exigent généralement des titres plus détaillés pour les articles.
 
-## News Articles & Magazine Pieces
+## Sources non examinées par les pairs
 
-Identify articles published in newspapers, magazines, or other media outlets.  
-Examples include:
+Excluez les documents étiquetés comme `éditorial`, `opinion`, `commentaire`, `lettre à l'éditeur`, `perspective` ou `revue` (si non systématique).  
+Les exemples incluent :
 
 <!-- prettier-ignore-start -->
-> _Published in The New York Times_
-> _Article in Time Magazine..._
+> _Éditorial : L'avenir de..._
+> _Lettre à l'éditeur concernant..._
 <!-- prettier-ignore-end -->
 
-Articles lacking a DOI (unless they are books) are red flags for exclusion.
+Les sources non examinées par les pairs peuvent également inclure des `manuels`, `guides`, `listes de ressources`, `rapports` et `manuels de référence`.
 
-## Language & Accessibility
+## Articles de presse et de magazine
 
-Exclude abstracts in languages not covered by your review unless translation is feasible. For instance, if the review includes only English-language studies, any Spanish publications should be excluded.
-
-## Publication Status
-
-Exclude abstracts marked as `in press`, `forthcoming`, or `submitted`.  
-The next examples indicate that such studies have not yet been published.
+Identifiez les articles publiés dans les journaux, magazines ou autres médias.  
+Les exemples incluent :
 
 <!-- prettier-ignore-start -->
-> _Article in press_
-> _Forthcoming in Journal of..._
+> _Publié dans Le Monde_
+> _Article dans Paris Match..._
 <!-- prettier-ignore-end -->
 
-Additionally, if the abstract is written in the future tense (e.g., _we will recruit 50 participants_) or includes the word `protocol`, it should be excluded, as it indicates that data collection has not occurred. Absence of quantitative data in the abstract is also a good indicator for exclusion, except for qualitative studies (e.g., _M_ = 39.9, _SD_ = 5.9).
+Les articles sans DOI (sauf s'il s'agit de livres) sont des signaux d'alarme pour l'exclusion.
 
-## Year of Publication
+## Langue et accessibilité
 
-Filter out articles published outside the specified date range of your review.  
-For example, exclude studies published in 1999 if your review covers 2000-2023.
+Excluez les résumés dans des langues non couvertes par votre revue, sauf si la traduction est possible. Par exemple, si la revue n'inclut que des études en anglais, toute publication en espagnol devrait être exclue.
 
-## Non-Empirical Studies
+## Statut de publication
 
-Exclude theoretical papers, narrative reviews, or non-empirical discussions.  
-Examples include:
+Excluez les résumés marqués comme `sous presse`, `à paraître` ou `soumis`.  
+Les exemples suivants indiquent que ces études n'ont pas encore été publiées.
 
 <!-- prettier-ignore-start -->
-> _A theoretical exploration of..._
-> _Narrative review of..._
+> _Article sous presse_
+> _À paraître dans le Journal de..._
 <!-- prettier-ignore-end -->
 
-## Case Studies
+De plus, si le résumé est rédigé au futur (par exemple, _nous recruterons 50 participants_) ou inclut le mot `protocole`, il doit être exclu, car cela indique que la collecte de données n'a pas eu lieu. L'absence de données quantitatives dans le résumé est également un bon indicateur d'exclusion, sauf pour les études qualitatives (par exemple, _M_ = 39,9, _ET_ = 5,9).
 
-If an abstract mentions only one participant or includes phrases like `the story of…` or `vignette`, it is likely a case study, which should be excluded.
+## Année de publication
 
-## Recommended Citation
+Filtrez les articles publiés en dehors de la plage de dates spécifiée pour votre revue.  
+Par exemple, excluez les études publiées en 1999 si votre revue couvre 2000-2023.
 
-Finally, reviewing the recommended citation at the end of an article can provide additional information that may help you determine whether to exclude it, especially if you are familiar with citation formatting styles.
+## Études non empiriques
+
+Excluez les articles théoriques, les revues narratives ou les discussions non empiriques.  
+Les exemples incluent :
+
+<!-- prettier-ignore-start -->
+> _Une exploration théorique de..._
+> _Revue narrative de..._
+<!-- prettier-ignore-end -->
+
+## Études de cas
+
+Si un résumé ne mentionne qu'un seul participant ou inclut des phrases comme `l'histoire de...` ou `vignette`, il s'agit probablement d'une étude de cas, qui devrait être exclue.
+
+## Citation recommandée
+
+Enfin, l'examen de la citation recommandée à la fin d'un article peut fournir des informations supplémentaires qui peuvent vous aider à déterminer s'il faut l'exclure, surtout si vous êtes familier avec les styles de formatage des citations.
