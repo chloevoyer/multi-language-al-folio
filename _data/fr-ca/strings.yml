@@ -16,6 +16,7 @@ blog:
     communication: "communication"
     lifestyle: "style de vie"
     literature-review: "revue de littérature"
+    strategies: "stratégies"
   categories:
     research: "recherche"
 navigation_title: blogue
@@ -88,7 +89,7 @@ cv:
 filter: Tapez pour filtrer
 footer:
   copyright: ""
-  last_updated: "Dernière mise à jour : "
+  last_updated: "Dernière mise à jour le "
 latest_posts: derniers articles
 months:
   long:
