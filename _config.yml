@@ -161,13 +161,15 @@ disqus_shortname: al-folio # put your disqus shortname
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
   en-us:
-    - name: funding
+    - name: Funding
       posts:
         - url: https://www.mhrc.ca/studentresearchers/chloevoyer
           name: CIHR Master's Award
           published_date: 2024-04-28
           featured: true
-    - name: lifestyle
+          tags: ["funding"]
+          categories: [research]
+    - name: Lifestyle
       posts:
         - url: https://www.notion.so/templates/fitness-tracker-738
           name: Fitness Tracker Notion Template
@@ -477,7 +479,7 @@ enable_navbar_social: false # enables displaying social links in the navbar on t
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
-enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
+enable_video_embedding: true # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
 
 # -----------------------------------------------------------------------------
 # Library versions

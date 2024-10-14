@@ -212,7 +212,7 @@
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
       {% endif %}
       {% if entry.tldr %}
-        <a class="tldr btn btn-sm z-depth-0" role="button">TLDR</a>
+        <a class="tldr btn btn-sm z-depth-0" role="button">TL;DR</a>
       {% endif %}
       {% if entry.arxiv %}
         <a href="{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
@@ -242,7 +242,7 @@
         {% endif %}
       {% endif %}
       {% if entry.video and site.enable_video_embedding %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.video }}</a>
+        <a class="video-btn btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.video }}</a>
       {% elsif entry.video %}
         <a href="{{ entry.video | prepend: '/assets/video/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.video }}</a>
       {% endif %}
@@ -377,6 +377,8 @@
             | replace: 'Discussion:', '<b><i>Discussion:</i></b>'
             | replace: 'Conclusion:', '<b><i>Conclusion:</i></b>'
             | replace: 'Contexte :', '<b><i>Contexte :</i></b>'
+            | replace: 'Objectifs :', '<b><i>Objectifs :</i></b>'
+            | replace: 'Objectif :', '<b><i>Objectif :</i></b>'
             | replace: 'Méthodes :', '<b><i>Méthodes :</i></b>'
             | replace: 'Résultats :', '<b><i>Résultats :</i></b>'
             | replace: 'Discussion :', '<b><i>Discussion :</i></b>'
@@ -404,7 +406,7 @@
 
     {% if entry.video and site.enable_video_embedding %}
       <!-- Hidden video block -->
-      <div class="abstract hidden">
+      <div class="video hidden">
         <div style="text-align: center">{% include video.liquid path=entry.video class="img-fluid rounded z-depth-1" controls=true %}</div>
       </div>
     {% endif %}

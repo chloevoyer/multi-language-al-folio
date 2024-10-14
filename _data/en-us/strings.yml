@@ -47,7 +47,7 @@ cv:
   interests: Interests
   issuer: Issuer
   keywords: Keywords
-  label: Label
+  label: Position
   language: Language
   languages: Languages
   level: Level
@@ -78,13 +78,6 @@ cv:
   username: Username
   volunteer: Volunteer
   work: Work
-  basics_labels:
-    name: "Name"
-    label: "Title"
-    email: "Email"
-    phone: "Phone"
-    url: "URL"
-    summary: "Summary"    
 filter: Type to filter
 footer:
   copyright: "Copyright: "
