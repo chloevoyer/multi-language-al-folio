@@ -147,7 +147,7 @@ pagination:
       <p>{{ post.description }}</p>
       <p class="post-meta">
         {{ read_time }}&nbsp;{{ site.data[site.active_lang].strings.blog.read_time }} &nbsp; &middot; &nbsp;
-        {{ post.date | date: '%d %B, %Y' }}
+        {% include date_format.liquid format="long" date=post.date %}
         {% if post.external_source %}
         &nbsp; &middot; &nbsp; {{ post.external_source }}
         {% endif %}
