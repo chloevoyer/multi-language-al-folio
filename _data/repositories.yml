@@ -14,3 +14,10 @@ github_repos:
   #   description:
   #     en: "Academic Research Portfolio"
   #     fr: "Portfolio de recherche académique"
+  - name: transdiagnostic-cognitive-biases
+    url: https://github.com/katielavigne/transdiagnostic-cognitive-biases
+    description:
+      en-us: "R code for transdiagnostic meta-analysis paper"
+      fr-ca: "Importer des données de GarminConnect vers la base de données Notion"
+
+
