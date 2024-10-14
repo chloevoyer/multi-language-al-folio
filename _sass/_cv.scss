@@ -209,7 +209,7 @@ ul.timeline li::before {
   top: -0.5rem;
 }
 
-ul.timeline::before {
+/*ul.timeline::before {
      content: "●";
      font-size: 1em;
      display: inline-block;
@@ -231,28 +231,4 @@ ul.timeline::before {
      top: -1rem;
      color: var(--global-text-color);
 }
-
-
-.custom-bullet-list {
-  list-style-type: none;
-  padding-left: 1.5em; /* Adjust this value to move the entire list right */
-  margin-top: 0.5em; /* Add some space above the list */
-}
-
-.custom-bullet-list li {
-  position: relative;
-  font-size: 0.9rem; /* Slightly smaller font size */
-  margin-bottom: 0.3em; /* Space between list items */
-}
-
-.custom-bullet-list li::before {
-  content: "•"; /* Unicode bullet character */
-  position: absolute;
-  left: -1em; /* Adjust this to move just the bullet point */
-  color: var(--global-theme-color); /* Use your theme color for bullets */
-}
-
-.custom-bullet-list .item {
-  display: inline-block;
-  vertical-align: top;
-}
+*/
