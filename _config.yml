@@ -161,13 +161,13 @@ disqus_shortname: al-folio # put your disqus shortname
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
   en-us:
-    - name: Funding
+    - name: funding
       posts:
         - url: https://www.mhrc.ca/studentresearchers/chloevoyer
           name: CIHR Master's Award
           published_date: 2024-04-28
           featured: true
-    - name: Lifestyle
+    - name: lifestyle
       posts:
         - url: https://www.notion.so/templates/fitness-tracker-738
           name: Fitness Tracker Notion Template
