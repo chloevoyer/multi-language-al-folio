@@ -14,8 +14,6 @@ pretty_table: true
 
 <!-- Bibsearch Feature -->
 
-<p>Veuillez consulter mon <a href="https://scholar.google.fr/citations?user=g53kVKwAAAAJ&hl=fr&oi=sra" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i>&nbsp;Google Scholar</a> pour la liste la plus à jour des publications.</p>
-
 {% include bib_search.liquid %}
 
 <div class="publications">
