@@ -9,8 +9,7 @@
         <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
       {% endif %}
       {% if site.last_updated %}
-        {{- site.data[site.active_lang].strings.footer.last_updated }}{{ 'now' | date: '%B %d, %Y' }}.
-      {% endif %}
+      {{- site.data[site.active_lang].strings.footer.last_updated }} {% include date_format.liquid format="long" date=site.time %}.      {% endif %}
     </div>
   </footer>
 {% else %}

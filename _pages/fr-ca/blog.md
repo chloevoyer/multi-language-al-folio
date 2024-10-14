@@ -32,12 +32,11 @@ display_categories:
 {% assign blog_description_size = page.description | size %}
 
 {% if blog_name_size > 0 or blog_description_size > 0 %}
-
   <div class="header-bar">
     <h1>{{ page.blog_name }}</h1>
     <h2>{{ page.description }}</h2>
   </div>
-  {% endif %}
+{% endif %}
 
 {% if page.display_tags and page.display_tags.size > 0 or page.display_categories and page.display_categories.size > 0 %}
   <div class="tag-category-list">
