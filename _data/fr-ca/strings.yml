@@ -81,10 +81,10 @@ cv:
   work: travail
   basics_labels:
     name: "Nom"
-    label: "Titre"
+    label: "Position"
     email: "Courriel"
     phone: "Téléphone"
-    url: "URL"
+    url: "site web"
     summary: "Résumé"
 filter: Tapez pour filtrer
 footer:
