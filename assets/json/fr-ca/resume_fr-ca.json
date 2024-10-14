@@ -218,12 +218,12 @@
     {
       "language": "Français",
       "fluency": "Langue maternelle",
-      "icon": "fa-solid fa-leaf-maple"
+      "icon": "fa-solid fa-flag"
     },
     {
       "language": "Anglais",
       "fluency": "Bilingue",
-      "icon": "https://www.flaticon.com/free-icon/flower_15870529?term=quebec&page=1&position=6&origin=tag&related_id=15870529"
+      "icon": "fa-solid fa-flag-usa"
     }
   ],
   "interests": [
