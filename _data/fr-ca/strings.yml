@@ -10,9 +10,7 @@ bibliography:
   website: site web
 blog: blogue
 blog:
-  reading_time: minutes de lecture
-  tag: 
-  categories: 
+  read_time: minutes de lecture
 navigation_title: blogue
 categories:
   fun: amusement

@@ -10,7 +10,7 @@ bibliography:
   website: website
 blog:
   navigation_title: blog
-reading_time: min read
+  read_time: min read
 categories:
   fun: fun
   work: work
