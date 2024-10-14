@@ -1,7 +1,7 @@
 ---
 page_id: project_1
 layout: page
-title: Minds@Work-ADHD
+title: Quality of work life
 description: Improving quality of work life in ADHD
 img: assets/img/headers/brain-aurora.jpg
 importance: 1
