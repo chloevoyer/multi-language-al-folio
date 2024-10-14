@@ -60,8 +60,8 @@ module ExternalPosts
       )
       doc.data['external_source'] = source_name
       doc.data['title'] = content[:title]
-      doc.data['feed_content'] = content[:content]
-      doc.data['description'] = content[:summary]
+      doc.data['feed_content'] = content[:content] || ''
+      doc.data['description'] = content[:summary] || ''
       doc.data['date'] = content[:published]
       doc.data['redirect'] = url
       doc.data['lang'] = lang
@@ -91,11 +91,11 @@ module ExternalPosts
     def fetch_content_from_url(url)
       html = HTTParty.get(url).body
       parsed_html = Nokogiri::HTML(html)
-
-      title = parsed_html.at('head title')&.text.strip || ''
+    
+      title = parsed_html.at('head title')&.text&.strip || ''
       description = parsed_html.at('head meta[name="description"]')&.attr('content') || ''
       body_content = parsed_html.at('body')&.inner_html || ''
-
+    
       {
         title: title,
         content: body_content,
