@@ -16,6 +16,7 @@ blog:
     communication: "communication"
     lifestyle: "lifestyle"
     literature-review: "literature review"
+    strategies: "strategies"
   categories:
     research: "research"
 categories:
@@ -116,7 +117,7 @@ months:
     october: Oct
     november: Nov
     december: Dec
-  long:
+  longer:
     1: January
     2: February
     3: March
@@ -129,7 +130,7 @@ months:
     10: October
     11: November
     12: December
-  short:
+  shorter:
     1: Jan
     2: Feb
     3: Mar
