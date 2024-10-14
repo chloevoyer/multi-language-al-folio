@@ -35,7 +35,7 @@ Recherchez des mots-clés comme `actes`, `conférence`, `symposium`, `réunion` 
 Par exemple :
 
 <!-- prettier-ignore-start -->
-> _Actes de la 23e Conférence Internationale sur..._
+> _Actes de la 23e Conférence Internationale sur..._  
 > _Symposium sur XYZ, tenu à..._
 <!-- prettier-ignore-end -->
 
@@ -47,7 +47,7 @@ Identifiez les mots-clés tels que `thèse`, `mémoire`, `doctorat` ou `doctoral
 Ces deux exemples indiquent du matériel non examiné par les pairs.
 
 <!-- prettier-ignore-start -->
-> _Mémoire de Master, Université de..._
+> _Mémoire de Master, Université de..._  
 > _Thèse de doctorat, Département de..._
 <!-- prettier-ignore-end -->
 
@@ -57,7 +57,7 @@ Recherchez des termes comme `chapitre`, `section`, `manuel`, `guide` ou `édité
 Les exemples incluent :
 
 <!-- prettier-ignore-start -->
-> _Chapitre 4 dans..._
+> _Chapitre 4 dans..._  
 > _Manuel de sciences cognitives..._
 <!-- prettier-ignore-end -->
 
@@ -70,7 +70,7 @@ Excluez les documents étiquetés comme `éditorial`, `opinion`, `commentaire`, 
 Les exemples incluent :
 
 <!-- prettier-ignore-start -->
-> _Éditorial : L'avenir de..._
+> _Éditorial : L'avenir de..._  
 > _Lettre à l'éditeur concernant..._
 <!-- prettier-ignore-end -->
 
@@ -82,7 +82,7 @@ Identifiez les articles publiés dans les journaux, magazines ou autres médias.
 Les exemples incluent :
 
 <!-- prettier-ignore-start -->
-> _Publié dans Le Monde_
+> _Publié dans Le Monde_  
 > _Article dans Paris Match..._
 <!-- prettier-ignore-end -->
 
@@ -98,7 +98,7 @@ Excluez les résumés marqués comme `sous presse`, `à paraître` ou `soumis`.
 Les exemples suivants indiquent que ces études n'ont pas encore été publiées.
 
 <!-- prettier-ignore-start -->
-> _Article sous presse_
+> _Article sous presse_  
 > _À paraître dans le Journal de..._
 <!-- prettier-ignore-end -->
 
@@ -115,7 +115,7 @@ Excluez les articles théoriques, les revues narratives ou les discussions non e
 Les exemples incluent :
 
 <!-- prettier-ignore-start -->
-> _Une exploration théorique de..._
+> _Une exploration théorique de..._  
 > _Revue narrative de..._
 <!-- prettier-ignore-end -->
 
