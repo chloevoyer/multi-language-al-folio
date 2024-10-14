@@ -40,8 +40,6 @@ display_categories:
   {% endif %}
 
 {% if page.display_tags and page.display_tags.size > 0 or page.display_categories and page.display_categories.size > 0 %}
-
-{% if page.display_tags and page.display_tags.size > 0 or page.display_categories and page.display_categories.size > 0 %}
   <div class="tag-category-list">
     <ul class="p-0 m-0">
       {% for tag in page.display_tags %}
