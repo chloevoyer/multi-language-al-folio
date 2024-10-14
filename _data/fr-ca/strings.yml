@@ -77,6 +77,13 @@ cv:
   username: nom d'utilisateur
   volunteer: bénévolat
   work: travail
+  basics:
+    name: "Nom"
+    label: "Titre"
+    email: "Courriel"
+    phone: "Téléphone"
+    url: "Site web"
+    summary: "Résumé"
 filter: Tapez pour filtrer
 footer:
   copyright: ""

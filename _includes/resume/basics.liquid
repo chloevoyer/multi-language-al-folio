@@ -1,17 +1,14 @@
 <table class="table table-cv table-sm table-borderless table-responsive table-cv-map">
   {% assign skip_basics = 'image,profiles,location' | split: ',' %}
   {% for content in data[1] %}
-    {%
-      if (content[1] == "") or (skip_basics contains
-      content[0])
-    %}
+    {% if (content[1] == "") or (skip_basics contains content[0]) %}
       {% continue %}
     {% endif %}
 
     <tr>
       <td class="p-1 pr-2 font-weight-bold">
         {% assign cv_key = content[0] %}
-        <b>{{ content[0] | capitalize }}</b>
+        <b>{{ site.data[site.active_lang].strings.cv.basics[cv_key] | default: cv_key | capitalize }}</b>
       </td>
       <td class="p-1 pl-2 font-weight-light text">
         {% if content[0] == 'url' %}

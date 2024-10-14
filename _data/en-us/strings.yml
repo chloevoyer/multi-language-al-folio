@@ -76,6 +76,13 @@ cv:
   username: Username
   volunteer: Volunteer
   work: Work
+  basics:
+    name: "Name"
+    label: "Label"
+    email: "Email"
+    phone: "Phone"
+    url: "Website"
+    summary: "Summary"    
 filter: Type to filter
 footer:
   copyright: "Copyright: "
