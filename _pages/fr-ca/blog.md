@@ -41,22 +41,23 @@ display_categories:
 {% if page.display_tags and page.display_tags.size > 0 or page.display_categories and page.display_categories.size > 0 %}
   <div class="tag-category-list">
     <ul class="p-0 m-0">
-      {% for tag in post.tags %}
-      <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
-        <i class="fa-solid fa-hashtag fa-sm"></i> {{ site.data[site.active_lang].strings.blog.tags[tag] | default: tag }}</a>
-      {% unless forloop.last %}
-        &nbsp;
-      {% endunless %}
+      {% for tag in page.display_tags %}
+        <li>
+          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ site.data[site.active_lang].strings.blog.tags[tag] | default: tag }}</a>
+        </li>
+        {% unless forloop.last %}
+          <p>&bull;</p>
+        {% endunless %}
       {% endfor %}
-
       {% if page.display_categories.size > 0 and page.display_tags.size > 0 %}
         <p>&bull;</p>
       {% endif %}
-        {% for category in post.categories %}
-        <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
-          <i class="fa-solid fa-tag fa-sm"></i> {{ site.data[site.active_lang].strings.blog.categories[category] | default: category }}</a>
+      {% for category in page.display_categories %}
+        <li>
+          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ site.data[site.active_lang].strings.blog.categories[category] | default: category }}</a>
+        </li>
         {% unless forloop.last %}
-          &nbsp;
+          <p>&bull;</p>
         {% endunless %}
       {% endfor %}
     </ul>
