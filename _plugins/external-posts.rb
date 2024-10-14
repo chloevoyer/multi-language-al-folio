@@ -11,25 +11,29 @@ module ExternalPosts
 
     def generate(site)
       if site.config['external_sources'] != nil
-        site.config['external_sources'].each do |src|
-          puts "Fetching external posts from #{src['name']}:"
-          if src['rss_url']
-            fetch_from_rss(site, src)
-          elsif src['posts']
-            fetch_from_urls(site, src)
+        site.config['languages'].each do |lang|
+          if site.config['external_sources'][lang]
+            site.config['external_sources'][lang].each do |src|
+              puts "Fetching external posts from #{src['name']} (#{lang}):"
+              if src['rss_url']
+                fetch_from_rss(site, src, lang)
+              elsif src['posts']
+                fetch_from_urls(site, src, lang)
+              end
+            end
           end
         end
       end
     end
 
-    def fetch_from_rss(site, src)
+    def fetch_from_rss(site, src, lang)
       xml = HTTParty.get(src['rss_url']).body
       return if xml.nil?
       feed = Feedjira.parse(xml)
-      process_entries(site, src, feed.entries)
+      process_entries(site, src, feed.entries, lang)
     end
 
-    def process_entries(site, src, entries)
+    def process_entries(site, src, entries, lang)
       entries.each do |e|
         puts "...fetching #{e.url}"
         create_document(site, src['name'], e.url, {
@@ -37,22 +41,20 @@ module ExternalPosts
           content: e.content,
           summary: e.summary,
           published: e.published
-        })
+        }, lang)
       end
     end
 
-    def create_document(site, source_name, url, content)
-      # check if title is composed only of whitespace or foreign characters
+    def create_document(site, source_name, url, content, lang)
       if content[:title].gsub(/[^\w]/, '').strip.empty?
-        # use the source name and last url segment as fallback
         slug = "#{source_name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}-#{url.split('/').last}"
       else
-        # parse title from the post or use the source name and last url segment as fallback
         slug = content[:title].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
         slug = "#{source_name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}-#{url.split('/').last}" if slug.empty?
       end
 
-      path = site.in_source_dir("_posts/#{slug}.md")
+      sanitized_lang = lang.split('-').first
+      path = site.in_source_dir("_posts/#{sanitized_lang}/#{slug}.md")
       doc = Jekyll::Document.new(
         path, { :site => site, :collection => site.collections['posts'] }
       )
@@ -62,15 +64,16 @@ module ExternalPosts
       doc.data['description'] = content[:summary]
       doc.data['date'] = content[:published]
       doc.data['redirect'] = url
+      doc.data['lang'] = lang
       site.collections['posts'].docs << doc
     end
 
-    def fetch_from_urls(site, src)
+    def fetch_from_urls(site, src, lang)
       src['posts'].each do |post|
         puts "...fetching #{post['url']}"
         content = fetch_content_from_url(post['url'])
         content[:published] = parse_published_date(post['published_date'])
-        create_document(site, src['name'], post['url'], content)
+        create_document(site, src['name'], post['url'], content, lang)
       end
     end
 
@@ -97,9 +100,7 @@ module ExternalPosts
         title: title,
         content: body_content,
         summary: description
-        # Note: The published date is now added in the fetch_from_urls method.
       }
     end
-
   end
 end
