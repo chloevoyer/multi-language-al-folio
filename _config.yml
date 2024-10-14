@@ -160,18 +160,32 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: Funding
-    posts:
-      - url: https://www.mhrc.ca/studentresearchers/chloevoyer
-        name: CIHR Master's Award
-        published_date: 2024-04-28
-        featured: true
-  - name: Lifestyle
-    posts:
-      - url: https://www.notion.so/templates/fitness-tracker-738 # https://www.notion.so/fr/templates/fitness-tracker-738
-        name: Fitness Tracker Notion Template
-        published_date: 2024-09-01
-        featured: true
+  en:
+    - name: Funding
+      posts:
+        - url: https://www.mhrc.ca/studentresearchers/chloevoyer
+          name: CIHR Master's Award
+          published_date: 2024-04-28
+          featured: true
+    - name: Lifestyle
+      posts:
+        - url: https://www.notion.so/templates/fitness-tracker-738
+          name: Fitness Tracker Notion Template
+          published_date: 2024-09-01
+          featured: true
+  fr:
+    - name: Financement
+      posts:
+        - url: https://www.mhrc.ca/studentresearchers/chloevoyer
+          name: Bourse de maîtrise des IRSC
+          published_date: 2024-04-28
+          featured: true
+    - name: Mode de vie
+      posts:
+        - url: https://www.notion.so/fr/templates/fitness-tracker-738
+          name: Modèle de suivi de fitness Notion
+          published_date: 2024-09-01
+          featured: true
 
 # -----------------------------------------------------------------------------
 # Newsletter
