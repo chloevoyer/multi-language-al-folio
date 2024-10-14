@@ -26,7 +26,7 @@ toc:
 2. _Le consortium DREAM BIG : une initiative d'harmonisation et un plan d'analyse des données_ (2023&ndash;présent).
    - _Problèmes de santé mentale et résilience liés à la COVID-19 chez les jeunes adultes pour éclairer les politiques d'intervention à partir des niveaux pré-pandémiques d'adversité environnementale et d'humeur maternelle._
 
-<h2 style="padding-top: 30px">organisation de la conférence</a>
+<h2 style="padding-top: 30px">organisation de la conférence</h2>
 
 - <a href="https://colloque2024.santementaletravail.ca/">Colloque francophone international sur la santé mentale et le retour au travail</a> (2024)
 - <a href="https://colloque2021.santementaletravail.ca/">Colloque regards croisés sur la santé mentale et le retour au travail</a> (2021)
