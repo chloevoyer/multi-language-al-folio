@@ -176,7 +176,7 @@ external_sources:
   fr-ca:
     - name: Financement
       posts:
-        - url: https://www.mhrc.ca/studentresearchers/chloevoyer
+        - url: https://www.mhrc-rsmc.ca/boursesdetudes/chloevoyer
           name: Bourse de maîtrise des IRSC
           published_date: 2024-04-28
           featured: true
