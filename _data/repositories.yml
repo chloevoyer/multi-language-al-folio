@@ -18,6 +18,6 @@ github_repos:
     url: https://github.com/katielavigne/transdiagnostic-cognitive-biases
     description:
       en-us: "R code for transdiagnostic meta-analysis paper"
-      fr-ca: "Importer des données de GarminConnect vers la base de données Notion"
+      fr-ca: "Code R pour reproduire nos resultats de notre meta-analyse sur les bias cognitifs d'une approche transdiagnostique"
 
 
