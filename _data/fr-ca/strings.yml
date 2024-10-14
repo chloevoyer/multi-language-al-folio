@@ -70,7 +70,7 @@ cv:
   work: travail
 filter: Tapez pour filtrer
 footer:
-  copyright: "Droits d'auteur : "
+  copyright: ""
   last_updated: "Dernière mise à jour : "
 latest_posts: derniers articles
 months:

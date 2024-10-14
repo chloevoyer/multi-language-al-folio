@@ -20,7 +20,7 @@
     {% endif %}
 
     <div class="container">
-      &copy;
+      &copy; 
       {{- site.data[site.active_lang].strings.footer.copyright -}}
       {{- site.time | date: '%Y' }}
       {{ site.first_name }}
@@ -31,7 +31,18 @@
       {% endif %}
       {% if site.last_updated %}
         {{- site.data[site.active_lang].strings.footer.last_updated -}}
-        {{- 'now' | date: '%B %d, %Y' }}.
+        {% assign date = 'now' | date: '%d %m %Y' | split: ' ' %}
+        {% assign day = date[0] | plus: 0 %}
+        {% assign month = date[1] | minus: 1 %}
+        {% assign year = date[2] %}
+        
+        {% if site.active_lang == 'fr' %}
+          {% assign months = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," %}
+          {{ day }} {{ months[month] }} {{ year }}.
+        {% else %}
+          {% assign months = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}
+          {{ months[month] }} {{ day }}, {{ year }}.
+        {% endif %}
       {% endif %}
     </div>
   </footer>
