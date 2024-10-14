@@ -5,6 +5,8 @@ permalink: /blog/
 title: blog
 blog_name: chloe-voyer
 description: an open space for academic research
+display_tags: ["funding", "communication", "lifestyle", "literature-review"] # these tags will be displayed on the front page of your blog
+display_categories: ["research"] # these categories will be displayed on the front page of your blog
 nav: true
 nav_order: 1
 pagination:
@@ -32,11 +34,11 @@ pagination:
   </div>
   {% endif %}
 
-{% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
+{% if page.display_tags and page.display_tags.size > 0 or page.display_categories and page.display_categories.size > 0 %}
 
   <div class="tag-category-list">
     <ul class="p-0 m-0">
-      {% for tag in site.display_tags %}
+      {% for tag in page.display_tags %}
         <li>
           <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
         </li>
@@ -44,10 +46,10 @@ pagination:
           <p>&bull;</p>
         {% endunless %}
       {% endfor %}
-      {% if site.display_categories.size > 0 and site.display_tags.size > 0 %}
+      {% if page.display_categories.size > 0 and page.display_tags.size > 0 %}
         <p>&bull;</p>
       {% endif %}
-      {% for category in site.display_categories %}
+      {% for category in page.display_categories %}
         <li>
           <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
         </li>
@@ -144,7 +146,7 @@ pagination:
       </h3>
       <p>{{ post.description }}</p>
       <p class="post-meta">
-        {{ site.data[site.active_lang].strings.blog.read_time }}min read &nbsp; &middot; &nbsp;
+        {{ site.data[site.active_lang].strings.blog.read_time }} &nbsp; &middot; &nbsp;
         {% include date_format.liquid format="long" date=post.date %}
         {% if post.external_source %}
         &nbsp; &middot; &nbsp; {{ post.external_source }}

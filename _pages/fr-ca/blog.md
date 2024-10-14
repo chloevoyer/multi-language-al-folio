@@ -5,6 +5,8 @@ permalink: /blog/
 title: blogue
 blog_name: chloé-voyer
 description: un espace ouvert pour la recherche académique
+display_tags: ["funding", "communication", "lifestyle", "literature-review"] # these tags will be displayed on the front page of your blog
+display_categories: ["research"] # these categories will be displayed on the front page of your blog
 nav: true
 nav_order: 1
 pagination:
