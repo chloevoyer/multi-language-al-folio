@@ -160,7 +160,7 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  en:
+  en-us:
     - name: Funding
       posts:
         - url: https://www.mhrc.ca/studentresearchers/chloevoyer
@@ -173,7 +173,7 @@ external_sources:
           name: Fitness Tracker Notion Template
           published_date: 2024-09-01
           featured: true
-  fr:
+  fr-ca:
     - name: Financement
       posts:
         - url: https://www.mhrc.ca/studentresearchers/chloevoyer
