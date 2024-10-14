@@ -11,6 +11,13 @@ bibliography:
 blog:
   navigation_title: blog
   read_time: min read
+  tags:
+    funding: "funding"
+    communication: "communication"
+    lifestyle: "lifestyle"
+    literature-review: "literature review"
+  categories:
+    research: "research"
 categories:
   fun: fun
   work: work

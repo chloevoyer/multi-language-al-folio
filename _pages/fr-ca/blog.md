@@ -5,8 +5,6 @@ permalink: /blog/
 title: blogue
 blog_name: chloé-voyer
 description: un espace ouvert pour la recherche académique
-display_tags: ["funding", "communication", "lifestyle", "literature-review"] # these tags will be displayed on the front page of your blog
-display_categories: ["research"] # these categories will be displayed on the front page of your blog
 nav: true
 nav_order: 1
 pagination:
@@ -19,6 +17,13 @@ pagination:
   trail:
     before: 1 # The number of links before the current page
     after: 3 # The number of links after the current page
+display_tags: 
+  - funding
+  - communication
+  - lifestyle
+  - literature-review
+display_categories: 
+  - research
 ---
 
 <div class="post">
@@ -36,11 +41,12 @@ pagination:
 
 {% if page.display_tags and page.display_tags.size > 0 or page.display_categories and page.display_categories.size > 0 %}
 
+{% if page.display_tags and page.display_tags.size > 0 or page.display_categories and page.display_categories.size > 0 %}
   <div class="tag-category-list">
     <ul class="p-0 m-0">
       {% for tag in page.display_tags %}
         <li>
-          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
+          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ site.data[site.active_lang].strings.blog.tags[tag] }}</a>
         </li>
         {% unless forloop.last %}
           <p>&bull;</p>
@@ -51,7 +57,7 @@ pagination:
       {% endif %}
       {% for category in page.display_categories %}
         <li>
-          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
+          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ site.data[site.active_lang].strings.blog.categories[category] }}</a>
         </li>
         {% unless forloop.last %}
           <p>&bull;</p>
@@ -59,7 +65,8 @@ pagination:
       {% endfor %}
     </ul>
   </div>
-  {% endif %}
+{% endif %}
+
 
 {% assign featured_posts = site.posts | where: "featured", "true" %}
 {% if featured_posts.size > 0 %}

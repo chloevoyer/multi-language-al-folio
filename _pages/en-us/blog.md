@@ -5,8 +5,13 @@ permalink: /blog/
 title: blog
 blog_name: chloe-voyer
 description: an open space for academic research
-display_tags: ["funding", "communication", "lifestyle", "literature-review"] # these tags will be displayed on the front page of your blog
-display_categories: ["research"] # these categories will be displayed on the front page of your blog
+display_tags: 
+  - funding
+  - communication
+  - lifestyle
+  - literature-review
+display_categories: 
+  - research
 nav: true
 nav_order: 1
 pagination:

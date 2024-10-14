@@ -11,6 +11,13 @@ bibliography:
 blog: blogue
 blog:
   read_time: minutes de lecture
+  tags:
+    funding: "financement"
+    communication: "communication"
+    lifestyle: "style de vie"
+    literature-review: "revue de littérature"
+  categories:
+    research: "recherche"
 navigation_title: blogue
 categories:
   fun: amusement
