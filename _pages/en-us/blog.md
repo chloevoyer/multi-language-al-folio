@@ -4,7 +4,7 @@ layout: default
 permalink: /blog/
 title: blog
 blog_name: chloe-voyer
-description: an open space for academic research
+description: un mélange de savoir et de divertissement # Un espace ouvert à la recherche et à la créativité
 display_tags:
   - funding
   - communication
