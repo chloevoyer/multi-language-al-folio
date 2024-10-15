@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: "Revue de litérature : conseils & astuces <i class='fa-solid fa-file-magnifying-glass'></i>"
+title: "Revue de litérature : conseils & astuces <i class=\"fa-solid fa-file-magnifying-glass\"></i>"
 date: 2024-10-07 11:12:00
 description: Conseils pour identifier rapidement les résumés à exclure et augmenter son efficacité
 tags: revue-litérature stratégies
@@ -25,6 +25,8 @@ Les critères des participants sont généralement les éléments les plus facil
 C'est également là que vous pouvez vérifier si les critères de diagnostic ou d'âge sont respectés, en particulier lorsqu'il s'agit de distinguer les enfants des adultes.
 
 Si votre plateforme le permet (par exemple, [Rayyan](https://www.rayyan.ai/), [COVIDENCE](https://www.covidence.org/)), utilisez les fonctions de surlignage pour rechercher les mots-clés des critères d'inclusion/exclusion. Cette technique peut considérablement accélérer votre processus de sélection !
+
+<!-- https://academy.covidence.org/?utm_source=email-campaign&utm_medium=email&utm_campaign=announcement3 -->
 
 ## Actes de conférence
 

@@ -26,6 +26,8 @@ This is also where you can verify whether diagnostic or age criteria are met, es
 
 If your platform allows it (e.g., [Rayyan](https://www.rayyan.ai/), [COVIDENCE](https://www.covidence.org/)), use highlighting features to search for inclusion/exclusion criteria keywords. This technique can significantly speed up your screening process!
 
+<!-- https://academy.covidence.org/?utm_source=email-campaign&utm_medium=email&utm_campaign=announcement3 -->
+
 ## Conference Proceedings
 
 Be cautious of articles with conference details, such as:

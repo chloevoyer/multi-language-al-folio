@@ -162,15 +162,6 @@ disqus_shortname: al-folio # put your disqus shortname
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
   en-us:
-    - name: Funding
-      posts:
-        - url: https://www.mhrc.ca/studentresearchers/chloevoyer
-          name: CIHR Master's Award
-          published_date: 2024-04-28
-          featured: true
-          tags: ["funding"]
-          categories: [research]
-          description: "Details about the CIHR Master's Award."
     - name: Lifestyle
       posts:
         - url: https://www.notion.so/templates/fitness-tracker-738
@@ -180,16 +171,25 @@ external_sources:
           tags: ["lifestyle", "productivity"]
           categories: [tools]
           description: "A Notion template for tracking your fitness goals."
-  fr-ca:
-    - name: Financement
+    - name: Funding
       posts:
-        - url: https://www.mhrc-rsmc.ca/boursesdetudes/chloevoyer
-          name: Bourse de maîtrise des IRSC
+        - url: https://www.mhrc.ca/studentresearchers/chloevoyer
+          name: Recipient of the MHRC-Mitacs-iA Workplace Mental Health Studentship Summer 2024!
+          published_date: 2024-05-20 12:18:03
+          featured: true
+          tags: ["funding"]
+          categories: [research]
+          description: "Co-funded in partnership with Mitacs and iA Financial Group"
+    - name: Funding
+      posts:
+        - url: https://webapps.cihr-irsc.gc.ca/decisions/p/project_details.html?applId=506175&lang=en
+          name: CIHR Master's Award (CGS M)"
           published_date: 2024-04-28
           featured: true
-          tags: ["financement"]
-          categories: [recherche]
-          description: "Détails sur la bourse de maîtrise des IRSC."
+          tags: ["funding"]
+          categories: [research]
+          description: "Canada Graduate Scholarship &ndash; Master's program (CGS M)"
+  fr-ca:
     - name: Mode de vie
       posts:
         - url: https://www.notion.so/fr/templates/fitness-tracker-738
@@ -199,6 +199,24 @@ external_sources:
           tags: ["mode de vie", "productivité"]
           categories: [outils]
           description: "Un modèle Notion pour suivre vos objectifs de fitness."
+    - name: Financement
+      posts:
+        - url: https://www.mhrc-rsmc.ca/boursesdetudes/chloevoyer
+          name: Lauréate de la bourse d'études RSMC-Mitacs-iA en santé mentale au travail été 2024 !
+          published_date: 2024-05-20 12:18:03
+          featured: true
+          tags: ["financement"]
+          categories: [recherche]
+          description: "Détails sur la bourse de maîtrise des IRSC."
+    - name: Financement
+      posts:
+        - url: https://webapps.cihr-irsc.gc.ca/decisions/p/project_details.html?applId=506175&lang=fr
+          name: Bourse de maîtrise des IRSC
+          published_date: 2024-04-28
+          featured: true
+          tags: ["financement"]
+          categories: [recherche]
+          description: "Bourse d'études supérieures du Canada &ndash; Programme de maîtrise (BESC-M)"
 
 # -----------------------------------------------------------------------------
 # Newsletter
