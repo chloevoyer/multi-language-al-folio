@@ -13,7 +13,7 @@
               {% assign startMonth = '' %}
             {% endif %}
             {% assign startDate = startMonth | append: startYear %}
-          
+
             {% if content.endDate %}
               {% assign endDate_parts = content.endDate | split: '-' %}
               {% assign endYear = endDate_parts[0] %}
@@ -26,7 +26,7 @@
             {% else %}
               {% assign endDate = site.data[site.active_lang].strings.cv.present %}
             {% endif %}
-          
+
             {% assign date = startDate | append: ' — ' | append: endDate %}
           {% else %}
             {% assign date = '' %}

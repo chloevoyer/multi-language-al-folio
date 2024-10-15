@@ -19,5 +19,3 @@ github_repos:
     description:
       en-us: "R code for transdiagnostic meta-analysis paper"
       fr-ca: "Code R pour reproduire nos resultats de notre meta-analyse sur les bias cognitifs d'une approche transdiagnostique"
-
-

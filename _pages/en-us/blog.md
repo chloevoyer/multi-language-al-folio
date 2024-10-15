@@ -5,12 +5,12 @@ permalink: /blog/
 title: blog
 blog_name: chloe-voyer
 description: an open space for academic research
-display_tags: 
+display_tags:
   - funding
   - communication
   - lifestyle
   - literature-review
-display_categories: 
+display_categories:
   - research
 nav: true
 nav_order: 1

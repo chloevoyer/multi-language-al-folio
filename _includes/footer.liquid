@@ -2,7 +2,8 @@
   <footer class="fixed-bottom" role="contentinfo">
     <div class="container mt-0">
       &copy;&nbsp;
-      {{- site.data[site.active_lang].strings.footer.copyright }}{{ site.time | date: '%Y' }}
+      {{- site.data[site.active_lang].strings.footer.copyright -}}
+      {{- site.time | date: '%Y' }}
       {{ site.first_name }}
       {{ site.middle_name }}
       {{ site.last_name }}. {{ site.data[site.active_lang].strings.footer_text }}
@@ -10,7 +11,9 @@
         <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
       {% endif %}
       {% if site.last_updated %}
-      {{- site.data[site.active_lang].strings.footer.last_updated }} {% include date_format.liquid format="long" date=site.time %}.      {% endif %}
+        {{- site.data[site.active_lang].strings.footer.last_updated }}
+        {% include date_format.liquid format="long" date=site.time %}.
+      {% endif %}
     </div>
   </footer>
 {% else %}
@@ -35,14 +38,17 @@
         {% assign day = date[0] | plus: 0 %}
         {% assign month = date[1] | minus: 1 %}
         {% assign year = date[2] %}
-        
+
         {% if site.active_lang == 'fr' %}
-          {% assign months = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," %}
-          {{ day }} {{ months[month] }} {{ year }}.
+          {% assign months = 'janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre' | split: ',' %}
+          {{ day }}
+          {{ months[month] }}
+          {{ year }}.
         {% else %}
-          {% assign months = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}
-          {{ months[month] }} {{ day }}, {{ year }}.
-        {% endif %}
+        {% assign months = 'January,February,March,April,May,June,July,August,September,October,November,December' | split: ',' %}
+        {{ months[month] }}
+        {{ day }}, {{ year }}.
+      {% endif %}
       {% endif %}
     </div>
   </footer>

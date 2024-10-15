@@ -5,6 +5,13 @@ permalink: /blog/
 title: blogue
 blog_name: chloé-voyer
 description: un espace ouvert pour la recherche académique
+display_tags:
+  - funding
+  - communication
+  - lifestyle
+  - literature-review
+display_categories:
+  - research
 nav: true
 nav_order: 1
 pagination:
@@ -17,13 +24,6 @@ pagination:
   trail:
     before: 1 # The number of links before the current page
     after: 3 # The number of links after the current page
-display_tags: 
-  - funding
-  - communication
-  - lifestyle
-  - literature-review
-display_categories: 
-  - research
 ---
 
 <div class="post">
@@ -32,10 +32,12 @@ display_categories:
 {% assign blog_description_size = page.description | size %}
 
 {% if blog_name_size > 0 or blog_description_size > 0 %}
+
   <div class="header-bar">
     <h1>{{ page.blog_name }}</h1>
     <h2>{{ page.description }}</h2>
   </div>
+
 {% endif %}
 
 {% if page.display_tags and page.display_tags.size > 0 or page.display_categories and page.display_categories.size > 0 %}
@@ -67,8 +69,8 @@ display_categories:
 {% assign featured_posts = site.posts | where: "featured", true | where: "lang", site.active_lang %}
 {% assign external_sources = site.external_sources[site.active_lang] %}
 {% for source in external_sources %}
-  {% assign featured_external_posts = source.posts | where: "featured", true %}
-  {% assign featured_posts = featured_posts | concat: featured_external_posts %}
+{% assign featured_external_posts = source.posts | where: "featured", true %}
+{% assign featured_posts = featured_posts | concat: featured_external_posts %}
 {% endfor %}
 {% if featured_posts.size > 0 %}
 <br>
@@ -116,13 +118,13 @@ display_categories:
 
   <ul class="post-list">
 
-  {% if page.pagination.enabled %}
-    {% assign unfiltered_postlist = site.posts %}
-  {% else %}
-    {% assign unfiltered_postlist = site.posts %}
-  {% endif %}
+{% if page.pagination.enabled %}
+{% assign unfiltered_postlist = site.posts %}
+{% else %}
+{% assign unfiltered_postlist = site.posts %}
+{% endif %}
 
-  {% assign postlist = unfiltered_postlist | where: "lang", site.active_lang %}
+{% assign postlist = unfiltered_postlist | where: "lang", site.active_lang %}
 
     {% for post in postlist %}
 
@@ -139,20 +141,20 @@ display_categories:
 
 {% assign external_sources = site.external_sources[site.active_lang] %}
 {% for source in external_sources %}
-  {% for post in source.posts %}
-    <li>
-      <h3>
-        <a class="post-title" href="{{ post.url }}" target="_blank">{{ post.name }}</a>
-        <svg width="2rem" height="2rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-      </h3>
-      <p class="post-meta">
-        {% include date_format.liquid format="long" date=post.published_date %}
-        &nbsp; &middot; &nbsp; {{ source.name }}
-      </p>
-    </li>
-  {% endfor %}
+{% for post in source.posts %}
+<li>
+<h3>
+<a class="post-title" href="{{ post.url }}" target="_blank">{{ post.name }}</a>
+<svg width="2rem" height="2rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</h3>
+<p class="post-meta">
+{% include date_format.liquid format="long" date=post.published_date %}
+&nbsp; &middot; &nbsp; {{ source.name }}
+</p>
+</li>
+{% endfor %}
 {% endfor %}
 
 {% if post.thumbnail %}

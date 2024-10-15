@@ -82,7 +82,7 @@ jobs:
       - name: Set ImageMagick policy
         run: |
           sudo mkdir -p /etc/ImageMagick-6
-          sudo cp policy.xml /etc/ImageMagick-6/policy.xml 
+          sudo cp policy.xml /etc/ImageMagick-6/policy.xml
       - name: Install and Build 🔧
         run: |
           pip3 install --upgrade jupyter
