@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conférences de psychologie
+title: Conférences de psychologie 🎙️
 date: 2024-10-15 11:12:00
 description: Une liste non exhaustive de conférences dans le domaine de la psychologie
 tags: conférences
