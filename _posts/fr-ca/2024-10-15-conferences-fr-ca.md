@@ -22,8 +22,8 @@ feature: true
   data-url="{{ '/assets/json/en-us/conferences_table_data.json' | relative_url }}">
   <thead>
     <tr>
-      <th data-field="name" data-halign="left" data-align="center" data-sortable="true">Abbreviation</th>
-      <th data-field="name" data-halign="center" data-align="right" data-sortable="true">Conference Name</th>
+      <th data-field="text" data-halign="left" data-align="center" data-sortable="true">Abbreviation</th>
+      <th data-field="text" data-halign="center" data-align="right" data-sortable="true">Conference Name</th>
       <th data-field="text" data-halign="right" data-align="left" data-sortable="true">Submission Deadline</th>
       <th data-field="text" data-halign="right" data-align="left" data-sortable="true">Location</th>
       <th data-field="text" data-halign="right" data-align="left" data-sortable="true">Date</th>
