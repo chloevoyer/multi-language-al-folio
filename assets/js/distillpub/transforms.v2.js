@@ -13720,7 +13720,7 @@
     // if this is a proprer article, generate Google Scholar meta data
     if (data.doiSuffix) {
       appendHead(`
-      <!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->\n`);
+      <!--  https://scholar.google.ca/intl/en/scholar/inclusion.html#indexing -->\n`);
 
       meta("citation_title", data.title);
       meta("citation_fulltext_html_url", data.url);
