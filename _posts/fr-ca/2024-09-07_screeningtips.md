@@ -5,7 +5,7 @@ date: 2024-10-07 11:12:00
 description: Conseils pour identifier rapidement les résumés à exclure et augmenter son efficacité
 tags: revue-litérature stratégies
 categories: recherche
-lang: fr
+lang: fr-ca
 featured: true
 # bibliography: 2018-12-22-distill.bib
 toc: true
