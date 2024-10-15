@@ -26,8 +26,6 @@ pagination:
     after: 3 # The number of links after the current page
 ---
 
-<p>Debug: Active Lang: {{ site.active_lang }}, Posts Count: {{ site.posts | size }}, French Posts Count: {{ site.posts | where: "lang", "fr-ca" | size }}</p>
-
 <div class="post">
 
 {% assign blog_name_size = page.blog_name | size %}
