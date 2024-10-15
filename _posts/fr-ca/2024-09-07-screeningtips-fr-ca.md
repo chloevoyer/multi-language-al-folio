@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: "Revue de litérature : conseils & astuces <i class=\"fa-solid fa-file-magnifying-glass\"></i>🔍"
+title: "Revue de litérature : conseils & astuces <i class='fa-solid fa-file-magnifying-glass'></i>🔍"
 date: 2024-10-07 11:12:00
 description: Conseils pour identifier rapidement les résumés à exclure et augmenter son efficacité
 tags: revue-litérature stratégies

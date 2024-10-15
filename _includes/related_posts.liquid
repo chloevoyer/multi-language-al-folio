@@ -1,5 +1,5 @@
 {% assign have_related_posts = false %}
-{% assign related_posts = site.related_posts | where: "lang", site.active_lang %}
+{% assign related_posts = site.related_posts | where: 'lang', site.active_lang %}
 {% for post in related_posts | limit: site.related_blog_posts.max_related %}
   {% unless have_related_posts %}
     {% assign have_related_posts = true %}
