@@ -2,7 +2,7 @@
 layout: post
 title: Conférences de psychologie
 date: 2024-10-15 11:12:00
-description: a non-exhaustive list of conferences in the field of psychology
+description: une liste non exhaustive de conférences dans le domaine de la psychologie
 tags: conférences
 categories: recherche
 lang: fr-ca
