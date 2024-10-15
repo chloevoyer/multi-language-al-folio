@@ -168,7 +168,7 @@ pagination:
           {% endif %}
         </p>
       {% endif %}
-      
+
       {% if post.thumbnail %}
         <div class="row">
           <div class="col-sm-9">
