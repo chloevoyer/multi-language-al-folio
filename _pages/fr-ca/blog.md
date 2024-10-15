@@ -65,12 +65,6 @@ pagination:
 {% endif %}
 
 {% assign featured_posts = site.posts | where: "featured", true | where: "lang", site.active_lang %}
-{% assign featured_posts = site.posts | where: "featured", true | where: "lang", "fr-ca" %}
-{% assign external_sources = site.external_sources[site.active_lang] %}
-{% for source in external_sources %}
-{% assign featured_external_posts = source.posts | where: "featured", true %}
-{% assign featured_posts = featured_posts | concat: featured_external_posts %}
-{% endfor %}
 {% if featured_posts.size > 0 %}
 <br>
 <div class="container featured-posts">
@@ -131,53 +125,6 @@ pagination:
           &nbsp; &middot; &nbsp; {{ post.external_source }}
         </p>
       {% else %}
-  <ul class="post-list">
-
-{% if page.pagination.enabled %}
-{% assign unfiltered_postlist = site.posts %}
-{% else %}
-{% assign unfiltered_postlist = site.posts %}
-{% endif %}
-
-{% assign postlist = unfiltered_postlist | where: "lang", "fr-ca" %}
-
-    {% for post in postlist %}
-
-    {% if post.external_source == blank %}
-      {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
-    {% else %}
-      {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
-    {% endif %}
-    {% assign year = post.date | date: "%Y" %}
-    {% assign tags = post.tags | join: "" %}
-    {% assign categories = post.categories | join: "" %}
-
-    <li>
-
-{% assign external_sources = site.external_sources["fr-ca"] %}
-{% for source in external_sources %}
-{% for post in source.posts %}
-
-<li>
-<h3>
-<a class="post-title" href="{{ post.url }}" target="_blank">{{ post.name }}</a>
-<svg width="2rem" height="2rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-<path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
-</h3>
-<p class="post-meta">
-{% include date_format.liquid format="long" date=post.published_date %}
-&nbsp; &middot; &nbsp; {{ source.name }}
-</p>
-</li>
-{% endfor %}
-{% endfor %}
-
-{% if post.thumbnail %}
-
-<div class="row">
-          <div class="col-sm-9">
-{% endif %}
         <h3>
           {% if post.redirect == blank %}
             <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
