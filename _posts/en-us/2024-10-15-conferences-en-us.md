@@ -5,13 +5,13 @@ date: 2024-10-15 11:10:00
 description: a non-exhaustive list of conferences in the field of psychology
 tags: conferences
 categories: research
-giscus_comments: true
+giscus_comments: false
 related_posts: true
 pretty_table: true
 feature: true
 ---
 
-## Conferences
+## a non-exhaustive list of conferences in the field of psychology
 
 <table
   data-click-to-select="true"

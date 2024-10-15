@@ -1,17 +1,17 @@
 ---
 layout: post
-title: list of psychology conferences
+title: psychology conferences
 date: 2024-10-15 11:10:00
 description: a non-exhaustive list of conferences in the field of psychology
-tags: conferences
+tags: conférences
 categories: research
-giscus_comments: true
+giscus_comments: false
 related_posts: true
 pretty_table: true
 feature: true
 ---
 
-## Conferences
+## a non-exhaustive list of conferences in the field of psychology
 
 <table
   data-click-to-select="true"
@@ -22,7 +22,7 @@ feature: true
   data-url="{{ '/assets/json/en-us/conferences_table_data.json' | relative_url }}">
   <thead>
     <tr>
-      <th data-field="text" data-halign="left" data-align="center" data-sortable="true">Abbreviation</th>
+      <th data-field="name" data-halign="left" data-align="center" data-sortable="true">Abbreviation</th>
       <th data-field="name" data-halign="center" data-align="right" data-sortable="true">Conference Name</th>
       <th data-field="text" data-halign="right" data-align="left" data-sortable="true">Submission Deadline</th>
       <th data-field="text" data-halign="right" data-align="left" data-sortable="true">Location</th>
