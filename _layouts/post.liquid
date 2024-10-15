@@ -42,11 +42,11 @@ layout: default
           {% if url_beginning == '/blog/' %}
             <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
               <i class="fa-solid fa-hashtag fa-sm"></i>
-              {{ site.data[site.active_lang].strings.blog.tags[tag] | default: tag }}
+              {{ site.data[site.active_lang].strings.blog_posts.tags[tag] | default: tag }}
             </a>
           {% else %}
             <i class="fa-solid fa-hashtag fa-sm"></i>
-            {{ site.data[site.active_lang].strings.blog.tags[tag] | default: tag }}
+            {{ site.data[site.active_lang].strings.blog_posts.tags[tag] | default: tag }}
           {% endif %}
           {% unless forloop.last %}
             &nbsp;
@@ -60,11 +60,11 @@ layout: default
           {% if url_beginning == '/blog/' %}
             <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
               <i class="fa-solid fa-tag fa-sm"></i>
-              {{ site.data[site.active_lang].strings.blog.categories[category] | default: category }}
+              {{ site.data[site.active_lang].strings.blog_posts.categories[category] | default: category }}
             </a>
           {% else %}
             <i class="fa-solid fa-tag fa-sm"></i>
-            {{ site.data[site.active_lang].strings.blog.categories[category] | default: category }}
+            {{ site.data[site.active_lang].strings.blog_posts.categories[category] | default: category }}
           {% endif %}
           {% unless forloop.last %}
             &nbsp;
