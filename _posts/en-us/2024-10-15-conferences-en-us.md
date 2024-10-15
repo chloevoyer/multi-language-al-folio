@@ -1,6 +1,6 @@
 ---
 layout: post
-title: list of psychology conferences
+title: Psychology Conferences
 date: 2024-10-15 11:10:00
 description: a non-exhaustive list of conferences in the field of psychology
 tags: conferences

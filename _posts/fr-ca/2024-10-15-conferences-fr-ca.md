@@ -1,10 +1,10 @@
 ---
 layout: post
-title: psychology conferences
+title: Conférences de psychologie
 date: 2024-10-15 11:10:00
 description: a non-exhaustive list of conferences in the field of psychology
 tags: conférences
-categories: research
+categories: recherche
 giscus_comments: false
 related_posts: true
 pretty_table: true
