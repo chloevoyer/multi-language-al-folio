@@ -80,7 +80,9 @@ jobs:
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
       - name: Set ImageMagick policy
-        run: sudo cp policy.xml /etc/ImageMagick-6/policy.xml
+        run: |
+          sudo mkdir -p /etc/ImageMagick-6
+          sudo cp policy.xml /etc/ImageMagick-6/policy.xml 
       - name: Install and Build 🔧
         run: |
           pip3 install --upgrade jupyter
