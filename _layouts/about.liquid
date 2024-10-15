@@ -44,7 +44,7 @@ layout: default
       <h2 style="padding-top: 10px;">
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">{{ site.data[site.active_lang].strings.news }}</a>
       </h2>
-      {% include news.liquid limit=true %}
+      {% include news.liquid limit=true lang=site.active_lang %}
     {% endif %}
 
     <!-- Latest posts -->
@@ -52,7 +52,7 @@ layout: default
       <h2 style="padding-top: 40px;">
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">{{ site.data[site.active_lang].strings.latest_posts }}</a>
       </h2>
-      {% include latest_posts.liquid %}
+      {% include latest_posts.liquid lang=site.active_lang %}
     {% endif %}
 
     <!-- Selected papers -->
