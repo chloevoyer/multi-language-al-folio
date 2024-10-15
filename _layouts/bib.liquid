@@ -258,19 +258,19 @@
         {% if entry.poster contains '://' %}
           <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.poster }}</a>
         {% else %}
-        <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">
-        {{- site.data[site.active_lang].strings.bibliography.poster -}}
-      </a>
-    {% endif %}
+          <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">
+            {{- site.data[site.active_lang].strings.bibliography.poster -}}
+          </a>
+        {% endif %}
       {% endif %}
       {% if entry.slides %}
         {% if entry.slides contains '://' %}
           <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.slides }}</a>
         {% else %}
-        <a href="{{ entry.slides | prepend: '/assets/slides/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">
-        {{- site.data[site.active_lang].strings.bibliography.slides -}}
-      </a>
-    {% endif %}
+          <a href="{{ entry.slides | prepend: '/assets/slides/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">
+            {{- site.data[site.active_lang].strings.bibliography.slides -}}
+          </a>
+        {% endif %}
       {% endif %}
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.website }}</a>

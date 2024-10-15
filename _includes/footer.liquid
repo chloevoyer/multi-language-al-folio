@@ -45,10 +45,10 @@
           {{ months[month] }}
           {{ year }}.
         {% else %}
-        {% assign months = 'January,February,March,April,May,June,July,August,September,October,November,December' | split: ',' %}
-        {{ months[month] }}
-        {{ day }}, {{ year }}.
-      {% endif %}
+          {% assign months = 'January,February,March,April,May,June,July,August,September,October,November,December' | split: ',' %}
+          {{ months[month] }}
+          {{ day }}, {{ year }}.
+        {% endif %}
       {% endif %}
     </div>
   </footer>

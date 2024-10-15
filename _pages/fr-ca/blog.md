@@ -41,6 +41,7 @@ pagination:
 {% endif %}
 
 {% if page.display_tags and page.display_tags.size > 0 or page.display_categories and page.display_categories.size > 0 %}
+
   <div class="tag-category-list">
     <ul class="p-0 m-0">
       {% for tag in page.display_tags %}
@@ -142,6 +143,7 @@ pagination:
 {% assign external_sources = site.external_sources[site.active_lang] %}
 {% for source in external_sources %}
 {% for post in source.posts %}
+
 <li>
 <h3>
 <a class="post-title" href="{{ post.url }}" target="_blank">{{ post.name }}</a>
