@@ -133,6 +133,7 @@ lsi: false # produce an index for related posts
 pagination:
   enabled: true
   title: ":title - pagination.page :num"
+  filter: lang
 
 related_blog_posts:
   enabled: true

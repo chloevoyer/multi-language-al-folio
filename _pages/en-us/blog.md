@@ -66,7 +66,7 @@ pagination:
   </div>
   {% endif %}
 
-{% assign featured_posts = site.posts | where: "featured", "true" %}
+{% assign featured_posts = site.posts | where: "featured", "true" | where: "lang", site.active_lang %}
 {% if featured_posts.size > 0 %}
 <br>
 
@@ -114,9 +114,9 @@ pagination:
   <ul class="post-list">
 
     {% if page.pagination.enabled %}
-      {% assign postlist = paginator.posts %}
+      {% assign postlist = paginator.posts | where: "lang", site.active_lang %}
     {% else %}
-      {% assign postlist = site.posts %}
+      {% assign postlist = site.posts | where: "lang", site.active_lang %}
     {% endif %}
 
     {% for post in postlist %}
