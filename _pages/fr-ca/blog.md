@@ -6,12 +6,12 @@ title: blogue
 blog_name: chloé-voyer
 description: un espace pour la recherche académique
 display_tags:
-  - funding
+  - financement
   - communication
-  - lifestyle
-  - literature-review
+  - mode de vie
+  - revue-litérature
 display_categories:
-  - research
+  - recherche
 nav: true
 nav_order: 1
 pagination:
