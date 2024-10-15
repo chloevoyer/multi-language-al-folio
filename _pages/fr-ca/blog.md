@@ -67,7 +67,7 @@ pagination:
   </div>
 {% endif %}
 
-{% assign featured_posts = site.posts | where: "featured", true | where: "lang", site.active_lang %}
+{% assign featured_posts = site.posts | where: "featured", true | where: "lang", "fr-ca" %}
 {% assign external_sources = site.external_sources[site.active_lang] %}
 {% for source in external_sources %}
 {% assign featured_external_posts = source.posts | where: "featured", true %}
@@ -125,7 +125,7 @@ pagination:
 {% assign unfiltered_postlist = site.posts %}
 {% endif %}
 
-{% assign postlist = unfiltered_postlist | where: "lang", site.active_lang %}
+{% assign postlist = unfiltered_postlist | where: "lang", "fr-ca" %}
 
     {% for post in postlist %}
 
@@ -140,7 +140,7 @@ pagination:
 
     <li>
 
-{% assign external_sources = site.external_sources[site.active_lang] %}
+{% assign external_sources = site.external_sources["fr-ca"] %}
 {% for source in external_sources %}
 {% for post in source.posts %}
 
