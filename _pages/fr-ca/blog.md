@@ -104,8 +104,7 @@ pagination:
 
 <ul class="post-list">
   {% assign all_posts = site.posts | where: "lang", site.active_lang %}
-  {% assign external_sources = site.external_sources[site.active_lang] | default: {} %}
-  {% for source in external_sources %}
+{% assign external_sources = site.external_sources[site.active_lang] | default: empty %}  {% for source in external_sources %}
     {% assign all_posts = all_posts | concat: source.posts %}
   {% endfor %}
   
@@ -139,7 +138,7 @@ pagination:
         </h3>
         <p>{{ post.description }}</p>
         <p class="post-meta">
-          {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
+          {% assign external_sources = site.external_sources[site.active_lang] | default: empty %}
           {{ read_time }}&nbsp;{{ site.data[site.active_lang].strings.blog_posts.read_time }} &nbsp; &middot; &nbsp;
           {% include date_format.liquid format="long" date=post.date %}
         </p>
