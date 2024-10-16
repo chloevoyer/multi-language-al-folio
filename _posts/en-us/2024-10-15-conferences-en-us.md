@@ -16,7 +16,7 @@ feature: true
 
 <table
   data-click-to-select="true"
-  data-height="460"
+  data-height="600"
   data-pagination="true"
   data-search="true"
   data-toggle="table"

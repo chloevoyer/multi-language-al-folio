@@ -6,10 +6,10 @@ description: Une liste non exhaustive de conférences dans le domaine de la psyc
 tags: conférences
 categories: recherche
 lang: fr-ca
+featured: true
 giscus_comments: false
 related_posts: true
 pretty_table: true
-feature: true
 ---
 
 ## Une liste non exhaustive de conférences dans le domaine de la psychologie
