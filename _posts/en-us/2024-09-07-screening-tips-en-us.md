@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: "Screening Tips: Red Flags Edition 🚩"
-icon: fa-brands fa-searchengin # fa-solid fa-file-magnifying-glass
+icon: fa-solid fa-flag
 date: 2024-10-07 11:12:00
 description: Tips for quickly identifying abstracts to exclude
 tags: literature-review strategies
