@@ -9,7 +9,7 @@ lang: en-us
 giscus_comments: false
 related_posts: true
 pretty_table: true
-feature: true
+featured: true
 ---
 
 ## A non-exhaustive list of conferences in the field of psychology
