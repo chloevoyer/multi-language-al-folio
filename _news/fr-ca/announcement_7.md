@@ -7,4 +7,4 @@ published: true
 lang: fr-ca
 ---
 
-<b>Ma thèse sur 180s</b> sera présentée à la conférence [CoP-SMT](https://colloque2024.santementaletravail.ca/) 📸
+<b>Ma thèse en 180s</b> sera présentée à la conférence [CoP-SMT](https://colloque2024.santementaletravail.ca/) 📸
