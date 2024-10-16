@@ -23,7 +23,7 @@ suggestions_form: true
   data-toggle="table"
   data-url="{{ '/assets/json/en-us/conferences_table_data.json' | relative_url }}">
   <thead class="table-light">
-    <tr>
+    <tr class="table-header-row">
       <th data-field="Abbreviation" data-halign="left" data-align="center" data-sortable="true">Abbreviation</th>
       <th data-field="Conference Name" data-formatter="conferenceNameFormatter">Conference Name</th>
       <th data-field="Submission Deadline" data-halign="right" data-align="left" data-sortable="true">Submission Deadline</th>
