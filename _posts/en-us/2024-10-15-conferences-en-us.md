@@ -6,7 +6,6 @@ description: A non-exhaustive list of conferences in the field of psychology
 tags: conferences
 categories: research
 lang: en-us
-giscus_comments: false
 related_posts: true
 pretty_table: true
 featured: true

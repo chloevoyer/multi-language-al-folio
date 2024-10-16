@@ -22,6 +22,7 @@ pretty_table: true
   data-search="true"
   data-toggle="table"
   data-url="{{ '/assets/json/fr-ca/conferences_table_data.json' | relative_url }}">
+  <caption>Last updated: October 15, 2024</caption>
   <thead>
     <tr>
       <th data-field="Abbreviation" data-halign="left" data-align="center" data-sortable="true">Abbreviation</th>
