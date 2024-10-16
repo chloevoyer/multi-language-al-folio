@@ -16,19 +16,18 @@ suggestions_form: true
 
 <table
   data-click-to-select="true"
-  data-height="600"
+  data-height="1000"
   data-pagination="true"
   data-search="true"
   data-toggle="table"
   data-url="{{ '/assets/json/en-us/conferences_table_data.json' | relative_url }}">
-  <thead>
+  <thead class="table-light">
     <tr>
       <th data-field="Abbreviation" data-halign="left" data-align="center" data-sortable="true">Abbreviation</th>
-      <th data-field="Conference Name" data-halign="center" data-align="right" data-sortable="true">Conference Name</th>
+      <th data-field="Conference Name" data-formatter="conferenceNameFormatter">Conference Name</th>
       <th data-field="Submission Deadline" data-halign="right" data-align="left" data-sortable="true">Submission Deadline</th>
       <th data-field="Location" data-halign="right" data-align="left" data-sortable="true">Location</th>
       <th data-field="Date" data-halign="right" data-align="left" data-sortable="true">Date</th>
-      <th data-field="URL" data-halign="right" data-align="left" data-sortable="true">URL</th>
       <th data-field="Discipline" data-halign="right" data-align="left" data-sortable="true">Discipline</th>
       <th data-field="Local vs. Abroad" data-halign="right" data-align="left" data-sortable="true">Local vs. Abroad</th>
       <th data-field="Modality" data-halign="right" data-align="left" data-sortable="true">Modality</th>
@@ -36,3 +35,27 @@ suggestions_form: true
     </tr>
   </thead>
 </table>
+
+<script>
+  $(function() {
+    $('table').on('click', 'a', function(e) {
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<script>
+  function conferenceNameFormatter(value, row) {
+    if (row.URL) {
+      return '<a href="' + row.URL + '" target="_blank" title="' + row.URL + '">' + value + '</a>';
+    }
+    return value;
+  }
+
+  // Prevent link clicks from interfering with table sorting
+  $(function() {
+    $('table').on('click', 'a', function(e) {
+      e.stopPropagation();
+    });
+  });
+</script>

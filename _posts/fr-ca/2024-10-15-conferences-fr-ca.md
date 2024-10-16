@@ -38,3 +38,27 @@ pretty_table: true
     </tr>
   </thead>
 </table>
+
+<script>
+  $(function() {
+    $('table').on('click', 'a', function(e) {
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<script>
+  function conferenceNameFormatter(value, row) {
+    if (row.URL) {
+      return '<a href="' + row.URL + '" target="_blank" title="' + row.URL + '">' + value + '</a>';
+    }
+    return value;
+  }
+
+  // Prevent link clicks from interfering with table sorting
+  $(function() {
+    $('table').on('click', 'a', function(e) {
+      e.stopPropagation();
+    });
+  });
+</script>

@@ -53,6 +53,11 @@ table.table a {
   }
 }
 
+.table-light {
+  background-color: var(--global-theme-color);
+  // color: var(--global-text-color-light);
+}
+
 .table-dark {
   background-color: transparent;
   &.table-bordered {
