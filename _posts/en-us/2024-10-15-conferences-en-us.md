@@ -9,6 +9,7 @@ lang: en-us
 related_posts: true
 pretty_table: true
 featured: true
+suggestions_form: true
 ---
 
 ## A non-exhaustive list of conferences in the field of psychology

@@ -195,3 +195,10 @@ search:
 selected_publications: publications sélectionnées
 site_description: un espace ouvert pour la recherche académique
 searchbar: " "
+suggestions_form:
+  title: "Suggest a Conference"
+  description: "Know a conference that's not on our list? Let us know!"
+  conference_name: "Conference Name"
+  conference_url: "Conference URL"
+  additional_info: "Additional Information"
+  submit: "Submit Suggestion"
