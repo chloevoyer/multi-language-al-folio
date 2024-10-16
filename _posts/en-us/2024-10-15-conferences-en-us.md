@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Psychology Conferences 🎙️
+icon: fa-solid fa-microphone # fa-solid fa-presentation-screen OR fa-podium-star 
 date: 2024-10-15 11:12:00
 description: A non-exhaustive list of conferences in the field of psychology
 tags: conferences
