@@ -8,7 +8,6 @@ tags: conférences
 categories: recherche
 lang: fr-ca
 featured: true
-giscus_comments: false
 related_posts: true
 pretty_table: true
 ---
