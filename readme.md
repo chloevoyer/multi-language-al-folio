@@ -5,9 +5,11 @@
 - [x] Fix cv rendering issue
 - [x] Languages resets across navigation
 - [x] Posts not showing up
-- [ ] Program short/long academic CVs
-- [ ] Right-align award amout $
 - [x] Indent tab for highlights list items in resume
+- [ ] Program short/long academic CVs
+- [ ] Fix color of submission button 
+- [ ] Fix conferences table 
+- [ ] Right-align award amout $
 - [ ] Increase size of badges
 - [ ] Make certificates into one column
 - [ ] Add icons for titles of each section in CV
