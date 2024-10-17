@@ -21,6 +21,7 @@ $green-color-light: #ddffdd !default;
 $green-color-bright: #11d68b !default;
 $purple-color: #b509ac !default;
 $light-purple-color: color.adjust($purple-color, $lightness: 25%);
+$light-turq-color: color.adjust($turq-color, $lightness: 25%);
 $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
@@ -35,7 +36,7 @@ $black-color: #000000 !default;
 
 // Theme colors
 
-$code-bg-color-light: rgba($purple-color, 0.05);
+$code-bg-color-light: rgba($turq-color, 0.05);
 $code-bg-color-dark: #2c3237 !default;
 
 // Font awesome location
@@ -43,6 +44,9 @@ $fa-font-path: "../webfonts";
 
 // Tabler icons location
 $ti-font-path: "../fonts";
+
+// Emojis location
+// $emoji-font-path: "../fonts";
 
 // Back To Top button config
 $back-to-top-z-index: 10;
