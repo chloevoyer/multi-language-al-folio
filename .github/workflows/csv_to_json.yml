@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - '_data/en-us/conferences.csv'
+  workflow_dispatch:
 
 jobs:
   convert:
