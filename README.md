@@ -5,9 +5,12 @@
 - [x] Fix cv rendering issue
 - [x] Languages resets across navigation
 - [x] Posts not showing up
+- [x] Indent tab for highlights list items in resume
+- [ ] Fix table formatting and styling
+- [ ] Fix emoji display
+- [ ] Font for presentation types Oral/Paper/Poster/Symposium
 - [ ] Program short/long academic CVs
 - [ ] Right-align award amout $
-- [x] Indent tab for highlights list items in resume
 - [ ] Increase size of badges
 - [ ] Make certificates into one column
 - [ ] Add icons for titles of each section in CV
