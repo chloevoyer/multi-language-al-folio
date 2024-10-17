@@ -39,7 +39,7 @@ Look for keywords like `proceedings`, `conference`, `symposium`, `meeting`, or `
 For example:
 
 <!-- prettier-ignore-start -->
-> _Proceedings of the 23rd International Conference on..._
+> _Proceedings of the 23rd International Conference on..._  
 > _Symposium on XYZ, held in..._
 <!-- prettier-ignore-end -->
 
@@ -51,7 +51,7 @@ Identify keywords such as `dissertation`, `thesis`, `PhD`, or `doctoral`.
 These 2 examples indicate non-peer-reviewed material.
 
 <!-- prettier-ignore-start -->
-> _Master’s Thesis, University of..._
+> _Master’s Thesis, University of..._  
 > _PhD Dissertation, Department of..._
 <!-- prettier-ignore-end -->
 
@@ -61,7 +61,7 @@ Look for terms like `chapter`, `section`, `handbook`, `guide`, or `edited by`.
 Examples include:
 
 <!-- prettier-ignore-start -->
-> _Chapter 4 in..._
+> _Chapter 4 in..._  
 > _Handbook of Cognitive Science..._
 <!-- prettier-ignore-end -->
 
@@ -74,7 +74,7 @@ Exclude materials that are labeled as `editorial`, `opinion`, `commentary`, `let
 Examples include:
 
 <!-- prettier-ignore-start -->
-> _Editorial: The Future of..._
+> _Editorial: The Future of..._  
 > _Letter to the Editor regarding..._
 <!-- prettier-ignore-end -->
 
@@ -86,7 +86,7 @@ Identify articles published in newspapers, magazines, or other media outlets.
 Examples include:
 
 <!-- prettier-ignore-start -->
-> _Published in The New York Times_
+> _Published in The New York Times_  
 > _Article in Time Magazine..._
 <!-- prettier-ignore-end -->
 
@@ -102,7 +102,7 @@ Exclude abstracts marked as `in press`, `forthcoming`, or `submitted`.
 The next examples indicate that such studies have not yet been published.
 
 <!-- prettier-ignore-start -->
-> _Article in press_
+> _Article in press_  
 > _Forthcoming in Journal of..._
 <!-- prettier-ignore-end -->
 
@@ -119,7 +119,7 @@ Exclude theoretical papers, narrative reviews, or non-empirical discussions.
 Examples include:
 
 <!-- prettier-ignore-start -->
-> _A theoretical exploration of..._
+> _A theoretical exploration of..._  
 > _Narrative review of..._
 <!-- prettier-ignore-end -->
 
