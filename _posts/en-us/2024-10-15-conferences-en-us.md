@@ -60,3 +60,14 @@ suggestions_form: true
     });
   });
 </script>
+
+Here's a list of upcoming psychology conferences:
+
+{% for conference in site.data.conferences %}
+<div class="conference">
+  <h2>{{ conference.title }}</h2>
+  <p>Date: {{ conference.date }}</p>
+  <p>Location: {{ conference.location }}</p>
+  <a href="{{ conference.url }}">More Info</a>
+</div>
+{% endfor %}
