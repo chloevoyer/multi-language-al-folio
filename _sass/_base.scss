@@ -1366,3 +1366,12 @@ ninja-keys::part(ninja-input-wrapper) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
 }
+
+@emoji-font-face {
+     font-family: 'CustomEmoji';
+     src: url('assets/fonts/emoji-font.ttf') format('truetype');
+   }
+
+   body {
+     font-family: 'Your Regular Font', 'CustomEmoji';
+   }
