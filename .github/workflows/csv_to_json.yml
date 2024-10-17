@@ -1,0 +1,40 @@
+name: Convert CSV to JSON
+
+on:
+  push:
+    paths:
+      - '_data/en-us/conferences.csv'
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pandas
+
+    - name: Run conversion script
+      run: python _includes/scripts/csv_to_json.py
+
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add _data/en-us/conferences.json
+        git diff --quiet && git diff --staged --quiet || git commit -m "Update conferences.json"
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
