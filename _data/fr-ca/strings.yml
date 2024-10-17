@@ -47,7 +47,7 @@ cv:
   interests: intérêts
   issuer: émetteur
   keywords: mots-clés
-  label: étiquette
+  label: poste
   language: langue
   languages: langues
   level: niveau
@@ -78,13 +78,6 @@ cv:
   username: nom d'utilisateur
   volunteer: bénévolat
   work: travail
-  basics_labels:
-    name: "Nom"
-    label: "Position"
-    email: "Courriel"
-    phone: "Téléphone"
-    url: "site web"
-    summary: "Résumé"
 filter: Tapez pour filtrer
 footer:
   copyright: ""
