@@ -54,7 +54,7 @@ $max-content-width: {{ site.max_width }};
   button {
     align-self: flex-start;
     padding: 0.5rem 1rem;
-    background-color: #007bff;
+    background-color: var(--global-theme-color);
     color: white;
     border: none;
     border-radius: 0.25rem;

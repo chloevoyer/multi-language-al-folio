@@ -48,9 +48,11 @@
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
     <div class="title">
-      {{- entry.title -}}
+      {{- entry.title -}}<br>
       {%- if entry.type contains 'Oral' or entry.type contains 'Poster' or entry.type contains 'Symposium' | capitalize -%}
-        &nbsp;<b>[{{ entry.type }}]</b>
+        <span class="entry-type" style="font-family: 'Monaco', monospace !important; font-weight: bold;">
+          [{{ entry.type }}]
+        </span>
       {%- endif -%}
     </div>
 
@@ -242,7 +244,7 @@
         {% endif %}
       {% endif %}
       {% if entry.video and site.enable_video_embedding %}
-        <a class="video-btn btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.video }}</a>
+        <a class="video btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.video }}</a>
       {% elsif entry.video %}
         <a href="{{ entry.video | prepend: '/assets/video/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">
           {{- site.data[site.active_lang].strings.bibliography.video -}}
