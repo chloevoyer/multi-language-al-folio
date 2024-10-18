@@ -13,7 +13,7 @@ featured: true
 suggestions_form: true
 ---
 
-## A non-exhaustive list of conferences in the field of psychology
+## A non-exhaustive list of upcoming psychology conferences
 
 <table
   data-click-to-select="true"
@@ -21,7 +21,7 @@ suggestions_form: true
   data-pagination="true"
   data-search="true"
   data-toggle="table"
-  data-url="{{ '/assets/json/en-us/conferences_table_data.json' | relative_url }}">
+  data-url="{{ '/assets/json/en-us/conferences.json' | relative_url }}">
   <thead class="table-light">
     <tr class="table-header-row">
       <th data-field="Abbreviation" data-halign="left" data-align="center" data-sortable="true">Abbreviation</th>

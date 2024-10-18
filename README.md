@@ -6,9 +6,10 @@
 - [x] Languages resets across navigation
 - [x] Posts not showing up
 - [x] Indent tab for highlights list items in resume
+- [ ] Fix table formatting and styling
+- [ ] Fix emoji display
+- [ ] Font for presentation types Oral/Paper/Poster/Symposium
 - [ ] Program short/long academic CVs
-- [ ] Fix color of submission button 
-- [ ] Fix conferences table 
 - [ ] Right-align award amout $
 - [ ] Increase size of badges
 - [ ] Make certificates into one column
