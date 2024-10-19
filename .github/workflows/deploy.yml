@@ -40,6 +40,18 @@ jobs:
           ruby --version
           gem install bundler
 
+      - name: Install problematic gems
+        shell: pwsh
+        run: |
+          $env:PATH = "C:\Ruby32-x64\bin;$env:PATH"
+          gem install libv8-node -v '16.10.0.0' --platform=ruby
+          gem install mini_racer -v '0.6.3'
+
+      - name: Update Gemfile
+        shell: pwsh
+        run: |
+          (Get-Content Gemfile) -replace "gem 'mini_racer'", "gem 'mini_racer', '0.6.3'" | Set-Content Gemfile
+
       - name: Install dependencies
         shell: pwsh
         run: |
