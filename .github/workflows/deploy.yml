@@ -28,11 +28,16 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
 
-      - name: Install Ruby
+      - name: Install Scoop and Ruby
         shell: pwsh
         run: |
-          choco install ruby --version 3.2.2 -y
-          refreshenv
+          if (!(Get-Command scoop -ErrorAction SilentlyContinue)) {
+            Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+            iwr -useb get.scoop.sh | iex
+          }
+          scoop install ruby
+          $env:PATH = "$env:PATH;$env:USERPROFILE\scoop\apps\ruby\current\bin"
+          ruby --version
           gem install bundler
 
       - name: Install dependencies
