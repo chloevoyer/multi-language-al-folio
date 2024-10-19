@@ -23,7 +23,6 @@ pretty_table: true
   data-search="true"
   data-toggle="table"
   data-url="{{ '/assets/json/fr-ca/conferences.json' | relative_url }}">
-  <caption>{{- site.data[site.active_lang].strings.footer.last_updated }} Dernière mise à jour le 15 octobre 2024 {% include date_format.liquid format='long' date=page.last_updated -%}</caption>
   <thead>
     <tr>
       <th data-field="Abbreviation" data-halign="left" data-align="left" data-sortable="true">Abbreviation</th>

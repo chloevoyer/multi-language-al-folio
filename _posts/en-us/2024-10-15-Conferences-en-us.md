@@ -23,17 +23,13 @@ suggestions_form: true
     data-search="true"
     data-toggle="table"
     data-url="{{ '/assets/json/en-us/conferences.json' | relative_url }}">
-    <caption>{{- site.data[site.active_lang].strings.footer.last_updated }} Dernière mise à jour le 15 octobre 2024 {% include date_format.liquid format='long' date=page.last_updated -%}</caption>
+    <caption>{{- site.data[site.active_lang].strings.footer.last_updated }}{% include date_format.liquid format="long" date=page.time %}</caption>
     <thead class="table-light">
       <tr class="table-header-row">
         <th class="table-header-row" data-field="Abbreviation" data-halign="left" data-align="left" data-sortable="true">Abbreviation</th>
         <th data-field="Conference Name" data-formatter="conferenceNameFormatter">Conference Name</th>
-        <!-- <th data-field="Submission Deadline" data-halign="right" data-align="left" data-sortable="true">Submission Deadline</th> -->
         <th data-field="Location" data-halign="left" data-align="left" data-sortable="true">Location</th>
         <th data-field="Date" data-halign="left" data-align="left" data-sortable="true">Date</th>
-        <!-- <th data-field="Discipline" data-halign="left" data-align="left" data-sortable="true">Discipline</th>
-        <th data-field="Local vs. Abroad" data-halign="left" data-align="left" data-sortable="true">Local vs. Abroad</th>
-        <th data-field="Modality" data-halign="left" data-align="left" data-sortable="true">Modality</th> -->
         <th data-field="Theme" data-halign="left" data-align="left" data-sortable="true">Theme</th>
       </tr>
     </thead>
