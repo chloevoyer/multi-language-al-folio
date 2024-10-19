@@ -32,7 +32,6 @@ table {
     font-size: 1rem;
     padding: 1px 1rem 1px 0;
     font-weight: bold;
-    color: var(--global-bg-color) !important;
   }
 }
 
@@ -60,7 +59,7 @@ table.table a {
 }
 
 .table-header-row {
-  color: var(--global-text-color-light);
+  color: var(--global-bg-color) !important;
 }
 
 .table-dark {

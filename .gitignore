@@ -11,3 +11,6 @@ assets/libs/
 node_modules/
 vendor
 .idea
+actions-runner/
+chloevoyer.github.io.code-workspace
+actions-runner/_diag/Runner_20241019-143737-utc.log
