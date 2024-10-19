@@ -3,7 +3,7 @@ layout: page
 title: Compétences du futur
 description: Outil psychométrique sur les compétences futures
 img: assets/img/headers/futureworkplaceskills.gif
-importance: 1
+importance: 2
 category: recherche
 giscus_comments: false
 ---
