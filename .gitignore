@@ -14,3 +14,10 @@ vendor
 actions-runner/
 chloevoyer.github.io.code-workspace
 actions-runner/_diag/Runner_20241019-143737-utc.log
+.venv/
+.vscode/
+actions-runner-linux-x64-2.320.0.tar.gz
+run-helper.cmd.template
+run-helper.sh.template
+run.sh
+safe_sleep.sh
