@@ -39,14 +39,6 @@ pretty_table: true
 </table>
 
 <script>
-  $(function() {
-    $('table').on('click', 'a', function(e) {
-      e.stopPropagation();
-    });
-  });
-</script>
-
-<script>
   function conferenceNameFormatter(value, row) {
     if (row.URL) {
       return '<a href="' + row.URL + '" target="_blank" title="' + row.URL + '">' + value + '</a>';
