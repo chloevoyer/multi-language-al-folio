@@ -6,7 +6,7 @@
     "email": "chloe.voyer@mail.mcgill.ca",
     "phone": "(450) 272-3736",
     "url": "chloevoyer.com",
-    "summary": "Lauréate de <b>3 bourses</b> au cours de ma 1<sup>re</sup> année en tant qu'étudiante à la maîtrise, cherchant à poursuivre des recherches sur l'efficacité des interventions en milieu de travail chez les adultes vivant avec des troubles mentaux.",
+    "summary": "Lauréate de <b>3 bourses</b> au cours de ma 1<sup>re</sup> année en tant qu'étudiante à la maîtrise, poursuivant des recherches sur l'efficacité des interventions en milieu de travail chez les adultes vivant avec des troubles mentaux.",
     "location": {
       "address": "",
       "postalCode": "H2C 1K3",
@@ -218,6 +218,28 @@
         "Created a company website in the scope of a CEGEP course using cascading style sheets (.css) and html coding",
         "Implemented a new digital filing system and accounting program for administrative tasks"
       ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Centre de développement de l'enfant et de santé mentale ",
+      "position": "Bénévole de recherche aux études supérieures",
+      "url": "https://www.jgh.ca/care-services/occupational-therapy/occupational-therapy-mental-health/child-psychiatry-services/",
+      "icon": "fa-solid fa-hands-helping",
+      "startDate": "2023-05-09",
+      "endDate": "",
+      "summary": "Institut de recherche médicale Lady Davis&mdash;Hôpital général juif",
+      "highlights": []
+    },
+    {
+      "organization": "Centre de prévention du suicide de Montréal",
+      "position": "Intervention psychosociale",
+      "url": "https://cpsmontreal.ca/",
+      "icon": "fa-solid fa-phone-volume",
+      "startDate": "2021-10-01",
+      "endDate": "2023-09-01",
+      "summary": "Pendant plus d'un an, j'ai fait du bénévolat au Centre de prévention du suicide de Montréal (anciennement Suicide Action Montréal) en tant qu'intervenante psychosocial de première ligne pour soutenir les personnes en détresse suicidaire, leurs proches ainsi que les personnes endeuillées par le suicide d'un proche.",
+      "highlights": []
     }
   ],
   "languages": [
