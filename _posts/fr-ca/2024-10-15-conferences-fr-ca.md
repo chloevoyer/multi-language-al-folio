@@ -24,16 +24,15 @@ pretty_table: true
   <caption>Last updated: October 15, 2024</caption>
   <thead>
     <tr>
-      <th data-field="Abbreviation" data-halign="left" data-align="center" data-sortable="true">Abbreviation</th>
-      <th data-field="Conference Name" data-halign="center" data-align="right" data-sortable="true">Conference Name</th>
-      <th data-field="Submission Deadline" data-halign="right" data-align="left" data-sortable="true">Submission Deadline</th>
-      <th data-field="Location" data-halign="right" data-align="left" data-sortable="true">Location</th>
-      <th data-field="Date" data-halign="right" data-align="left" data-sortable="true">Date</th>
-      <th data-field="URL" data-halign="right" data-align="left" data-sortable="true">URL</th>
-      <th data-field="Discipline" data-halign="right" data-align="left" data-sortable="true">Discipline</th>
-      <th data-field="Local vs. Abroad" data-halign="right" data-align="left" data-sortable="true">Local vs. Abroad</th>
-      <th data-field="Modality" data-halign="right" data-align="left" data-sortable="true">Modality</th>
-      <th data-field="Theme" data-halign="right" data-align="left" data-sortable="true">Theme</th>
+      <th data-field="Abbreviation" data-halign="left" data-align="left" data-sortable="true">Abbreviation</th>
+      <th data-field="Conference Name" data-formatter="conferenceNameFormatter">Conference Name</th>
+      <!-- <th data-field="Submission Deadline" data-halign="right" data-align="left" data-sortable="true">Submission Deadline</th> -->
+      <th data-field="Location" data-halign="left" data-align="left" data-sortable="true">Location</th>
+      <th data-field="Date" data-halign="left" data-align="left" data-sortable="true">Date</th>
+      <!-- <th data-field="Discipline" data-halign="left" data-align="left" data-sortable="true">Discipline</th>
+      <th data-field="Local vs. Abroad" data-halign="left" data-align="left" data-sortable="true">Local vs. Abroad</th>
+      <th data-field="Modality" data-halign="left" data-align="left" data-sortable="true">Modality</th> -->
+      <th data-field="Theme" data-halign="left" data-align="left" data-sortable="true">Theme</th>
     </tr>
   </thead>
 </table>

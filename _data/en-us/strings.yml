@@ -80,7 +80,7 @@ cv:
   work: Work
 filter: Type to filter
 footer:
-  copyright: "Copyright: "
+  copyright: ""
   last_updated: "Last updated: "
 latest_posts: latest posts
 months:
