@@ -152,13 +152,13 @@ pagination:
   older: Older
   page: page
 post:
-  created_in: Created in
+  created_in: Created on
   created_by: by
   last_updated: last updated in
 references: References
 related_posts:
   description: "Here are some more articles you might like to read next:"
-  title: Enjoy Reading This Article?
+  title: Enjoyed Reading This Article?
   no_related_posts: "No related posts found."
 search:
   dark_theme:

@@ -6,4 +6,4 @@ related_posts: false
 lang: en-us
 ---
 
-<b>Won</b> a [CIHR Master's award (CGS-M)](https://webapps.cihr-irsc.gc.ca/decisions/p/project_details.html?applId=506175&lang=en) for the my thesis project! 💰🎉
+<b>Won a [CIHR Master's award</b> (CGS-M)](https://webapps.cihr-irsc.gc.ca/decisions/p/project_details.html?applId=506175&lang=en) for the my thesis project! 💰🎉

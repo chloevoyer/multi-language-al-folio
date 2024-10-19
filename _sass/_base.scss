@@ -21,6 +21,7 @@ strong {
 
 hr {
   border-top: 1px solid var(--global-divider-color);
+  color: var(--global-bg-color) !important;
 }
 
 table {
@@ -31,6 +32,7 @@ table {
     font-size: 1rem;
     padding: 1px 1rem 1px 0;
     font-weight: bold;
+    color: var(--global-bg-color) !important;
   }
 }
 
