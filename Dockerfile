@@ -1,16 +1,18 @@
 FROM ruby:latest
 ENV DEBIAN_FRONTEND noninteractive
 
-Label MAINTAINER George Araújo
+Label MAINTAINER Amir Pourmand
 
 RUN apt-get update -y && apt-get install -y --no-install-recommends \
     locales \
     imagemagick \
     build-essential \
     zlib1g-dev \
-    jupyter-nbconvert \
+    python3-pip \
     inotify-tools procps && \
-    apt-get clean && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
+    apt-get clean && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/* && \
+    pip install nbconvert --break-system-packages
+
 
 RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
     locale-gen
