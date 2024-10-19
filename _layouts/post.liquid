@@ -89,6 +89,32 @@ layout: default
   {% if page.citation %}
     {% include citation.liquid %}
   {% endif %}
+  
+    {% if page.suggestions_form %}
+      <div class="suggestions-form">
+        <h3>{{ site.data[site.active_lang].strings.suggestions_form.title }}</h3>
+        <p>{{ site.data[site.active_lang].strings.suggestions_form.description }}</p>
+        <form action="https://formspree.io/f/xvgoowgg" method="POST">
+          <input type="hidden" name="_subject" value="New conference suggestion for {{ page.title }}">
+          <label for="conference-name">{{ site.data[site.active_lang].strings.suggestions_form.conference_name }}:</label>
+          <input type="text" id="conference-name" name="conference-name" required>
+          
+          <label for="conference-url">{{ site.data[site.active_lang].strings.suggestions_form.conference_url }}:</label>
+          <input type="url" id="conference-url" name="conference-url" required>
+          
+          <label for="additional-info">{{ site.data[site.active_lang].strings.suggestions_form.additional_info }}:</label>
+          <textarea id="additional-info" name="additional-info"></textarea>
+          
+          <button type="submit">{{ site.data[site.active_lang].strings.suggestions_form.submit }}</button>
+<<<<<<< HEAD
+          </form>
+          </div>
+        {% endif %}
+=======
+        </form>
+      </div>
+    {% endif %}
+>>>>>>> 3e605c1d (Refactor post.liquid to add suggestions form)
 
   {% if page.related_publications %}
     <h2>{{ site.data[site.active_lang].strings.references }}</h2>
@@ -108,26 +134,6 @@ layout: default
   {% endif %}
   {% if site.giscus and page.giscus_comments %}
     {% include giscus.liquid %}
-  {% endif %}
-
-  {% if page.suggestions_form %}
-    <div class="suggestions-form">
-      <h3>{{ site.data[site.active_lang].strings.suggestions_form.title }}</h3>
-      <p>{{ site.data[site.active_lang].strings.suggestions_form.description }}</p>
-      <form action="https://formspree.io/f/xvgoowgg" method="POST">
-        <input type="hidden" name="_subject" value="New conference suggestion for {{ page.title }}">
-        <label for="conference-name">{{ site.data[site.active_lang].strings.suggestions_form.conference_name }}:</label>
-        <input type="text" id="conference-name" name="conference-name" required>
-        
-        <label for="conference-url">{{ site.data[site.active_lang].strings.suggestions_form.conference_url }}:</label>
-        <input type="url" id="conference-url" name="conference-url" required>
-        
-        <label for="additional-info">{{ site.data[site.active_lang].strings.suggestions_form.additional_info }}:</label>
-        <textarea id="additional-info" name="additional-info"></textarea>
-        
-        <button type="submit">{{ site.data[site.active_lang].strings.suggestions_form.submit }}</button>
-      </form>
-    </div>
   {% endif %}
 
 </div>

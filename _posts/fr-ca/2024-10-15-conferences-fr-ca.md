@@ -22,8 +22,7 @@ pretty_table: true
   data-pagination="true"
   data-search="true"
   data-toggle="table"
-  data-url="{{ '/assets/json/fr-ca/conferences.json' | relative_url }}">
-  <caption>{{- site.data[site.active_lang].strings.footer.last_updated }} Dernière mise à jour le 15 octobre 2024 {% include date_format.liquid format='long' date=page.last_updated -%}</caption>
+  data-url="{{ '/assets/json/fr-ca/conferences_fr-ca.json' | relative_url }}">
   <thead>
     <tr>
       <th data-field="Abbreviation" data-halign="left" data-align="left" data-sortable="true">Abbreviation</th>
@@ -38,14 +37,6 @@ pretty_table: true
     </tr>
   </thead>
 </table>
-
-<script>
-  $(function() {
-    $('table').on('click', 'a', function(e) {
-      e.stopPropagation();
-    });
-  });
-</script>
 
 <script>
   function conferenceNameFormatter(value, row) {

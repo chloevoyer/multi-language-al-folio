@@ -6,10 +6,10 @@ import os
 base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Define file paths
-en_csv_path = os.path.join(base_dir, '_data', 'en-us', 'conferences.csv')
-fr_csv_path = os.path.join(base_dir, '_data', 'fr-ca', 'conferences.csv')
-en_json_path = os.path.join(base_dir, 'assets', 'json', 'en-us', 'conferences.json')
-fr_json_path = os.path.join(base_dir, 'assets', 'json', 'fr-ca', 'conferences.json')
+en_csv_path = os.path.join(base_dir, '_data', 'en-us', 'conferences_en-us.csv')
+fr_csv_path = os.path.join(base_dir, '_data', 'fr-ca', 'conferences_fr-ca.csv')
+en_json_path = os.path.join(base_dir, 'assets', 'json', 'en-us', 'conferences_en-us.json')
+fr_json_path = os.path.join(base_dir, 'assets', 'json', 'fr-ca', 'conferences_fr-ca.json')
 
 def convert_csv_to_json(csv_path, json_path):
     with open(csv_path, 'r', encoding='utf-8') as csvfile:
