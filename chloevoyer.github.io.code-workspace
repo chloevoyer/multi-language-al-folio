@@ -7,6 +7,10 @@
 	"settings": {
 		"github-actions.workflows.pinned.workflows": [
 			".github/workflows/deploy.yml"
+		],
+		"DockerRun.DisableDockerrc": true,
+		"DockerRun.Containers": [
+			"c9090b17e1a3"
 		]
 	}
 }

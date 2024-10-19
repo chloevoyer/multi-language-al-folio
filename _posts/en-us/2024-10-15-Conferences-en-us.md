@@ -14,6 +14,7 @@ suggestions_form: true
 ---
 
 ## A non-exhaustive list of upcoming psychology conferences
+
 <div class="table-responsive">
   <table
     data-click-to-select="true"
@@ -22,6 +23,7 @@ suggestions_form: true
     data-search="true"
     data-toggle="table"
     data-url="{{ '/assets/json/en-us/conferences.json' | relative_url }}">
+    <caption>{{- site.data[site.active_lang].strings.footer.last_updated }} Dernière mise à jour le 15 octobre 2024 {% include date_format.liquid format='long' date=page.last_updated -%}</caption>
     <thead class="table-light">
       <tr class="table-header-row">
         <th class="table-header-row" data-field="Abbreviation" data-halign="left" data-align="left" data-sortable="true">Abbreviation</th>
