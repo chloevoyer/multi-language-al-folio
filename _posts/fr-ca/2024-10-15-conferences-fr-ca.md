@@ -20,8 +20,8 @@ pretty_table: true
   data-pagination="true"
   data-search="true"
   data-toggle="table"
-  data-url="{{ '/assets/json/fr-ca/conferences_fr-ca.json' | relative_url }}">
-  <caption>Last updated: October 15, 2024</caption>
+  data-url="{{ '/assets/json/fr-ca/conferences.json' | relative_url }}">
+  <caption>Dernière mise à jour le 15 octobre 2024</caption>
   <thead>
     <tr>
       <th data-field="Abbreviation" data-halign="left" data-align="left" data-sortable="true">Abbreviation</th>

@@ -158,7 +158,7 @@ post:
 references: références
 related_posts:
   description: "Voici d'autres articles que vous pourriez aimer lire ensuite :"
-  title: vous avez aimé lire cet article ?
+  title: "Vous avez aimé lire cet article ?"
   no_related_posts: "Aucun article connexe trouvé."
 search:
   dark_theme:

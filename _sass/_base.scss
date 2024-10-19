@@ -859,8 +859,8 @@ footer.sticky-bottom {
         border-color: var(--global-highlight-color);
       }
 
-      div.video.hidden.open {
-        border-color: var(--global-highlight-color);
+      div.video.hidden {
+        border: dashed 1px var(--global-bg-color);
       }
       
       div.video.hidden.open {
