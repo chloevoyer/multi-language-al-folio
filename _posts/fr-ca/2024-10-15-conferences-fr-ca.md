@@ -20,7 +20,7 @@ pretty_table: true
   data-pagination="true"
   data-search="true"
   data-toggle="table"
-  data-url="{{ '/assets/json/fr-ca/conferences.json' | relative_url }}">
+  data-url="{{ '/assets/json/fr-ca/conferences_fr-ca.json' | relative_url }}">
   <caption>Last updated: October 15, 2024</caption>
   <thead>
     <tr>
