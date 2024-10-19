@@ -22,7 +22,7 @@ suggestions_form: true
     data-pagination="true"
     data-search="true"
     data-toggle="table"
-    data-url="{{ '/assets/json/en-us/conferences.json' | relative_url }}">
+    data-url="{{ '/assets/json/en-us/conferences_en-us.json' | relative_url }}">
     <caption>{{- site.data[site.active_lang].strings.footer.last_updated }}{% include date_format.liquid format="long" date=page.time %}</caption>
     <thead class="table-light">
       <tr class="table-header-row">

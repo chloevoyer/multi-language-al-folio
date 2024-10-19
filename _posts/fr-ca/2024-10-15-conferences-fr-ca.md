@@ -22,7 +22,7 @@ pretty_table: true
   data-pagination="true"
   data-search="true"
   data-toggle="table"
-  data-url="{{ '/assets/json/fr-ca/conferences.json' | relative_url }}">
+  data-url="{{ '/assets/json/fr-ca/conferences_fr-ca.json' | relative_url }}">
   <thead>
     <tr>
       <th data-field="Abbreviation" data-halign="left" data-align="left" data-sortable="true">Abbreviation</th>

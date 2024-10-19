@@ -6,7 +6,8 @@
 	],
 	"settings": {
 		"github-actions.workflows.pinned.workflows": [
-			".github/workflows/deploy.yml"
+			".github/workflows/deploy.yml",
+			".github/workflows/csv_to_json.yml"
 		],
 		"DockerRun.DisableDockerrc": true,
 		"DockerRun.Containers": [

@@ -3,13 +3,13 @@ name: Convert CSV to JSON
 on:
   push:
     paths:
-      - '_data/en-us/conferences.csv'
-      - '_data/fr-ca/conferences.csv'
+      - '_data/en-us/conferences_en-us.csv'
+      - '_data/fr-ca/conferences_fr-ca.csv'
   workflow_dispatch:
 
 jobs:
   convert:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     
     steps:
     - name: Checkout repository
@@ -32,8 +32,8 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add assets/json/en-us/conferences.json
-        git add assets/json/fr-ca/conferences.json
+        git add assets/json/en-us/conferences_en-us.json
+        git add assets/json/fr-ca/conferences_fr-ca.json
         git diff --quiet && git diff --staged --quiet || git commit -m "Update conferences.json"
 
     - name: Push changes
