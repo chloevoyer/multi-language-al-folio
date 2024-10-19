@@ -28,21 +28,22 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
 
-      - name: Install Scoop and Ruby
+      - name: Download and Install Ruby
         shell: pwsh
         run: |
-          if (!(Get-Command scoop -ErrorAction SilentlyContinue)) {
-            Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-            iwr -useb get.scoop.sh | iex
-          }
-          scoop install ruby
-          $env:PATH = "$env:PATH;$env:USERPROFILE\scoop\apps\ruby\current\bin"
+          $rubyInstallerUrl = "https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.2.2-1/rubyinstaller-devkit-3.2.2-1-x64.exe"
+          $installerPath = "$env:TEMP\rubyinstaller.exe"
+          Invoke-WebRequest -Uri $rubyInstallerUrl -OutFile $installerPath
+          Start-Process -FilePath $installerPath -Args "/verysilent /dir=C:\Ruby32-x64" -Wait
+          $env:PATH = "C:\Ruby32-x64\bin;$env:PATH"
+          [Environment]::SetEnvironmentVariable("PATH", $env:PATH, "Machine")
           ruby --version
           gem install bundler
 
       - name: Install dependencies
         shell: pwsh
         run: |
+          $env:PATH = "C:\Ruby32-x64\bin;$env:PATH"
           bundle install
 
       - name: Cache npm packages
@@ -62,6 +63,7 @@ jobs:
       - name: Install and Build 🔧
         shell: pwsh
         run: |
+          $env:PATH = "C:\Ruby32-x64\bin;$env:PATH"
           pip3 install --upgrade jupyter
           $env:JEKYLL_ENV = "production"
           bundle exec jekyll build --trace
