@@ -1018,6 +1018,7 @@ progress::-moz-progress-bar {
 
   .btn-secondary.dropdown-toggle {
     border: 1px solid var(--global-divider-color);
+    background-color: var(--global-bg-color);
 
     .page-size {
       color: inherit;
