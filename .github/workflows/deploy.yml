@@ -22,7 +22,7 @@ concurrency:
   cancel-in-progress: true
 
 defaults:
-  run-on: [self-hosted, windows]
+  runs-on: [self-hosted, windows]
 
 jobs:
   deploy:
