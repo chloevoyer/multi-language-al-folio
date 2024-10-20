@@ -39,11 +39,11 @@ jobs:
           ruby-version: "3.2.2"
           # bundler-cache: true
 
-      - name: Cache npm packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
+      # - name: Cache npm packages
+      #   uses: actions/cache@v3
+      #   with:
+      #     path: ~/.npm
+      #     key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
 
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
