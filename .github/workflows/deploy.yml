@@ -21,9 +21,6 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
-defaults:
-  runs-on: [self-hosted, windows]
-
 jobs:
   deploy:
     # available images: https://github.com/actions/runner-images#available-images
