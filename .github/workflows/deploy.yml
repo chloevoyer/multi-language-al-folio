@@ -24,7 +24,7 @@ concurrency:
 jobs:
   deploy:
     # available images: https://github.com/actions/runner-images#available-images
-    runs-on: [self-hosted, linux]
+    runs-on: Linux
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
@@ -33,13 +33,13 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2.2"
-          # bundler-cache: true
+          bundler-cache: true
 
-      # - name: Cache npm packages
-      #   uses: actions/cache@v3
-      #   with:
-      #     path: ~/.npm
-      #     key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
+      - name: Cache npm packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
 
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
