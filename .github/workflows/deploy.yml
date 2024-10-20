@@ -24,7 +24,8 @@ concurrency:
 jobs:
   deploy:
     # available images: https://github.com/actions/runner-images#available-images
-    runs-on: self-hosted
+    githubrunner: "self-hosted, Windows"
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
@@ -33,7 +34,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2.2"
-          # bundler-cache: true
+          bundler-cache: true
 
       - name: Cache npm packages
         uses: actions/cache@v3

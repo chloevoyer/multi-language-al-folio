@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"github-actions.workflows.pinned.workflows": [
+			".github/workflows/deploy.yml",
+			".github/workflows/csv_to_json.yml",
+			"dynamic/pages/pages-build-deployment"
+		],
+		"DockerRun.DisableDockerrc": true,
+		"DockerRun.Containers": [
+			"c9090b17e1a3"
+		]
+	}
+}
