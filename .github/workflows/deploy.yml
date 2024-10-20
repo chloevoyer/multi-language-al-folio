@@ -21,10 +21,14 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+defaults:
+  run:
+    shell: pwsh
+
 jobs:
   deploy:
     # available images: https://github.com/actions/runner-images#available-images
-    githubrunner: "self-hosted, Windows"
+    # runs-on: [ self-hosted, Windows ]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️

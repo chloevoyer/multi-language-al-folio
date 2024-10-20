@@ -6,9 +6,9 @@
 	],
 	"settings": {
 		"github-actions.workflows.pinned.workflows": [
-			".github/workflows/deploy.yml",
 			".github/workflows/csv_to_json.yml",
-			"dynamic/pages/pages-build-deployment"
+			"dynamic/pages/pages-build-deployment",
+			".github/workflows/deploy.yml"
 		],
 		"DockerRun.DisableDockerrc": true,
 		"DockerRun.Containers": [
