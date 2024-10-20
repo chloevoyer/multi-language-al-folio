@@ -21,6 +21,10 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+defaults:
+  run:
+    shell: pwsh
+
 jobs:
   deploy:
     # available images: https://github.com/actions/runner-images#available-images
@@ -58,7 +62,7 @@ jobs:
         run: |
           pip3 install --upgrade jupyter
           export JEKYLL_ENV=production
-          bundle exec jekyll build --trace
+          bundle exec jekyll build
 
       - name: Purge unused CSS 🧹
         run: |
