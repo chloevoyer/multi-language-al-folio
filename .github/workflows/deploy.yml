@@ -21,15 +21,10 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
-defaults:
-  run:
-    shell: pwsh
-
 jobs:
   deploy:
     # available images: https://github.com/actions/runner-images#available-images
-    # runs-on: [ self-hosted, Windows ]
-    runs-on: ubuntu-latest
+    runs-on: [ self-hosted, Windows ]
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
@@ -62,8 +57,8 @@ jobs:
       - name: Install and Build 🔧
         run: |
           pip3 install --upgrade jupyter
-          $env:JEKYLL_ENV = "production"
-          bundle exec jekyll build
+          export JEKYLL_ENV=production
+          bundle exec jekyll build --trace
 
       - name: Purge unused CSS 🧹
         run: |
