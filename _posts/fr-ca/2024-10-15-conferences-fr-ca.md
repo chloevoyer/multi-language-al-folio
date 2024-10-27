@@ -15,6 +15,7 @@ pretty_table: true
 ## Une liste non exhaustive de conférences dans le domaine de la psychologie
 
 {{- site.data[site.active_lang].strings.footer.last_updated }}{% include date_format.liquid format='long' date=page.last_updated -%}
+{{- site.data[site.active_lang].strings.post.last_updated }}{% include date_format.liquid format='short' date=post.last_updated %}
 
 <table
   data-click-to-select="true"
