@@ -152,7 +152,7 @@ pagination:
   older: plus anciens
   page: page
 post:
-  created_in: créé en
+  created_in: créé le
   created_by: par
   last_updated: "dernière mise à jour :"
 references: références
@@ -189,9 +189,9 @@ selected_publications: publications sélectionnées
 site_description: un espace ouvert pour la recherche académique
 searchbar: " "
 suggestions_form:
-  title: "Suggest a Conference"
-  description: "Know a conference that's not on our list? Let us know!"
-  conference_name: "Conference Name"
-  conference_url: "Conference URL"
-  additional_info: "Additional Information"
-  submit: "Submit Suggestion"
+  title: Suggérez une conférence
+  description: "Nous avons oublié une conférence ? Soumettez-la pour l'ajouter à la liste."
+  conference_name: Nom de la conférence
+  conference_url: URL
+  additional_info: Information supplémentaire
+  submit: Soumettre
