@@ -16,7 +16,7 @@ layout: default
 
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }} {% if page.icon %}<i class="{{ page.icon }}"></i>{% endif %}</h1>
+    <h1 class="post-title">{{ page.title }} {% if page.icon %}<i class="fa {{ page.icon }}"></i>{% endif %}</h1>
     <p class="post-meta">
       {{ site.data[site.active_lang].strings.post.created_in }}
       {% include date_format.liquid format='long' date=page.date -%}
