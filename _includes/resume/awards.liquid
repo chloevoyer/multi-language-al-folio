@@ -1,5 +1,7 @@
+{% raw %}
+{% assign sorted_awards = data[1] | sort: "date" | reverse %}
 <ul class="card-text font-weight-light list-group list-group-flush">
-  {% for content in data[1] %}
+  {% for content in sorted_awards %}
     <li class="list-group-item">
       <div class="row">
         <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
@@ -35,3 +37,4 @@
     </li>
   {% endfor %}
 </ul>
+{% endraw %}
