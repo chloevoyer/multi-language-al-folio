@@ -2,11 +2,7 @@ os: linux
 dist: focal
 language: ruby
 rvm:
-  - 3.0.0
-
-# Install Node.js
-node_js:
-  - 16
+  - 3.2.2  # Matching your GitHub Actions Ruby version
 
 branches:
   only:
@@ -14,31 +10,45 @@ branches:
 
 cache:
   bundler: true
+  pip: true
+  npm: true
   directories:
-    - node_modules
+    - ~/.npm
+    - vendor/bundle
 
 before_install:
-  # Install Node.js
-  - nvm install 16
-  - nvm use 16
-  # Install npm dependencies if you have a package.json
-  - npm install
-  # Install Ruby dependencies
+  # Install Python and pip
+  - sudo apt-get update
+  - sudo apt-get install -y python3-pip
+  # Install ImageMagick and setup policy
+  - sudo apt-get install -y imagemagick
+  - sudo mkdir -p /etc/ImageMagick-6
+  - sudo cp policy.xml /etc/ImageMagick-6/policy.xml
+  # Setup Ruby
   - gem install bundler
   - bundle config set path 'vendor/bundle'
-  - rm -f Gemfile.lock
+  # Setup Node.js
+  - nvm install 16
+  - nvm use 16
+  - npm install -g purgecss
 
 install:
   - bundle install
+  - pip3 install --upgrade jupyter
 
 script:
+  # Set production environment
+  - export JEKYLL_ENV=production
+  # Build site
   - bundle exec jekyll build
+  # Purge unused CSS
+  - purgecss -c purgecss.config.js
 
 deploy:
   provider: pages
   strategy: git
   cleanup: false
-  token: $GITHUB_TOKEN
+  token: $GITHUB_TOKEN  # Make sure to set this in Travis CI settings
   local_dir: _site
   target_branch: gh-pages
   keep_history: true
