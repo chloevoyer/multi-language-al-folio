@@ -30,7 +30,7 @@ install:
 
 # Build the site
 script:
-  - bundle exec jekyll build
+  - bundle exec jekyll build --trace
 
 # Deploy to GitHub Pages
 deploy:
