@@ -1,4 +1,4 @@
-os: ubuntu-latest
+os: linux
 dist: focal
 language: ruby
 rvm:
