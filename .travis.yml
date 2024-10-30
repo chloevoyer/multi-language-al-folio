@@ -4,14 +4,26 @@ language: ruby
 rvm:
   - 3.0.0
 
+# Install Node.js
+node_js:
+  - 16
+
 branches:
   only:
-    - master  # Updated from main to master
+    - master
 
 cache:
   bundler: true
+  directories:
+    - node_modules
 
 before_install:
+  # Install Node.js
+  - nvm install 16
+  - nvm use 16
+  # Install npm dependencies if you have a package.json
+  - npm install
+  # Install Ruby dependencies
   - gem install bundler
   - bundle config set path 'vendor/bundle'
   - rm -f Gemfile.lock
@@ -32,4 +44,4 @@ deploy:
   keep_history: true
   edge: true
   on:
-    branch: master  # Updated from main to master
+    branch: master
