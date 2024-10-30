@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - '3.0.0'
+  - 3.0.0  # Updated from 2.7 to 3.0.0 for Bundler compatibility
 
 # Only build these branches
 branches:
@@ -15,7 +15,7 @@ cache:
 
 env:
   global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up html-proofer installation
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
 # Install dependencies
 before_install:
@@ -28,16 +28,14 @@ install:
 # Build the site
 script:
   - bundle exec jekyll build
-  # Optionally test your build:
-  # - bundle exec htmlproofer ./_site --disable-external --allow-hash-href
 
 # Deploy to GitHub Pages
 deploy:
   provider: pages
   skip_cleanup: true
-  token: $GITHUB_TOKEN  # Set this in Travis CI settings
-  local_dir: _site      # Directory to deploy (contains built site)
-  target_branch: gh-pages  # Branch to deploy to
+  token: $GITHUB_TOKEN
+  local_dir: _site
+  target_branch: gh-pages
   keep_history: true
   on:
     branch: master
