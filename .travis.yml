@@ -1,0 +1,43 @@
+language: ruby
+rvm:
+  - 2.7
+
+# Only build these branches
+branches:
+  only:
+    - master
+
+# Cache bundler dependencies
+cache:
+  bundler: true
+  directories:
+    - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
+
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up html-proofer installation
+
+# Install dependencies
+before_install:
+  - gem install bundler
+  - bundle config set path 'vendor/bundle'
+
+install:
+  - bundle install
+
+# Build the site
+script:
+  - bundle exec jekyll build
+  # Optionally test your build:
+  # - bundle exec htmlproofer ./_site --disable-external --allow-hash-href
+
+# Deploy to GitHub Pages
+deploy:
+  provider: pages
+  skip_cleanup: true
+  token: $GITHUB_TOKEN  # Set this in Travis CI settings
+  local_dir: _site      # Directory to deploy (contains built site)
+  target_branch: gh-pages  # Branch to deploy to
+  keep_history: true
+  on:
+    branch: master
