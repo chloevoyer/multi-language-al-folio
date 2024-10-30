@@ -29,5 +29,4 @@ group :other_plugins do
     gem 'css_parser'
     gem 'feedjira'
     gem 'httparty'
-    gem 'html-proofer' # optional, for testing
 end
