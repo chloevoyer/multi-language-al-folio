@@ -23,6 +23,7 @@ env:
 before_install:
   - gem install bundler
   - bundle config set path 'vendor/bundle'
+  - rm -f Gemfile.lock
 
 install:
   - bundle install
