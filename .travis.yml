@@ -34,10 +34,12 @@ script:
 # Deploy to GitHub Pages
 deploy:
   provider: pages
-  skip_cleanup: true
+  strategy: git
+  cleanup: false
   token: $GITHUB_TOKEN
   local_dir: _site
   target_branch: gh-pages
   keep_history: true
+  edge: true 
   on:
     branch: master
