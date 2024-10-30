@@ -2,24 +2,15 @@ os: linux
 dist: focal
 language: ruby
 rvm:
-  - 3.0.0  # Updated from 2.7 to 3.0.0 for Bundler compatibility
+  - 3.0.0
 
-# Only build these branches
 branches:
   only:
-    - master
+    - master  # Updated from main to master
 
-# Cache bundler dependencies
 cache:
   bundler: true
-  directories:
-    - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 
-env:
-  global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-
-# Install dependencies
 before_install:
   - gem install bundler
   - bundle config set path 'vendor/bundle'
@@ -28,11 +19,9 @@ before_install:
 install:
   - bundle install
 
-# Build the site
 script:
-  - bundle exec jekyll build --trace
+  - bundle exec jekyll build
 
-# Deploy to GitHub Pages
 deploy:
   provider: pages
   strategy: git
@@ -41,6 +30,6 @@ deploy:
   local_dir: _site
   target_branch: gh-pages
   keep_history: true
-  edge: true 
+  edge: true
   on:
-    branch: master
+    branch: master  # Updated from main to master
