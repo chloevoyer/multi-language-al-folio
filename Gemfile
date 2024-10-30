@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+ruby '3.0.0'  # Add this line to specify Ruby version
+
 group :jekyll_plugins do
     gem 'classifier-reborn'
     gem 'jekyll'
