@@ -49,7 +49,7 @@
     <!-- Title -->
     <div class="title">
       {{- entry.title -}}<br>
-      {%- if entry.type contains 'oral' or entry.type contains 'poster' or entry.type contains 'symposium' | downcase -%}
+      {%- if entry.type contains 'oral' or entry.type contains 'poster' or entry.type contains 'symposium' or entry.type contains 'internal' | downcase -%}
         <span class="entry-type" style="font-family: 'Monaco', monospace !important; font-weight: bold;">
           [{{ entry.type }}]
         </span>
