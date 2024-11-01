@@ -14,9 +14,9 @@ authors:
     url: "https://www.researchgate.net/profile/Chloe-Voyer"
     affiliations:
       name: McGill University
-thumbnail: assets/img/9.jpg
+thumbnail: assets/img/screening-tips/slide-1.jpeg
 images:
-  compare: true
+  compare: false
   slider: true
 ---
 
