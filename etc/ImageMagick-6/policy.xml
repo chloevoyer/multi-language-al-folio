@@ -1,8 +1,0 @@
-<policymap>
-  <policy domain="resource" name="memory" value="256MiB"/>
-  <policy domain="resource" name="map" value="512MiB"/>
-  <policy domain="resource" name="width" value="8KP"/>
-  <policy domain="resource" name="height" value="8KP"/>
-  <policy domain="resource" name="area" value="64MP"/>
-  <policy domain="resource" name="disk" value="1GiB"/>
-</policymap>
