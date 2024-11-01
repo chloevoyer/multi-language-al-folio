@@ -1,6 +1,0 @@
-      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
-      835     832     832      21080  cons0     197609 08:35:54 /c/Program Files/Docker/Docker/resources/bin/docker
-      940     878     940      29084  cons1     197609 09:36:08 /usr/bin/PS
-      878       1     878       4420  cons1     197609 09:35:58 /usr/bin/bash
-      764       1     764      30568  cons0     197609 08:26:26 /usr/bin/bash
-      832     764     832      18780  cons0     197609 08:35:53 /usr/bin/sh
