@@ -11,6 +11,3 @@ assets/libs/
 node_modules/
 vendor
 .idea
-.vscode
-actions-runner-linux/
-actions-runner-windows/
