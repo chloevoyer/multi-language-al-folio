@@ -32,7 +32,7 @@ pretty_table: true
     <tr>
       <th data-field="date">Date</th>
       <th data-field="conference">Conference</th>
-      <th data-field="location">Location</th>
+      <th data-field="location" align="right">Location</th>
     </tr>
   </thead>
 </table>
