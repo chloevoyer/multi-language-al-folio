@@ -11,7 +11,7 @@
 - [ ] Styling of Interests category
 - [ ] Different colours for entry types in bib
 - [ ] Sort bib entries for talks by date in descending order
-- [ ] Lowercase presentation types 
+- [x] Lowercase presentation types 
 - [ ] Add originaltitle and formatting for translated presentation titles + remove from bibentry in config.yml
 - [ ] ...
 - [ ] ...
