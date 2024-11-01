@@ -32,8 +32,14 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.2.2"
+          ruby-version: "3.3.5"
           bundler-cache: true
+
+      - name: Setup Python 🐍
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip" # caching pip dependencies
 
       - name: Cache npm packages
         uses: actions/cache@v3
@@ -49,14 +55,9 @@ jobs:
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
 
-      - name: Set ImageMagick policy
-        run: |
-          sudo mkdir -p /etc/ImageMagick-6
-          sudo cp policy.xml /etc/ImageMagick-6/policy.xml
-
       - name: Install and Build 🔧
         run: |
-          pip3 install --upgrade jupyter
+          pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
 
