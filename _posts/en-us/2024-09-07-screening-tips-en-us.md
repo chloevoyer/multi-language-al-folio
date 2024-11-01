@@ -8,14 +8,35 @@ tags: literature-review strategies
 categories: research
 lang: en-us
 featured: true
-# bibliography: 2018-12-22-distill.bib
 toc: true
 authors:
   - name: Chloe Voyer
     url: "https://www.researchgate.net/profile/Chloe-Voyer"
     affiliations:
       name: McGill University
+thumbnail: assets/img/9.jpg
+images:
+  compare: true
+  slider: true
 ---
+
+<swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/screening-tips/slide-1.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/screening-tips/slide-2.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/screening-tips/slide-3.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/screening-tips/slide-4.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/screening-tips/slide-5.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/screening-tips/slide-5.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/screening-tips/slide-6.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/screening-tips/slide-7.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/screening-tips/slide-8.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/screening-tips/slide-9.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/screening-tips/slide-10.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/screening-tips/slide-11.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/screening-tips/slide-12.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/screening-tips/slide-13.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/screening-tips/slide-14.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+</swiper-container>
 
 When conducting a literature review, I start by identifying the quickest elements to exclude an article. This approach allows me to streamline the process and focus on the most relevant studies.
 
