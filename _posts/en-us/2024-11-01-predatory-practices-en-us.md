@@ -8,7 +8,7 @@ tags: literature-review strategies
 categories: research
 lang: en-us
 featured: true
-thumbnail: assets/img/9.jpg
+thumbnail: assets/img/predatory-practices/slide-1.jpeg
 images:
   compare: true
   slider: true
