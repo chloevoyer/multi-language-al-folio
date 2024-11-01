@@ -1,6 +1,4 @@
 source 'https://rubygems.org'
-ruby '3.0.0'  # Add this line to specify Ruby version
-
 group :jekyll_plugins do
     gem 'classifier-reborn'
     gem 'jekyll'
@@ -19,7 +17,6 @@ group :jekyll_plugins do
     gem 'jekyll-sitemap'
     gem 'jekyll-tabs'
     gem 'jekyll-toc'
-    gem 'jekyll-twitter-plugin'
     gem 'jemoji'
     gem 'mini_racer'
     gem 'unicode_utils'
