@@ -9,9 +9,9 @@ FROM ruby:latest
 
 ENV DEBIAN_FRONTEND noninteractive
 
-LABEL authors="Chloe Voyer" \
-      description="Docker image for academic website" \
-      maintainer="Chloe Voyer"
+LABEL authors="Amir Pourmand,George Araújo" \
+      description="Docker image for al-folio academic template" \
+      maintainer="George Araújo"
 
 # uncomment these if you are having this issue with the build:
 # /usr/local/bundle/gems/jekyll-4.3.4/lib/jekyll/site.rb:509:in `initialize': Permission denied @ rb_sysopen - /srv/jekyll/.jekyll-cache/.gitignore (Errno::EACCES)
@@ -19,7 +19,7 @@ LABEL authors="Chloe Voyer" \
 # RUN groupadd -r $GROUPNAME -g $GROUPID && \
 #     useradd -u $USERID -m -g $GROUPNAME $USERNAME
 
-# Install system dependencies
+# install system dependencies
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \
         build-essential \
@@ -33,28 +33,33 @@ RUN apt-get update -y && \
         zlib1g-dev && \
     pip --no-cache-dir install --upgrade --break-system-packages nbconvert
 
-# Set the locale
+# clean up
+RUN apt-get clean && \
+    apt-get autoremove && \
+    rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*  /tmp/*
+
+# set the locale
 RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
     locale-gen
 
-# Set environment variables
+# set environment variables
 ENV EXECJS_RUNTIME=Node \
     JEKYLL_ENV=production \
     LANG=en_US.UTF-8 \
     LANGUAGE=en_US:en \
     LC_ALL=en_US.UTF-8
 
-# Create a directory for the jekyll site
+# create a directory for the jekyll site
 RUN mkdir /srv/jekyll
 
-# Copy the Gemfile and Gemfile.lock to the image
+# copy the Gemfile and Gemfile.lock to the image
 ADD Gemfile.lock /srv/jekyll
 ADD Gemfile /srv/jekyll
 
-# Set the working directory
+# set the working directory
 WORKDIR /srv/jekyll
 
-# Install jekyll and dependencies
+# install jekyll and dependencies
 RUN gem install --no-document jekyll bundler
 RUN bundle install --no-cache
 
