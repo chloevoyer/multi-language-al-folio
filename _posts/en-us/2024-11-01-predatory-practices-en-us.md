@@ -7,7 +7,7 @@ description: Tips for navigating predatory publishing practices in academia
 tags: literature-review strategies
 categories: research
 lang: en-us
-featured: true
+featured: false
 thumbnail: assets/img/predatory-practices/slide-1.jpeg
 images:
   compare: true
