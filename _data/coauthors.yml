@@ -15,7 +15,7 @@
     url: https://www.researchgate.net/profile/Martin-Lepage-5
 
 "laplante":
-  - firstname: ["David P. Laplante", "David P.", "D. P.", "David Laplante", "D.", "<sup>†</sup>D. P."]
+  - firstname: ["David P. Laplante", "David P.", "D. P.", "David Laplante", "D.", "†D. P."]
     url: https://www.researchgate.net/profile/David-Laplante
 
 "raucher-chene":
@@ -23,7 +23,7 @@
     url: https://www.researchgate.net/profile/Delphine-Raucher-Chene
 
 "wazana":
-  - firstname: ["<sup>†</sup>A.", "Ashley", "A.", "A. W.", "Ashley Wazana"]
+  - firstname: ["†A.", "Ashley", "A.", "A. W.", "Ashley Wazana"]
     url: https://www.researchgate.net/profile/Ashley-Wazana
 
 "stamate":
