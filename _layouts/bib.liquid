@@ -71,15 +71,17 @@
     {%- assign first_name_clean = author.first | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
     {%- assign name_parts = first_name_clean | split: " " -%}
     {%- assign initials = "" -%}
+    
+    {% comment %}Add symbols before the first initial{% endcomment %}
+    {%- if first_name_symbols != "" -%}
+      {%- assign initials = '<sup>' | append: first_name_symbols | append: '</sup>' -%}
+    {%- endif -%}
+    
+    {% comment %}Add initials after the symbol{% endcomment %}
     {%- for name_part in name_parts -%}
       {%- assign initial = name_part | slice: 0 | append: "." -%}
       {%- assign initials = initials | append: initial | append: " " -%}
     {%- endfor -%}
-    
-    {% comment %}Add symbols to initials with superscript{% endcomment %}
-    {%- if first_name_symbols != "" -%}
-      {%- assign initials = initials | append: '<sup>' | append: first_name_symbols | append: '</sup>' -%}
-    {%- endif -%}
     
     {% if site.scholar.last_name contains author_last_name %}
       {% if site.scholar.first_name contains author.first %}
@@ -130,19 +132,22 @@
       {%- assign first_name_clean = author.first | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
       {%- assign name_parts = first_name_clean | split: " " -%}
       {%- assign initials = "" -%}
+      
+      {% comment %}Add symbols before the first initial for more authors{% endcomment %}
+      {%- if first_name_symbols != "" -%}
+        {%- assign initials = '<sup>' | append: first_name_symbols | append: '</sup>' -%}
+      {%- endif -%}
+      
       {%- for name_part in name_parts -%}
         {%- assign initial = name_part | slice: 0 | append: "." -%}
         {%- assign initials = initials | append: initial | append: " " -%}
       {%- endfor -%}
-      {%- if first_name_symbols != "" -%}
-        {%- assign initials = initials | append: '<sup>' | append: first_name_symbols | append: '</sup>' -%}
-      {%- endif -%}
+      
       {% assign more_authors_show = more_authors_show | append: initials | append: author.last %}
       {% unless forloop.last %}
         {% assign more_authors_show = more_authors_show | append: ', ' %}
       {% endunless %}
     {%- endfor -%}
-    {%- assign more_authors_show = more_authors_show | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
     , and
     <span
       class="more-authors"
