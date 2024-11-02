@@ -1,40 +1,28 @@
-{% raw %}
-{% assign sorted_awards = data[1] | sort: "date" | reverse %}
 <ul class="card-text font-weight-light list-group list-group-flush">
-  {% for content in sorted_awards %}
+  {% raw %}
+  {% assign sorted_awards = resume.awards | sort: "date" | reverse %}
+  {% for award in sorted_awards %}
     <li class="list-group-item">
       <div class="row">
         <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
-          {% if content.date %}
-            {% assign dates = content.date | split: '-' %}
-            {% assign start_year = dates[0] | strip | slice: 0, 4 %}
-            {% if dates.size > 1 %}
-              {% assign end_year = dates[1] | strip | slice: 0, 4 %}
-              {% if start_year != end_year %}
-                {% assign formatted_date = start_year | append: '&ndash;' | append: end_year %}
-              {% else %}
-                {% assign formatted_date = start_year %}
-              {% endif %}
-            {% else %}
-              {% assign formatted_date = start_year %}
-            {% endif %}
-          {% else %}
-            {% assign formatted_date = '' %}
-          {% endif %}
           <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 100px">
-            {{ formatted_date }}
+            {{ award.date }}
           </span>
         </div>
         <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
           <h6 class="title font-weight-bold ml-1 ml-md-4">
             <i class="fa-solid fa-sack-dollar iconaward" style="padding-bottom: 2%"></i>
-            <a href="{{ content.url }}">{{ content.title }}</a>
+            {% if award.url %}
+              <a href="{{ award.url }}">{{ award.title }}</a>
+            {% else %}
+              {{ award.title }}
+            {% endif %}
           </h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.awarder }}</h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-weight: 500">{{ content.summary }}</h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ award.awarder }}</h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-weight: 500">{{ award.summary }}</h6>
         </div>
       </div>
     </li>
   {% endfor %}
+  {% endraw %}
 </ul>
-{% endraw %}
