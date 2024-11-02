@@ -1,25 +1,29 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% raw %}
-  {% assign sorted_awards = resume.awards | sort: "date" | reverse %}
-  {% for award in sorted_awards %}
+  {% assign sorted_awards = data[1] | sort: "date" | reverse %}
+  {% for content in sorted_awards %}
     <li class="list-group-item">
       <div class="row">
         <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
-          <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 100px">
-            {{ award.date }}
+          {% if content.date %} 
+            {% assign date = content.date | split: '-' | join: '.' %} 
+          {% else %} 
+            {% assign date = '' %} 
+          {% endif %}
+          <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> 
+            {{ date }} 
           </span>
         </div>
         <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
           <h6 class="title font-weight-bold ml-1 ml-md-4">
-            <i class="fa-solid fa-sack-dollar iconaward" style="padding-bottom: 2%"></i>
-            {% if award.url %}
-              <a href="{{ award.url }}">{{ award.title }}</a>
+            {% if content.url %}
+              <a href="{{ content.url }}">{{ content.title }}</a>
             {% else %}
-              {{ award.title }}
+              {{ content.title }}
             {% endif %}
           </h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ award.awarder }}</h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-weight: 500">{{ award.summary }}</h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.awarder }}</h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</h6>
         </div>
       </div>
     </li>
