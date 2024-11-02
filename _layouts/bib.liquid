@@ -66,13 +66,20 @@
     {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
     {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
     
-    {% comment %}Convert first name to initials{% endcomment %}
-    {%- assign name_parts = author.first | split: " " -%}
+    {% comment %}Extract symbols and convert first name to initials{% endcomment %}
+    {%- assign first_name_symbols = author.first | regex_replace: '[^*∗†‡§¶‖&^]', '' -%}
+    {%- assign first_name_clean = author.first | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+    {%- assign name_parts = first_name_clean | split: " " -%}
     {%- assign initials = "" -%}
     {%- for name_part in name_parts -%}
       {%- assign initial = name_part | slice: 0 | append: "." -%}
       {%- assign initials = initials | append: initial | append: " " -%}
     {%- endfor -%}
+    
+    {% comment %}Add symbols to initials with superscript{% endcomment %}
+    {%- if first_name_symbols != "" -%}
+      {%- assign initials = initials | append: '<sup>' | append: first_name_symbols | append: '</sup>' -%}
+    {%- endif -%}
     
     {% if site.scholar.last_name contains author_last_name %}
       {% if site.scholar.first_name contains author.first %}
@@ -95,17 +102,17 @@
     {% endif %}
     {%- if author_is_self -%}
       <em>
-        {{- initials }}
+        {{- initials -}}
         {{ author_last_html -}}
       </em>
     {%- else -%}
       {%- if coauthor_url -%}
         <a href="{{ coauthor_url }}">
-          {{- initials }}
+          {{- initials -}}
           {{ author_last_html -}}
         </a>
       {%- else -%}
-        {{- initials }}
+        {{- initials -}}
         {{ author_last_html -}}
       {% endif %}
     {%- endif -%}
@@ -118,13 +125,18 @@
     {%- endif -%}
     {% assign more_authors_show = '' %}
     {%- for author in entry.author_array offset: author_array_limit -%}
-      {% comment %}Convert additional authors' names to initials{% endcomment %}
-      {%- assign name_parts = author.first | split: " " -%}
+      {% comment %}Convert additional authors' names to initials with symbols{% endcomment %}
+      {%- assign first_name_symbols = author.first | regex_replace: '[^*∗†‡§¶‖&^]', '' -%}
+      {%- assign first_name_clean = author.first | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+      {%- assign name_parts = first_name_clean | split: " " -%}
       {%- assign initials = "" -%}
       {%- for name_part in name_parts -%}
         {%- assign initial = name_part | slice: 0 | append: "." -%}
         {%- assign initials = initials | append: initial | append: " " -%}
       {%- endfor -%}
+      {%- if first_name_symbols != "" -%}
+        {%- assign initials = initials | append: '<sup>' | append: first_name_symbols | append: '</sup>' -%}
+      {%- endif -%}
       {% assign more_authors_show = more_authors_show | append: initials | append: author.last %}
       {% unless forloop.last %}
         {% assign more_authors_show = more_authors_show | append: ', ' %}
