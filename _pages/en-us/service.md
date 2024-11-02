@@ -39,7 +39,7 @@ toc:
 
 - <a href="https://douglas.research.mcgill.ca/event/undergraduate-research-expo-3/">Douglas Research Centre</a> Undergraduate Student Research Expo
 - <a href="https://www.mcgill.ca/hbhl/funded-projects/undergraduate-summer-research-internship">Healthy Brains, Healthy Lives</a> Undergraduate Student Summer Research Internship Awards
-- Annual <a href="https://douglas.research.mcgill.ca/annual-leo-and-rachel-hendlisz-awards/">Leo & Rachel Hendlisz Awards</a>
+- <a href="https://douglas.research.mcgill.ca/annual-leo-and-rachel-hendlisz-awards/">Annual Leo & Rachel Hendlisz Awards</a>
   - Assessed and selected the best research articles of the year published by students and postdoctoral fellows of the Douglas Research Centre.
 
 <h2 style="padding-top: 30px">miscellaneous</h2>

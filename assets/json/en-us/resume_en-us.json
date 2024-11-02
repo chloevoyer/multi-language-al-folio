@@ -66,30 +66,30 @@
   ],
   "awards": [
     {
+      "title": "Best Presentation Award! 🏆",
+      "date": "2024-10-18",
+      "awarder": "Centre d'études sur le stress humain (Sonia Lupien)",
+      "summary": "$500"
+    },
+    {
       "title": "Scholarships for post‑secondary students (Master's)",
-      "date": "2024",
+      "date": "2024-09-13",
       "awarder": "Desjardins Foundation",
       "summary": "$3,000"
     },
     {
       "title": "Canada Graduate Scholarship &ndash; Master's program (CGS M)",
-      "date": "2024-2025",
+      "date": "2024-04-02",
       "awarder": "Canadian Institutes of Health Research (CIHR)",
       "url": "https://webapps.cihr-irsc.gc.ca/decisions/p/project_details.html?applId=506175&lang=en",
       "summary": "$27,000"
     },
     {
       "title": "Workplace Mental Health Impact Studentship",
-      "date": "2024",
+      "date": "2024-03-22",
       "awarder": "Mental Health Research Canada (MHRC), co‑funded in partnership with Mitacs and iA Financial Group",
       "url": "https://www.mhrc.ca/studentresearchers/chloevoyer",
       "summary": "$15,000"
-    },
-    {
-      "title": "2<sup>nd</sup> place for Best Presentation Award! 🏆",
-      "date": "2024",
-      "awarder": "Centre d'études sur le stress humain (Sonia Lupien)",
-      "summary": "$500"
     }
   ],
   "work": [

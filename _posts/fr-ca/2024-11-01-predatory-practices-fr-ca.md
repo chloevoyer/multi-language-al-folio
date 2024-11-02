@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: distill
 title: "Protecting Academia: How to Identify and Avoid Predatory Publishing Practices 🦉"
 icon: # fa-solid fa-flag
 date: 2024-11-01 11:00:00
 description: Tips for navigating predatory publishing practices in academia
 tags: literature-review strategies
 categories: research
-lang: en-us
+lang: fr-ca
 featured: false
 thumbnail: assets/img/predatory-practices/slide-1.jpeg
 images:

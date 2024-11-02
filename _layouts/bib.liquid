@@ -271,11 +271,18 @@
         {% endif %}
       {% endif %}
       {% if entry.video and site.enable_video_embedding %}
-        <a class="video-btn btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.video }}</a>
+        <a class="video btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.video }}</a>
       {% elsif entry.video %}
-        <a href="{{ entry.video | prepend: '/assets/video/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">
-          {{- site.data[site.active_lang].strings.bibliography.video -}}
-        </a>
+        {% assign video_url = entry.video | strip %}
+        {% if video_url contains '://' or video_url contains 'http' %}
+          <a href="{{ video_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">
+            {{- site.data[site.active_lang].strings.bibliography.video -}}
+          </a>
+        {% else %}
+          <a href="{{ video_url | prepend: '/assets/video/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">
+            {{- site.data[site.active_lang].strings.bibliography.video -}}
+          </a>
+        {% endif %}
       {% endif %}
       {% if entry.blog %}
         <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.blogue }}</a>
