@@ -3,6 +3,7 @@ layout: post
 title: Psychology Conferences 🎙️
 icon: # fa-solid fa-microphone fa-solid fa-presentation-screen OR fa-podium-star 
 date: 2024-10-15 11:12:00
+last_updated: 2024-11-02
 description: A non-exhaustive list of conferences in the field of psychology
 tags: conferences
 categories: research
@@ -23,7 +24,7 @@ suggestions_form: true
     data-search="true"
     data-toggle="table"
     data-url="{{ '/assets/json/en-us/conferences_en-us.json' | relative_url }}">
-    <caption>{{- site.data[site.active_lang].strings.footer.last_updated }}{% include date_format.liquid format="short" date=post.time %}</caption>
+    <!-- <caption>{{- site.data[site.active_lang].strings.footer.last_updated }}{% include date_format.liquid format="short" date=page.last_updated %}</caption> -->
     <thead class="table-light">
       <tr class="table-header-row">
         <th data-field="abbreviation" data-halign="left" data-align="left" data-sortable="true">Abbreviation</th>
