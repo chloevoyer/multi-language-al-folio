@@ -23,34 +23,16 @@ pretty_table: true
   data-pagination="true"
   data-search="true"
   data-toggle="table"
-  data-url="{{ '/assets/json/fr-ca/conferences_fr-ca.json' | relative_url }}">
-  <thead>
-    <tr>
-      <th data-field="Abbreviation" data-halign="left" data-align="left" data-sortable="true">Abbreviation</th>
-      <th data-field="Conference Name" data-formatter="conferenceNameFormatter">Conference Name</th>
-      <!-- <th data-field="Submission Deadline" data-halign="right" data-align="left" data-sortable="true">Submission Deadline</th> -->
-      <th data-field="Location" data-halign="left" data-align="left" data-sortable="true">Location</th>
-      <th data-field="Date" data-halign="left" data-align="left" data-sortable="true">Date</th>
-      <!-- <th data-field="Discipline" data-halign="left" data-align="left" data-sortable="true">Discipline</th>
-      <th data-field="Local vs. Abroad" data-halign="left" data-align="left" data-sortable="true">Local vs. Abroad</th>
-      <th data-field="Modality" data-halign="left" data-align="left" data-sortable="true">Modality</th> -->
-      <th data-field="Theme" data-halign="left" data-align="left" data-sortable="true">Theme</th>
-    </tr>
-  </thead>
-</table>
-
-<script>
-  function conferenceNameFormatter(value, row) {
-    if (row.URL) {
-      return '<a href="' + row.URL + '" target="_blank" title="' + row.URL + '">' + value + '</a>';
-    }
-    return value;
-  }
-
-  // Prevent link clicks from interfering with table sorting
-  $(function() {
-    $('table').on('click', 'a', function(e) {
-      e.stopPropagation();
-    });
-  });
-</script>
+    data-url="{{ '/assets/json/en-us/conferences.json' | relative_url }}">
+    <caption>{{- site.data[site.active_lang].strings.footer.last_updated }}{% include date_format.liquid format="short" date=page.last_updated %}</caption>
+    <thead class="table-light">
+      <tr class="table-header-row">
+        <th data-field="abbreviation" data-halign="left" data-align="left" data-sortable="true">Abbreviation</th>
+        <th data-field="title" data-formatter="conferenceNameFormatter" data-sortable="true">Conference Name</th>
+        <th data-field="location" data-halign="left" data-align="left" data-sortable="true">Location</th>
+        <th data-field="date" data-halign="left" data-align="left" data-sortable="true">Date</th>
+        <th data-field="theme" data-halign="left" data-align="left" data-sortable="true">Theme</th>
+      </tr>
+    </thead>
+  </table>
+</div>

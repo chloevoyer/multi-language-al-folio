@@ -24,11 +24,6 @@ layout: default
         {{- site.data[site.active_lang].strings.post.created_by }}
         {{ page.author -}}
       {%- endif -%}
-      {%- if page.last_updated -%}
-        , {{ site.data[site.active_lang].strings.post.last_updated }}
-        {% include date_format.liquid format='long' date=page.last_updated -%}
-        {% include date_format.liquid format='short' date=post.last_updated %}</th>
-      {%- endif %}
       {% if page.meta %}• {{ page.meta }}{% endif %}
     </p>
     <p class="post-tags">

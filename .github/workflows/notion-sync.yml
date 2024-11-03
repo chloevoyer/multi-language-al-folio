@@ -1,0 +1,66 @@
+name: Sync Notion Database
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  sync-notion-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+          
+      - name: Install dependencies
+        run: |
+          pip install notion-client
+          
+      - name: Fetch Notion data
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        run: |
+          cat > fetch_notion.py << 'EOF'
+          import os
+          import json
+          from notion_client import Client
+          
+          # Initialize the client
+          notion = Client(auth=os.environ["NOTION_TOKEN"])
+          database_id = os.environ["DATABASE_ID"]
+          
+          # Query the database
+          results = notion.databases.query(
+              database_id=database_id
+          ).get("results")
+          
+          # Transform to desired format
+          conferences = []
+          for page in results:
+              props = page["properties"]
+              conference = {
+                  "name": props["Name"]["title"][0]["text"]["content"],
+                  "date": props["Date"]["date"]["start"],
+                  "location": props["Location"]["rich_text"][0]["text"]["content"],
+                  "url": props["URL"]["url"],
+                  "description": props["Description"]["rich_text"][0]["text"]["content"]
+              }
+              conferences.append(conference)
+              
+          # Save to JSON file
+          with open("_data/conferences.json", "w") as f:
+              json.dump({"conferences": conferences}, f, indent=2)
+          EOF
+          
+          python fetch_notion.py
+          
+      - name: Commit and push if changed
+        run: |
+          git config --global user.email "github-action@users.noreply.github.com"
+          git config --global user.name "GitHub Action"
+          git add _data/conferences.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update conferences data" && git push)

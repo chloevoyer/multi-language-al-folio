@@ -94,9 +94,9 @@ pagination:
                     {% assign year = post.date | date: "%Y" %}
 
                     <p class="post-meta">
-                      {{ read_time }}&nbsp;{{ site.data[site.active_lang].strings.blog_posts.read_time }}&nbsp; &middot; &nbsp;
+                      <i class="fa-solid fa-clock-four fa-sm"></i>  {{ read_time }}&nbsp;{{ site.data[site.active_lang].strings.blog_posts.read_time }}&nbsp; &middot; &nbsp;
                       <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
-                        <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
+                        <i class="fa-solid fa-calendar fa-sm"></i>  {{ year }} </a>
                     </p>
                   </div>
                 </div>
@@ -159,13 +159,13 @@ pagination:
       </p>
       <p class="post-tags">
         <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
-          <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
+          <i class="fa-solid fa-calendar fa-sm"></i>  {{ year }} </a>
 
           {% if tags != "" %}
           &nbsp; &middot; &nbsp;
             {% for tag in post.tags %}
             <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
-              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
+              <i class="fa-solid fa-hashtag fa-sm"></i>  {{ tag }}</a>
               {% unless forloop.last %}
                 &nbsp;
               {% endunless %}
@@ -176,7 +176,7 @@ pagination:
           &nbsp; &middot; &nbsp;
             {% for category in post.categories %}
             <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
-              <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
+              <i class="fa-solid fa-tag fa-sm"></i>  {{ category }}</a>
               {% unless forloop.last %}
                 &nbsp;
               {% endunless %}
@@ -204,3 +204,42 @@ pagination:
 {% endif %}
 
 </div>
+
+<!-- conferences -->
+<div class="conferences">
+  {% assign conferences = site.data.conferences.conferences | sort: 'date' %}
+  {% for conference in conferences %}
+    <div class="conference-card">
+      <h2>{{ conference.name }}</h2>
+      <p class="date">{{ conference.date | date: "%B %d, %Y" }}</p>
+      <p class="location">{{ conference.location }}</p>
+      <p class="description">{{ conference.description }}</p>
+      <a href="{{ conference.url }}" class="conference-link">Learn More</a>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+.conferences {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.conference-card {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.conference-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+</style>
