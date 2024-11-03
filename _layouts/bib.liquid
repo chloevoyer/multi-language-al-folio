@@ -49,7 +49,7 @@
     <!-- Title -->
     <div class="title">
       {{- entry.title -}}
-      {%- if entry.type contains 'Oral' or entry.type contains 'Poster' or entry.type contains 'Symposium' | capitalize -%}
+      {%- if entry.type contains 'internal' or entry.type contains 'oral' or entry.type contains 'poster' or entry.type contains 'symposium' | downcase -%}
         &nbsp;<b>[{{ entry.type }}]</b>
       {%- endif -%}
     </div>
