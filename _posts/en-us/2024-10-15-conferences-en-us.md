@@ -16,6 +16,10 @@ suggestions_form: true
 
 ## A non-exhaustive list of upcoming psychology conferences
 
+<div class="caption" style="text-align: left;">
+    {{- site.data[site.active_lang].strings.footer.last_updated }}{% include date_format.liquid format="short" date=page.last_updated %}
+</div>
+
 <div class="table-responsive">
   <table
     data-click-to-select="true"
@@ -33,9 +37,6 @@ suggestions_form: true
       </tr>
     </thead>
   </table>
-</div>
-<div class="caption">
-    {{- site.data[site.active_lang].strings.footer.last_updated }}{% include date_format.liquid format="short" date=page.last_updated %}
 </div>
 
 {% include conferences-list.html %}

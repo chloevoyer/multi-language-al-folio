@@ -34,13 +34,6 @@ jobs:
           notion = Client(auth=os.environ["NOTION_TOKEN"])
           database_id = os.environ["DATABASE_ID"]
           
-          # def clean_text(text):
-          #     """Clean text of any problematic characters"""
-          #     if text is None:
-          #         return ""
-          #     # Replace any problematic characters
-          #     return str(text).encode('ascii', 'backslashreplace').decode('ascii')
-          
           # Query the database
           results = notion.databases.query(
               database_id=database_id,
@@ -59,14 +52,14 @@ jobs:
               def get_text(prop_name):
                   prop = props.get(prop_name, {})
                   if prop.get("rich_text") and len(prop["rich_text"]) > 0:
-                      return clean_text(prop["rich_text"][0]["text"]["content"])
+                      return prop["rich_text"][0]["text"]["content"]
                   return ""
               
               # Helper function to get title
               def get_title(prop_name):
                   prop = props.get(prop_name, {})
                   if prop.get("title") and len(prop["title"]) > 0:
-                      return clean_text(prop["title"][0]["text"]["content"])
+                      return prop["title"][0]["text"]["content"]
                   return ""
               
               # Helper function to get date
@@ -80,7 +73,7 @@ jobs:
               def get_select(prop_name):
                   prop = props.get(prop_name, {})
                   if prop.get("select"):
-                      return clean_text(prop["select"].get("name", ""))
+                      return prop["select"].get("name", "")
                   return ""
               
               conference = {
@@ -93,7 +86,7 @@ jobs:
                   "modality": get_select("Modality"),
                   "discipline": get_select("Discipline"),
                   "theme": get_text("Theme"),
-                  "url": clean_text(props.get("URL", {}).get("url", ""))
+                  "url": props.get("URL", {}).get("url", "")
               }
               
               # Remove any None values
