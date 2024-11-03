@@ -66,9 +66,10 @@
   ],
   "awards": [
     {
-      "title": "Best Presentation Award! 🏆",
+      "title": "Best Presentation Award",
       "date": "2024-10-18",
       "awarder": "Centre d'études sur le stress humain (Sonia Lupien)",
+      "url": "https://humanstress.ca/",
       "summary": "$500"
     },
     {
