@@ -35,3 +35,14 @@ suggestions_form: true
     </thead>
   </table>
 </div>
+
+{% include conferences-list.html %}
+
+
+<iframe 
+  src="https://www.notion.so/chloevoyer/3ad05bf6976844ce82b360c234b3f0e0?v=5addbeae984a4a07aad786ce283d2427"
+  width="100%" 
+  height="500px" 
+  frameborder="0"
+  style="background: transparent; border: 1px solid #ccc;">
+</iframe>

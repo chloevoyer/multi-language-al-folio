@@ -38,7 +38,7 @@ jobs:
           results = notion.databases.query(
               database_id=database_id,
               sorts=[{
-                  "property": "Start",
+                  "property": "Date",
                   "direction": "ascending"
               }]
           ).get("results")
@@ -68,22 +68,25 @@ jobs:
                   if prop.get("date"):
                       return prop["date"]["start"]
                   return None
+                  
+              # Helper function to get select value
+              def get_select(prop_name):
+                  prop = props.get(prop_name, {})
+                  if prop.get("select"):
+                      return prop["select"].get("name", "")
+                  return ""
               
               conference = {
-                  "name": get_title("Name"),
-                  "start_date": get_date("Start"),
-                  "end_date": get_date("End"),
+                  "name": get_title("Conference name"),
+                  "acronym": get_text("Acronym"),
+                  "date": get_date("Date"),
+                  "submission_deadline": get_date("Submission deadline"),
                   "location": get_text("Location"),
-                  "city": get_text("City"),
-                  "country": get_text("Country"),
-                  "url": props.get("URL", {}).get("url", ""),
-                  "status": props.get("Status", {}).get("status", {}).get("name", ""),
-                  "application_deadline": get_date("Application deadline"),
-                  "notification": get_date("Notification"),
-                  "acceptance_type": props.get("Type", {}).get("select", {}).get("name", ""),
-                  "topics": [tag["name"] for tag in props.get("Topic", {}).get("multi_select", [])],
-                  "format": props.get("Format", {}).get("select", {}).get("name", ""),
-                  "comments": get_text("Comments")
+                  "local_abroad": get_select("Local vs Abroad"),
+                  "modality": get_select("Modality"),
+                  "discipline": get_select("Discipline"),
+                  "theme": get_text("Theme"),
+                  "url": props.get("URL", {}).get("url", "")
               }
               conferences.append(conference)
               
@@ -100,3 +103,4 @@ jobs:
           git config --global user.name "GitHub Action"
           git add _data/conferences.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update conferences data" && git push)
+

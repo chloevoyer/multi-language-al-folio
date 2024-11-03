@@ -208,76 +208,89 @@ pagination:
 <!-- conferences -->
 <div class="conferences-container">
   <div class="filters">
-    <select id="topicFilter" onchange="filterConferences()">
-      <option value="">All Topics</option>
-      {% assign all_topics = "" | split: "" %}
-      {% for conf in site.data.conferences.conferences %}
-        {% assign all_topics = all_topics | concat: conf.topics %}
+    <select id="disciplineFilter" onchange="filterConferences()">
+      <option value="">All Disciplines</option>
+      {% assign disciplines = site.data.conferences.conferences | map: 'discipline' | uniq | sort %}
+      {% for discipline in disciplines %}
+        {% if discipline != "" %}
+          <option value="{{ discipline }}">{{ discipline }}</option>
+        {% endif %}
       {% endfor %}
-      {% assign unique_topics = all_topics | uniq | sort %}
-      {% for topic in unique_topics %}
-        <option value="{{ topic }}">{{ topic }}</option>
+    </select>
+    
+    <select id="modalityFilter" onchange="filterConferences()">
+      <option value="">All Modalities</option>
+      {% assign modalities = site.data.conferences.conferences | map: 'modality' | uniq | sort %}
+      {% for modality in modalities %}
+        {% if modality != "" %}
+          <option value="{{ modality }}">{{ modality }}</option>
+        {% endif %}
       {% endfor %}
     </select>
 
-    <select id="formatFilter" onchange="filterConferences()">
-      <option value="">All Formats</option>
-      {% assign formats = site.data.conferences.conferences | map: 'format' | uniq | sort %}
-      {% for format in formats %}
-        {% if format != "" %}
-          <option value="{{ format }}">{{ format }}</option>
+    <select id="locationFilter" onchange="filterConferences()">
+      <option value="">All Locations</option>
+      {% assign locations = site.data.conferences.conferences | map: 'local_abroad' | uniq | sort %}
+      {% for location in locations %}
+        {% if location != "" %}
+          <option value="{{ location }}">{{ location }}</option>
         {% endif %}
       {% endfor %}
     </select>
   </div>
 
   <div class="conferences">
-    {% assign conferences = site.data.conferences.conferences %}
+    {% assign conferences = site.data.conferences.conferences | sort: 'date' %}
     {% for conference in conferences %}
       <div class="conference-card" 
-           data-topics="{{ conference.topics | join: ',' }}"
-           data-format="{{ conference.format }}">
-        <div class="conference-status {{ conference.status | downcase }}">
-          {{ conference.status }}
-        </div>
-        <h2>{{ conference.name }}</h2>
-        <div class="conference-dates">
-          <strong>Event:</strong> 
-          {{ conference.start_date | date: "%B %d, %Y" }}
-          {% if conference.end_date %}
-            - {{ conference.end_date | date: "%B %d, %Y" }}
+           data-discipline="{{ conference.discipline }}"
+           data-modality="{{ conference.modality }}"
+           data-location="{{ conference.local_abroad }}">
+        <div class="conference-header">
+          <h2>{{ conference.name }}</h2>
+          {% if conference.acronym != "" %}
+            <div class="acronym">{{ conference.acronym }}</div>
           {% endif %}
         </div>
 
-        {% if conference.application_deadline %}
-          <div class="deadline">
-            <strong>Deadline:</strong> {{ conference.application_deadline | date: "%B %d, %Y" }}
+        <div class="conference-info">
+          <div class="date-info">
+            <div class="event-date">
+              <strong>Event Date:</strong> 
+              {{ conference.date | date: "%B %d, %Y" }}
+            </div>
+            
+            {% if conference.submission_deadline %}
+              <div class="deadline">
+                <strong>Submission Deadline:</strong>
+                {{ conference.submission_deadline | date: "%B %d, %Y" }}
+              </div>
+            {% endif %}
           </div>
-        {% endif %}
-        
-        <div class="location">
-          <strong>Location:</strong> {{ conference.city }}, {{ conference.country }}
-        </div>
-        
-        <div class="details">
-          <div class="format">{{ conference.format }}</div>
-          <div class="type">{{ conference.acceptance_type }}</div>
-        </div>
-        
-        <div class="topics">
-          {% for topic in conference.topics %}
-            <span class="topic-tag">{{ topic }}</span>
-          {% endfor %}
-        </div>
-        
-        {% if conference.comments != "" %}
-          <div class="comments">
-            {{ conference.comments }}
+
+          <div class="location-info">
+            <div class="location">
+              <strong>Location:</strong> {{ conference.location }}
+              <span class="location-type">{{ conference.local_abroad }}</span>
+            </div>
+            <div class="modality">{{ conference.modality }}</div>
           </div>
-        {% endif %}
+
+          {% if conference.theme != "" %}
+            <div class="theme">
+              <strong>Theme:</strong> {{ conference.theme }}
+            </div>
+          {% endif %}
+
+          <div class="tags">
+            <span class="discipline-tag">{{ conference.discipline }}</span>
+          </div>
+        </div>
         
         {% if conference.url != "" %}
-          <a href="{{ conference.url }}" class="conference-link" target="_blank">Conference Website</a>
+          <a href="{{ conference.url }}" class="conference-link" target="_blank">
+            Visit Conference Website
+          </a>
         {% endif %}
       </div>
     {% endfor %}
@@ -291,93 +304,110 @@ pagination:
 
 .filters {
   margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .filters select {
-  margin-right: 1rem;
   padding: 0.5rem;
   border-radius: 4px;
+  border: 1px solid #e5e7eb;
+  min-width: 200px;
 }
 
 .conferences {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
 .conference-card {
-  border: 1px solid #ddd;
+  border: 1px solid #e5e7eb;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  position: relative;
-}
-
-.conference-status {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  padding: 0.25rem 0.75rem;
-  border-radius: 4px;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-.conference-status.done {
-  background-color: #d1fae5;
-  color: #065f46;
-}
-
-.conference-status.planned {
-  background-color: #fef3c7;
-  color: #92400e;
-}
-
-.conference-status.applied {
-  background-color: #dbeafe;
-  color: #1e40af;
-}
-
-.conference-dates, .deadline, .location, .details {
-  margin: 1rem 0;
-  font-size: 0.925rem;
-}
-
-.details {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  background: white;
   display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
 
-.format, .type {
+.conference-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.conference-header h2 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #111827;
+}
+
+.acronym {
   background-color: #f3f4f6;
   padding: 0.25rem 0.75rem;
   border-radius: 4px;
   font-size: 0.875rem;
+  font-weight: 500;
+  color: #4b5563;
 }
 
-.topics {
+.conference-info {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 1rem 0;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.topic-tag {
-  background-color: #e5e7eb;
-  padding: 0.25rem 0.75rem;
+.date-info, .location-info {
+  font-size: 0.925rem;
+  color: #374151;
+}
+
+.deadline {
+  color: #dc2626;
+}
+
+.location-type {
+  margin-left: 0.5rem;
+  padding: 0.125rem 0.5rem;
+  background-color: #f3f4f6;
   border-radius: 999px;
   font-size: 0.75rem;
+  color: #6b7280;
 }
 
-.comments {
-  margin: 1rem 0;
+.modality {
+  margin-top: 0.25rem;
   font-size: 0.875rem;
   color: #6b7280;
 }
 
+.theme {
+  font-size: 0.925rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.discipline-tag {
+  background-color: #dbeafe;
+  color: #1e40af;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
 .conference-link {
   display: inline-block;
-  margin-top: 1rem;
   padding: 0.5rem 1rem;
   background: #2563eb;
   color: white;
@@ -385,6 +415,8 @@ pagination:
   border-radius: 4px;
   font-size: 0.875rem;
   transition: background-color 0.2s;
+  text-align: center;
+  margin-top: auto;
 }
 
 .conference-link:hover {
@@ -394,17 +426,20 @@ pagination:
 
 <script>
 function filterConferences() {
-  const topicFilter = document.getElementById('topicFilter').value;
-  const formatFilter = document.getElementById('formatFilter').value;
+  const disciplineFilter = document.getElementById('disciplineFilter').value;
+  const modalityFilter = document.getElementById('modalityFilter').value;
+  const locationFilter = document.getElementById('locationFilter').value;
   
   document.querySelectorAll('.conference-card').forEach(card => {
-    const topics = card.dataset.topics.split(',');
-    const format = card.dataset.format;
-
-    const matchesTopic = !topicFilter || topics.includes(topicFilter);
-    const matchesFormat = !formatFilter || format === formatFilter;
-
-    card.style.display = (matchesTopic && matchesFormat) ? 'block' : 'none';
+    const discipline = card.dataset.discipline;
+    const modality = card.dataset.modality;
+    const location = card.dataset.location;
+    
+    const matchesDiscipline = !disciplineFilter || discipline === disciplineFilter;
+    const matchesModality = !modalityFilter || modality === modalityFilter;
+    const matchesLocation = !locationFilter || location === locationFilter;
+    
+    card.style.display = (matchesDiscipline && matchesModality && matchesLocation) ? 'block' : 'none';
   });
 }
 </script>
