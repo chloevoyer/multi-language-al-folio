@@ -206,24 +206,103 @@ pagination:
 </div>
 
 <!-- conferences -->
-<div class="conferences">
-  {% assign conferences = site.data.conferences.conferences | sort: 'date' %}
-  {% for conference in conferences %}
-    <div class="conference-card">
-      <h2>{{ conference.name }}</h2>
-      <p class="date">{{ conference.date | date: "%B %d, %Y" }}</p>
-      <p class="location">{{ conference.location }}</p>
-      <p class="description">{{ conference.description }}</p>
-      <a href="{{ conference.url }}" class="conference-link">Learn More</a>
-    </div>
-  {% endfor %}
+<div class="conferences-container">
+  <div class="filters">
+    <select id="topicFilter" onchange="filterConferences()">
+      <option value="">All Topics</option>
+      {% assign all_topics = "" | split: "" %}
+      {% for conf in site.data.conferences.conferences %}
+        {% assign all_topics = all_topics | concat: conf.topics %}
+      {% endfor %}
+      {% assign unique_topics = all_topics | uniq | sort %}
+      {% for topic in unique_topics %}
+        <option value="{{ topic }}">{{ topic }}</option>
+      {% endfor %}
+    </select>
+
+    <select id="formatFilter" onchange="filterConferences()">
+      <option value="">All Formats</option>
+      {% assign formats = site.data.conferences.conferences | map: 'format' | uniq | sort %}
+      {% for format in formats %}
+        {% if format != "" %}
+          <option value="{{ format }}">{{ format }}</option>
+        {% endif %}
+      {% endfor %}
+    </select>
+  </div>
+
+  <div class="conferences">
+    {% assign conferences = site.data.conferences.conferences %}
+    {% for conference in conferences %}
+      <div class="conference-card" 
+           data-topics="{{ conference.topics | join: ',' }}"
+           data-format="{{ conference.format }}">
+        <div class="conference-status {{ conference.status | downcase }}">
+          {{ conference.status }}
+        </div>
+        <h2>{{ conference.name }}</h2>
+        <div class="conference-dates">
+          <strong>Event:</strong> 
+          {{ conference.start_date | date: "%B %d, %Y" }}
+          {% if conference.end_date %}
+            - {{ conference.end_date | date: "%B %d, %Y" }}
+          {% endif %}
+        </div>
+
+        {% if conference.application_deadline %}
+          <div class="deadline">
+            <strong>Deadline:</strong> {{ conference.application_deadline | date: "%B %d, %Y" }}
+          </div>
+        {% endif %}
+        
+        <div class="location">
+          <strong>Location:</strong> {{ conference.city }}, {{ conference.country }}
+        </div>
+        
+        <div class="details">
+          <div class="format">{{ conference.format }}</div>
+          <div class="type">{{ conference.acceptance_type }}</div>
+        </div>
+        
+        <div class="topics">
+          {% for topic in conference.topics %}
+            <span class="topic-tag">{{ topic }}</span>
+          {% endfor %}
+        </div>
+        
+        {% if conference.comments != "" %}
+          <div class="comments">
+            {{ conference.comments }}
+          </div>
+        {% endif %}
+        
+        {% if conference.url != "" %}
+          <a href="{{ conference.url }}" class="conference-link" target="_blank">Conference Website</a>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
 </div>
 
 <style>
+.conferences-container {
+  padding: 2rem;
+}
+
+.filters {
+  margin-bottom: 2rem;
+}
+
+.filters select {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
 .conferences {
   display: grid;
   gap: 2rem;
-  padding: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .conference-card {
@@ -231,15 +310,101 @@ pagination:
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.conference-status {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.conference-status.done {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.conference-status.planned {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.conference-status.applied {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.conference-dates, .deadline, .location, .details {
+  margin: 1rem 0;
+  font-size: 0.925rem;
+}
+
+.details {
+  display: flex;
+  gap: 1rem;
+}
+
+.format, .type {
+  background-color: #f3f4f6;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.topic-tag {
+  background-color: #e5e7eb;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+}
+
+.comments {
+  margin: 1rem 0;
+  font-size: 0.875rem;
+  color: #6b7280;
 }
 
 .conference-link {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  background: #007bff;
+  background: #2563eb;
   color: white;
   text-decoration: none;
   border-radius: 4px;
+  font-size: 0.875rem;
+  transition: background-color 0.2s;
+}
+
+.conference-link:hover {
+  background: #1d4ed8;
 }
 </style>
+
+<script>
+function filterConferences() {
+  const topicFilter = document.getElementById('topicFilter').value;
+  const formatFilter = document.getElementById('formatFilter').value;
+  
+  document.querySelectorAll('.conference-card').forEach(card => {
+    const topics = card.dataset.topics.split(',');
+    const format = card.dataset.format;
+
+    const matchesTopic = !topicFilter || topics.includes(topicFilter);
+    const matchesFormat = !formatFilter || format === formatFilter;
+
+    card.style.display = (matchesTopic && matchesFormat) ? 'block' : 'none';
+  });
+}
+</script>

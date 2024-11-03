@@ -28,6 +28,7 @@ jobs:
           import os
           import json
           from notion_client import Client
+          from datetime import datetime
           
           # Initialize the client
           notion = Client(auth=os.environ["NOTION_TOKEN"])
@@ -35,19 +36,54 @@ jobs:
           
           # Query the database
           results = notion.databases.query(
-              database_id=database_id
+              database_id=database_id,
+              sorts=[{
+                  "property": "Start",
+                  "direction": "ascending"
+              }]
           ).get("results")
           
           # Transform to desired format
           conferences = []
           for page in results:
               props = page["properties"]
+              
+              # Helper function to safely get text content
+              def get_text(prop_name):
+                  prop = props.get(prop_name, {})
+                  if prop.get("rich_text") and len(prop["rich_text"]) > 0:
+                      return prop["rich_text"][0]["text"]["content"]
+                  return ""
+              
+              # Helper function to get title
+              def get_title(prop_name):
+                  prop = props.get(prop_name, {})
+                  if prop.get("title") and len(prop["title"]) > 0:
+                      return prop["title"][0]["text"]["content"]
+                  return ""
+              
+              # Helper function to get date
+              def get_date(prop_name):
+                  prop = props.get(prop_name, {})
+                  if prop.get("date"):
+                      return prop["date"]["start"]
+                  return None
+              
               conference = {
-                  "name": props["Name"]["title"][0]["text"]["content"],
-                  "date": props["Date"]["date"]["start"],
-                  "location": props["Location"]["rich_text"][0]["text"]["content"],
-                  "url": props["URL"]["url"],
-                  "description": props["Description"]["rich_text"][0]["text"]["content"]
+                  "name": get_title("Name"),
+                  "start_date": get_date("Start"),
+                  "end_date": get_date("End"),
+                  "location": get_text("Location"),
+                  "city": get_text("City"),
+                  "country": get_text("Country"),
+                  "url": props.get("URL", {}).get("url", ""),
+                  "status": props.get("Status", {}).get("status", {}).get("name", ""),
+                  "application_deadline": get_date("Application deadline"),
+                  "notification": get_date("Notification"),
+                  "acceptance_type": props.get("Type", {}).get("select", {}).get("name", ""),
+                  "topics": [tag["name"] for tag in props.get("Topic", {}).get("multi_select", [])],
+                  "format": props.get("Format", {}).get("select", {}).get("name", ""),
+                  "comments": get_text("Comments")
               }
               conferences.append(conference)
               
