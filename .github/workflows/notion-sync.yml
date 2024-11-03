@@ -22,7 +22,7 @@ jobs:
       - name: Fetch Notion data
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-          DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          DATABASE_ID: "3ad05bf6976844ce82b360c234b3f0e0"
         run: |
           cat > fetch_notion.py << 'EOF'
           import os
@@ -33,6 +33,13 @@ jobs:
           # Initialize the client
           notion = Client(auth=os.environ["NOTION_TOKEN"])
           database_id = os.environ["DATABASE_ID"]
+          
+          def clean_text(text):
+              """Clean text of any problematic characters"""
+              if text is None:
+                  return ""
+              # Replace any problematic characters
+              return str(text).encode('ascii', 'backslashreplace').decode('ascii')
           
           # Query the database
           results = notion.databases.query(
@@ -52,14 +59,14 @@ jobs:
               def get_text(prop_name):
                   prop = props.get(prop_name, {})
                   if prop.get("rich_text") and len(prop["rich_text"]) > 0:
-                      return prop["rich_text"][0]["text"]["content"]
+                      return clean_text(prop["rich_text"][0]["text"]["content"])
                   return ""
               
               # Helper function to get title
               def get_title(prop_name):
                   prop = props.get(prop_name, {})
                   if prop.get("title") and len(prop["title"]) > 0:
-                      return prop["title"][0]["text"]["content"]
+                      return clean_text(prop["title"][0]["text"]["content"])
                   return ""
               
               # Helper function to get date
@@ -73,7 +80,7 @@ jobs:
               def get_select(prop_name):
                   prop = props.get(prop_name, {})
                   if prop.get("select"):
-                      return prop["select"].get("name", "")
+                      return clean_text(prop["select"].get("name", ""))
                   return ""
               
               conference = {
@@ -82,17 +89,20 @@ jobs:
                   "date": get_date("Date"),
                   "submission_deadline": get_date("Submission deadline"),
                   "location": get_text("Location"),
-                  "local_abroad": get_select("Local vs Abroad"),
+                  "local_abroad": get_select("Local vs. Abroad"),
                   "modality": get_select("Modality"),
                   "discipline": get_select("Discipline"),
                   "theme": get_text("Theme"),
-                  "url": props.get("URL", {}).get("url", "")
+                  "url": clean_text(props.get("URL", {}).get("url", ""))
               }
+              
+              # Remove any None values
+              conference = {k: v for k, v in conference.items() if v is not None}
               conferences.append(conference)
               
-          # Save to JSON file
-          with open("_data/conferences.json", "w") as f:
-              json.dump({"conferences": conferences}, f, indent=2)
+          # Save to JSON file with proper encoding
+          with open("_data/conferences.json", "w", encoding="utf-8") as f:
+              json.dump({"conferences": conferences}, f, indent=2, ensure_ascii=False)
           EOF
           
           python fetch_notion.py
@@ -103,4 +113,3 @@ jobs:
           git config --global user.name "GitHub Action"
           git add _data/conferences.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update conferences data" && git push)
-
