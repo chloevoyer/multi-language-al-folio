@@ -23,14 +23,14 @@ suggestions_form: true
     data-search="true"
     data-toggle="table"
     data-url="{{ '/assets/json/en-us/conferences_en-us.json' | relative_url }}">
-    <caption>{{- site.data[site.active_lang].strings.footer.last_updated }}{% include date_format.liquid format="long" date=page.time %}</caption>
+    <caption>{{- site.data[site.active_lang].strings.footer.last_updated }}{% include date_format.liquid format="short" date=page.time %}</caption>
     <thead class="table-light">
       <tr class="table-header-row">
-        <th class="table-header-row" data-field="Abbreviation" data-halign="left" data-align="left" data-sortable="true">Abbreviation</th>
-        <th data-field="Conference Name" data-formatter="conferenceNameFormatter">Conference Name</th>
-        <th data-field="Location" data-halign="left" data-align="left" data-sortable="true">Location</th>
-        <th data-field="Date" data-halign="left" data-align="left" data-sortable="true">Date</th>
-        <th data-field="Theme" data-halign="left" data-align="left" data-sortable="true">Theme</th>
+        <th class="table-header-row" data-field="abbreviation" data-halign="left" data-align="left" data-sortable="true">Abbreviation</th>
+        <th data-field="title" data-formatter="conferenceNameFormatter">Conference Name</th>
+        <th data-field="location" data-halign="left" data-align="left" data-sortable="true">Location</th>
+        <th data-field="date" data-halign="left" data-align="left" data-sortable="true">Date</th>
+        <th data-field="theme" data-halign="left" data-align="left" data-sortable="true">Theme</th>
       </tr>
     </thead>
   </table>
@@ -38,8 +38,8 @@ suggestions_form: true
 
 <script>
   function conferenceNameFormatter(value, row) {
-    if (row.URL) {
-      return '<a href="' + row.URL + '" target="_blank" title="' + row.URL + '">' + value + '</a>';
+    if (row.url) {
+      return '<a href="' + row.url + '" target="_blank" title="' + row.url + '">' + value + '</a>';
     }
     return value;
   }
