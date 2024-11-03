@@ -48,22 +48,22 @@
            data-modality="{{ conference.modality }}"
            data-location="{{ conference.local_abroad }}"
            {% if conf_year == "2024" %}style="display: block;"{% else %}style="display: none;"{% endif %}>
-           <div class="conference-header">
-            {% if conference.url != "" %}
-              <h2>
-                <a href="{{ conference.url }}" target="_blank" rel="noopener noreferrer" class="conference-name-link">
-                  {{ conference.name }}
-                  <span class="external-link-icon">↗</span>
-                </a>
-              </h2>
-            {% else %}
-              <h2>{{ conference.name }}</h2>
-            {% endif %}
-            {% if conference.acronym != "" %}
-              <div class="acronym">{{ conference.acronym }}</div>
-            {% endif %}
-          </div>
-          
+        <div class="conference-header">
+          {% if conference.url != "" %}
+            <h2>
+              <a href="{{ conference.url }}" target="_blank" rel="noopener noreferrer" class="conference-name-link">
+                {{ conference.name }}
+                <span class="external-link-icon">↗</span>
+              </a>
+            </h2>
+          {% else %}
+            <h2>{{ conference.name }}</h2>
+          {% endif %}
+          {% if conference.acronym != "" %}
+            <div class="acronym">{{ conference.acronym }}</div>
+          {% endif %}
+        </div>
+
         <div class="conference-info">
           <div class="date-info">
             <div class="event-date">
@@ -82,9 +82,7 @@
           <div class="location-info">
             <div class="location">
               <strong>Location:</strong> {{ conference.location }}
-              <span class="location-type">{{ conference.local_abroad }}</span>
             </div>
-            <div class="modality">{{ conference.modality }}</div>
           </div>
 
           {% if conference.theme != "" %}
@@ -92,9 +90,27 @@
               <strong>Theme:</strong> {{ conference.theme }}
             </div>
           {% endif %}
+        </div>
 
-          <div class="tags">
-            <span class="discipline-tag">{{ conference.discipline }}</span>
+        <div class="conference-tags">
+          <div class="tags-row">
+            {% if conference.local_abroad != "" %}
+              <div class="tag location-tag">
+                {{ conference.local_abroad }}
+              </div>
+            {% endif %}
+            
+            {% if conference.modality != "" %}
+              <div class="tag modality-tag">
+                {{ conference.modality }}
+              </div>
+            {% endif %}
+            
+            {% if conference.discipline != "" %}
+              <div class="tag discipline-tag">
+                {{ conference.discipline }}
+              </div>
+            {% endif %}
           </div>
         </div>
       </div>
@@ -140,7 +156,6 @@
   background: var(--global-card-bg-color);
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
 .conference-header {
@@ -166,33 +181,53 @@
 }
 
 .conference-info {
+  flex-grow: 1;
+}
+
+.conference-tags {
+  margin-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1rem;
+}
+
+.tags-row {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.location-tag {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.modality-tag {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.discipline-tag {
+  background-color: #dcfce7;
+  color: #166534;
 }
 
 .date-info, .location-info {
   font-size: 0.925rem;
   color: #374151;
+  margin-bottom: 1rem;
 }
 
 .deadline {
   color: var(--global-highlight-color);
-}
-
-.location-type {
-  margin-left: 0.5rem;
-  padding: 0.125rem 0.5rem;
-  background-color: #f3f4f6;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  color: #6b7280;
-}
-
-.modality {
-  margin-top: 0.25rem;
-  font-size: 0.875rem;
-  color: #6b7280;
+  margin-top: 0.5rem;
 }
 
 .theme {
@@ -201,37 +236,23 @@
   line-height: 1.5;
 }
 
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.discipline-tag {
-  background-color: var(--global-bg-color);
+.conference-name-link {
   color: var(--global-theme-color);
-  padding: 0.25rem 0.75rem;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 500;
-}
-
-.conference-link {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background: var(--global-theme-color);
-  color: var(--global-text-color);
   text-decoration: none;
-  border-radius: 4px;
-  font-size: 0.875rem;
-  transition: background-color 0.2s;
-  text-align: center;
-  margin-top: auto;
+  transition: color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
-.conference-link:hover {
-  background: var(--global-hover-color);
-  color: var(--global-hover-text-color)
+.conference-name-link:hover {
+  color: var(--global-hover-color);
+  text-decoration: underline;
+}
+
+.external-link-icon {
+  font-size: 0.875rem;
+  opacity: 0.7;
 }
 
 .no-results {
@@ -261,27 +282,6 @@
     grid-template-columns: 1fr;
   }
 }
-
-<style>
-.conference-name-link {
-  color: #2563eb;
-  text-decoration: none;
-  transition: color 0.2s;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-}
-
-.conference-name-link:hover {
-  color: #1d4ed8;
-  text-decoration: underline;
-}
-
-.external-link-icon {
-  font-size: 0.875rem;
-  opacity: 0.7;
-}
-
 </style>
 
 <script>
