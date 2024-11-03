@@ -19,17 +19,10 @@
       alt="{{ include.username }}"
       src="https://github-readme-stats-nine-zeta-69.vercel.app/api/top-langs/?username={{ include.username }}&theme={{ site.repo_theme_dark }}&locale={{ github_locale }}&show_icons=true&size_weight=0&count_weight=1&langs_count=5&layout=donut"
     >
-    <img 
+    {% comment %} <img 
       class="repo-img-light w-200"
-      src="assets/img/languages.svg#gh-light-mode-only"
-    >
-    <img 
-      class="repo-img-dark w-200"
-      src="assets/img/languages.svg#gh-light-mode-only"
-    >
-    <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="generated/languages.svg#gh-dark-mode-only">
-        <img src="generated/languages.svg#gh-light-mode-only">
-    </picture>
+      alt="{{ include.username }}"
+      src="assets/img/languages.svg"
+    > {% endcomment %}
   </a>
 </div>

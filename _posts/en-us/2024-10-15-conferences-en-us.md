@@ -23,7 +23,6 @@ suggestions_form: true
     data-search="true"
     data-toggle="table"
     data-url="{{ '/assets/json/en-us/conferences.json' | relative_url }}">
-    <caption>{{- site.data[site.active_lang].strings.footer.last_updated }}{% include date_format.liquid format="short" date=page.last_updated %}</caption>
     <thead class="table-light">
       <tr class="table-header-row">
         <th data-field="abbreviation" data-halign="left" data-align="left" data-sortable="true">Abbreviation</th>
@@ -34,6 +33,9 @@ suggestions_form: true
       </tr>
     </thead>
   </table>
+</div>
+<div class="caption">
+    {{- site.data[site.active_lang].strings.footer.last_updated }}{% include date_format.liquid format="short" date=page.last_updated %}
 </div>
 
 {% include conferences-list.html %}

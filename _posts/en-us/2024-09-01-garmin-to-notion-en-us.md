@@ -1,13 +1,77 @@
 ---
 layout: post
 title: Fitness Tracker | Notion Template 💪
+toc: true
 icon: # ti-icon-brand-notion
 date: 2024-09-01 11:12:00
 description: A Notion template for tracking your fitness goals
 tags: lifestyle productivity
 categories: tools
 featured: false
-redirect: https://www.notion.so/templates/fitness-tracker-738
+# redirect: https://www.notion.so/templates/fitness-tracker-738
 thumbnail: https://www.notion.com/cdn-cgi/image/format=webp,width=1920/https://s3.us-west-2.amazonaws.com/public.notion-static.com/template/a04b89d3-fb92-44f3-94f4-a908e3565cd8/1726319374099/desktop.jpg
 lang: en-us
 ---
+
+# Garmin to Notion Integration ⌚
+
+This project connects your Garmin activities and personal records to your Notion database, allowing you to keep track of your performance metrics in one place.
+
+## Features ✨
+
+- Automatically sync Garmin activities to Notion.
+- Extract Garmin personal records such as fastest 1K and longest ride.
+- Easy setup with clear instructions and minimal coding required.
+
+## Prerequisites 🛠️
+
+- A Notion account with API access.
+- A Garmin Connect account to pull activity data.
+- If you wish to sync your Peloton workouts with Garmin, see [peloton-to-garmin](https://github.com/philosowaffle/peloton-to-garmin)
+
+## Getting Started 🎯
+
+Follow these steps to set up the integration:
+
+### 1. Set Environment Secrets
+
+Ensure that your environment secrets are correctly configured for secure data access.
+
+### 2. Create Notion Token
+
+* Go to [Notion Integrations](https://www.notion.so/profile/integrations).
+* [Create](https://developers.notion.com/docs/create-a-notion-integration) a new integration and copy the integration token.
+* [Share](https://www.notion.so/help/add-and-manage-connections-with-the-api#enterprise-connection-settings) the integration with the target database in Notion.
+
+### 3. Run Scripts (if not using automatic workflow)
+
+* Run [garmin-activities.py](https://github.com/chloevoyer/garmin-to-notion/blob/main/garmin-activities.py) to sync your Garmin activities to Notion.
+`python garmin-activities.py`
+* Run [person-records.py](https://github.com/chloevoyer/garmin-to-notion/blob/main/personal-records.py) to extract activity records (e.g., fastest run, longest ride).  
+`python personal-records.py`
+
+## Example Configuration 📝
+
+You can customize the scripts to fit your needs by modifying environment variables and Notion database settings.  
+
+Here is a screenshot of what my Notion dashboard looks like:
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/life/notion-template.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+My Notion template is available for free and can be duplicated to your Notion [here](https://www.notion.so/templates/fitness-tracker-738)
+
+## Acknowledgements 🙌
+
+- Reference dictionary and examples can be found in [cyberjunky/python-garminconnect](https://github.com/cyberjunky/python-garminconnect.git).
+- This project was inspired by [n-kratz/garmin-notion](https://github.com/n-kratz/garmin-notion.git).
+
+## Contributing 🤝
+
+Contributions are welcome! If you find a bug or want to add a feature, feel free to open an issue or submit a pull request. Financial contributions are also greatly appreciated :blush:
+
+## ©️ License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
