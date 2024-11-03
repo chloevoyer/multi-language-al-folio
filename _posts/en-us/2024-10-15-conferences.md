@@ -23,10 +23,10 @@ suggestions_form: true
     data-search="true"
     data-toggle="table"
     data-url="{{ '/assets/json/en-us/conferences_en-us.json' | relative_url }}">
-    <caption>{{- site.data[site.active_lang].strings.footer.last_updated }}{% include date_format.liquid format="short" date=page.time %}</caption>
+    <caption>{{- site.data[site.active_lang].strings.footer.last_updated }}{% include date_format.liquid format="short" date=post.time %}</caption>
     <thead class="table-light">
       <tr class="table-header-row">
-        <th class="table-header-row" data-field="abbreviation" data-halign="left" data-align="left" data-sortable="true">Abbreviation</th>
+        <th data-field="abbreviation" data-halign="left" data-align="left" data-sortable="true">Abbreviation</th>
         <th data-field="title" data-formatter="conferenceNameFormatter">Conference Name</th>
         <th data-field="location" data-halign="left" data-align="left" data-sortable="true">Location</th>
         <th data-field="date" data-halign="left" data-align="left" data-sortable="true">Date</th>
