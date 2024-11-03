@@ -34,12 +34,12 @@ jobs:
           notion = Client(auth=os.environ["NOTION_TOKEN"])
           database_id = os.environ["DATABASE_ID"]
           
-          def clean_text(text):
-              """Clean text of any problematic characters"""
-              if text is None:
-                  return ""
-              # Replace any problematic characters
-              return str(text).encode('ascii', 'backslashreplace').decode('ascii')
+          # def clean_text(text):
+          #     """Clean text of any problematic characters"""
+          #     if text is None:
+          #         return ""
+          #     # Replace any problematic characters
+          #     return str(text).encode('ascii', 'backslashreplace').decode('ascii')
           
           # Query the database
           results = notion.databases.query(
