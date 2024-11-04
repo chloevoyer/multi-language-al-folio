@@ -131,8 +131,6 @@
       "endDate": "2023-03-01",
       "summary": "Department of Family Medicine and Health Sciences, Faculty of Medicine and Health Sciences, McGill University",
       "highlights": [
-        "Conducted literature reviews",
-        "Assisted in data collection and analysis",
         "Assisting my research supervisor, Dr Peter Nugus, with transcription, translation, literature reviews, grants, paper and report drafting, data collection and data analysis",
         "Drafting a literature review on clinical reasoning and decision-making in medical settings",
         "Conduct a data analysis to evaluate user experience with a cancer helpline",
@@ -255,8 +253,8 @@
       "icon": "fa-solid fa-phone-volume",
       "startDate": "2021-10-01",
       "endDate": "2023-09-01",
-      "summary": "For over a year I have been volunteering at the Suicide Prevention Center of Montreal (formerly Suicide Action Montreal) as a front-line psychosocial worker to support people in suicidal distress, their loved ones as well as people bereaved by suicide. the suicide of a loved one.",
-      "highlights": []
+      "summary": "",
+      "highlights": ["For over a year I have been volunteering at the Suicide Prevention Center of Montreal (formerly Suicide Action Montreal) as a front-line psychosocial worker to support people in suicidal distress, their loved ones as well as people bereaved by suicide. the suicide of a loved one."]
     }
   ],
   "certificates": [
@@ -275,18 +273,25 @@
       "icon": "fa-solid fa-clipboard-check"
     },
     {
-      "name": "Accreditation AQPS",
-      "date": null,
-      "issuer": null,
+      "name": "Prévention du suicide",
+      "date": "2021",
+      "issuer": "Quebec Association for Suicide Prevention Accreditation",
       "url": "",
       "icon": "fa-solid fa-life-ring"
     },
     {
-      "name": "First Aid",
-      "date": null,
-      "issuer": null,
+      "name": "Premiers soins",
+      "date": "2021",
+      "issuer": "Croix-Rouge Canadienne",
       "url": "",
       "icon": "fa-solid fa-kit-medical"
+    },
+    {
+      "name": "Secourisme aquatiques",
+      "date": "2014",
+      "issuer": "Société de sauvetage",
+      "url": "",
+      "icon": "fa-solid fa-umbrella-beach"
     }
   ],
 

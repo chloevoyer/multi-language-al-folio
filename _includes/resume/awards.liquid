@@ -1,5 +1,5 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
-  {% assign content = data[1] | sort: "date" | reverse %}
+  {% assign content = data[1] | sort: "startDate" | reverse %}
   {% assign total_amount = 0 %}
   {% for content in content %}
     {% if content.amount %}
@@ -33,7 +33,7 @@
         </div>
         <div class="col-xs-2 cl-sm-2 col-md-2 mt-2 mt-md-0 text-right">
           {% if content.amount %}
-            <h6 class="font-weight-bold">${{ content.amount | divided_by: 1 | floor | number_with_delimiter }}</h6>
+            <h6 class="font-weight-bold amount-display" data-amount="{{ content.amount }}"></h6>
           {% endif %}
         </div>
       </div>
@@ -42,8 +42,23 @@
   <li class="list-group-item">
     <div class="row">
       <div class="col-12 text-right">
-        <h6 class="font-weight-bold">Total Awarded: ${{ total_amount | divided_by: 1 | floor | number_with_delimiter }}</h6>
+        <h6 class="font-weight-bold total-amount" data-amount="{{ total_amount }}"></h6>
       </div>
     </div>
   </li>
 </ul>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Format individual amounts
+  document.querySelectorAll('.amount-display').forEach(function(element) {
+    const amount = Number(element.dataset.amount);
+    element.textContent = '$' + amount.toLocaleString();
+  });
+
+  // Format total amount
+  const totalElement = document.querySelector('.total-amount');
+  const totalAmount = Number(totalElement.dataset.amount);
+  totalElement.textContent = 'Total Awarded: $' + totalAmount.toLocaleString();
+});
+</script>

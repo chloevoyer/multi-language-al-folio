@@ -121,8 +121,6 @@
       "endDate": "2023-03-01",
       "summary": "Département de médecine familiale et des sciences de la santé, Faculté de médecine et des sciences de la santé, Université McGill",
       "highlights": [
-        "Effectué des revues de littérature",
-        "Assisté à la collecte et à l'analyse de données",
         "Assisté mon superviseur de recherche, Dr Peter Nugus, avec des transcriptions, traductions, revues de littérature, subventions, rédaction de documents et d'articles, et analyses de données",
         "Rédaction d'une revue de la littérature sur le raisonnement clinique et la prise de décision en milieu médical",
         "Réalisation d'une analyse de données pour évaluer l'expérience utilisateur d'une ligne d'assistance pour le cancer",
@@ -243,8 +241,77 @@
       "icon": "fa-solid fa-phone-volume",
       "startDate": "2021-10-01",
       "endDate": "2023-09-01",
-      "summary": "Pendant plus d'un an, j'ai fait du bénévolat au Centre de prévention du suicide de Montréal (anciennement Suicide Action Montréal) en tant qu'intervenante psychosocial de première ligne pour soutenir les personnes en détresse suicidaire, leurs proches ainsi que les personnes endeuillées par le suicide d'un proche.",
-      "highlights": []
+      "summary": null,
+      "highlights": ["Pendant plus d'un an, j'ai fait du bénévolat au Centre de prévention du suicide de Montréal (anciennement Suicide Action Montréal) en tant qu'intervenante psychosocial de première ligne pour soutenir les personnes en détresse suicidaire, leurs proches ainsi que les personnes endeuillées par le suicide d'un proche."]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Entretien motivationnel en santé mentale",
+      "date": "2021",
+      "issuer": "Porte-Voix",
+      "url": "webpsychology.ca",
+      "icon": "fa-solid fa-comments"
+    },
+    {
+      "name": "Éthique de la recherche avec des êtres humains",
+      "date": "2022",
+      "issuer": "Tri-Council Policy Statement",
+      "url": "https://ethics.gc.ca/eng/policy-politique_tcps2-eptc2_2022.html",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
+      "name": "Prévention du suicide",
+      "date": "2021",
+      "issuer": "Association québécoise de prévention du suicide Accreditation (AQPS)",
+      "url": "",
+      "icon": "fa-solid fa-life-ring"
+    },
+    {
+      "name": "Premiers soins",
+      "date": "2021",
+      "issuer": "Croix-Rouge Canadienne",
+      "url": "",
+      "icon": "fa-solid fa-kit-medical"
+    },
+    {
+      "name": "Secourisme aquatiques",
+      "date": "2014",
+      "issuer": "Société de sauvetage",
+      "url": "",
+      "icon": "fa-solid fa-umbrella-beach"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages & Tools",
+      "level": "",
+      "icon": "fa-solid fa-code",
+      "keywords": ["R", "Python", "SQL", "LaTeX", "Markdown", "HTML", "CSS"]
+    },
+    {
+      "name": "Data Analysis & Statistical Software",
+      "level": "",
+      "icon": "fa-solid fa-chart-line",
+      "keywords": ["FreeSurfer", "Statistical Package for the Social Sciences (SPSS)", "REDCap", "NVivo"]
+    },
+    {
+      "name": "Operating Systems & Environments",
+      "level": "",
+      "icon": "fa-solid fa-desktop",
+      "keywords": ["Linux", "Ubuntu", "Virtual Machine"]
+    },
+    {
+      "name": "Office Software & Communication Tools",
+      "level": "",
+      "icon": "fa-solid fa-file-word",
+      "keywords": ["Microsoft Office Suite (Word, Excel, PowerPoint)", "Zoom"]
+    },
+    {
+      "name": "Reference Management",
+      "level": "",
+      "icon": "fa-solid fa-book",
+      "keywords": ["Endnote", "Zotero", "CSL", "CLS"]
     }
   ],
   "languages": [
@@ -263,7 +330,7 @@
     {
       "name": "Psychiatrie",
       "icon": "fa-solid fa-brain",
-      "keywords": ["workplace interventions", "ADHD", "severe mental illness", "theory of mind"]
+      "keywords": ["intervention", "travail", "TDAH", "troubles de santé mentale graves", "théorie de l'esprit"]
     },
     {
       "name": "Extra",
