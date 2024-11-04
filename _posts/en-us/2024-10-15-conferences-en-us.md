@@ -18,48 +18,56 @@ suggestions_form: true
 
 {% include conferences-list.html %}
 
-<div class="table-responsive">
+<!-- <div class="table-responsive">
   <table
     id="conference-table"
+    class="table"
     data-click-to-select="true"
     data-pagination="true"
     data-search="true"
     data-toggle="table"
+    data-page-size="10"
+    data-show-columns="true"
+    data-sort-name="date"
+    data-sort-order="desc"
     data-maintain-meta-data="true"
+    data-minimum-count-columns="2"
+    data-show-fullscreen="true"
+    data-show-pagination-switch="true"
     data-url="{{ '/assets/json/en-us/conferences-en-us.json' | relative_url }}">
     <thead class="table-light">
       <tr class="table-header-row">
         <th 
-          data-field="acronym" 
-          data-halign="left" 
-          data-align="left" 
+          data-field="acronym"
+          data-halign="left"
+          data-align="left"
           data-sortable="true"
-          data-width="120"
-          data-width-unit="px">Abbreviation</th>
+          data-width="10"
+          data-width-unit="%">Abbreviation</th>
         <th 
-          data-field="name" 
-          data-formatter="conferenceNameFormatter" 
+          data-field="name"
+          data-formatter="conferenceNameFormatter"
           data-sortable="true"
-          data-width="40"
+          data-width="60"
           data-width-unit="%">Conference Name</th>
         <th 
-          data-field="date" 
-          data-halign="left" 
-          data-align="left" 
+          data-field="date"
+          data-halign="left"
+          data-align="middle"
           data-sortable="true"
-          data-width="140"
-          data-width-unit="px">Date</th>
+          data-width="10"
+          data-width-unit="%">Date</th>
         <th 
-          data-field="location" 
-          data-halign="left" 
-          data-align="left" 
+          data-field="location"
+          data-halign="left"
+          data-align="left"
           data-sortable="true"
-          data-width="25"
+          data-width="15"
           data-width-unit="%">Location</th>
       </tr>
     </thead>
   </table>
-</div>
+</div> -->
 
 <style>
 /* Ensure consistent column widths and proper text wrapping */
@@ -89,7 +97,3 @@ suggestions_form: true
   }
 }
 </style>
-
-<div class="caption" style="text-align: left;">
-    {{- site.data[site.active_lang].strings.footer.last_updated }}{% include date_format.liquid format="short" date=page.last_updated }}
-</div>

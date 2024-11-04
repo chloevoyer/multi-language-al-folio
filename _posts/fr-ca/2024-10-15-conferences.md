@@ -3,6 +3,7 @@ layout: post
 title: Conférences de psychologie 🎙️
 icon: # fa-solid fa-microphone fa-solid fa-presentation-screen OR fa-podium-star 
 date: 2024-10-15 11:12:00
+last_updated: 2024-11-03 11:12:00
 description: Une liste non exhaustive de conférences dans le domaine de la psychologie
 tags: conférences
 categories: recherche
@@ -32,8 +33,4 @@ pretty_table: true
       </tr>
     </thead>
   </table>
-</div>
-
-<div class="caption" style="text-align: left;">
-    {{- site.data[site.active_lang].strings.footer.last_updated }}{% include date_format.liquid format="short" date=page.last_updated %}
 </div>

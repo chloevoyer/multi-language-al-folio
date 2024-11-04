@@ -19,9 +19,9 @@ layout: default
     <h1 class="post-title">{{ page.title }} {% if page.icon %}<i class="fa fa-sm {{ page.icon }}"></i>{% endif %}</h1>
     <p class="post-meta">
       {{ site.data[site.active_lang].strings.post.created_in }}
-      {% include date_format.liquid format='long' date=page.date -%}
+      {% include date_format.liquid format='long' date=page.date -%}<br>
       {{ site.data[site.active_lang].strings.post.last_updated }}
-      {% include date_format.liquid format='long' date=page.date -%}
+      {% include date_format.liquid format='long' date=page.last_updated -%}
       {%- if page.author -%}
         {{- site.data[site.active_lang].strings.post.created_by }}
         {{ page.author -}}

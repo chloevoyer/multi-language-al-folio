@@ -21,6 +21,8 @@ strong {
 
 hr {
   border-top: 1px solid var(--global-divider-color);
+  background-color: var(--global-theme-color);
+  color: var(--global-bg-color);
 }
 
 table {
@@ -55,10 +57,11 @@ table.table a {
 
 .table-light {
   background-color: var(--global-theme-color);
+  color: var(--global-bg-color);
 }
 
 .table-header-row {
-  color: var(--global-bg-color) !important;
+  color: var(--global-bg-color);
 }
 
 .table-dark {
