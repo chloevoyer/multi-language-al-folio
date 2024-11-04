@@ -1,9 +1,21 @@
+{% assign today_date = 'now' | date: '%Y-%m-%d' %}
+{% assign conferences = site.data.conferences.conferences | sort: 'date' %}
+
 <div class="conferences-container">
   <div class="filters">
     <select id="yearFilter" onchange="filterConferences()">
-      {% assign years = site.data.conferences.conferences | map: 'date' | map: 'year' | uniq | sort | reverse %}
-      {% for year in years %}
-        <option value="{{ year }}" {% if year == "2024" %}selected{% endif %}>{{ year }}</option>
+      <option value="upcoming" selected>Upcoming 2024</option>
+      {% assign all_years = site.data.conferences.conferences | map: 'date' | sort | reverse %}
+      {% assign unique_years = "" | split: "" %}
+      {% for date in all_years %}
+        {% assign year = date | slice: 0, 4 %}
+        {% unless unique_years contains year %}
+          {% assign unique_years = unique_years | push: year %}
+        {% endunless %}
+      {% endfor %}
+      
+      {% for year in unique_years %}
+        <option value="{{ year }}">{{ year }}</option>
       {% endfor %}
     </select>
 
@@ -38,22 +50,33 @@
     </select>
   </div>
 
+  <div class="filters-summary">
+    <div id="conferenceCount" class="conference-count">
+      Showing <span id="visibleCount">0</span> conferences
+    </div>
+  </div>
+  
   <div class="conferences">
     {% assign conferences = site.data.conferences.conferences | sort: 'date' %}
     {% for conference in conferences %}
       {% assign conf_year = conference.date | date: "%Y" %}
       <div class="conference-card" 
-           data-year="{{ conf_year }}"
-           data-discipline="{{ conference.discipline }}"
-           data-modality="{{ conference.modality }}"
-           data-location="{{ conference.local_abroad }}"
-           {% if conf_year == "2024" %}style="display: block;"{% else %}style="display: none;"{% endif %}>
-        <div class="conference-header">
+      data-year="{{ conference.date | slice: 0, 4 }}"
+      data-date="{{ conference.date }}"
+      data-discipline="{{ conference.discipline }}"
+      data-modality="{{ conference.modality }}"
+      data-location="{{ conference.local_abroad }}"
+      {% if conference.date | slice: 0, 4 == "2024" and conference.date >= today_date %}
+        style="display: block;"
+      {% else %}
+        style="display: none;"
+      {% endif %}>
+  
+         <div class="conference-header">
           {% if conference.url != "" %}
             <h2>
               <a href="{{ conference.url }}" target="_blank" rel="noopener noreferrer" class="conference-name-link">
                 {{ conference.name }}
-                <span class="external-link-icon">↗</span>
               </a>
             </h2>
           {% else %}
@@ -163,6 +186,7 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .conference-header h2 {
@@ -222,7 +246,7 @@
 .date-info, .location-info {
   font-size: 0.925rem;
   color: #374151;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
 }
 
 .deadline {
@@ -265,6 +289,18 @@
   margin-top: 1rem;
 }
 
+.filters-summary {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conference-count {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
 @media (max-width: 768px) {
   .conferences-container {
     padding: 1rem;
@@ -285,38 +321,72 @@
 </style>
 
 <script>
-function filterConferences() {
-  const yearFilter = document.getElementById('yearFilter').value;
-  const disciplineFilter = document.getElementById('disciplineFilter').value;
-  const modalityFilter = document.getElementById('modalityFilter').value;
-  const locationFilter = document.getElementById('locationFilter').value;
+  function filterConferences() {
+    const yearFilter = document.getElementById('yearFilter').value;
+    const disciplineFilter = document.getElementById('disciplineFilter').value;
+    const modalityFilter = document.getElementById('modalityFilter').value;
+    const locationFilter = document.getElementById('locationFilter').value;
+    
+    const today = new Date().toISOString().split('T')[0];
+    let visibleCount = 0;
+    
+    // Get all cards and convert to array for sorting
+    const cards = Array.from(document.querySelectorAll('.conference-card'));
+    
+    // Sort cards by date
+    cards.sort((a, b) => {
+      const dateA = a.dataset.date;
+      const dateB = b.dataset.date;
+      return dateA.localeCompare(dateB);
+    });
+    
+    // Reorder cards in DOM
+    const container = document.querySelector('.conferences');
+    cards.forEach(card => container.appendChild(card));
+    
+    // Filter cards
+    cards.forEach(card => {
+      const year = card.dataset.year;
+      const date = card.dataset.date;
+      const discipline = card.dataset.discipline;
+      const modality = card.dataset.modality;
+      const location = card.dataset.location;
+      
+      let matchesYearFilter;
+      if (yearFilter === 'upcoming') {
+        matchesYearFilter = year === '2024' && date >= today;
+      } else {
+        matchesYearFilter = year === yearFilter;
+      }
+      
+      const matchesDiscipline = !disciplineFilter || discipline === disciplineFilter;
+      const matchesModality = !modalityFilter || modality === modalityFilter;
+      const matchesLocation = !locationFilter || location === locationFilter;
+      
+      const shouldShow = matchesYearFilter && matchesDiscipline && matchesModality && matchesLocation;
+      card.style.display = shouldShow ? 'block' : 'none';
+      
+      if (shouldShow) visibleCount++;
+    });
+    
+    // Update the count display
+    const countElement = document.getElementById('visibleCount');
+    if (countElement) {
+      countElement.textContent = visibleCount;
+    }
+    
+    // Show/hide no results message
+    const noResultsDiv = document.getElementById('noResults');
+    if (noResultsDiv) {
+      noResultsDiv.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+  }
   
-  let visibleCount = 0;
-  
-  document.querySelectorAll('.conference-card').forEach(card => {
-    const year = card.dataset.year;
-    const discipline = card.dataset.discipline;
-    const modality = card.dataset.modality;
-    const location = card.dataset.location;
-    
-    const matchesYear = !yearFilter || year === yearFilter;
-    const matchesDiscipline = !disciplineFilter || discipline === disciplineFilter;
-    const matchesModality = !modalityFilter || modality === modalityFilter;
-    const matchesLocation = !locationFilter || location === locationFilter;
-    
-    const shouldShow = matchesYear && matchesDiscipline && matchesModality && matchesLocation;
-    card.style.display = shouldShow ? 'block' : 'none';
-    
-    if (shouldShow) visibleCount++;
+  // Initialize with upcoming events
+  document.addEventListener('DOMContentLoaded', function() {
+    const yearFilter = document.getElementById('yearFilter');
+    yearFilter.value = "upcoming";
+    filterConferences();
   });
+  </script>
   
-  // Show/hide no results message
-  const noResultsDiv = document.getElementById('noResults');
-  noResultsDiv.style.display = visibleCount === 0 ? 'block' : 'none';
-}
-
-// Initialize filtering to show 2024 by default
-document.addEventListener('DOMContentLoaded', function() {
-  filterConferences();
-});
-</script>

@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: Garmin to Notion Integration ⌚
+title: Garmin 2 Notion Integration ⌚
 toc: true
 icon: # ti-icon-brand-notion
 date: 2024-09-01 11:12:00
@@ -40,7 +40,9 @@ Ensure that your environment secrets are correctly configured for secure data ac
 * [Create](https://developers.notion.com/docs/create-a-notion-integration) a new integration and copy the integration token.
 * [Share](https://www.notion.so/help/add-and-manage-connections-with-the-api#enterprise-connection-settings) the integration with the target database in Notion.
 
-### 3. Run Scripts (if not using automatic workflow)
+### 3. Run Scripts Locally
+
+If you don't want to use automatically workflow:
 
 * Run [garmin-activities.py](https://github.com/chloevoyer/garmin-to-notion/blob/main/garmin-activities.py) to sync your Garmin activities to Notion.
 `python garmin-activities.py`

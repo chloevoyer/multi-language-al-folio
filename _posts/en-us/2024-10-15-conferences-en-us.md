@@ -24,11 +24,11 @@ suggestions_form: true
     data-pagination="true"
     data-search="true"
     data-toggle="table"
-    data-url="{{ '/assets/_data/conferences.json' | relative_url }}">
+    data-url="{{ '/assets/json/en-us/conferences_en-us.json' | relative_url }}">
     <thead class="table-light">
       <tr class="table-header-row">
-        <th data-field="abbreviation" data-halign="left" data-align="left" data-sortable="true">Abbreviation</th>
-        <th data-field="title" data-formatter="conferenceNameFormatter" data-sortable="true">Conference Name</th>
+        <th data-field="acronym" data-halign="left" data-align="left" data-sortable="true">Abbreviation</th>
+        <th data-field="name" data-formatter="conferenceNameFormatter" data-sortable="true">Conference Name</th>
         <th data-field="location" data-halign="left" data-align="left" data-sortable="true">Location</th>
         <th data-field="date" data-halign="left" data-align="left" data-sortable="true">Date</th>
         <th data-field="theme" data-halign="left" data-align="left" data-sortable="true">Theme</th>
