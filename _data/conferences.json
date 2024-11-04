@@ -36,17 +36,6 @@
       "url": "https://en.neurosymposium.ca/home"
     },
     {
-      "name": "Canadian Association for Neuroscience",
-      "acronym": "CAN",
-      "date": "2023-05-28",
-      "submission_deadline": "2023-01-31",
-      "location": "Montreal, QC",
-      "local_abroad": "CAN 🍁",
-      "modality": "",
-      "discipline": "NEURO",
-      "theme": ""
-    },
-    {
       "name": "10th World Congress Of Cognitive and Behavioral Therapies",
       "acronym": "WCBCT",
       "date": "2023-06-01",
@@ -56,18 +45,6 @@
       "discipline": "CBT",
       "theme": "",
       "url": "http://wccbt2023.org/"
-    },
-    {
-      "name": "International Congress of Cognitive Psychotherapy",
-      "acronym": "ICCP",
-      "date": "2023-11-09",
-      "submission_deadline": "2021-01-15",
-      "location": "Vancouver, Canada",
-      "local_abroad": "INT 🌎",
-      "modality": "VRL 💻",
-      "discipline": "PSYC",
-      "theme": "",
-      "url": "https://cognitivepsychotherapy.annualcongress.com/"
     },
     {
       "name": "Canadian Association of Cognitive and Behavioural Therapies",
@@ -174,7 +151,8 @@
       "name": "Colloque de professionnelles et professionnels en emploi",
       "acronym": "QUARIERA",
       "date": "2025-02-12",
-      "location": "",
+      "submission_deadline": "2024-10-18",
+      "location": "Sherbrooke, QC",
       "local_abroad": "QC ⚜️",
       "modality": "IRL 🤝",
       "discipline": "COUNS",
