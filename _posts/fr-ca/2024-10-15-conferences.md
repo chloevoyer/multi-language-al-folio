@@ -29,7 +29,6 @@ pretty_table: true
         <th data-field="name" data-formatter="conferenceNameFormatter" data-sortable="true">Conference Name</th>
         <th data-field="location" data-halign="left" data-align="left" data-sortable="true">Location</th>
         <th data-field="date" data-halign="left" data-align="left" data-sortable="true">Date</th>
-        <th data-field="theme" data-halign="left" data-align="left" data-sortable="true">Theme</th>
       </tr>
     </thead>
   </table>

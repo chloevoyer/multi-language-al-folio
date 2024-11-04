@@ -20,6 +20,8 @@ layout: default
     <p class="post-meta">
       {{ site.data[site.active_lang].strings.post.created_in }}
       {% include date_format.liquid format='long' date=page.date -%}
+      {{ site.data[site.active_lang].strings.post.last_updated }}
+      {% include date_format.liquid format='long' date=page.date -%}
       {%- if page.author -%}
         {{- site.data[site.active_lang].strings.post.created_by }}
         {{ page.author -}}

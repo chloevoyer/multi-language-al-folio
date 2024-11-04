@@ -1,6 +1,5 @@
-{
-  "conferences": [
-    {
+[
+  {
       "name": "32nd International Congress of Psychology",
       "acronym": "ICP",
       "date": "2021-07-18",
@@ -224,7 +223,7 @@
       "acronym": "CPA",
       "date": "2025-06-12",
       "submission_deadline": "2024-12-03",
-      "location": "St. John’s, Newfoundland",
+      "location": "St. John's, Newfoundland",
       "local_abroad": "CAN 🍁",
       "modality": "IRL 🤝",
       "discipline": "PSYC",
@@ -278,4 +277,3 @@
       "url": "https://isps.org/events/isps-lausanne-2026/"
     }
   ]
-}

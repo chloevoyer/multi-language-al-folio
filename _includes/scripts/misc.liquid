@@ -35,7 +35,7 @@
 <script>
   function conferenceNameFormatter(value, row) {
     if (row.url) {
-      return '<a href="' + row.url + '" target="_blank" title="' + row.url + '">' + value + '</a>';
+      return '<a href="' + row.url + '" target="_blank" name="' + row.url + '">' + value + '</a>';
     }
     return value;
   }

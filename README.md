@@ -1,7 +1,6 @@
 ## To do
 
 - [ ] Program short/long academic CVs
-- [ ] Right-align award amout $
 - [ ] Different colours for entry types in bib
 - [ ] ...
 - [ ] ...
