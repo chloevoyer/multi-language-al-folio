@@ -3,6 +3,7 @@ layout: distill
 title: "Protecting Academia: How to Identify and Avoid Predatory Publishing Practices 🦉"
 icon: # fa-solid fa-flag
 date: 2024-11-01 11:00:00
+last_updated: 2024-11-04 11:00:00
 description: Tips for navigating predatory publishing practices in academia
 tags: literature-review strategies
 categories: research
@@ -19,20 +20,8 @@ authors:
       name: McGill University
 ---
 
-<swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/predatory-practices/slide-1.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/predatory-practices/slide-2.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/predatory-practices/slide-3.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/predatory-practices/slide-4.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/predatory-practices/slide-6.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/predatory-practices/slide-7.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/predatory-practices/slide-8.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/predatory-practices/slide-10.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/predatory-practices/slide-12.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/predatory-practices/slide-13.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/predatory-practices/slide-14.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/predatory-practices/slide-15.jpeg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-</swiper-container>
+
+{% include image-slider.html path="assets/img/predatory-practices/" count=15 extension="jpeg" %}
 
 In today's digital age, a concerning trend has emerged in academic publishing that threatens research integrity: predatory publishing practices. I recently fell into a fascinating research rabbit hole about this topic, and what I discovered was both alarming and important to share.
 
