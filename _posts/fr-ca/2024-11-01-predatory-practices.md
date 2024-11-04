@@ -38,13 +38,13 @@ The consequences of predatory publishing extend far beyond individual researcher
 
 ## How to Spot Predatory Journals
 
-### Common Tactics:
+### Common Tactics
 - Aggressive email solicitation (spam)
 - Minimal or non-existent peer review
 - Unclear pricing and publishing fees
 - Poor website quality with blurry images
 
-### Red Flags:
+### Red Flags
 - Frequent spelling and grammatical errors
 - Non-professional or non-journal affiliated email addresses
 - Unclear copyright policies or demands for copyright retention
@@ -52,12 +52,12 @@ The consequences of predatory publishing extend far beyond individual researcher
 
 ## Identifying Predatory Conferences
 
-### Marketing Tactics to Watch For:
+### Marketing Tactics to Watch For
 - Spam email campaigns
 - Promises of guaranteed publication
 - Claims of editorial acceptance
 
-### Logistical Red Flags:
+### Logistical Red Flags
 - Unclear venue information
 - Multiple conferences scheduled simultaneously at the same location
 - Poor or missing schedule details
@@ -71,13 +71,13 @@ The consequences of predatory publishing extend far beyond individual researcher
 
 ## Best Practices for Protection
 
-### For Individual Researchers:
+### For Individual Researchers
 - Establish a due diligence checklist
 - Consult with peers and mentors
 - Follow institutional publishing guidelines
 - Document suspicious interactions
 
-### For Institutions:
+### For Institutions
 - Develop clear publishing policies
 - Provide support systems
 - Establish training programs
