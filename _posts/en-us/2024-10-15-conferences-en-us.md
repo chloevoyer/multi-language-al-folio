@@ -24,7 +24,7 @@ suggestions_form: true
     data-pagination="true"
     data-search="true"
     data-toggle="table"
-    data-url="{{ '/assets/json/en-us/conferences.json' | relative_url }}">
+    data-url="{{ '/assets/_data/conferences.json' | relative_url }}">
     <thead class="table-light">
       <tr class="table-header-row">
         <th data-field="abbreviation" data-halign="left" data-align="left" data-sortable="true">Abbreviation</th>
