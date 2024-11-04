@@ -1,27 +1,49 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% assign content = data[1] | sort: "date" | reverse %}
+  {% assign total_amount = 0 %}
   {% for content in content %}
+    {% if content.amount %}
+      {% assign total_amount = total_amount | plus: content.amount %}
+    {% endif %}
     <li class="list-group-item">
       <div class="row">
         <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
-          {% if content.date %}
-            {% assign date = content.date | date: "%Y" %}
+          {% if content.startDate %}
+            {% assign startDate = content.startDate | split: '-' | slice: 0, 1 | join: '.' %}
+            {% assign endDate = content.endDate | split: '-' | slice: 0, 1 | join: '.' %}
+            {% if endDate != '' %}
+              {% assign date = startDate | append: '—' | append: endDate %}
+            {% else %}
+              {% assign date = startDate %}
+            {% endif %}
           {% else %}
-            {% assign date = '' %}
+            {% assign date = null %}
           {% endif %}
-          <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+          <span class="badge font-weight-bold danger-color-dark text-lowercase align-middle" style="min-width: 100px">
             {{ date }}
           </span>
         </div>
-        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+        <div class="col-xs-8 cl-sm-8 col-md-8 mt-2 mt-md-0">
           <h6 class="title font-weight-bold ml-1 ml-md-4">
             <i class="fa-solid fa-sack-dollar iconaward" style="padding-bottom: 2%"></i>
             <a href="{{ content.url }}">{{ content.title }}</a>
           </h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.awarder }}</h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; margin-top: -0.5rem;">{{ content.awarder }}</h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-weight: 500">{{ content.summary }}</h6>
+        </div>
+        <div class="col-xs-2 cl-sm-2 col-md-2 mt-2 mt-md-0 text-right">
+          {% if content.amount %}
+            <h6 class="font-weight-bold">${{ content.amount | divided_by: 1 | floor | number_with_delimiter }}</h6>
+          {% endif %}
         </div>
       </div>
     </li>
   {% endfor %}
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col-12 text-right">
+        <h6 class="font-weight-bold">Total Awarded: ${{ total_amount | divided_by: 1 | floor | number_with_delimiter }}</h6>
+      </div>
+    </div>
+  </li>
 </ul>

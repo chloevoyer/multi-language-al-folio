@@ -24,7 +24,12 @@
           <tr>
             <td></td>
             <td class="list-group-name">
-              <b>{{ content.issuer }}</b>&nbsp; &middot; &nbsp;{{ content.date }}
+              {% if content.issuer %}
+                <b>{{ content.issuer }}</b>
+                {% if content.date %}&nbsp;&middot;&nbsp;{{ content.date }}{% endif %}
+              {% elsif content.date %}
+                {{ content.date }}
+              {% endif %}
             </td>
           </tr>
         </tbody>

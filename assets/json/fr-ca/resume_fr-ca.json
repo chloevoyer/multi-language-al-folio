@@ -61,30 +61,34 @@
     {
       "title": "Prix pour la meilleur présentation orale",
       "date": "2024-10-18",
-      "awarder": "Centre d'études sur le stress humain (Sonia Lupien)",
+      "awarder": "Centre d'études sur le stress humain (CESH) &ndash; (Sonia Lupien)",
       "url": "https://stresshumain.ca/",
-      "summary": "500 $"
+      "amount": 500,
+      "summary": ""
     },
     {
       "title": "Bourses pour étudiants postsecondaires (Maîtrise)",
       "date": "2024-09-13",
       "awarder": "Fondation Desjardins",
       "url": "https://www.desjardins.com/a-propos/responsabilite-sociale-cooperation/education-cooperation/fondation-desjardins/bourses-etudes/index.jsp",
-      "summary": "3 000 $"
+      "amount": 3000,
+      "summary": ""
     },
     {
       "title": "Bourse d'études supérieures du Canada &ndash; Programme de maîtrise (BESC-M)",
       "date": "2024-04-02",
       "awarder": "Instituts de recherche en santé du Canada (IRSC)",
       "url": "https://webapps.cihr-irsc.gc.ca/decisions/p/project_details.html?applId=506175&lang=fr",
-      "summary": "27 000 $"
+      "amount": 27000,
+      "summary": ""
     },
     {
       "title": "Bourse d'impact sur la santé mentale au travail",
       "date": "2024-03-22",
       "awarder": "Recherche en santé mentale Canada (RSMC), cofinancée en partenariat avec Mitacs et le Groupe financier iA",
       "url": "https://www.mhrc-rsmc.ca/boursesdetudes/chloevoyer",
-      "summary": "15 000 $"
+      "amount": 15000,
+      "summary": ""
     }
   ],
   "work": [
