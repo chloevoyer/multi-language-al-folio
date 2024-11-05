@@ -60,8 +60,7 @@
       "endDate": "2017-05-01",
       "location": "Montreal, QC",
       "score": "",
-      "courses": [],
-      "description": "Dean's Honours List"
+      "courses": ["Dean's Honours List"]
     }
   ],
   "awards": [
@@ -69,7 +68,7 @@
       "title": "Best Presentation Award",
       "startDate": "2024-10-18",
       "endDate": "",
-      "awarder": "Centre for Studies on Human Stress (CSHS) &ndash; (Sonia Lupien)",
+      "awarder": "Centre for Studies on Human Stress (CSHS) &ndash; Sonia Lupien",
       "url": "https://humanstress.ca/",
       "amount": 500,
       "summary": ""

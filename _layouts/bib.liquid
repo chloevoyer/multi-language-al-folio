@@ -196,7 +196,7 @@
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
-    {% comment %} --- {% endcomment %}
+    {% comment %} date {% endcomment %}
     {% if entry.day %}
       {% capture entryday %}{{ " " }}{{ entry.day | replace: "-", "&ndash;" }}{% endcapture %}
     {% endif %}
