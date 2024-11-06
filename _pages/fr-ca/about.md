@@ -16,6 +16,12 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Étudiante en MSc Santé Mentale à l'Université McGill, ayant reçu **3 bourses** lors de ma première année de master, je souhaite poursuivre des recherches en doctorat sur l'efficacité des interventions en milieu de travail pour les adultes vivant avec une maladie mentale.
+Chloé est étudiante à la **maîtrise en santé mentale** à l'**Université McGill**, co-supervisée par **Ian Gold** et **Geneviève Sauvé**.
 
-Mon récent **travail académique** se concentre sur la compréhension de l'impact des interventions psychosociales sur les personnes atteintes de TDAH en milieu de travail. Mon objectif est de fournir des idées précieuses pouvant contribuer à améliorer la qualité de vie professionnelle des personnes atteintes de TDAH.
+Récipiendaire de **3 bourses d'excellence** durant sa première année de maitrise, elle détient un baccalauréat en psychologie de la même université et aspire à poursuivre ses études au doctorat en **psychologie clinique**.
+
+Sa recherche s'inscrit dans le cadre de l'étude Cerveaux@Travail-TDAH, un essai contrôlé randomisé qui examine la qualité de vie au travail chez les adultes ayant un TDAH.
+
+Ce qui la motive particulièrement dans son domaine est l'opportunité de transformer les connaissances issues de la recherche en interventions concrètes pour améliorer la qualité de vie au travail des personnes atteintes de TDAH.
+
+Dans ses temps libres, Chloé est une sportive qui aime la **course à pied** et le **vélo**. Elle cultive également sa passion pour les **plantes** d'intérieur, un passe-temps qui a grandi pendant la pandémie de COVID-19 et qui ne l'a plus quittée depuis.
