@@ -50,9 +50,9 @@
     <div class="title">
       {{- entry.title -}}
 			{% if entry.chair and entry.symposium %}
-        <br><i>{{ site.data[site.active_lang].strings.bibliography.booktitle_prefix | capitalize }} {{ entry.chair }} (chair), {{ entry.symposium }}</i>
+        <br><i>{{ site.data[site.active_lang].strings.bibliography.symposium_prefix | capitalize }} {{ entry.chair }} (chair), {{ entry.symposium }}</i>
       {% elsif entry.symposium %}
-        <br><i>{{ site.data[site.active_lang].strings.bibliography.booktitle_prefix | capitalize }} {{ entry.symposium }}</i>
+        <br><i>{{ site.data[site.active_lang].strings.bibliography.symposium_prefix | capitalize }} {{ entry.symposium }}</i>
       {% endif %}
       {%- if entry.type contains 'internal' or entry.type contains 'oral' or entry.type contains 'poster' or entry.type contains 'symposium' | downcase -%}
         <span class="entry-type" style="font-family: 'Monaco', monospace !important; font-weight: bold;">
@@ -195,7 +195,7 @@
     {% if entry.type == 'article' %}
       {% capture entrytype %}<em>{{ entry.journal }}</em><br>{% endcapture %}
     {% elsif proceedings contains entry.type %}
-      {% capture entrytype %}<em>{{ site.data[site.active_lang].strings.bibliography.booktitle_prefix | capitalize }} {{ entry.booktitle }}</em><br>{% endcapture %}
+      {% capture entrytype %}<em>{{ site.data[site.active_lang].strings.bibliography.book_prefix | capitalize }} {{ entry.booktitle }}</em><br>{% endcapture %}
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{ entry.school }}</em><br>{% endcapture %}
     {% else %}
