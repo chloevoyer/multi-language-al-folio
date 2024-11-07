@@ -9,7 +9,7 @@ nav_order: 5
 pretty_table: true
 ---
 
-<p>Veuillez consulter mon <a href="https://scholar.google.fr/citations?user=g53kVKwAAAAJ&hl=fr&oi=sra" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i>&nbsp;Google Scholar</a> pour la liste la plus à jour des publications.</p>
+<p>Veuillez consulter <a href="https://scholar.google.fr/citations?user=g53kVKwAAAAJ&hl=fr&oi=sra" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i>&nbsp;Google Scholar</a> pour une liste plus à jour de mes publications.</p>
 
 <!-- Bibsearch Feature -->
 
