@@ -3,7 +3,7 @@ page_id: talks
 layout: page
 title: présentations
 permalink: /talks/
-description: "* indique une contribution égale et une co-auteur principal."
+description: "* indique une contribution égale et co-auteur principal."
 nav: true
 nav_order: 5
 pretty_table: true

@@ -8,7 +8,7 @@ tags: revue-litérature stratégies
 categories: recherche
 lang: fr-ca
 featured: false
-thumbnail: assets/img/predatory-practices/slide-1.jpeg
+thumbnail: assets/slides/predatory-practices/slide-1.jpeg
 images:
   slider: true
 toc: true
@@ -19,7 +19,7 @@ authors:
       name: McGill University
 ---
 
-{% include image-slider.html path="assets/img/predatory-practices/" count=15 extension="jpeg" %}
+{% include image-slider.html path="assets/slides/predatory-practices/" count=15 extension="jpeg" %}
 
 In today's digital age, a concerning trend has emerged in academic publishing that threatens research integrity: predatory publishing practices. I recently fell into a fascinating research rabbit hole about this topic, and what I discovered was both alarming and important to share.
 

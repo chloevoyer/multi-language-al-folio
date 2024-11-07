@@ -97,6 +97,7 @@ cv:
   region: Region
   releaseDate: Release date
   score: Score
+  since: since
   skills: Skills
   startDate: Start date
   studyType: Study type

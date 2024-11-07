@@ -14,13 +14,13 @@ authors:
     url: "https://www.researchgate.net/profile/Chloe-Voyer"
     affiliations:
       name: McGill University
-thumbnail: assets/img/screening-tips/slide-1.jpeg
+thumbnail: assets/slides/screening-tips/slide-1.jpeg
 images:
   compare: false
   slider: true
 ---
 
-{% include image-slider.html path="assets/img/screening-tips" count=14 extension="jpeg" %}
+{% include image-slider.html path="assets/slides/screening-tips" count=14 extension="jpeg" %}
 
 When conducting a literature review, I start by identifying the quickest elements to exclude an article. This approach allows me to streamline the process and focus on the most relevant studies.
 

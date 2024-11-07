@@ -106,7 +106,7 @@
       "name": "DREAM BIG Lab",
       "url": "https://dreambigresearch.com/",
       "startDate": "2023-05-09",
-      "endDate": "",
+      "endDate": null,
       "summary": "Lady Davis Institute for Medical Research&mdash;Jewish General Hospital",
       "highlights": []
     },
@@ -241,7 +241,7 @@
       "url": "https://www.jgh.ca/care-services/occupational-therapy/occupational-therapy-mental-health/child-psychiatry-services/",
       "icon": "fa-solid fa-hands-helping",
       "startDate": "2023-05-09",
-      "endDate": "",
+      "endDate": null,
       "summary": "Lady Davis Institute for Medical Research&mdash;Jewish General Hospital",
       "highlights": []
     },
