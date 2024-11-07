@@ -195,9 +195,9 @@
         </span>
       {%- endif -%}
       {% if entry.chair and entry.symposium %}
-        <br><i>In {{ entry.chair }} (chair), {{ entry.symposium }}</i>
+        <br><i>{{ site.data[site.active_lang].strings.bibliography.booktitle_prefix | capitalize }} {{ entry.chair }} (chair), {{ entry.symposium }}</i>
       {% elsif entry.symposium %}
-        <br><i>In {{ entry.symposium }}</i>
+        <br><i>{{ site.data[site.active_lang].strings.bibliography.booktitle_prefix | capitalize }} {{ entry.symposium }}</i>
       {% endif %}
     </div>
 
