@@ -190,7 +190,7 @@
     {% if entry.type == 'article' %}
       {% capture entrytype %}<em>{{ entry.journal }}</em><br>{% endcapture %}
     {% elsif proceedings contains entry.type %}
-      {% capture entrytype %}<em>In {{ entry.booktitle }}</em><br>{% endcapture %}
+      {% capture entrytype %}<em>{{ site.data[site.active_lang].strings.bibliography.booktitle_prefix | capitalize }} {{ entry.booktitle }}</em><br>{% endcapture %}
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{ entry.school }}</em><br>{% endcapture %}
     {% else %}
@@ -236,11 +236,11 @@
     <div class="links">
       {% if entry.award %}
         <a class="award btn btn-sm z-depth-0" role="button">
-          {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
+          {%- if entry.award_name %}{{ entry.award_name }}{% else %}{{ site.data[site.active_lang].strings.bibliography.awarded }}{% endif -%}
         </a>
       {% endif %}
       {% if entry.abstract %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+        <a class="abstract btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.abs }}</a>
       {% endif %}
       {% if entry.tldr %}
         <a class="tldr btn btn-sm z-depth-0" role="button">TLDR</a>
@@ -269,7 +269,7 @@
         {% if entry.supp contains '://' %}
           <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
         {% else %}
-          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
+          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.supp }}</a>
         {% endif %}
       {% endif %}
       {% if entry.video and site.enable_video_embedding %}
@@ -287,10 +287,10 @@
         {% endif %}
       {% endif %}
       {% if entry.blog %}
-        <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.blogue }}</a>
+        <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.blog }}</a>
       {% endif %}
       {% if entry.code %}
-        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.code }}</a>
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}

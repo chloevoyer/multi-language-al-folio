@@ -2,11 +2,17 @@ archive_category: an archive of posts in this category
 archive_tag: an archive of posts with this tag
 archive_year: an archive of posts from this year
 bibliography:
-  conference: conference
-  slides: slides
-  poster: poster
-  video: video
-  website: website
+  abs: Abs
+  awarded: Awarded
+  blog: Blog
+  conference: Conference
+  code: Code
+  slides: Slides
+  poster: Poster
+  supp: Supp
+  tldr: TLDR
+  video: Video
+  website: Website
 blog: blog
 blog_posts:
   navigation_title: blog

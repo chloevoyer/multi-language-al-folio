@@ -2,9 +2,15 @@ archive_category: une archive des articles de cette catégorie
 archive_tag: une archive de messages avec ce tag
 archive_year: une archive des articles de cette année
 bibliography:
+  abs: résumé
+  awarded: prix
+  blog: blogue
+  code: code
   conference: conférence
   slides: diapos
   poster: affiche
+  supp: supp
+  tldr: TLDR
   video: vidéo
   website: site web
 blog: blogue
@@ -23,7 +29,7 @@ categories:
   fun: amusement
   work: travail
 citation:
-  bibtex: "ou comme entrée BibTeX :"
+  bibtex: "ou comme entrée BibTeX :"
   introduction: introduction
 contact_note: Que vous souhaitiez collaborer, parler davantage de mon travail ou avoir des questions, n'hésitez pas à me contacter.
 cv:
