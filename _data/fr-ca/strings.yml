@@ -5,6 +5,8 @@ bibliography:
   abs: résumé
   awarded: prix
   blog: blogue
+  book_prefix: dans
+  symposium_prefix: dans
   code: code
   conference: conférence
   slides: diapos
