@@ -5,6 +5,8 @@ bibliography:
   abs: Abs
   awarded: Awarded
   blog: Blog
+  book_prefix: in
+  symposium_prefix: in
   conference: Conference
   code: Code
   slides: Slides
