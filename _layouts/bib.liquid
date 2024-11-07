@@ -48,10 +48,15 @@
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
     <div class="title">
-      {{- entry.title -}}<br>
+      {{- entry.title -}}
+			{% if entry.chair and entry.symposium %}
+        <br><i>{{ site.data[site.active_lang].strings.bibliography.booktitle_prefix | capitalize }} {{ entry.chair }} (chair), {{ entry.symposium }}</i>
+      {% elsif entry.symposium %}
+        <br><i>{{ site.data[site.active_lang].strings.bibliography.booktitle_prefix | capitalize }} {{ entry.symposium }}</i>
+      {% endif %}
       {%- if entry.type contains 'internal' or entry.type contains 'oral' or entry.type contains 'poster' or entry.type contains 'symposium' | downcase -%}
         <span class="entry-type" style="font-family: 'Monaco', monospace !important; font-weight: bold;">
-          [{{ entry.type }}]
+          <br>[{{ entry.type }}]
         </span>
       {%- endif -%}
     </div>
@@ -185,21 +190,6 @@
     <!-- Journal/Book title and date -->
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
-
-    {% comment %} Handle chair and symposium directly after title in the title div {% endcomment %}
-    <div class="title">
-      {{- entry.title -}}
-      {%- if entry.type contains 'internal' or entry.type contains 'oral' or entry.type contains 'poster' or entry.type contains 'symposium' | downcase -%}
-        <span class="entry-type" style="font-family: 'Monaco', monospace !important; font-weight: bold;">
-          [{{ entry.type }}]
-        </span>
-      {%- endif -%}
-      {% if entry.chair and entry.symposium %}
-        <br><i>{{ site.data[site.active_lang].strings.bibliography.booktitle_prefix | capitalize }} {{ entry.chair }} (chair), {{ entry.symposium }}</i>
-      {% elsif entry.symposium %}
-        <br><i>{{ site.data[site.active_lang].strings.bibliography.booktitle_prefix | capitalize }} {{ entry.symposium }}</i>
-      {% endif %}
-    </div>
 
     {% comment %} Normalize entry types {% endcomment %}
     {% if entry.type == 'article' %}
