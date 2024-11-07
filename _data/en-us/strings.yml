@@ -3,30 +3,51 @@ archive_tag: an archive of posts with this tag
 archive_year: an archive of posts from this year
 bibliography:
   abs: Abs
+  arxiv: arXiv
   awarded: Awarded
+  bib: Bib
   blog: Blog
   book_prefix: in
   symposium_prefix: in
+  chair_role: chair
   conference: Conference
   code: Code
+  html: HTML
+  last_author_prefix: and
   slides: Slides
+  pdf: PDF
   poster: Poster
   supp: Supp
   tldr: TLDR
+  url: URL
   video: Video
   website: Website
+  more_authors:
+    one: "more author"
+    multiple: "more authors"
+    click: "click to view"
+  types:
+    symposium: Symposium
+    poster: Poster
+    oral: Oral
+    internal: Internal
+    article: Article
+    inproceedings: Conference Paper
+    thesis: Thesis
+    mastersthesis: "Master's Thesis"
+    phdthesis: PhD Thesis
 blog: blog
 blog_posts:
   navigation_title: blog
   read_time: min read
   tags:
-    funding: "funding"
-    communication: "communication"
-    lifestyle: "lifestyle"
-    literature-review: "literature-review"
-    strategies: "strategies"
+    funding: funding
+    communication: communication
+    lifestyle: lifestyle
+    literature-review: literature-review
+    strategies: strategies
   categories:
-    research: "research"
+    research: research
 categories:
   fun: fun
   work: work

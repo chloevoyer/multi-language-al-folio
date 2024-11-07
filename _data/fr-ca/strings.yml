@@ -3,18 +3,39 @@ archive_tag: une archive de messages avec ce tag
 archive_year: une archive des articles de cette année
 bibliography:
   abs: résumé
+  arxiv: arXiv
   awarded: prix
+  bib: Bib
   blog: blogue
   book_prefix: dans
   symposium_prefix: dans
+  chair_role: "resp."
   code: code
   conference: conférence
+  html: HTML
+  last_author_prefix: et
   slides: diapos
+  pdf: PDF
   poster: affiche
   supp: supp
   tldr: TLDR
+  url: URL
   video: vidéo
   website: site web
+  more_authors:
+    one: "autre auteur·e"
+    multiple: "autres auteur·es"
+    click: "cliquez pour voir"
+  types:
+    symposium: symposium
+    poster: affiche
+    oral: communication orale
+    internal: présentation interne
+    article: article
+    inproceedings: article de conférence
+    thesis: thèse
+    mastersthesis: mémoire de maîtrise
+    phdthesis: thèse de doctorat
 blog: blogue
 blog_posts:
   read_time: minutes de lecture

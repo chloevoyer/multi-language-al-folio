@@ -48,15 +48,37 @@
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
     <div class="title">
-      {{- entry.title -}}
-			{% if entry.chair and entry.symposium %}
-        <br><i>{{ site.data[site.active_lang].strings.bibliography.symposium_prefix | capitalize }} {{ entry.chair }} (chair), {{ entry.symposium }}</i>
+      {% if site.active_lang == 'fr-ca' and entry.translated_title %}
+        {{- entry.translated_title -}}
+        {% if entry.title %}
+          <br><i>{{ entry.title }}</i>
+        {% endif %}
+      {% else %}
+        {{- entry.title -}}
+        {% if entry.translated_title and site.active_lang == 'en-us' %}
+          <br><i>{{ entry.translated_title }}</i>
+        {% endif %}
+      {% endif %}
+
+      {% if entry.chair and entry.symposium %}
+        <br><i>{{ site.data[site.active_lang].strings.bibliography.symposium_prefix | capitalize }} {{ entry.chair }} ({{- site.data[site.active_lang].strings.bibliography.chair_role -}}), {{ entry.symposium }}</i>
       {% elsif entry.symposium %}
         <br><i>{{ site.data[site.active_lang].strings.bibliography.symposium_prefix | capitalize }} {{ entry.symposium }}</i>
       {% endif %}
-      {%- if entry.type contains 'internal' or entry.type contains 'oral' or entry.type contains 'poster' or entry.type contains 'symposium' | downcase -%}
+      {%- if entry.type contains 'internal' or entry.type contains 'oral' or entry.type contains 'poster' or entry.type contains 'symposium' -%}
         <span class="entry-type" style="font-family: 'Monaco', monospace !important; font-weight: bold;">
-          <br>[{{ entry.type }}]
+          <br>[
+          {%- case entry.type -%}
+            {%- when 'internal' -%}
+              {{- site.data[site.active_lang].strings.bibliography.types.internal | downcase -}}
+            {%- when 'oral' -%}
+              {{- site.data[site.active_lang].strings.bibliography.types.oral | downcase -}}
+            {%- when 'poster' -%}
+              {{- site.data[site.active_lang].strings.bibliography.types.poster | downcase -}}
+            {%- when 'symposium' -%}
+              {{- site.data[site.active_lang].strings.bibliography.types.symposium | downcase -}}
+          {%- endcase -%}
+          ]
         </span>
       {%- endif -%}
     </div>
@@ -107,7 +129,7 @@
     {%- endif -%}
     {%- if forloop.length > 1 -%}
       {% if forloop.first == false %},&nbsp;{% endif %}
-      {%- if forloop.last and author_array_limit == author_array_size %}and&nbsp;{% endif -%}
+      {%- if forloop.last and author_array_limit == author_array_size %}{{ site.data[site.active_lang].strings.bibliography.last_author_prefix }}&nbsp;{% endif -%}
     {% endif %}
     {%- if author_is_self -%}
       <em>
@@ -123,23 +145,24 @@
       {%- else -%}
         {{- initials -}}
         {{ author_last_html -}}
-      {% endif %}
+      {%- endif -%}
     {%- endif -%}
   {% endfor %}
   {%- assign more_authors = author_array_size | minus: author_array_limit -%}
-  {%- assign more_authors_hide = more_authors | append: ' more author' -%}
+  {%- if more_authors > 1 -%}
+    {%- assign more_authors_hide = more_authors | append: ' ' | append: site.data[site.active_lang].strings.bibliography.more_authors.multiple -%}
+  {%- else -%}
+    {%- assign more_authors_hide = more_authors | append: ' ' | append: site.data[site.active_lang].strings.bibliography.more_authors.one -%}
+  {%- endif -%}
+  
   {% if more_authors > 0 %}
-    {%- if more_authors > 1 -%}
-      {% assign more_authors_hide = more_authors_hide | append: 's' %}
-    {%- endif -%}
-    {% assign more_authors_show = '' %}
+    {%- assign more_authors_show = '' %}
     {%- for author in entry.author_array offset: author_array_limit -%}
       {% comment %}Convert additional authors' names to initials with symbols{% endcomment %}
       {%- assign first_name_symbols = author.first | regex_replace: '[^*∗†‡§¶‖&^]', '' -%}
       {%- assign first_name_clean = author.first | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
       {%- assign name_parts = first_name_clean | split: " " -%}
-      {%- assign initials = "" -%}
-      
+      {%- assign initials = "" -%}      
       {% comment %}Add symbols before the first initial for more authors{% endcomment %}
       {%- if first_name_symbols != "" -%}
         {%- assign initials = '<sup>' | append: first_name_symbols | append: '</sup>' -%}
@@ -155,7 +178,7 @@
         {% assign more_authors_show = more_authors_show | append: ', ' %}
       {% endunless %}
     {%- endfor -%}
-    , and
+    , {{ site.data[site.active_lang].strings.bibliography.last_author_prefix }}
     <span
       class="more-authors"
       title="click to view {{ more_authors_hide }}"
@@ -249,31 +272,31 @@
         <a class="abstract btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.abs }}</a>
       {% endif %}
       {% if entry.tldr %}
-        <a class="tldr btn btn-sm z-depth-0" role="button">TLDR</a>
+        <a class="tldr btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.tldr }}</a>
       {% endif %}
       {% if entry.arxiv %}
-        <a href="{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+        <a href="{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.arxiv }}</a>
       {% endif %}
       {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+        <a class="bibtex btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.bib }}</a>
       {% endif %}
       {% if entry.html %}
         {% if entry.html contains '://' %}
-          <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">URL</a>
+          <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.url }}</a>
         {% else %}
-          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.html }}</a>
         {% endif %}
       {% endif %}
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
-          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.pdf }}</a>
         {% else %}
-          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.pdf }}</a>
         {% endif %}
       {% endif %}
       {% if entry.supp %}
         {% if entry.supp contains '://' %}
-          <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
+          <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.supp }}</a>
         {% else %}
           <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.supp }}</a>
         {% endif %}
