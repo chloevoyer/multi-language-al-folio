@@ -111,7 +111,7 @@ cv:
 filter: Type to filter
 footer:
   copyright: ""
-  last_updated: "Last updated: "
+  last_updated: "Last updated on "
 latest_posts: latest posts
 months:
   long:
