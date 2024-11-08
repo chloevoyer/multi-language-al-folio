@@ -199,9 +199,9 @@
       "endDate": "2018-08-27",
       "summary": "",
       "highlights": [
-        "Assessed and applied social interventions among children with special needs ages 4-13",
-        "Integrated children with special needs in social and academic activities",
-        "e.g., autism, oppositional defiant disorder (ODD), physical handicaps, phobias, anxiety disorders, AD/HD, diabetes"
+        "Évaluation et application d'interventions sociales auprès d'enfants à besoins particuliers âgés de 4 à 13 ans",
+        "Intégration d'enfants à besoins particuliers dans des activités sociales et académiques",
+        "p. ex., autisme, trouble oppositionnel avec provocation (TOP), handicaps physiques, phobies, troubles anxieux, TDA/H, diabète"
       ]
     },
     {
@@ -222,8 +222,8 @@
       "endDate": "2017",
       "summary": "",
       "highlights": [
-        "Created a company website in the scope of a CEGEP course using cascading style sheets (.css) and html coding",
-        "Implemented a new digital filing system and accounting program for administrative tasks"
+        "Création d'un site web d'entreprise dans le cadre d'un cours au CÉGEP en utilisant les feuilles de style en cascade (.css) et le codage HTML",
+        "Mise en place d'un nouveau système de classement numérique et d'un programme de comptabilité pour les tâches administratives"
       ]
     }
   ],
@@ -267,7 +267,7 @@
     {
       "name": "Prévention du suicide",
       "date": "2021",
-      "issuer": "Association québécoise de prévention du suicide Accreditation (AQPS)",
+      "issuer": "Association québécoise de prévention du suicide (AQPS)",
       "url": "https://aqps.info/",
       "icon": "fa-solid fa-life-ring"
     },
@@ -288,37 +288,37 @@
   ],
   "skills": [
     {
-      "name": "Programming Languages & Tools",
+      "name": "Langages & outils de programmation",
       "level": "",
       "icon": "fa-solid fa-code",
       "keywords": ["R", "Python", "SQL", "LaTeX", "Markdown", "HTML", "CSS/SCSS", "Ruby", "JavaScript", "Liquid"]
     },
     {
-      "name": "Data Analysis & Statistical Software",
+      "name": "Analyse de données & logiciels statistiques",
       "level": "",
       "icon": "fa-solid fa-chart-line",
       "keywords": ["FreeSurfer", "Statistical Package for the Social Sciences (SPSS)", "REDCap", "NVivo"]
     },
     {
-      "name": "Operating Systems & Environments",
+      "name": "Systèmes d'exploitation & environnements",
       "level": "",
       "icon": "fa-solid fa-desktop",
       "keywords": ["Linux", "Ubuntu", "Virtual Machine", "Docker"]
     },
     {
-      "name": "Office Software & Communication Tools",
+      "name": "Logiciels de bureau & outils de communication",
       "level": "",
       "icon": "fa-solid fa-file-word",
       "keywords": ["Microsoft Office Suite (Word, Excel, PowerPoint)", "Zoom"]
     },
     {
-      "name": "Reference Management",
+      "name": "Gestion des références",
       "level": "",
       "icon": "fa-solid fa-book",
       "keywords": ["Endnote", "Zotero", "CSL", "CLS"]
     },
     {
-      "name": "Other",
+      "name": "Autres",
       "level": "",
       "icon": "fa-solid fa-book",
       "keywords": ["Notion", "Jekyll", "GitHub"]

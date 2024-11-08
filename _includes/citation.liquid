@@ -10,8 +10,6 @@
 
 <p>{{ site.data[site.active_lang].strings.citation.bibtex }}</p>
 
-<p>or as a BibTeX entry:</p>
-
 {% capture citation_code -%}
 ```bibtex
 @article{ {{- site.last_name | downcase }}{{ page.date | date: "%Y" }}{{ page.title | slugify }},

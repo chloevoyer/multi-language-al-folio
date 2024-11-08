@@ -260,7 +260,7 @@
     {
       "name": "Motivational Interviewing",
       "date": "2021",
-      "issuer": "Porte-Voix",
+      "issuer": "Web Psychology",
       "url": "https://www.webpsychology.ca/",
       "icon": "fa-solid fa-comments"
     },
@@ -272,23 +272,23 @@
       "icon": "fa-solid fa-clipboard-check"
     },
     {
-      "name": "Prévention du suicide",
+      "name": "Suicide Prevention",
       "date": "2021",
-      "issuer": "Quebec Association for Suicide Prevention Accreditation",
+      "issuer": "Quebec Association for Suicide Prevention",
       "url": "https://aqps.info/",
       "icon": "fa-solid fa-life-ring"
     },
     {
-      "name": "Premiers soins",
+      "name": "First Aid",
       "date": "2021",
-      "issuer": "Croix-Rouge Canadienne",
+      "issuer": "Canadian Red Cross",
       "url": "https://www.redcross.ca/",
       "icon": "fa-solid fa-kit-medical"
     },
     {
-      "name": "Secourisme aquatiques",
+      "name": "Lifeguard",
       "date": "2014",
-      "issuer": "Société de sauvetage",
+      "issuer": "Lifesaving Society",
       "url": "https://sauvetage.qc.ca/en",
       "icon": "fa-solid fa-umbrella-beach"
     }
