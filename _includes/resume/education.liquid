@@ -43,6 +43,7 @@
           </h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-weight: bolder">{{ content.area }}</h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.institution }}</h6>
+          {% unless site.short_cv %}
           <ul class="items" style="padding-left: 3.5em; margin: 0; line-height: 1.2">
             {% for item in content.courses %}
               <li style="margin-bottom: 0.3em">
@@ -50,6 +51,7 @@
               </li>
             {% endfor %}
           </ul>
+          {% endunless %}
         </div>
       </div>
     </li>

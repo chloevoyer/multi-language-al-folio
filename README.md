@@ -1,5 +1,5 @@
 ## To do
 
-- [ ] Program short/long academic CVs
+- [x] Program short/long academic CVs
 - [ ] Different colours for entry types in bib
 - [ ] ...
