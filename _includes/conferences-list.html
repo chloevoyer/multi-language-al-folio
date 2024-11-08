@@ -4,7 +4,7 @@
 <div class="conferences-container">
   <div class="filters">
     <select id="yearFilter" onchange="filterConferences()">
-      <option value="upcoming" selected>Upcoming 2024</option>
+      <option value="upcoming" selected>{{ site.data[site.active_lang].strings.list_psyc_conf.upcoming }}</option>
       {% assign all_years = site.data.conferences.conferences | map: 'date' | sort | reverse %}
       {% assign unique_years = "" | split: "" %}
       {% for date in all_years %}
@@ -20,7 +20,7 @@
     </select>
 
     <select id="disciplineFilter" onchange="filterConferences()">
-      <option value="">All Disciplines</option>
+      <option value="">{{ site.data[site.active_lang].strings.list_psyc_conf.all_disciplines }}</option>
       {% assign disciplines = site.data.conferences.conferences | map: 'discipline' | uniq | sort %}
       {% for discipline in disciplines %}
         {% if discipline != "" %}
@@ -30,7 +30,7 @@
     </select>
     
     <select id="modalityFilter" onchange="filterConferences()">
-      <option value="">All Modalities</option>
+      <option value="">{{ site.data[site.active_lang].strings.list_psyc_conf.all_modalities }}</option>
       {% assign modalities = site.data.conferences.conferences | map: 'modality' | uniq | sort %}
       {% for modality in modalities %}
         {% if modality != "" %}
@@ -40,7 +40,7 @@
     </select>
 
     <select id="locationFilter" onchange="filterConferences()">
-      <option value="">All Locations</option>
+      <option value="">{{ site.data[site.active_lang].strings.list_psyc_conf.all_locations }}</option>
       {% assign locations = site.data.conferences.conferences | map: 'local_abroad' | uniq | sort %}
       {% for location in locations %}
         {% if location != "" %}
@@ -52,7 +52,7 @@
 
   <div class="filters-summary">
     <div id="conferenceCount" class="conference-count">
-      Showing <span id="visibleCount">0</span> conferences
+      {{ site.data[site.active_lang].strings.list_psyc_conf.showing }} <span id="visibleCount">0</span> {{ site.data[site.active_lang].strings.list_psyc_conf.conferences }}
     </div>
   </div>
   
@@ -90,13 +90,13 @@
         <div class="conference-info">
           <div class="date-info">
             <div class="event-date">
-              <strong>Event Date:</strong> 
+              <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.event_date }}</strong> 
               {{ conference.date | date: "%B %d, %Y" }}
             </div>
             
             {% if conference.submission_deadline %}
               <div class="deadline">
-                <strong>Submission Deadline:</strong>
+                <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.deadline }}</strong>
                 {{ conference.submission_deadline | date: "%B %d, %Y" }}
               </div>
             {% endif %}
@@ -104,13 +104,13 @@
 
           <div class="location-info">
             <div class="location">
-              <strong>Location:</strong> {{ conference.location }}
+              <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.location }}</strong> {{ conference.location }}
             </div>
           </div>
 
           {% if conference.theme != "" %}
             <div class="theme">
-              <strong>Theme:</strong> {{ conference.theme }}
+              <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.theme }}</strong> {{ conference.theme }}
             </div>
           {% endif %}
         </div>
@@ -141,7 +141,7 @@
   </div>
 
   <div id="noResults" class="no-results" style="display: none;">
-    No conferences found matching your filters.
+    {{ site.data[site.active_lang].strings.list_psyc_conf.noresults }}
   </div>
 </div>
 

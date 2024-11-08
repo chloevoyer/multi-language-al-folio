@@ -19,7 +19,7 @@ authors:
       name: McGill University
 ---
 
-{% include image-slider.html path="assets/slides/predatory-practices/" count=15 extension="jpeg" %}
+{% include image-slider.html path="assets/slides/predatory-practices/" count=11 extension="jpeg" %}
 
 In today's digital age, a concerning trend has emerged in academic publishing that threatens research integrity: predatory publishing practices. I recently fell into a fascinating research rabbit hole about this topic, and what I discovered was both alarming and important to share.
 

@@ -6,4 +6,4 @@ related_posts: false
 lang: fr-ca
 ---
 
-Publication de mon premier dépôt GitHub [garmin-to-notion](https://github.com/chloevoyer/garmin-to-notion) qui automatise la synchronisation entre <img src="/assets/img/icons/garmin-connect.png" width="20" height="20" alt="garmin"> Garmin et <img src="/assets/img/icons/Notion.svg" width="18" height="18" alt="notion"> Notion <img src="/assets/img/icons/github-logo-purple.svg" width="20" height="20" alt="octicon">
+Publication de mon 1<sup>er</sup> dépôt GitHub [garmin-to-notion](https://github.com/chloevoyer/garmin-to-notion) qui automatise la synchronisation entre <img src="/assets/img/icons/garmin-connect.png" width="20" height="20" alt="garmin"> Garmin et <img src="/assets/img/icons/Notion.svg" width="18" height="18" alt="notion"> Notion <img src="/assets/img/icons/github-logo-purple.svg" width="20" height="20" alt="octicon">

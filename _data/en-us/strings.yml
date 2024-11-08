@@ -2,6 +2,16 @@ archive_category: an archive of posts in this category
 archive_tag: an archive of posts with this tag
 archive_year: an archive of posts from this year
 bibliography:
+  abbrs:
+    adhd_work: ADHD@Work
+    cog_bias: Cognitive Biases
+    future_work: Future Work Skills
+    job_tenure: Job Tenure
+    mavan: MAVAN Cohort
+    pred_prac: Predatory Practices
+    rct: RCT Protocol
+    resilience: Resilience
+    youth_psyc: Youth Psychopathology
   abs: Abs
   arxiv: arXiv
   awarded: Awarded
@@ -43,17 +53,25 @@ blog_posts:
   tags:
     funding: funding
     communication: communication
+    conferences: conferences
     lifestyle: lifestyle
     literature-review: literature-review
+    productivity: productivity
     strategies: strategies
   categories:
     research: research
+    tools: tools
 categories:
   fun: fun
   work: work
 citation:
   bibtex: "or as a BibTeX entry:"
   introduction: "If you found this useful, please cite this as:"
+conferences_attended:
+  heading: conferences attended 
+  date: date
+  name: conference
+  location: location
 contact_note: Whether you're looking to collaborate, talk more about my work or have any questions, please don't hesitate to reach out.
 cv:
   address: Address
@@ -104,6 +122,7 @@ cv:
   summary: Summary
   table_of_contents: Table of Contents
   title: Title
+  total_award: "Total Awarded: "
   url: Website
   username: Username
   volunteer: Volunteer
@@ -113,6 +132,18 @@ footer:
   copyright: ""
   last_updated: "Last updated on "
 latest_posts: latest posts
+list_psyc_conf: 
+  upcoming: Upcoming 2024
+  all_disciplines: All Disciplines
+  all_modalities: All Modalities
+  all_locations: All Locations
+  showing: Showing
+  noresults: No conferences found matching your filters.
+  conferences: conferences
+  event_date: "Event Date:"
+  deadline: "Submission Deadline:"
+  location: "Location:"
+  theme: "Theme:"
 months:
   long:
     january: January
@@ -159,6 +190,12 @@ post:
   created_in: Created on
   created_by: by
   last_updated: Last updated on
+publications:
+  heading: publications
+  articles: peer-reviewed journal articles
+  inproceedings: conference proceedings
+  preprints: preprints
+  unpublished: manuscripts in preparation
 references: References
 related_posts:
   description: "Here are some more articles you might like to read next:"
@@ -199,3 +236,5 @@ suggestions_form:
   conference_url: "Conference URL"
   additional_info: "Additional Information"
   submit: "Submit Suggestion"
+talks:
+  oral: oral presentations

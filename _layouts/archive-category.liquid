@@ -10,7 +10,8 @@ layout: default
   <article class="archive">
     <div class="table-responsive">
       <table class="table table-sm table-borderless">
-        {% for post in page.posts %}
+        {% assign filtered_posts = page.posts | where: "lang", site.active_lang %}
+        {% for post in filtered_posts %}
           <tr>
             <th scope="row">{% include date_format.liquid format='short' date=post.date %}</th>
             <td>

@@ -48,17 +48,38 @@
   </li>
 </ul>
 
+<input type="hidden" id="translation-total-award" value="{{ site.data[site.active_lang].strings.cv.total_award }}">
+<input type="hidden" id="active-lang" value="{{ site.active_lang }}">
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  // Get the translation and language from the hidden inputs
+  const translation = document.getElementById('translation-total-award').value;
+  const activeLang = document.getElementById('active-lang').value;
+
   // Format individual amounts
   document.querySelectorAll('.amount-display').forEach(function(element) {
     const amount = Number(element.dataset.amount);
-    element.textContent = '$' + amount.toLocaleString();
+    const hasDecimals = amount % 1 !== 0;
+    const formattedNumber = amount.toLocaleString(activeLang, {
+      minimumFractionDigits: hasDecimals ? 2 : 0,
+      maximumFractionDigits: 2
+    });
+    element.textContent = activeLang === 'en-us' 
+      ? '$' + formattedNumber
+      : formattedNumber + ' $';
   });
 
   // Format total amount
   const totalElement = document.querySelector('.total-amount');
   const totalAmount = Number(totalElement.dataset.amount);
-  totalElement.textContent = 'Total Awarded: $' + totalAmount.toLocaleString();
+  const hasDecimals = totalAmount % 1 !== 0;
+  totalElement.textContent = `${translation}${totalAmount.toLocaleString(activeLang, {
+    style: 'currency',
+    currency: 'CAD',
+    currencyDisplay: 'symbol',
+    minimumFractionDigits: hasDecimals ? 2 : 0,
+    maximumFractionDigits: 2
+  }).replace('CA', '')}`;
 });
 </script>

@@ -7,5 +7,6 @@ tags: lifestyle productivity
 categories: tools
 featured: false
 redirect: https://www.notion.so/templates/fitness-tracker-738
+thumbnail: assets/img/life/notion-template.png
 lang: en-us
 ---

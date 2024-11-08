@@ -60,7 +60,8 @@
   "awards": [
     {
       "title": "Prix pour la meilleur présentation orale",
-      "date": "2024-10-18",
+      "startDate": "2024-10-18",
+      "endDate": null,
       "awarder": "Centre d'études sur le stress humain (CESH) &ndash; (Sonia Lupien)",
       "url": "https://stresshumain.ca/",
       "amount": 500,
@@ -68,7 +69,8 @@
     },
     {
       "title": "Bourses pour étudiants postsecondaires (Maîtrise)",
-      "date": "2024-09-13",
+      "startDate": "2024-09-13",
+      "endDate": null,
       "awarder": "Fondation Desjardins",
       "url": "https://www.desjardins.com/a-propos/responsabilite-sociale-cooperation/education-cooperation/fondation-desjardins/bourses-etudes/index.jsp",
       "amount": 3000,
@@ -76,7 +78,8 @@
     },
     {
       "title": "Bourse d'études supérieures du Canada &ndash; Programme de maîtrise (BESC-M)",
-      "date": "2024-04-02",
+      "startDate": "2024-04-02",
+      "endDate": "2025-09-01",
       "awarder": "Instituts de recherche en santé du Canada (IRSC)",
       "url": "https://webapps.cihr-irsc.gc.ca/decisions/p/project_details.html?applId=506175&lang=fr",
       "amount": 27000,
@@ -84,7 +87,8 @@
     },
     {
       "title": "Bourse d'impact sur la santé mentale au travail",
-      "date": "2024-03-22",
+      "startDate": "2024-03-22",
+      "endDate": null,
       "awarder": "Recherche en santé mentale Canada (RSMC), cofinancée en partenariat avec Mitacs et le Groupe financier iA",
       "url": "https://www.mhrc-rsmc.ca/boursesdetudes/chloevoyer",
       "amount": 15000,
@@ -97,7 +101,7 @@
       "name": "DREAM BIG Lab",
       "url": "https://dreambigresearch.com/#",
       "startDate": "2023-05-09",
-      "endDate": "",
+      "endDate": null,
       "summary": "Institut Lady Davis pour la recherche médicale&mdash;Hôpital général juif",
       "highlights": []
     },
@@ -230,7 +234,7 @@
       "url": "https://www.jgh.ca/care-services/occupational-therapy/occupational-therapy-mental-health/child-psychiatry-services/",
       "icon": "fa-solid fa-hands-helping",
       "startDate": "2023-05-09",
-      "endDate": "",
+      "endDate": null,
       "summary": "Institut de recherche médicale Lady Davis&mdash;Hôpital général juif",
       "highlights": []
     },
@@ -250,7 +254,7 @@
       "name": "Entretien motivationnel en santé mentale",
       "date": "2021",
       "issuer": "Porte-Voix",
-      "url": "webpsychology.ca",
+      "url": "https://www.porte-voix.qc.ca/",
       "icon": "fa-solid fa-comments"
     },
     {
@@ -264,21 +268,21 @@
       "name": "Prévention du suicide",
       "date": "2021",
       "issuer": "Association québécoise de prévention du suicide Accreditation (AQPS)",
-      "url": "",
+      "url": "https://aqps.info/",
       "icon": "fa-solid fa-life-ring"
     },
     {
       "name": "Premiers soins",
       "date": "2021",
       "issuer": "Croix-Rouge Canadienne",
-      "url": "",
+      "url": "https://www.croixrouge.ca/",
       "icon": "fa-solid fa-kit-medical"
     },
     {
       "name": "Secourisme aquatiques",
       "date": "2014",
       "issuer": "Société de sauvetage",
-      "url": "",
+      "url": "https://sauvetage.qc.ca/fr",
       "icon": "fa-solid fa-umbrella-beach"
     }
   ],

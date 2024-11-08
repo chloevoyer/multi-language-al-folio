@@ -67,7 +67,7 @@
     {
       "title": "Best Presentation Award",
       "startDate": "2024-10-18",
-      "endDate": "",
+      "endDate": null,
       "awarder": "Centre for Studies on Human Stress (CSHS) &ndash; Sonia Lupien",
       "url": "https://humanstress.ca/",
       "amount": 500,
@@ -261,7 +261,7 @@
       "name": "Motivational Interviewing",
       "date": "2021",
       "issuer": "Porte-Voix",
-      "url": "webpsychology.ca",
+      "url": "https://www.webpsychology.ca/",
       "icon": "fa-solid fa-comments"
     },
     {
@@ -275,21 +275,21 @@
       "name": "Prévention du suicide",
       "date": "2021",
       "issuer": "Quebec Association for Suicide Prevention Accreditation",
-      "url": "",
+      "url": "https://aqps.info/",
       "icon": "fa-solid fa-life-ring"
     },
     {
       "name": "Premiers soins",
       "date": "2021",
       "issuer": "Croix-Rouge Canadienne",
-      "url": "",
+      "url": "https://www.redcross.ca/",
       "icon": "fa-solid fa-kit-medical"
     },
     {
       "name": "Secourisme aquatiques",
       "date": "2014",
       "issuer": "Société de sauvetage",
-      "url": "",
+      "url": "https://sauvetage.qc.ca/en",
       "icon": "fa-solid fa-umbrella-beach"
     }
   ],

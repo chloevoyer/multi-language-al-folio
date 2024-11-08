@@ -7,4 +7,4 @@ published: true
 lang: en-us
 ---
 
-<b>Won 2<sup>nd</sup> place for Best Presentation Award</b> at the [CoP-SMT](https://colloque2024.santementaletravail.ca/) conference! 🏆
+<b>Won Best Presentation Award</b> at the [CoP-SMT](https://colloque2024.santementaletravail.ca/) conference! 🏆

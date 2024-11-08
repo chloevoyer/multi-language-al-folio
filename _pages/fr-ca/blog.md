@@ -96,9 +96,9 @@ pagination:
                     {% assign year = post.date | date: "%Y" %}
 
                     <p class="post-meta">
-                      {{ read_time }}&nbsp;{{ site.data[site.active_lang].strings.blog_posts.read_time }}&nbsp; &middot; &nbsp;
+                      <i class="fa-solid fa-clock-four fa-sm"></i>  {{ read_time }}&nbsp;{{ site.data[site.active_lang].strings.blog_posts.read_time }}&nbsp; &middot; &nbsp;
                       <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
-                        <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
+                        <i class="fa-solid fa-calendar fa-sm"></i>  {{ year }} </a>
                     </p>
                   </div>
                 </div>

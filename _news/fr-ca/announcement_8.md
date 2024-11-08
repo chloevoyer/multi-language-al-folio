@@ -7,4 +7,4 @@ published: true
 lang: fr-ca
 ---
 
-A remporté la <b>2<sup>e</sup> place pour le prix de la meilleure présentation</b> à la conférence [CoP-SMT](https://colloque2024.santementaletravail.ca/) ! 🏆
+A remporté le <b>prix de la meilleure présentation</b> à la conférence [CoP-SMT](https://colloque2024.santementaletravail.ca/) ! 🏆

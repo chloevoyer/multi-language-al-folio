@@ -22,8 +22,8 @@
             {% endif %}
           </abbr>
         {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
-        {% endif %}
+        <abbr class="badge rounded w-100">{{ site.data[site.active_lang].strings.bibliography.abbrs[entry.abbr] | default: entry.abbr }}</abbr>
+      {% endif %}
       {% endif %}
       {% if entry.preview %}
         {% if entry.preview contains '://' %}
@@ -48,18 +48,10 @@
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
     <div class="title">
-      {% if site.active_lang == 'fr-ca' and entry.translated_title %}
-        {{- entry.translated_title -}}
-        {% if entry.title %}
-          <br><i>{{ entry.title }}</i>
-        {% endif %}
-      {% else %}
-        {{- entry.title -}}
-        {% if entry.translated_title and site.active_lang == 'en-us' %}
-          <br><i>{{ entry.translated_title }}</i>
-        {% endif %}
+      {{- entry.title -}}
+      {% if entry.translated_title %}
+        <br><i>{{ entry.translated_title }}</i>
       {% endif %}
-
       {% if entry.chair and entry.symposium %}
         <br><i>{{ site.data[site.active_lang].strings.bibliography.symposium_prefix | capitalize }} {{ entry.chair }} ({{- site.data[site.active_lang].strings.bibliography.chair_role -}}), {{ entry.symposium }}</i>
       {% elsif entry.symposium %}
@@ -235,6 +227,7 @@
     {% if entry.year %}
       {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
     {% endif %}
+    
     {% if entry.conference %}
       {% assign entrytype_text = entrytype | strip_html | strip %}
       {% capture entrytype %}{{ entrytype }}{% if entrytype_text != "" %}, {% endif %}<em>{{ entry.conference }}</em><br>{% endcapture %}
