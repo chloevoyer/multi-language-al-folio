@@ -253,6 +253,13 @@ search:
     title: utiliser le thème par défaut du système
   theme: thème
 selected_publications: publications sélectionnées
+service: 
+  open_science: contributions à la science ouverte
+  know_mob: activités de mobilisation des connaissances
+  know_user: "Membre d'un comité d'utilisateurs des connaissances pour (2) études :"
+  conf_org: aide au déroulement de conférences
+  reviewer: comités de révision
+  misc: divers
 site_description: un espace ouvert pour la recherche académique
 searchbar: " "
 suggestions_form:

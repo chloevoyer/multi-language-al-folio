@@ -229,6 +229,13 @@ search:
 selected_publications: selected publications
 site_description: an open space for academic research
 searchbar: " "
+service: 
+  open_science: contributions to open science
+  know_mob: knowledge mobilization activities
+  know_user: "Member of a Knowledge User Committee for (2) studies:"
+  conf_org: conference organization
+  reviewer: reviewer
+  misc: miscellaneous
 suggestions_form:
   title: "Suggest a Conference"
   description: "Know a conference that's not on our list? Let us know!"

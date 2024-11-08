@@ -7,4 +7,4 @@ published: true
 lang: en-us
 ---
 
-<b>New publication:<b> [Strengths and challenges to embrace ADHD in employment&ndash;A systematic review](https://doi.org/10.1177/27546330241287655) ⭐
+<b>New publication:</b> [Strengths and challenges to embrace ADHD in employment&ndash;A systematic review](https://doi.org/10.1177/27546330241287655) ⭐
