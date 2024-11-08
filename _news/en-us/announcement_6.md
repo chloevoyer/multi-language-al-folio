@@ -1,10 +1,10 @@
 ---
 layout: post
-date: 2024-10-31 15:59:00-0400
+date: 2024-11-08 8:09:00-0400
 inline: true
 related_posts: true
-published: false
+published: true
 lang: en-us
 ---
 
-New publication: _Strengths and challenges to embrace ADHD in employment: A systematic review_ ⭐
+New publication: <a href='https://doi.org/10.1177/27546330241287655'>_Strengths and challenges to embrace ADHD in employment&ndash;A systematic review_</a>⭐
