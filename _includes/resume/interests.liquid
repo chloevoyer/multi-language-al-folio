@@ -18,7 +18,8 @@
             {% endfor %}
             <td colspan="{{ i }}" class="list-group-category">{{ content.name }}</td>
           </tr>
-          {% for item in content.keywords %}
+          {% assign sorted_keywords = content.keywords | sort %}
+          {% for item in sorted_keywords %}
             <tr>
               <td></td>
               <td class="list-group-name">
