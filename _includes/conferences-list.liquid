@@ -1,90 +1,98 @@
+{% assign today_date = 'now' | date: '%Y-%m-%d' %}
 {% assign conferences = site.data.conferences.conferences | sort: 'date' %}
-{% include scripts/conference-functions.liquid %}
 
 <div class="conferences-container">
   <div class="filters">
-    {{ site.data[site.active_lang].strings.list_psyc_conf.upcoming }}
-    {% assign all_years = site.data.conferences.conferences | map: 'date' | sort | reverse %}
-    {% assign unique_years = '' | split: '' %}
-    {% for date in all_years %}
-      {% assign year = date | slice: 0, 4 %}
-      {% unless unique_years contains year %}
-        {% assign unique_years = unique_years | push: year %}
-      {% endunless %}
-    {% endfor %}
+    <select id="yearFilter" onchange="filterConferences()">
+      <option value="upcoming" selected>{{ site.data[site.active_lang].strings.list_psyc_conf.upcoming }}</option>
+      {% assign all_years = site.data.conferences.conferences | map: 'date' | sort | reverse %}
+      {% assign unique_years = "" | split: "" %}
+      {% for date in all_years %}
+        {% assign year = date | slice: 0, 4 %}
+        {% unless unique_years contains year %}
+          {% assign unique_years = unique_years | push: year %}
+        {% endunless %}
+      {% endfor %}
+      
+      {% for year in unique_years %}
+        <option value="{{ year }}">{{ year }}</option>
+      {% endfor %}
+    </select>
+
+    <select id="disciplineFilter" onchange="filterConferences()">
+      <option value="">{{ site.data[site.active_lang].strings.list_psyc_conf.all_disciplines }}</option>
+      {% assign disciplines = site.data.conferences.conferences | map: 'discipline' | uniq | sort %}
+      {% for discipline in disciplines %}
+        {% if discipline != "" %}
+          <option value="{{ discipline }}">{{ discipline }}</option>
+        {% endif %}
+      {% endfor %}
+    </select>
     
-    {% for year in unique_years %}
-      {{ year }}
-    {% endfor %}
-    
-    {{ site.data[site.active_lang].strings.list_psyc_conf.all_disciplines }}
-    {% assign disciplines = site.data.conferences.conferences | map: 'discipline' | uniq | sort %}
-    {% for discipline in disciplines %}
-      {% if discipline != '' %}
-        {{ discipline }}
-      {% endif %}
-    {% endfor %}
-    
-    {{ site.data[site.active_lang].strings.list_psyc_conf.all_modalities }}
-    {% assign modalities = site.data.conferences.conferences | map: 'modality' | uniq | sort %}
-    {% for modality in modalities %}
-      {% if modality != '' %}
-        {{ modality }}
-      {% endif %}
-    {% endfor %}
-    
-    {{ site.data[site.active_lang].strings.list_psyc_conf.all_locations }}
-    {% assign locations = site.data.conferences.conferences | map: 'local_abroad' | uniq | sort %}
-    {% for location in locations %}
-      {% if location != '' %}
-        {{ location }}
-      {% endif %}
-    {% endfor %}
+    <select id="modalityFilter" onchange="filterConferences()">
+      <option value="">{{ site.data[site.active_lang].strings.list_psyc_conf.all_modalities }}</option>
+      {% assign modalities = site.data.conferences.conferences | map: 'modality' | uniq | sort %}
+      {% for modality in modalities %}
+        {% if modality != "" %}
+          <option value="{{ modality }}">{{ modality }}</option>
+        {% endif %}
+      {% endfor %}
+    </select>
+
+    <select id="locationFilter" onchange="filterConferences()">
+      <option value="">{{ site.data[site.active_lang].strings.list_psyc_conf.all_locations }}</option>
+      {% assign locations = site.data.conferences.conferences | map: 'local_abroad' | uniq | sort %}
+      {% for location in locations %}
+        {% if location != "" %}
+          <option value="{{ location }}">{{ location }}</option>
+        {% endif %}
+      {% endfor %}
+    </select>
   </div>
 
   <div class="filters-summary">
     <div id="conferenceCount" class="conference-count">
-      {{ site.data[site.active_lang].strings.list_psyc_conf.showing }}
-      <span id="visibleCount">0</span>
-      {{ site.data[site.active_lang].strings.list_psyc_conf.conferences }}
+      {{ site.data[site.active_lang].strings.list_psyc_conf.showing }} <span id="visibleCount">0</span> {{ site.data[site.active_lang].strings.list_psyc_conf.conferences }}
     </div>
   </div>
-
+  
   <div class="conferences">
     {% assign conferences = site.data.conferences.conferences | sort: 'date' %}
     {% for conference in conferences %}
       {% assign conf_year = conference.date | date: "%Y" %}
-      
-      <div class="conference-card"
-           data-year="{{ conference.date | slice: 0, 4 }}"
-           data-date="{{ conference.date }}"
-           data-discipline="{{ conference.discipline }}"
-           data-modality="{{ conference.modality }}"
-           data-location="{{ conference.local_abroad }}"
-           style="{% if conference.date | slice: 0, 4 == '2024' and conference.date >= today_date %}display: block;{% else %}display: none;{% endif %}">
-        
-        <div class="conference-header">
-          {% if conference.url != '' %}
+      <div class="conference-card" 
+      data-year="{{ conference.date | slice: 0, 4 }}"
+      data-date="{{ conference.date }}"
+      data-discipline="{{ conference.discipline }}"
+      data-modality="{{ conference.modality }}"
+      data-location="{{ conference.local_abroad }}"
+      {% if conference.date | slice: 0, 4 == "2024" and conference.date >= today_date %}
+        style="display: block;"
+      {% else %}
+        style="display: none;"
+      {% endif %}>
+  
+         <div class="conference-header">
+          {% if conference.url != "" %}
             <h2>
-              <a href="{{ conference.url }}" class="conference-name-link" target="_blank" rel="noopener noreferrer">
+              <a href="{{ conference.url }}" target="_blank" rel="noopener noreferrer" class="conference-name-link">
                 {{ conference.name }}
               </a>
             </h2>
           {% else %}
             <h2>{{ conference.name }}</h2>
           {% endif %}
-          
-          {% if conference.acronym != '' %}
-            <div class="acronym">
-              {{ conference.acronym }}
-            </div>
+          {% if conference.acronym != "" %}
+            <div class="acronym">{{ conference.acronym }}</div>
           {% endif %}
         </div>
 
         <div class="conference-info">
           <div class="date-info">
-            <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.event_date }}</strong>
-            {{ conference.date | date: "%B %d, %Y" }}
+            <div class="event-date">
+              <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.event_date }}</strong> 
+              {{ conference.date | date: "%B %d, %Y" }}
+            </div>
             
             {% if conference.submission_deadline %}
               <div class="deadline">
@@ -95,33 +103,33 @@
           </div>
 
           <div class="location-info">
-            <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.location }}</strong>
-            {{ conference.location }}
+            <div class="location">
+              <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.location }}</strong> {{ conference.location }}
+            </div>
           </div>
 
-          {% if conference.theme != '' %}
+          {% if conference.theme != "" %}
             <div class="theme">
-              <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.theme }}</strong>
-              {{ conference.theme }}
+              <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.theme }}</strong> {{ conference.theme }}
             </div>
           {% endif %}
         </div>
 
         <div class="conference-tags">
           <div class="tags-row">
-            {% if conference.local_abroad != '' %}
+            {% if conference.local_abroad != "" %}
               <div class="tag location-tag">
                 {{ conference.local_abroad }}
               </div>
             {% endif %}
             
-            {% if conference.modality != '' %}
+            {% if conference.modality != "" %}
               <div class="tag modality-tag">
                 {{ conference.modality }}
               </div>
             {% endif %}
             
-            {% if conference.discipline != '' %}
+            {% if conference.discipline != "" %}
               <div class="tag discipline-tag">
                 {{ conference.discipline }}
               </div>
