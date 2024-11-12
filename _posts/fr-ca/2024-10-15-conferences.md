@@ -11,7 +11,7 @@ lang: fr-ca
 featured: true
 related_posts: true
 suggestions_form: true
-thumbnail: https://unsplash.com/photos/unknown-persons-sitting-indoors-wn7dOzUh3Rs
+thumbnail: assets/img/thumbnails/conference.jpg
 ---
 
 ## Une liste non exhaustive de conférences dans le domaine de la psychologie

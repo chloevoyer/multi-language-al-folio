@@ -7,6 +7,6 @@ tags: mode-de-vie productivité
 categories: outils
 featured: false
 redirect: https://www.notion.so/templates/fitness-tracker-738
-thumbnail: assets/img/life/notion-template.png
+thumbnail: assets/img/thumbnails/notion-template.png
 lang: fr-ca
 ---

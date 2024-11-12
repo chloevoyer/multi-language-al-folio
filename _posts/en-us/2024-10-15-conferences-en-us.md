@@ -11,7 +11,7 @@ lang: en-us
 related_posts: true
 featured: true
 suggestions_form: true
-thumbnail: https://unsplash.com/photos/unknown-persons-sitting-indoors-wn7dOzUh3Rs
+thumbnail: assets/img/thumbnails/conference.jpg
 ---
 
 ## A non-exhaustive list of upcoming psychology conferences
