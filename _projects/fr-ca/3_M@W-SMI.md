@@ -6,3 +6,5 @@ img: assets/img/headers/severe-mental-illness.jpg
 importance: 3
 category: recherche
 ---
+
+Un programme Cerveaux@travail pour améliorer la santé mentale au travail des personnes atteintes d’un trouble de santé mentale grave (TMG).

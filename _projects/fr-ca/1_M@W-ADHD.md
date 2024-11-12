@@ -9,4 +9,4 @@ category: recherche
 related_publications: true
 ---
 
-Un programme Minds@Work adapté pour améliorer la qualité de vie au travail des personnes atteintes d’un trouble déficitaire de l’attention/hyperactivité (TDAH) est actuellement en cours d’élaboration.
+Un programme Cerveaux@travail adapté pour améliorer la qualité de vie au travail des personnes atteintes d’un trouble déficitaire de l’attention/hyperactivité (TDAH) est actuellement en cours d’élaboration.

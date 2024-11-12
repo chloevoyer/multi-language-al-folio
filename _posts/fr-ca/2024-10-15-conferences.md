@@ -10,10 +10,9 @@ categories: research
 lang: fr-ca
 featured: true
 related_posts: true
-pretty_table: true
 suggestions_form: true
 ---
 
 ## Une liste non exhaustive de conférences dans le domaine de la psychologie
 
-{% include conferences-list.html %}
+{% include conferences-list.liquid %}
