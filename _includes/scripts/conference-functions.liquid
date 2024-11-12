@@ -6,7 +6,6 @@
 {% assign today_date = 'now' | date: '%Y-%m-%d' %}
 
 {% capture conference_functions %}
-
   function filterConferences() {
     const yearFilter = document.getElementById('yearFilter').value;
     const disciplineFilter = document.getElementById('disciplineFilter').value;
@@ -73,6 +72,5 @@
     const yearFilter = document.getElementById('yearFilter');
     yearFilter.value = "upcoming";
     filterConferences();
-  });
-  
+  });  
 {% endcapture %}
