@@ -365,6 +365,17 @@
     },
     {
       "name": "",
+      "acronym": "LHRS",
+      "date": "2025-05-31",
+      "location": "TBA",
+      "local_abroad": "",
+      "modality": "IRL 🤝",
+      "discipline": "DEV",
+      "theme": "",
+      "url": "https://lifehistoryresearchsociety.com/"
+    },
+    {
+      "name": "",
       "acronym": "WAIMH",
       "date": "2025-06-05",
       "location": "Tampere, Finland",
@@ -571,36 +582,6 @@
       "discipline": "PSYT",
       "theme": "",
       "url": "https://www.cpa-apc.org/annual-conference/"
-    },
-    {
-      "name": "",
-      "acronym": "ISFB",
-      "location": "Not Listed",
-      "local_abroad": "",
-      "modality": "IRL 🤝",
-      "discipline": "NEURO",
-      "theme": "",
-      "url": "https://www.fetalbrainsymposium.com/"
-    },
-    {
-      "name": "",
-      "acronym": "DOHaD",
-      "location": "Hamamatsu, Japan",
-      "local_abroad": "INT 🌎",
-      "modality": "IRL 🤝",
-      "discipline": "DEV",
-      "theme": "",
-      "url": "https://dohadsoc.org/world-congress/"
-    },
-    {
-      "name": "",
-      "acronym": "LHRS",
-      "location": "TBA",
-      "local_abroad": "",
-      "modality": "IRL 🤝",
-      "discipline": "DEV",
-      "theme": "",
-      "url": "https://lifehistoryresearchsociety.com/"
     }
   ]
 }
