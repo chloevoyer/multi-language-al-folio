@@ -1,0 +1,46 @@
+{% assign image_path = include.path | default: "assets/img" %}
+{% assign num_slides = include.count | default: 10 %}
+{% assign extension = include.extension | default: "jpeg" %}
+
+<div class="image-slider">
+  <div class="slider-container">
+    {% for i in (1..num_slides) %}
+      <div class="slide {% if forloop.first %}active{% endif %}">
+        {% capture slide_path %}{{ image_path }}/slide-{{ i }}.{{ extension }}{% endcapture %}
+        {% include figure.liquid loading="eager" path=slide_path class="img-fluid rounded z-depth-1" %}
+      </div>
+    {% endfor %}
+  </div>
+  
+  <button class="slider-nav prev" onclick="moveSlide(-1)">&#10094;</button>
+  <button class="slider-nav next" onclick="moveSlide(1)">&#10095;</button>
+  
+  <div class="slider-dots">
+    {% for i in (1..num_slides) %}
+      <span class="dot {% if forloop.first %}active{% endif %}" onclick="showSlide({{ forloop.index0 }})"></span>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+
+  function showSlide(n) {
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+    
+    currentSlide = (n + slides.length) % slides.length;
+    
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+  }
+
+  function moveSlide(direction) {
+    showSlide(currentSlide + direction);
+  }
+
+  // Optional: Auto-advance slides
+  // setInterval(() => moveSlide(1), 5000);
+</script>

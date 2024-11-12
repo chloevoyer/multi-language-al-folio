@@ -20,7 +20,7 @@ images:
   slider: true
 ---
 
-{% include image-slider.html path="assets/slides/screening-tips" count=14 extension="jpeg" %}
+{% include image-slider.liquid path="assets/slides/screening-tips" count=14 extension="jpeg" %}
 
 When conducting a literature review, I start by identifying the quickest elements to exclude an article. This approach allows me to streamline the process and focus on the most relevant studies.
 

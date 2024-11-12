@@ -18,7 +18,7 @@ authors:
       name: Université McGill
 ---
 
-{% include image-slider.html path="assets/slides/screening-tips" count=14 extension="jpeg" %}
+{% include image-slider.liquid path="assets/slides/screening-tips" count=14 extension="jpeg" %}
 
 Lors de la réalisation d'une revue de littérature, je commence par identifier les éléments les plus rapides à exclure d'un article. Cette approche me permet de rationaliser le processus et de me concentrer sur les études les plus pertinentes.
 
