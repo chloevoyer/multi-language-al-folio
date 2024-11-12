@@ -1,10 +1,10 @@
-{% assign conferences = site.data.conferences.conferences | where_exp: "item", "item.date != nil and item.date != ''" | sort: 'date' %}
+{% assign conferences = site.data.conferences.conferences | sort: 'date' %}
 {% include scripts/conference-functions.liquid %}
 
 <div class="conferences-container">
   <div class="filters">
     {{ site.data[site.active_lang].strings.list_psyc_conf.upcoming }}
-    {% assign all_years = conferences | map: 'date' | sort | reverse %}
+    {% assign all_years = site.data.conferences.conferences | map: 'date' | sort | reverse %}
     {% assign unique_years = '' | split: '' %}
     {% for date in all_years %}
       {% assign year = date | slice: 0, 4 %}
@@ -18,7 +18,7 @@
     {% endfor %}
     
     {{ site.data[site.active_lang].strings.list_psyc_conf.all_disciplines }}
-    {% assign disciplines = conferences | map: 'discipline' | uniq | sort %}
+    {% assign disciplines = site.data.conferences.conferences | map: 'discipline' | uniq | sort %}
     {% for discipline in disciplines %}
       {% if discipline != '' %}
         {{ discipline }}
@@ -26,7 +26,7 @@
     {% endfor %}
     
     {{ site.data[site.active_lang].strings.list_psyc_conf.all_modalities }}
-    {% assign modalities = conferences | map: 'modality' | uniq | sort %}
+    {% assign modalities = site.data.conferences.conferences | map: 'modality' | uniq | sort %}
     {% for modality in modalities %}
       {% if modality != '' %}
         {{ modality }}
@@ -34,7 +34,7 @@
     {% endfor %}
     
     {{ site.data[site.active_lang].strings.list_psyc_conf.all_locations }}
-    {% assign locations = conferences | map: 'local_abroad' | uniq | sort %}
+    {% assign locations = site.data.conferences.conferences | map: 'local_abroad' | uniq | sort %}
     {% for location in locations %}
       {% if location != '' %}
         {{ location }}
