@@ -77,10 +77,10 @@ jobs:
                   return ""
               
               conference = {
-                  "name": get_title("Conference name"),
+                  "name": get_title("Conference Name"),
                   "acronym": get_text("Acronym"),
                   "date": get_date("Date"),
-                  "submission_deadline": get_date("Submission deadline"),
+                  "submission_deadline": get_date("Submission Deadline"),
                   "location": get_text("Location"),
                   "local_abroad": get_select("Local vs. Abroad"),
                   "modality": get_select("Modality"),
