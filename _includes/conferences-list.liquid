@@ -1,5 +1,6 @@
 {% assign today_date = 'now' | date: '%Y-%m-%d' %}
 {% assign conferences = site.data.conferences.conferences | sort: 'date' %}
+{% include scripts/conference-functions.liquid %}
 
 <div class="conferences-container">
   <div class="filters">
