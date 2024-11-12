@@ -25,11 +25,11 @@ pretty_table: true
 
 ---
 
-<div class="conferences" style="margin-bottom: 5rem;">
+<div style="margin-bottom: 5rem;">
   <div class="table-responsive table-borderless">
     <table class="table-borderless" 
            id="table" 
-           data-toggle="table" 
+           data-toggle="table"
            data-url="{{ '/assets/json/conferences_attended.json' | relative_url }}">
       <thead>
         <tr>
@@ -43,31 +43,31 @@ pretty_table: true
 </div>
 
 <script>
-function dateFormatter(value, row) {
-    const date = new Date(value);
-    const month = date.toLocaleString('{{ site.active_lang }}', { month: 'short' });
-    const year = date.getFullYear();
-    {% if site.active_lang == 'fr-ca' %}
-    return `${month.toLowerCase()} ${year}`;
-    {% else %}
-    return `${month} ${year}`;
-    {% endif %}
-}
+  function dateFormatter(value, row) {
+      const date = new Date(value);
+      const month = date.toLocaleString('{{ site.active_lang }}', { month: 'short' });
+      const year = date.getFullYear();
+      {% if site.active_lang == 'fr-ca' %}
+      return `${month.toLowerCase()} ${year}`;
+      {% else %}
+      return `${month} ${year}`;
+      {% endif %}
+  }
 
-function conferenceFormatter(value, row) {
-    // Replace ordinal indicators including French "e " (with space)
-    let formattedValue = value
-        .replace(/(\d+)(st|nd|rd|th|er|e )/gi, function(match, number, ordinal) {
-            // Preserve the space after 'e' if it exists
-            const space = ordinal === 'e ' ? ' ' : '';
-            return `${number}<sup>${ordinal.trim()}</sup>${space}`;
-        });
-    
-    if (row.abbrv && row.url) {
-        return `${formattedValue} (<a href="${row.url}" target="_blank">${row.abbrv}</a>)`;
-    } else if (row.abbrv) {
-        return `${formattedValue} (${row.abbrv})`;
-    }
-    return formattedValue;
-}
+  function conferenceFormatter(value, row) {
+      // Replace ordinal indicators including French "e " (with space)
+      let formattedValue = value
+          .replace(/(\d+)(st|nd|rd|th|er|e )/gi, function(match, number, ordinal) {
+              // Preserve the space after 'e' if it exists
+              const space = ordinal === 'e ' ? ' ' : '';
+              return `${number}<sup>${ordinal.trim()}</sup>${space}`;
+          });
+
+      if (row.abbrv && row.url) {
+          return `${formattedValue} (<a href="${row.url}" target="_blank">${row.abbrv}</a>)`;
+      } else if (row.abbrv) {
+          return `${formattedValue} (${row.abbrv})`;
+      }
+      return formattedValue;
+  }
 </script>

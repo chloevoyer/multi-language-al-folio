@@ -1,0 +1,78 @@
+
+{% comment %}
+  Conference filtering and display functions
+{% endcomment %}
+
+{% assign today_date = 'now' | date: '%Y-%m-%d' %}
+
+{% capture conference_functions %}
+
+  function filterConferences() {
+    const yearFilter = document.getElementById('yearFilter').value;
+    const disciplineFilter = document.getElementById('disciplineFilter').value;
+    const modalityFilter = document.getElementById('modalityFilter').value;
+    const locationFilter = document.getElementById('locationFilter').value;
+    
+    const today = new Date().toISOString().split('T')[0];
+    let visibleCount = 0;
+    
+    // Get all cards and convert to array for sorting
+    const cards = Array.from(document.querySelectorAll('.conference-card'));
+    
+    // Sort cards by date
+    cards.sort((a, b) => {
+      const dateA = a.dataset.date;
+      const dateB = b.dataset.date;
+      return dateA.localeCompare(dateB);
+    });
+    
+    // Reorder cards in DOM
+    const container = document.querySelector('.conferences');
+    cards.forEach(card => container.appendChild(card));
+    
+    // Filter cards
+    cards.forEach(card => {
+      const year = card.dataset.year;
+      const date = card.dataset.date;
+      const discipline = card.dataset.discipline;
+      const modality = card.dataset.modality;
+      const location = card.dataset.location;
+      
+      let matchesYearFilter;
+      if (yearFilter === 'upcoming') {
+        matchesYearFilter = year === '2024' && date >= today;
+      } else {
+        matchesYearFilter = year === yearFilter;
+      }
+      
+      const matchesDiscipline = !disciplineFilter || discipline === disciplineFilter;
+      const matchesModality = !modalityFilter || modality === modalityFilter;
+      const matchesLocation = !locationFilter || location === locationFilter;
+      
+      const shouldShow = matchesYearFilter && matchesDiscipline && matchesModality && matchesLocation;
+      card.style.display = shouldShow ? 'block' : 'none';
+      
+      if (shouldShow) visibleCount++;
+    });
+    
+    // Update the count display
+    const countElement = document.getElementById('visibleCount');
+    if (countElement) {
+      countElement.textContent = visibleCount;
+    }
+    
+    // Show/hide no results message
+    const noResultsDiv = document.getElementById('noResults');
+    if (noResultsDiv) {
+      noResultsDiv.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+  }
+  
+  // Initialize with upcoming events
+  document.addEventListener('DOMContentLoaded', function() {
+    const yearFilter = document.getElementById('yearFilter');
+    yearFilter.value = "upcoming";
+    filterConferences();
+  });
+  
+{% endcapture %}
