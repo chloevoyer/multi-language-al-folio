@@ -1,7 +1,7 @@
 {
   "conferences": [
     {
-      "name": "32nd International Congress of Psychology",
+      "name": "32nd International Congress of Psychology",
       "acronym": "ICP",
       "date": "2021-07-18",
       "submission_deadline": "2021-01-18",
@@ -151,7 +151,7 @@
       "url": "https://aacap.confex.com/aacap/2024/cfp.cgi"
     },
     {
-      "name": "8th Annual US DOHaD Meeting",
+      "name": "8th Annual US DOHaD Meeting",
       "acronym": "DOHaD",
       "date": "2024-10-14",
       "submission_deadline": "2024-08-01",
@@ -174,7 +174,7 @@
       "url": "https://colloque2024.santementaletravail.ca/"
     },
     {
-      "name": "74th Annual Canadian Psychiatric Association Conference",
+      "name": "74th Annual Canadian Psychiatric Association Conference",
       "acronym": "CPA",
       "date": "2024-11-06",
       "location": "Montreal, QC",
@@ -185,7 +185,7 @@
       "url": "https://www.cpa-apc.org/annual-conference/"
     },
     {
-      "name": "24th World Congress of Psychiatry",
+      "name": "24th World Congress of Psychiatry",
       "acronym": "WPA",
       "date": "2024-11-14",
       "submission_deadline": "2024-05-06",
@@ -267,7 +267,7 @@
       "url": "https://aagponline.org/event/aagp-2025-annual-meeting/"
     },
     {
-      "name": "72nd Annual Scientific Meeting of the Society for Reproductive Investigation",
+      "name": "72nd Annual Scientific Meeting of the Society for Reproductive Investigation",
       "acronym": "SRI",
       "date": "2025-03-25",
       "submission_deadline": "2024-10-11",
@@ -351,7 +351,7 @@
       "url": "https://www.parentalbrainmeetings.com/"
     },
     {
-      "name": "APA’s 2025 Annual Meeting",
+      "name": "APA's 2025 Annual Meeting",
       "acronym": "APA",
       "date": "2025-05-07",
       "submission_deadline": "2025-01-09",
@@ -409,7 +409,7 @@
       "url": "https://waimh.org/page/waimh2024_posters"
     },
     {
-      "name": "38th SPER Annual Meeting",
+      "name": "38th SPER Annual Meeting",
       "acronym": "SPER",
       "date": "2025-06-09",
       "submission_deadline": "2025-01-27",
@@ -421,11 +421,11 @@
       "url": "https://sper.org/annual-meeting-2/future-meetings/"
     },
     {
-      "name": "86th Annual Canadian Psychological Association Annual National Convention",
+      "name": "86th Annual Canadian Psychological Association Annual National Convention",
       "acronym": "CPA",
       "date": "2025-06-12",
       "submission_deadline": "2024-12-03",
-      "location": "St. John’s, Newfoundland",
+      "location": "St. John's, Newfoundland",
       "local_abroad": "CAN 🍁",
       "modality": "IRL 🤝",
       "discipline": "PSYC",
@@ -460,7 +460,7 @@
       "name": "American Psychological Association Convention",
       "acronym": "APA",
       "date": "2025-08-07",
-      "location": "Denver, Colorado",
+      "location": "Denver, Colorado",
       "local_abroad": "INT 🌎",
       "modality": "IRL 🤝",
       "discipline": "PSYC",
@@ -492,7 +492,7 @@
       "url": "https://iepa.org.au/"
     },
     {
-      "name": "75th Annual Canadian Psychiatric Association Conference",
+      "name": "75th Annual Canadian Psychiatric Association Conference",
       "acronym": "CPA",
       "date": "2025-10-22",
       "location": "Vancouver, BC",
@@ -581,7 +581,7 @@
       "url": "https://waimh.org/page/waimh2024_posters"
     },
     {
-      "name": "76th Annual Canadian Psychiatric Association Conference",
+      "name": "76th Annual Canadian Psychiatric Association Conference",
       "acronym": "CPA",
       "date": "2026-11-18",
       "location": "Montreal, QC",
@@ -592,7 +592,7 @@
       "url": "https://www.cpa-apc.org/annual-conference/"
     },
     {
-      "name": "40th SPER Annual Meeting",
+      "name": "40th SPER Annual Meeting",
       "acronym": "SPER",
       "date": "2027-06-15",
       "location": "Detroit, MI",
@@ -603,7 +603,7 @@
       "url": "https://sper.org/annual-meeting-2/future-meetings/"
     },
     {
-      "name": "77th Annual Canadian Psychiatric Association Conference",
+      "name": "77th Annual Canadian Psychiatric Association Conference",
       "acronym": "CPA",
       "date": "2027-11-10",
       "location": "Toronto, ON",
