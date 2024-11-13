@@ -104,7 +104,7 @@
         {%- assign first_name_clean = author.first | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
         {%- assign name_parts = first_name_clean | split: ' ' -%}
         {%- assign initials = '' -%}
-    
+
         {% comment %} Add symbols before the first initial {% endcomment %}
         {%- if first_name_symbols != '' -%}
           {%- assign initials = '<sup>' | append: first_name_symbols | append: '</sup>' -%}
@@ -168,7 +168,7 @@
           {%- assign first_name_symbols = author.first | regex_replace: '[^*∗†‡§¶‖&^]', '' -%}
           {%- assign first_name_clean = author.first | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
           {%- assign name_parts = first_name_clean | split: ' ' -%}
-          {%- assign initials = '' -%}      
+          {%- assign initials = '' -%}
           {% comment %}Add symbols before the first initial for more authors{% endcomment %}
           {%- if first_name_symbols != '' -%}
             {%- assign initials = '<sup>' | append: first_name_symbols | append: '</sup>' -%}
