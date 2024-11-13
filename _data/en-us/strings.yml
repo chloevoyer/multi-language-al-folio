@@ -68,7 +68,7 @@ citation:
   bibtex: "or as a BibTeX entry:"
   introduction: "If you found this useful, please cite this as:"
 conferences_attended:
-  heading: conferences attended 
+  heading: conferences attended
   date: date
   name: conference
   location: location
@@ -132,7 +132,7 @@ footer:
   copyright: ""
   last_updated: "Last updated on "
 latest_posts: latest posts
-list_psyc_conf: 
+list_psyc_conf:
   upcoming: Upcoming 2024
   all_disciplines: All Disciplines
   all_modalities: All Modalities
@@ -229,7 +229,7 @@ search:
 selected_publications: selected publications
 site_description: an open space for academic research
 searchbar: " "
-service: 
+service:
   open_science: contributions to open science
   know_mob: knowledge mobilization activities
   know_user: "Member of a Knowledge User Committee for (2) studies:"

@@ -1,7 +1,7 @@
 name: Sync Notion Database
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight
+    - cron: "0 0 * * *"  # Runs daily at midnight
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
@@ -9,16 +9,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
+
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.x'
-          
+          python-version: "3.x"
+
       - name: Install dependencies
         run: |
           pip install notion-client
-          
+
       - name: Fetch Notion data
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
@@ -29,11 +29,11 @@ jobs:
           import json
           from notion_client import Client
           from datetime import datetime
-          
+
           # Initialize the client
           notion = Client(auth=os.environ["NOTION_TOKEN"])
           database_id = os.environ["DATABASE_ID"]
-          
+
           # Query the database
           results = notion.databases.query(
               database_id=database_id,
@@ -47,35 +47,35 @@ jobs:
           conferences = []
           for page in results:
               props = page["properties"]
-              
+
               # Helper function to safely get text content
               def get_text(prop_name):
                   prop = props.get(prop_name, {})
                   if prop.get("rich_text") and len(prop["rich_text"]) > 0:
                       return prop["rich_text"][0]["text"]["content"]
                   return ""
-              
+
               # Helper function to get title
               def get_title(prop_name):
                   prop = props.get(prop_name, {})
                   if prop.get("title") and len(prop["title"]) > 0:
                       return prop["title"][0]["text"]["content"]
                   return ""
-              
+
               # Helper function to get date
               def get_date(prop_name):
                   prop = props.get(prop_name, {})
                   if prop.get("date"):
                       return prop["date"]["start"]
                   return None
-                  
+
               # Helper function to get select value
               def get_select(prop_name):
                   prop = props.get(prop_name, {})
                   if prop.get("select"):
                       return prop["select"].get("name", "")
                   return ""
-              
+
               conference = {
                   "name": get_title("Conference Name"),
                   "acronym": get_text("Acronym"),
@@ -88,18 +88,18 @@ jobs:
                   "theme": get_text("Theme"),
                   "url": props.get("URL", {}).get("url", "")
               }
-              
+
               # Remove any None values
               conference = {k: v for k, v in conference.items() if v is not None}
               conferences.append(conference)
-              
+
           # Save to JSON file with proper encoding
           with open("_data/conferences.json", "w", encoding="utf-8") as f:
               json.dump({"conferences": conferences}, f, indent=2, ensure_ascii=False)
           EOF
-          
+
           python fetch_notion.py
-          
+
       - name: Commit and push if changed
         run: |
           git config --global user.email "github-action@users.noreply.github.com"

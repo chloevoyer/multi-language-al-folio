@@ -133,7 +133,7 @@ footer:
   copyright: ""
   last_updated: "Dernière mise à jour le "
 latest_posts: derniers articles
-list_psyc_conf: 
+list_psyc_conf:
   upcoming: À venir en 2024
   all_disciplines: Toutes les disciplines
   all_modalities: Toutes les modalités
@@ -253,7 +253,7 @@ search:
     title: utiliser le thème par défaut du système
   theme: thème
 selected_publications: publications sélectionnées
-service: 
+service:
   open_science: contributions à la science ouverte
   know_mob: activités de mobilisation des connaissances
   know_user: "Membre d'un comité d'utilisateurs des connaissances pour (2) études :"

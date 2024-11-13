@@ -67,7 +67,7 @@
   type: time_table
   contents:
     - year: 2024
-      items: 
+      items:
         - Scholarships for post‑secondary students (Master's), Desjardins Foundation ($3,000)
         - Canada Graduate Scholarship – Master's program (CGS M), Canadian Institutes of Health Research (CIHR) ($27,000)
         - Workplace Mental Health Impact Studentship, Mental Health Research Canada (MHRC) ($15,000)
@@ -92,7 +92,7 @@
   type: nested_list
   contents:
     - title: Programming Languages & Tools
-      items: 
+      items:
         - R, Python, SQL, LaTeX, Markdown, HTML, CSS
     - title: Data Analysis & Statistical Software
       items:
