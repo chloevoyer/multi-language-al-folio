@@ -98,24 +98,24 @@
         {% assign author_is_self = false %}
         {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
         {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
-    
+
         {% comment %} Extract symbols and convert first name to initials {% endcomment %}
         {%- assign first_name_symbols = author.first | regex_replace: '[^*∗†‡§¶‖&^]', '' -%}
         {%- assign first_name_clean = author.first | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
-        {%- assign name_parts = first_name_clean | split: " " -%}
-        {%- assign initials = "" -%}
+        {%- assign name_parts = first_name_clean | split: ' ' -%}
+        {%- assign initials = '' -%}
     
         {% comment %} Add symbols before the first initial {% endcomment %}
-        {%- if first_name_symbols != "" -%}
+        {%- if first_name_symbols != '' -%}
           {%- assign initials = '<sup>' | append: first_name_symbols | append: '</sup>' -%}
         {%- endif -%}
-    
+
         {% comment %} Add initials after the symbol {% endcomment %}
         {%- for name_part in name_parts -%}
-          {%- assign initial = name_part | slice: 0 | append: "." -%}
-          {%- assign initials = initials | append: initial | append: " " -%}
+          {%- assign initial = name_part | slice: 0 | append: '.' -%}
+          {%- assign initials = initials | append: initial | append: ' ' -%}
         {%- endfor -%}
-        
+
         {% if site.scholar.last_name contains author_last_name %}
           {% if site.scholar.first_name contains author.first %}
             {% assign author_is_self = true %}
@@ -133,7 +133,9 @@
         {%- endif -%}
         {%- if forloop.length > 1 -%}
           {% if forloop.first == false %},&nbsp;{% endif %}
-          {%- if forloop.last and author_array_limit == author_array_size %}{{ site.data[site.active_lang].strings.bibliography.last_author_prefix }}&nbsp;{% endif -%}
+          {%- if forloop.last and author_array_limit == author_array_size %}
+            {{ site.data[site.active_lang].strings.bibliography.last_author_prefix }}&nbsp;
+          {% endif -%}
         {% endif %}
         {%- if author_is_self -%}
           <em>
@@ -165,18 +167,18 @@
           {% comment %}Convert additional authors' names to initials with symbols{% endcomment %}
           {%- assign first_name_symbols = author.first | regex_replace: '[^*∗†‡§¶‖&^]', '' -%}
           {%- assign first_name_clean = author.first | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
-          {%- assign name_parts = first_name_clean | split: " " -%}
-          {%- assign initials = "" -%}      
+          {%- assign name_parts = first_name_clean | split: ' ' -%}
+          {%- assign initials = '' -%}      
           {% comment %}Add symbols before the first initial for more authors{% endcomment %}
-          {%- if first_name_symbols != "" -%}
+          {%- if first_name_symbols != '' -%}
             {%- assign initials = '<sup>' | append: first_name_symbols | append: '</sup>' -%}
           {%- endif -%}
-          
+
           {%- for name_part in name_parts -%}
-            {%- assign initial = name_part | slice: 0 | append: "." -%}
-            {%- assign initials = initials | append: initial | append: " " -%}
+            {%- assign initial = name_part | slice: 0 | append: '.' -%}
+            {%- assign initials = initials | append: initial | append: ' ' -%}
           {%- endfor -%}
-          
+
           {% assign more_authors_show = more_authors_show | append: initials | append: author.last %}
           {% unless forloop.last %}
             {% assign more_authors_show = more_authors_show | append: ', ' %}

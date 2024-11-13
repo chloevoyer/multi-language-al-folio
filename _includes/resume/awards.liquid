@@ -64,10 +64,8 @@
       const formattedNumber = amount.toLocaleString(activeLang, {
         minimumFractionDigits: hasDecimals ? 2 : 0,
         maximumFractionDigits: 2,
-    });
-    element.textContent = activeLang === 'en-us' 
-      ? '$' + formattedNumber
-      : formattedNumber + ' $';
+      });
+      element.textContent = activeLang === 'en-us' ? '$' + formattedNumber : formattedNumber + ' $';
     });
 
     // Format total amount
@@ -75,7 +73,7 @@
     const totalAmount = Number(totalElement.dataset.amount);
     const hasDecimals = totalAmount % 1 !== 0;
     totalElement.textContent = `${translation}${totalAmount
-    .toLocaleString(activeLang, {
+      .toLocaleString(activeLang, {
         style: 'currency',
         currency: 'CAD',
         currencyDisplay: 'symbol',

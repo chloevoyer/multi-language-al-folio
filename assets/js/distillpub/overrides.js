@@ -45,11 +45,11 @@ $(document).ready(function () {
       // Create last updated element
       const lastUpdated = document.createElement("div");
       lastUpdated.className = "last-updated";
-      
+
       // Add language-specific text
       const lang = document.documentElement.lang || "en";
       const label = lang.startsWith("fr") ? "Dernière mise à jour" : "Last updated";
-      
+
       lastUpdated.innerHTML = `
         <span class="dt-updated">
           ${label}: ${data.lastUpdated}

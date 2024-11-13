@@ -45,13 +45,13 @@ Ensure that your environment secrets are correctly configured for secure data ac
 If you don't want to use automatically workflow:
 
 - Run [garmin-activities.py](https://github.com/chloevoyer/garmin-to-notion/blob/main/garmin-activities.py) to sync your Garmin activities to Notion.
-    `python garmin-activities.py`
+  `python garmin-activities.py`
 - Run [person-records.py](https://github.com/chloevoyer/garmin-to-notion/blob/main/personal-records.py) to extract activity records (e.g., fastest run, longest ride).  
-    `python personal-records.py`
+   `python personal-records.py`
 
 ## Example Configuration 📝
 
-You can customize the scripts to fit your needs by modifying environment variables and Notion database settings.  
+You can customize the scripts to fit your needs by modifying environment variables and Notion database settings.
 
 Here is a screenshot of what my Notion dashboard looks like:
 
