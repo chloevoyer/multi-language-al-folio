@@ -1,7 +1,7 @@
 {% if site.enable_tooltips %}
   <!-- Enable Tooltips -->
   <script type="text/javascript">
-    $(function() {
+    $(function () {
       $('[data-toggle="tooltip"]').tooltip();
     });
   </script>
@@ -41,8 +41,8 @@
   }
 
   // Prevent link clicks from interfering with table sorting
-  $(function() {
-    $('table').on('click', 'a', function(e) {
+  $(function () {
+    $('table').on('click', 'a', function (e) {
       e.stopPropagation();
     });
   });

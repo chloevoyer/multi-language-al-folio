@@ -27,7 +27,6 @@ pretty_table: true
 
 ---
 
-
 <div class="conferences" style="margin-bottom: 5rem;">
   <div class="table-responsive table-borderless">
     <table class="table-borderless" 

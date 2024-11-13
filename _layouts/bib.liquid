@@ -22,8 +22,8 @@
             {% endif %}
           </abbr>
         {% else %}
-        <abbr class="badge rounded w-100">{{ site.data[site.active_lang].strings.bibliography.abbrs[entry.abbr] | default: entry.abbr }}</abbr>
-      {% endif %}
+          <abbr class="badge rounded w-100">{{ site.data[site.active_lang].strings.bibliography.abbrs[entry.abbr] | default: entry.abbr }}</abbr>
+        {% endif %}
       {% endif %}
       {% if entry.preview %}
         {% if entry.preview contains '://' %}
@@ -50,16 +50,28 @@
     <div class="title">
       {{- entry.title -}}
       {% if entry.translated_title %}
-        <br><i>{{ entry.translated_title }}</i>
+        <br>
+        <i>{{ entry.translated_title }}</i>
       {% endif %}
       {% if entry.chair and entry.symposium %}
-        <br><i>{{ site.data[site.active_lang].strings.bibliography.symposium_prefix | capitalize }} {{ entry.chair }} ({{- site.data[site.active_lang].strings.bibliography.chair_role -}}), {{ entry.symposium }}</i>
+        <br>
+        <i>
+          {{- site.data[site.active_lang].strings.bibliography.symposium_prefix | capitalize }}
+          {{ entry.chair }} (
+          {{- site.data[site.active_lang].strings.bibliography.chair_role -}}
+          ), {{ entry.symposium -}}
+        </i>
       {% elsif entry.symposium %}
-        <br><i>{{ site.data[site.active_lang].strings.bibliography.symposium_prefix | capitalize }} {{ entry.symposium }}</i>
+        <br>
+        <i>
+          {{- site.data[site.active_lang].strings.bibliography.symposium_prefix | capitalize }}
+          {{ entry.symposium -}}
+        </i>
       {% endif %}
       {%- if entry.type contains 'internal' or entry.type contains 'oral' or entry.type contains 'poster' or entry.type contains 'symposium' -%}
         <span class="entry-type" style="font-family: 'Monaco', monospace !important; font-weight: bold;">
-          <br>[
+          <br>
+          [
           {%- case entry.type -%}
             {%- when 'internal' -%}
               {{- site.data[site.active_lang].strings.bibliography.types.internal | downcase -}}
@@ -75,132 +87,132 @@
       {%- endif -%}
     </div>
 
-<!-- Author -->
-<div class="author">
-  {% assign author_array_size = entry.author_array | size %}
-  {% assign author_array_limit = author_array_size %}
-  {% if site.max_author_limit and author_array_size > site.max_author_limit %}
-    {% assign author_array_limit = site.max_author_limit %}
-  {% endif %}
-  {%- for author in entry.author_array limit: author_array_limit -%}
-    {% assign author_is_self = false %}
-    {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
-    {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
-    
-    {% comment %}Extract symbols and convert first name to initials{% endcomment %}
-    {%- assign first_name_symbols = author.first | regex_replace: '[^*∗†‡§¶‖&^]', '' -%}
-    {%- assign first_name_clean = author.first | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
-    {%- assign name_parts = first_name_clean | split: " " -%}
-    {%- assign initials = "" -%}
-    
-    {% comment %}Add symbols before the first initial{% endcomment %}
-    {%- if first_name_symbols != "" -%}
-      {%- assign initials = '<sup>' | append: first_name_symbols | append: '</sup>' -%}
-    {%- endif -%}
-    
-    {% comment %}Add initials after the symbol{% endcomment %}
-    {%- for name_part in name_parts -%}
-      {%- assign initial = name_part | slice: 0 | append: "." -%}
-      {%- assign initials = initials | append: initial | append: " " -%}
-    {%- endfor -%}
-    
-    {% if site.scholar.last_name contains author_last_name %}
-      {% if site.scholar.first_name contains author.first %}
-        {% assign author_is_self = true %}
+    <!-- Author -->
+    <div class="author">
+      {% assign author_array_size = entry.author_array | size %}
+      {% assign author_array_limit = author_array_size %}
+      {% if site.max_author_limit and author_array_size > site.max_author_limit %}
+        {% assign author_array_limit = site.max_author_limit %}
       {% endif %}
-    {%- endif -%}
-    {% assign coauthor_url = null %}
-    {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
-    {% if site.data.coauthors[clean_last_name] %}
-      {%- for coauthor in site.data.coauthors[clean_last_name] -%}
-        {% if coauthor.firstname contains author.first %}
-          {%- assign coauthor_url = coauthor.url -%}
-          {% break %}
+      {%- for author in entry.author_array limit: author_array_limit -%}
+        {% assign author_is_self = false %}
+        {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+        {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
+    
+        {% comment %} Extract symbols and convert first name to initials {% endcomment %}
+        {%- assign first_name_symbols = author.first | regex_replace: '[^*∗†‡§¶‖&^]', '' -%}
+        {%- assign first_name_clean = author.first | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+        {%- assign name_parts = first_name_clean | split: " " -%}
+        {%- assign initials = "" -%}
+    
+        {% comment %} Add symbols before the first initial {% endcomment %}
+        {%- if first_name_symbols != "" -%}
+          {%- assign initials = '<sup>' | append: first_name_symbols | append: '</sup>' -%}
+        {%- endif -%}
+    
+        {% comment %} Add initials after the symbol {% endcomment %}
+        {%- for name_part in name_parts -%}
+          {%- assign initial = name_part | slice: 0 | append: "." -%}
+          {%- assign initials = initials | append: initial | append: " " -%}
+        {%- endfor -%}
+        
+        {% if site.scholar.last_name contains author_last_name %}
+          {% if site.scholar.first_name contains author.first %}
+            {% assign author_is_self = true %}
+          {% endif %}
+        {%- endif -%}
+        {% assign coauthor_url = null %}
+        {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
+        {% if site.data.coauthors[clean_last_name] %}
+          {%- for coauthor in site.data.coauthors[clean_last_name] -%}
+            {% if coauthor.firstname contains author.first %}
+              {%- assign coauthor_url = coauthor.url -%}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+        {%- endif -%}
+        {%- if forloop.length > 1 -%}
+          {% if forloop.first == false %},&nbsp;{% endif %}
+          {%- if forloop.last and author_array_limit == author_array_size %}{{ site.data[site.active_lang].strings.bibliography.last_author_prefix }}&nbsp;{% endif -%}
         {% endif %}
+        {%- if author_is_self -%}
+          <em>
+            {{- initials -}}
+            {{ author_last_html -}}
+          </em>
+        {%- else -%}
+          {%- if coauthor_url -%}
+            <a href="{{ coauthor_url }}">
+              {{- initials -}}
+              {{ author_last_html -}}
+            </a>
+          {%- else -%}
+            {{- initials -}}
+            {{ author_last_html -}}
+          {%- endif -%}
+        {%- endif -%}
       {% endfor %}
-    {%- endif -%}
-    {%- if forloop.length > 1 -%}
-      {% if forloop.first == false %},&nbsp;{% endif %}
-      {%- if forloop.last and author_array_limit == author_array_size %}{{ site.data[site.active_lang].strings.bibliography.last_author_prefix }}&nbsp;{% endif -%}
-    {% endif %}
-    {%- if author_is_self -%}
-      <em>
-        {{- initials -}}
-        {{ author_last_html -}}
-      </em>
-    {%- else -%}
-      {%- if coauthor_url -%}
-        <a href="{{ coauthor_url }}">
-          {{- initials -}}
-          {{ author_last_html -}}
-        </a>
+      {%- assign more_authors = author_array_size | minus: author_array_limit -%}
+      {%- if more_authors > 1 -%}
+        {%- assign more_authors_hide = more_authors | append: ' ' | append: site.data[site.active_lang].strings.bibliography.more_authors.multiple -%}
       {%- else -%}
-        {{- initials -}}
-        {{ author_last_html -}}
+        {%- assign more_authors_hide = more_authors | append: ' ' | append: site.data[site.active_lang].strings.bibliography.more_authors.one -%}
       {%- endif -%}
-    {%- endif -%}
-  {% endfor %}
-  {%- assign more_authors = author_array_size | minus: author_array_limit -%}
-  {%- if more_authors > 1 -%}
-    {%- assign more_authors_hide = more_authors | append: ' ' | append: site.data[site.active_lang].strings.bibliography.more_authors.multiple -%}
-  {%- else -%}
-    {%- assign more_authors_hide = more_authors | append: ' ' | append: site.data[site.active_lang].strings.bibliography.more_authors.one -%}
-  {%- endif -%}
-  
-  {% if more_authors > 0 %}
-    {%- assign more_authors_show = '' %}
-    {%- for author in entry.author_array offset: author_array_limit -%}
-      {% comment %}Convert additional authors' names to initials with symbols{% endcomment %}
-      {%- assign first_name_symbols = author.first | regex_replace: '[^*∗†‡§¶‖&^]', '' -%}
-      {%- assign first_name_clean = author.first | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
-      {%- assign name_parts = first_name_clean | split: " " -%}
-      {%- assign initials = "" -%}      
-      {% comment %}Add symbols before the first initial for more authors{% endcomment %}
-      {%- if first_name_symbols != "" -%}
-        {%- assign initials = '<sup>' | append: first_name_symbols | append: '</sup>' -%}
-      {%- endif -%}
-      
-      {%- for name_part in name_parts -%}
-        {%- assign initial = name_part | slice: 0 | append: "." -%}
-        {%- assign initials = initials | append: initial | append: " " -%}
-      {%- endfor -%}
-      
-      {% assign more_authors_show = more_authors_show | append: initials | append: author.last %}
-      {% unless forloop.last %}
-        {% assign more_authors_show = more_authors_show | append: ', ' %}
-      {% endunless %}
-    {%- endfor -%}
-    , {{ site.data[site.active_lang].strings.bibliography.last_author_prefix }}
-    <span
-      class="more-authors"
-      title="click to view {{ more_authors_hide }}"
-      onclick="
-          var element = $(this);
-          element.attr('title', '');
-          var more_authors_text = element.text() == '{{ more_authors_hide }}' ? '{{ more_authors_show }}' : '{{ more_authors_hide }}';
-          var cursorPosition = 0;
-          var textAdder = setInterval(function(){
-            element.html(more_authors_text.substring(0, cursorPosition + 1));
-            if (++cursorPosition == more_authors_text.length){
-              clearInterval(textAdder);
-            }
-        }, '{{ site.more_authors_animation_delay }}');
-      "
-    >
-      {{- more_authors_hide -}}
-    </span>
-  {% endif %}
-  {% if entry.annotation %}
-    <i
-      class="fa-solid fa-circle-info ml-1"
-      data-toggle="popover"
-      data-placement="top"
-      data-html="true"
-      data-content="{{ entry.annotation | escape }}"
-    >
-    </i>
-  {% endif %}
-</div>
+
+      {% if more_authors > 0 %}
+        {%- assign more_authors_show = '' %}
+        {%- for author in entry.author_array offset: author_array_limit -%}
+          {% comment %}Convert additional authors' names to initials with symbols{% endcomment %}
+          {%- assign first_name_symbols = author.first | regex_replace: '[^*∗†‡§¶‖&^]', '' -%}
+          {%- assign first_name_clean = author.first | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+          {%- assign name_parts = first_name_clean | split: " " -%}
+          {%- assign initials = "" -%}      
+          {% comment %}Add symbols before the first initial for more authors{% endcomment %}
+          {%- if first_name_symbols != "" -%}
+            {%- assign initials = '<sup>' | append: first_name_symbols | append: '</sup>' -%}
+          {%- endif -%}
+          
+          {%- for name_part in name_parts -%}
+            {%- assign initial = name_part | slice: 0 | append: "." -%}
+            {%- assign initials = initials | append: initial | append: " " -%}
+          {%- endfor -%}
+          
+          {% assign more_authors_show = more_authors_show | append: initials | append: author.last %}
+          {% unless forloop.last %}
+            {% assign more_authors_show = more_authors_show | append: ', ' %}
+          {% endunless %}
+        {%- endfor -%}
+        , {{ site.data[site.active_lang].strings.bibliography.last_author_prefix }}
+        <span
+          class="more-authors"
+          title="click to view {{ more_authors_hide }}"
+          onclick="
+              var element = $(this);
+              element.attr('title', '');
+              var more_authors_text = element.text() == '{{ more_authors_hide }}' ? '{{ more_authors_show }}' : '{{ more_authors_hide }}';
+              var cursorPosition = 0;
+              var textAdder = setInterval(function(){
+                element.html(more_authors_text.substring(0, cursorPosition + 1));
+                if (++cursorPosition == more_authors_text.length){
+                  clearInterval(textAdder);
+                }
+            }, '{{ site.more_authors_animation_delay }}');
+          "
+        >
+          {{- more_authors_hide -}}
+        </span>
+      {% endif %}
+      {% if entry.annotation %}
+        <i
+          class="fa-solid fa-circle-info ml-1"
+          data-toggle="popover"
+          data-placement="top"
+          data-html="true"
+          data-content="{{ entry.annotation | escape }}"
+        >
+        </i>
+      {% endif %}
+    </div>
 
     <!-- Journal/Book title and date -->
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
@@ -227,7 +239,7 @@
     {% if entry.year %}
       {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
     {% endif %}
-    
+
     {% if entry.conference %}
       {% assign entrytype_text = entrytype | strip_html | strip %}
       {% capture entrytype %}{{ entrytype }}{% if entrytype_text != "" %}, {% endif %}<em>{{ entry.conference }}</em><br>{% endcapture %}
@@ -277,21 +289,31 @@
         {% if entry.html contains '://' %}
           <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.url }}</a>
         {% else %}
-          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.html }}</a>
+          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">
+            {{ site.data[site.active_lang].strings.bibliography.html }}
+          </a>
         {% endif %}
       {% endif %}
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
-          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.pdf }}</a>
+          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">
+            {{ site.data[site.active_lang].strings.bibliography.pdf }}
+          </a>
         {% else %}
-          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.pdf }}</a>
+          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">
+            {{ site.data[site.active_lang].strings.bibliography.pdf }}
+          </a>
         {% endif %}
       {% endif %}
       {% if entry.supp %}
         {% if entry.supp contains '://' %}
-          <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.supp }}</a>
+          <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">
+            {{ site.data[site.active_lang].strings.bibliography.supp }}
+          </a>
         {% else %}
-          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.supp }}</a>
+          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">
+            {{ site.data[site.active_lang].strings.bibliography.supp }}
+          </a>
         {% endif %}
       {% endif %}
       {% if entry.video and site.enable_video_embedding %}

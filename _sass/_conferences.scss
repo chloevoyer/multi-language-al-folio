@@ -16,7 +16,7 @@
   border: 1px solid #e5e7eb;
   min-width: 150px;
   background-color: var(--global-bg-color);
-}    
+}
 
 .filters-summary {
   margin: 1rem 0;
@@ -40,7 +40,7 @@
   border: 1px solid #e5e7eb;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   background: var(--global-card-bg-color);
   display: flex;
   flex-direction: column;
@@ -82,7 +82,8 @@
   flex-grow: 1;
 }
 
-.date-info, .location-info {
+.date-info, 
+.location-info {
   font-size: 0.925rem;
   color: #374151;
   margin-top: 0.5rem;
@@ -145,7 +146,6 @@
   margin-top: 1rem;
 }
 
-
 .conference-name-link:hover {
   color: var(--global-hover-color);
   text-decoration: underline;
@@ -155,15 +155,15 @@
   .conferences-container {
     padding: 1rem;
   }
-  
+
   .filters {
     flex-direction: column;
   }
-  
+
   .filters select {
     width: 100%;
   }
-  
+
   .conferences {
     grid-template-columns: 1fr;
   }

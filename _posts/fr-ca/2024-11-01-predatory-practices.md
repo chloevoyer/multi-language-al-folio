@@ -30,6 +30,7 @@ At their core, predatory publishing practices are unethical activities that expl
 ## The Real Impact
 
 The consequences of predatory publishing extend far beyond individual researchers:
+
 - Dilution of scientific literature with unreliable studies
 - Spread of potential misinformation
 - Waste of valuable research funds
@@ -39,12 +40,14 @@ The consequences of predatory publishing extend far beyond individual researcher
 ## How to Spot Predatory Journals
 
 ### Common Tactics
+
 - Aggressive email solicitation (spam)
 - Minimal or non-existent peer review
 - Unclear pricing and publishing fees
 - Poor website quality with blurry images
 
 ### Red Flags
+
 - Frequent spelling and grammatical errors
 - Non-professional or non-journal affiliated email addresses
 - Unclear copyright policies or demands for copyright retention
@@ -53,17 +56,20 @@ The consequences of predatory publishing extend far beyond individual researcher
 ## Identifying Predatory Conferences
 
 ### Marketing Tactics to Watch For
+
 - Spam email campaigns
 - Promises of guaranteed publication
 - Claims of editorial acceptance
 
 ### Logistical Red Flags
+
 - Unclear venue information
 - Multiple conferences scheduled simultaneously at the same location
 - Poor or missing schedule details
 - Excessive registration fees without refund policies
 
-### Warning Signs:
+### Warning Signs
+
 - Overly broad conference scope covering unrelated disciplines
 - Guaranteed acceptance promises
 - Unusually short review times
@@ -72,12 +78,14 @@ The consequences of predatory publishing extend far beyond individual researcher
 ## Best Practices for Protection
 
 ### For Individual Researchers
+
 - Establish a due diligence checklist
 - Consult with peers and mentors
 - Follow institutional publishing guidelines
 - Document suspicious interactions
 
 ### For Institutions
+
 - Develop clear publishing policies
 - Provide support systems
 - Establish training programs
@@ -86,6 +94,7 @@ The consequences of predatory publishing extend far beyond individual researcher
 ## Future Outlook
 
 The fight against predatory publishing is evolving through:
+
 - Emerging AI-powered detection tools
 - Stricter institutional guidelines
 - Enhanced funding agency requirements
@@ -110,4 +119,4 @@ Building a resilient academic publishing ecosystem depends heavily on researcher
 
 ---
 
-*About the Author: Chloé Voyer is a MSc Mental Health researcher passionate about maintaining academic integrity and helping fellow researchers navigate the complex landscape of academic publishing.*
+_About the Author: Chloé Voyer is a MSc Mental Health researcher passionate about maintaining academic integrity and helping fellow researchers navigate the complex landscape of academic publishing._

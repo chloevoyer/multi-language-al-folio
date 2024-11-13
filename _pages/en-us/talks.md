@@ -19,6 +19,7 @@ pretty_table: true
 <h1>{{ site.data[site.active_lang].strings.talks.oral }}</h1>
 
 {% bibliography --query @presentation %}
+
 </div>
 
 <h2 class="section-heading">{{ site.data[site.active_lang].strings.conferences_attended.heading }}</h2>

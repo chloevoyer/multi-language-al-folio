@@ -646,7 +646,7 @@ footer.sticky-bottom {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 8px 16px;
   border: none;
@@ -654,8 +654,12 @@ footer.sticky-bottom {
   border-radius: 50%;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev { 
+  left: 10px; 
+}
+.next { 
+  right: 10px; 
+}
 
 .slider-dots {
   text-align: center;
@@ -899,19 +903,19 @@ footer.sticky-bottom {
       div.abstract.hidden.open {
         border-color: var(--global-text-color);
       }
-      
+
       div.tldr.hidden {
         border: dashed 1px var(--global-bg-color);
       }
-      
+
       div.tldr.hidden.open {
         border-color: var(--global-text-color);
       }
-    
+
       div.award.hidden {
         border: dashed 1px var(--global-bg-color);
       }
-      
+
       div.award.hidden.open {
         border-color: var(--global-highlight-color);
       }
@@ -919,7 +923,7 @@ footer.sticky-bottom {
       div.video.hidden {
         border: dashed 1px var(--global-bg-color);
       }
-      
+
       div.video.hidden.open {
         // border-color: var(--global-text-color);
       }
@@ -927,7 +931,7 @@ footer.sticky-bottom {
   }
 }
 
-.embed-container { 
+.embed-container {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;

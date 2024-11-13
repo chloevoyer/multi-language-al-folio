@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // Existing footnotes styling
-  document.querySelectorAll("d-footnote").forEach(function(footnote) {
+  document.querySelectorAll("d-footnote").forEach(function (footnote) {
     footnote.shadowRoot.querySelector("sup > span").setAttribute("style", "color: var(--global-theme-color);");
     footnote.shadowRoot
       .querySelector("d-hover-box")
@@ -13,7 +13,7 @@ $(document).ready(function() {
   });
 
   // Existing citations styling
-  document.querySelectorAll("d-cite").forEach(function(cite) {
+  document.querySelectorAll("d-cite").forEach(function (cite) {
     cite.shadowRoot.querySelector("div > span").setAttribute("style", "color: var(--global-theme-color);");
     cite.shadowRoot.querySelector("style").sheet.insertRule("ul li a {color: var(--global-text-color) !important; text-decoration: none;}");
     cite.shadowRoot.querySelector("style").sheet.insertRule("ul li a:hover {color: var(--global-theme-color) !important;}");
@@ -29,26 +29,26 @@ $(document).ready(function() {
 
   // Add last updated date to byline
   function addLastUpdated() {
-    const frontMatter = document.querySelector('d-front-matter');
+    const frontMatter = document.querySelector("d-front-matter");
     if (!frontMatter) return;
-    
+
     try {
       const data = JSON.parse(frontMatter.firstElementChild.textContent);
       if (!data.lastUpdated) return;
-      
-      const byline = document.querySelector('d-byline .byline');
+
+      const byline = document.querySelector("d-byline .byline");
       if (!byline) return;
-      
-      const publishedDate = byline.querySelector('.published');
+
+      const publishedDate = byline.querySelector(".published");
       if (!publishedDate) return;
 
       // Create last updated element
-      const lastUpdated = document.createElement('div');
-      lastUpdated.className = 'last-updated';
+      const lastUpdated = document.createElement("div");
+      lastUpdated.className = "last-updated";
       
       // Add language-specific text
-      const lang = document.documentElement.lang || 'en';
-      const label = lang.startsWith('fr') ? 'Dernière mise à jour' : 'Last updated';
+      const lang = document.documentElement.lang || "en";
+      const label = lang.startsWith("fr") ? "Dernière mise à jour" : "Last updated";
       
       lastUpdated.innerHTML = `
         <span class="dt-updated">
@@ -57,10 +57,10 @@ $(document).ready(function() {
       `;
 
       // Insert after published date
-      publishedDate.insertAdjacentElement('afterend', lastUpdated);
+      publishedDate.insertAdjacentElement("afterend", lastUpdated);
 
       // Add styles to match your theme
-      const style = document.createElement('style');
+      const style = document.createElement("style");
       style.textContent = `
         d-byline .last-updated {
           grid-column: text;
@@ -75,7 +75,7 @@ $(document).ready(function() {
       `;
       document.head.appendChild(style);
     } catch (e) {
-      console.error('Error adding last updated date:', e);
+      console.error("Error adding last updated date:", e);
     }
   }
 

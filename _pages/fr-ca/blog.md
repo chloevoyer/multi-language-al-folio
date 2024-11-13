@@ -4,8 +4,8 @@ layout: default
 permalink: /blog/
 title: blogue
 blog_name: chloé-voyer
-description: un mélange de savoir et de divertissement 
-# Un espace ouvert à la recherche 
+description: un mélange de savoir et de divertissement
+# Un espace ouvert à la recherche
 # Un espace pour la recherche académique
 display_tags:
   - financement

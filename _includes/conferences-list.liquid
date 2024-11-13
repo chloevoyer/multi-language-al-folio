@@ -53,27 +53,29 @@
 
   <div class="filters-summary">
     <div id="conferenceCount" class="conference-count">
-      {{ site.data[site.active_lang].strings.list_psyc_conf.showing }} <span id="visibleCount">0</span> {{ site.data[site.active_lang].strings.list_psyc_conf.conferences }}
+      {{ site.data[site.active_lang].strings.list_psyc_conf.showing }}
+      <span id="visibleCount">0</span> {{ site.data[site.active_lang].strings.list_psyc_conf.conferences }}
     </div>
   </div>
 
   <div class="conferences">
     {% assign conferences = site.data.conferences.conferences | sort: 'date' %}
     {% for conference in conferences %}
-      {% assign conf_year = conference.date | date: "%Y" %}
-      <div class="conference-card" 
-      data-year="{{ conference.date | slice: 0, 4 }}"
-      data-date="{{ conference.date }}"
-      data-discipline="{{ conference.discipline }}"
-      data-modality="{{ conference.modality }}"
-      data-location="{{ conference.local_abroad }}"
-      {% if conference.date | slice: 0, 4 == "2024" and conference.date >= today_date %}
-        style="display: block;"
-      {% else %}
-        style="display: none;"
-      {% endif %}>
-  
-         <div class="conference-header">
+      {% assign conf_year = conference.date | date: '%Y' %}
+      <div
+        class="conference-card"
+        data-year="{{ conference.date | slice: 0, 4 }}"
+        data-date="{{ conference.date }}"
+        data-discipline="{{ conference.discipline }}"
+        data-modality="{{ conference.modality }}"
+        data-location="{{ conference.local_abroad }}"
+        {% if conference.date | slice: 0, 4 == "2024" and conference.date >= today_date %}
+          style="display: block;"
+        {% else %}
+          style="display: none;"
+        {% endif %}
+      >
+        <div class="conference-header">
           {% if conference.url != '' %}
             <h2>
               <a href="{{ conference.url }}" target="_blank" rel="noopener noreferrer" class="conference-name-link">
@@ -91,14 +93,14 @@
         <div class="conference-info">
           <div class="date-info">
             <div class="event-date">
-              <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.event_date }}</strong> 
-              {{ conference.date | date: "%B %d, %Y" }}
+              <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.event_date }}</strong>
+              {{ conference.date | date: '%B %d, %Y' }}
             </div>
 
             {% if conference.submission_deadline %}
               <div class="deadline">
                 <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.deadline }}</strong>
-                {{ conference.submission_deadline | date: "%B %d, %Y" }}
+                {{ conference.submission_deadline | date: '%B %d, %Y' }}
               </div>
             {% endif %}
           </div>
@@ -147,10 +149,8 @@
 </div>
 
 <script>
-  {{ conference_functions }}
-
   // Initialize when document is ready
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     filterConferences();
     updateVisibleCount();
   });

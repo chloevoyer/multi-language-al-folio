@@ -20,7 +20,6 @@ authors:
       name: McGill University
 ---
 
-
 {% include image-slider.liquid path="assets/slides/predatory-practices/" count=11 extension="jpeg" %}
 
 In today's digital age, a concerning trend has emerged in academic publishing that threatens research integrity: predatory publishing practices. I recently fell into a fascinating research rabbit hole about this topic, and what I discovered was both alarming and important to share.
@@ -121,4 +120,4 @@ Building a resilient academic publishing ecosystem depends heavily on researcher
 
 ---
 
-*About the Author: Chloé Voyer is a MSc Mental Health researcher passionate about maintaining academic integrity and helping fellow researchers navigate the complex landscape of academic publishing.*
+_About the Author: Chloé Voyer is a MSc Mental Health researcher passionate about maintaining academic integrity and helping fellow researchers navigate the complex landscape of academic publishing._
