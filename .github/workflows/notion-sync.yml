@@ -1,8 +1,8 @@
 name: Sync Notion Database
 on:
   schedule:
-    - cron: "0 0 * * *"  # Runs daily at midnight
-  workflow_dispatch:  # Allows manual trigger
+    - cron: "0 0 * * *" # Runs daily at midnight
+  workflow_dispatch: # Allows manual trigger
 
 jobs:
   sync-notion-data:
@@ -42,7 +42,7 @@ jobs:
                   "direction": "ascending"
               }]
           ).get("results")
-          
+
           # Transform to desired format
           conferences = []
           for page in results:

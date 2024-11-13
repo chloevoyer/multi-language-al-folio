@@ -34,7 +34,7 @@
       <option value="">{{ site.data[site.active_lang].strings.list_psyc_conf.all_modalities }}</option>
       {% assign modalities = site.data.conferences.conferences | map: 'modality' | uniq | sort %}
       {% for modality in modalities %}
-        {% if modality != "" %}
+        {% if modality != '' %}
           <option value="{{ modality }}">{{ modality }}</option>
         {% endif %}
       {% endfor %}
@@ -44,7 +44,7 @@
       <option value="">{{ site.data[site.active_lang].strings.list_psyc_conf.all_locations }}</option>
       {% assign locations = site.data.conferences.conferences | map: 'local_abroad' | uniq | sort %}
       {% for location in locations %}
-        {% if location != "" %}
+        {% if location != '' %}
           <option value="{{ location }}">{{ location }}</option>
         {% endif %}
       {% endfor %}
@@ -130,7 +130,7 @@
               </div>
             {% endif %}
 
-            {% if conference.discipline != "" %}
+            {% if conference.discipline != '' %}
               <div class="tag discipline-tag">
                 {{ conference.discipline }}
               </div>
