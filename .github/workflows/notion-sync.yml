@@ -79,7 +79,7 @@ jobs:
               conference = {
                   "name": get_title("Conference Name"),
                   "acronym": get_select("Acronym"),
-                  "date": get_date("Date"),
+                  "date": get_date("Event Date"),
                   "submission_deadline": get_date("Submission Deadline"),
                   "location": get_text("Location"),
                   "local_abroad": get_select("Local vs. Abroad"),

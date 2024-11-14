@@ -6,45 +6,31 @@
     const disciplineFilter = document.getElementById('disciplineFilter').value;
     const modalityFilter = document.getElementById('modalityFilter').value;
     const locationFilter = document.getElementById('locationFilter').value;
-    const statusFilter = document.getElementById('statusFilter').value;
     
     const today = new Date();
     const twoMonthsFromNow = new Date(today);
     twoMonthsFromNow.setMonth(today.getMonth() + 2);
     let visibleCount = 0;
     
+    // Get all cards and convert to array for sorting
     const cards = Array.from(document.querySelectorAll('.conference-card'));
     
-    // Custom sorting function
+    // Sort cards by date
     cards.sort((a, b) => {
-      const aDeadlineElement = a.querySelector('.deadline');
-      const bDeadlineElement = b.querySelector('.deadline');
-      const aDeadlineText = aDeadlineElement ? aDeadlineElement.textContent.split('Deadline')[1].trim() : '';
-      const bDeadlineText = bDeadlineElement ? bDeadlineElement.textContent.split('Deadline')[1].trim() : '';
-      
-      // Sort by deadline first
-      if (aDeadlineText && bDeadlineText) {
-        return new Date(aDeadlineText) - new Date(bDeadlineText);
-      }
-      
-      // If one has deadline and other doesn't, prioritize the one with deadline
-      if (aDeadlineText) return -1;
-      if (bDeadlineText) return 1;
-      
-      // If no deadlines, sort by event date
-      return new Date(a.dataset.date) - new Date(b.dataset.date);
+      const dateA = a.dataset.date;
+      const dateB = b.dataset.date;
+      return dateA.localeCompare(dateB);
     });
     
+    // Reorder cards in DOM
     const container = document.querySelector('.conferences');
     cards.forEach(card => container.appendChild(card));
     
+    // Filter cards
     cards.forEach(card => {
-      const eventDateElement = card.querySelector('.event-date');
-      const eventDateText = eventDateElement ? eventDateElement.textContent.split('Event Date')[1].trim() : '';
-      const eventDate = eventDateText ? new Date(eventDateText) : null;
-      
+      const eventDate = new Date(card.dataset.date);
       const deadlineElement = card.querySelector('.deadline');
-      const deadlineText = deadlineElement ? deadlineElement.textContent.split('Deadline')[1].trim() : '';
+      const deadlineText = deadlineElement ? deadlineElement.textContent.split('Deadline')[1].trim() : null;
       const deadlineDate = deadlineText ? new Date(deadlineText) : null;
       
       const discipline = card.dataset.discipline;
@@ -53,40 +39,39 @@
       
       let matchesYearFilter;
       if (yearFilter === 'upcoming') {
-        const eventInRange = eventDate && eventDate >= today && eventDate <= twoMonthsFromNow;
+        // Show if either event date or submission deadline is within next 2 months
+        const eventInRange = eventDate >= today && eventDate <= twoMonthsFromNow;
         const deadlineInRange = deadlineDate && deadlineDate >= today && deadlineDate <= twoMonthsFromNow;
         matchesYearFilter = eventInRange || deadlineInRange;
       } else {
-        const eventYear = eventDate ? eventDate.getFullYear().toString() : '';
+        // For specific year filtering
+        const eventYear = eventDate.getFullYear().toString();
         matchesYearFilter = eventYear === yearFilter;
       }
-      
-      const matchesStatus = statusFilter === 'all' || 
-        (statusFilter === 'tba' && (!eventDateText || !deadlineText)) ||
-        (statusFilter === 'confirmed' && eventDateText && deadlineText);
       
       const matchesDiscipline = !disciplineFilter || discipline === disciplineFilter;
       const matchesModality = !modalityFilter || modality === modalityFilter;
       const matchesLocation = !locationFilter || location === locationFilter;
       
-      const shouldShow = matchesYearFilter && matchesDiscipline && matchesModality && 
-                        matchesLocation && matchesStatus;
+      const shouldShow = matchesYearFilter && matchesDiscipline && matchesModality && matchesLocation;
       card.style.display = shouldShow ? 'block' : 'none';
       
       if (shouldShow) visibleCount++;
     });
     
+    // Update the count display
     const countElement = document.getElementById('visibleCount');
     if (countElement) {
       countElement.textContent = visibleCount;
     }
     
+    // Show/hide no results message
     const noResultsDiv = document.getElementById('noResults');
     if (noResultsDiv) {
       noResultsDiv.style.display = visibleCount === 0 ? 'block' : 'none';
     }
   }
-        
+      
   // Initialize with upcoming events
   document.addEventListener('DOMContentLoaded', function() {
     const yearFilter = document.getElementById('yearFilter');
