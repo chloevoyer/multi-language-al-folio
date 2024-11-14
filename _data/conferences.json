@@ -2,7 +2,7 @@
   "conferences": [
     {
       "name": "32nd International Congress of Psychology",
-      "acronym": "ICP",
+      "acronym": "",
       "date": "2021-07-18",
       "submission_deadline": "2021-01-18",
       "location": "Prague, Czech Republic",
@@ -14,7 +14,7 @@
     },
     {
       "name": "Canadian Organization for Gender and Sex Research",
-      "acronym": "COGS",
+      "acronym": "",
       "date": "2022-05-29",
       "submission_deadline": "2022-03-05",
       "location": "Montreal, QC",
@@ -26,7 +26,7 @@
     },
     {
       "name": "7th Neurosymposium",
-      "acronym": "NEUROSYMP",
+      "acronym": "",
       "date": "2022-06-17",
       "location": "Montreal, QC",
       "local_abroad": "QC ⚜️",
@@ -37,7 +37,7 @@
     },
     {
       "name": "10th World Congress Of Cognitive and Behavioral Therapies",
-      "acronym": "WCBCT",
+      "acronym": "",
       "date": "2023-06-01",
       "location": "Seoul, South Korea",
       "local_abroad": "INT 🌎",
@@ -48,7 +48,7 @@
     },
     {
       "name": "Canadian Association of Cognitive and Behavioural Therapies",
-      "acronym": "CACBT",
+      "acronym": "",
       "date": "2024-05-09",
       "location": "Toronto, ON",
       "local_abroad": "CAN 🍁",
@@ -59,7 +59,7 @@
     },
     {
       "name": "Congrès annuel de la Société Québécoise pour la Recherche en Psychologie",
-      "acronym": "SQRP",
+      "acronym": "",
       "date": "2024-05-24",
       "submission_deadline": "2024-03-15",
       "location": "Drummondville, QC",
@@ -71,7 +71,7 @@
     },
     {
       "name": "Perinatal & Child Health Research Annual Meeting 2025",
-      "acronym": "PCHR",
+      "acronym": "",
       "date": "2024-06-02",
       "location": "Vancouver, BC",
       "local_abroad": "CAN 🍁",
@@ -82,7 +82,7 @@
     },
     {
       "name": "World Congress of Societies of Biological Psychiatry",
-      "acronym": "WSFPB",
+      "acronym": "",
       "date": "2024-06-05",
       "location": "Istanbul, Turkey",
       "local_abroad": "INT 🌎",
@@ -93,7 +93,7 @@
     },
     {
       "name": "International Marcé Society 2024",
-      "acronym": "IMS",
+      "acronym": "",
       "date": "2024-09-04",
       "submission_deadline": "2024-03-01",
       "location": "Barcelona, Spain",
@@ -105,7 +105,7 @@
     },
     {
       "name": "AAP 2024 National Conference & Exhibition",
-      "acronym": "AAP",
+      "acronym": "",
       "date": "2024-09-27",
       "submission_deadline": "2024-04-12",
       "location": "Orlando, FL",
@@ -117,7 +117,7 @@
     },
     {
       "name": "57th Annual Meeting of the International Society for Developmental Psychobiology",
-      "acronym": "ISDP",
+      "acronym": "",
       "date": "2024-10-02",
       "submission_deadline": "2024-06-03",
       "location": "Chicago, IL",
@@ -129,7 +129,7 @@
     },
     {
       "name": "Society for Neuroscience",
-      "acronym": "SFN",
+      "acronym": "",
       "date": "2024-10-05",
       "location": "Chicago, IL",
       "local_abroad": "INT 🌎",
@@ -140,7 +140,7 @@
     },
     {
       "name": "2024 Annual Meeting of the American Academy of Child and Adolescent Psychiatry",
-      "acronym": "AACAP",
+      "acronym": "",
       "date": "2024-10-14",
       "submission_deadline": "2024-06-06",
       "location": "Seattle, WA",
@@ -152,7 +152,7 @@
     },
     {
       "name": "8th Annual US DOHaD Meeting",
-      "acronym": "DOHaD",
+      "acronym": "",
       "date": "2024-10-14",
       "submission_deadline": "2024-08-01",
       "location": "Chapel Hill, NC",
@@ -164,7 +164,7 @@
     },
     {
       "name": "1er Colloque de la Communauté de pratiques internationale santé mentale et travail",
-      "acronym": "CoP-SMT",
+      "acronym": "",
       "date": "2024-10-16",
       "location": "Montreal, QC",
       "local_abroad": "QC ⚜️",
@@ -175,7 +175,7 @@
     },
     {
       "name": "74th Annual Canadian Psychiatric Association Conference",
-      "acronym": "CPA",
+      "acronym": "",
       "date": "2024-11-06",
       "location": "Montreal, QC",
       "local_abroad": "CAN 🍁",
@@ -186,10 +186,10 @@
     },
     {
       "name": "24th World Congress of Psychiatry",
-      "acronym": "WPA",
+      "acronym": "",
       "date": "2024-11-14",
       "submission_deadline": "2024-05-06",
-      "location": "Mexico City, Mexico",
+      "location": "Mexico City, MX",
       "local_abroad": "INT 🌎",
       "modality": "IRL 🤝",
       "discipline": "PSYT",
@@ -198,7 +198,7 @@
     },
     {
       "name": "Douglas Research Blitz",
-      "acronym": "DOUGLAS",
+      "acronym": "",
       "date": "2024-11-26",
       "submission_deadline": "2024-11-11T17:00:00.000-05:00",
       "location": "Montreal, QC",
@@ -210,7 +210,7 @@
     },
     {
       "name": "12e édition de la Journée scientifique NeuroQAM",
-      "acronym": "NeuroQAM",
+      "acronym": "",
       "date": "2024-12-06",
       "location": "Montreal, QC",
       "local_abroad": "CAN 🍁",
@@ -221,7 +221,7 @@
     },
     {
       "name": "Colloque de professionnelles et professionnels en emploi",
-      "acronym": "QUARIERA",
+      "acronym": "",
       "date": "2025-02-12",
       "submission_deadline": "2024-10-18",
       "location": "Sherbrooke, QC",
@@ -233,7 +233,7 @@
     },
     {
       "name": "INBBC 2025 Foetal Brain Conference",
-      "acronym": "INBBC",
+      "acronym": "",
       "date": "2025-02-19",
       "submission_deadline": "2024-11-04",
       "location": "San Diego, CA",
@@ -245,7 +245,7 @@
     },
     {
       "name": "Cognitive Science Undergraduate Research Forum 2025",
-      "acronym": "CogSURF",
+      "acronym": "",
       "date": "2025-02-27",
       "submission_deadline": "2024-11-29",
       "location": "Montreal, QC",
@@ -257,7 +257,7 @@
     },
     {
       "name": "AAGP 2025 Annual Meeting",
-      "acronym": "AAGP",
+      "acronym": "",
       "date": "2025-03-14",
       "location": "Phoenix, AZ",
       "local_abroad": "INT 🌎",
@@ -268,7 +268,7 @@
     },
     {
       "name": "72nd Annual Scientific Meeting of the Society for Reproductive Investigation",
-      "acronym": "SRI",
+      "acronym": "",
       "date": "2025-03-25",
       "submission_deadline": "2024-10-11",
       "location": "Charlotte, NC",
@@ -280,7 +280,7 @@
     },
     {
       "name": "32nd Cognitive Neuroscience Society Annual Meeting",
-      "acronym": "CNS",
+      "acronym": "",
       "date": "2025-03-29",
       "submission_deadline": "2024-12-06",
       "location": "Boston, Massachusetts",
@@ -292,7 +292,7 @@
     },
     {
       "name": "Congress of the Schizophrenia International Research Society",
-      "acronym": "SIRS",
+      "acronym": "",
       "date": "2025-03-29",
       "submission_deadline": "2024-12-05",
       "location": "Chicago, IL",
@@ -304,10 +304,10 @@
     },
     {
       "name": "European Congress of Psychiatry",
-      "acronym": "EPA",
+      "acronym": "",
       "date": "2025-04-08",
       "submission_deadline": "2024-09-17",
-      "location": "Madrid, Spain",
+      "location": "Madrid, ES",
       "local_abroad": "INT 🌎",
       "modality": "IRL 🤝",
       "discipline": "PSYT",
@@ -316,7 +316,7 @@
     },
     {
       "name": "Society for Biological Psychiatry",
-      "acronym": "SOBP",
+      "acronym": "",
       "date": "2025-04-24",
       "submission_deadline": "2024-11-22",
       "location": "Toronto, ON",
@@ -328,7 +328,7 @@
     },
     {
       "name": "2025 Society for Research in Child Development Biennial Meeting",
-      "acronym": "SRCD",
+      "acronym": "",
       "date": "2025-05-01",
       "submission_deadline": "2024-09-26",
       "location": "Minneapolis, MN",
@@ -340,10 +340,10 @@
     },
     {
       "name": "8th International Meeting on the Neuroscience of Parenting (Parental Brain 2025 Meeting)",
-      "acronym": "PB",
+      "acronym": "",
       "date": "2025-05-07",
       "submission_deadline": "2025-03-15",
-      "location": "Barcelona, Spain",
+      "location": "Barcelona, ES",
       "local_abroad": "INT 🌎",
       "modality": "IRL 🤝",
       "discipline": "NEURO",
@@ -352,7 +352,7 @@
     },
     {
       "name": "APA's 2025 Annual Meeting",
-      "acronym": "APA",
+      "acronym": "",
       "date": "2025-05-07",
       "submission_deadline": "2025-01-09",
       "location": "Los Angeles, CA",
@@ -364,7 +364,7 @@
     },
     {
       "name": "10th World Congress on ADHD",
-      "acronym": "ADHD",
+      "acronym": "",
       "date": "2025-05-08",
       "submission_deadline": "2024-11-07",
       "location": "Prague, Czech Republic",
@@ -376,7 +376,7 @@
     },
     {
       "name": "American Psychiatric Association",
-      "acronym": "APA",
+      "acronym": "",
       "date": "2025-05-17",
       "submission_deadline": "2024-09-05T17:00:00.000-04:00",
       "location": "Los Angeles, CA",
@@ -388,7 +388,7 @@
     },
     {
       "name": "Life History Research Society 2025",
-      "acronym": "LHRS",
+      "acronym": "",
       "date": "2025-05-31",
       "location": "TBA",
       "local_abroad": "",
@@ -399,7 +399,7 @@
     },
     {
       "name": "WAIMH 2024 Interim World Congress",
-      "acronym": "WAIMH",
+      "acronym": "",
       "date": "2025-06-05",
       "location": "Tampere, Finland",
       "local_abroad": "INT 🌎",
@@ -410,7 +410,7 @@
     },
     {
       "name": "38th SPER Annual Meeting",
-      "acronym": "SPER",
+      "acronym": "",
       "date": "2025-06-09",
       "submission_deadline": "2025-01-27",
       "location": "Boston, MA",
@@ -422,7 +422,7 @@
     },
     {
       "name": "86th Annual Canadian Psychological Association Annual National Convention",
-      "acronym": "CPA",
+      "acronym": "",
       "date": "2025-06-12",
       "submission_deadline": "2024-12-03",
       "location": "St. John's, Newfoundland",
@@ -434,7 +434,7 @@
     },
     {
       "name": "21st International Society for Research in Child and Adolescent Psychopathology Conference",
-      "acronym": "ISRCAP",
+      "acronym": "",
       "date": "2025-06-18",
       "submission_deadline": "2024-12-31",
       "location": "Vancouver, BC",
@@ -446,7 +446,7 @@
     },
     {
       "name": "Organization for Human Brain Mapping",
-      "acronym": "OHBM",
+      "acronym": "",
       "date": "2025-06-24",
       "submission_deadline": "2024-12-17",
       "location": "Brisbane, Australia",
@@ -458,7 +458,7 @@
     },
     {
       "name": "American Psychological Association Convention",
-      "acronym": "APA",
+      "acronym": "",
       "date": "2025-08-07",
       "location": "Denver, Colorado",
       "local_abroad": "INT 🌎",
@@ -469,10 +469,10 @@
     },
     {
       "name": "13th World Congress on Developmental Origins of Health and Disease",
-      "acronym": "DOHaD",
+      "acronym": "",
       "date": "2025-09-07",
       "submission_deadline": "2024-12-06",
-      "location": "Buenos Aires, Argentina",
+      "location": "Buenos Aires, AR",
       "local_abroad": "INT 🌎",
       "modality": "IRL 🤝",
       "discipline": "DEV",
@@ -481,7 +481,7 @@
     },
     {
       "name": "15th International Conference on Prevention and Early Intervention in Mental Health",
-      "acronym": "IEPA",
+      "acronym": "",
       "date": "2025-09-08",
       "submission_deadline": "2024-11-15",
       "location": "Berlin, Germany",
@@ -493,7 +493,7 @@
     },
     {
       "name": "75th Annual Canadian Psychiatric Association Conference",
-      "acronym": "CPA",
+      "acronym": "",
       "date": "2025-10-22",
       "location": "Vancouver, BC",
       "local_abroad": "CAN 🍁",
@@ -504,7 +504,7 @@
     },
     {
       "name": "58th Annual Meeting of the International Society for Developmental Psychobiology",
-      "acronym": "ISDP",
+      "acronym": "",
       "date": "2025-11-12",
       "submission_deadline": "2025-06-02",
       "location": "San Diego, CA",
@@ -516,7 +516,7 @@
     },
     {
       "name": "28th Biennial Meeting of the International Society for the Study of Behavioural Development",
-      "acronym": "ISSBD",
+      "acronym": "",
       "date": "2026-06-21",
       "location": "Incheon, South Korea",
       "local_abroad": "INT 🌎",
@@ -527,7 +527,7 @@
     },
     {
       "name": "39th SPER Annual Meeting",
-      "acronym": "SPER",
+      "acronym": "",
       "date": "2026-06-22",
       "location": "Phoenix, AZ",
       "local_abroad": "INT 🌎",
@@ -538,7 +538,7 @@
     },
     {
       "name": "ICIS 2026 Congress",
-      "acronym": "ICIS",
+      "acronym": "",
       "date": "2026-07-01",
       "location": "Panama City, Panama",
       "local_abroad": "INT 🌎",
@@ -549,7 +549,7 @@
     },
     {
       "name": "27th World Congress of IACAPAP",
-      "acronym": "IACAPAP",
+      "acronym": "",
       "date": "2026-07-01",
       "location": "Hamburg, Germany",
       "local_abroad": "INT 🌎",
@@ -560,7 +560,7 @@
     },
     {
       "name": "24th International Conference of the International Society for Psychological and Social Approaches to Psychosis",
-      "acronym": "ISPS",
+      "acronym": "",
       "date": "2026-07-06",
       "location": "Lausanne, Switzerland",
       "local_abroad": "INT 🌎",
@@ -571,7 +571,7 @@
     },
     {
       "name": "WAIMH 2026 World Congress",
-      "acronym": "WAIMH",
+      "acronym": "",
       "date": "2026-10-02",
       "location": "Toronto, ON",
       "local_abroad": "CAN 🍁",
@@ -582,7 +582,7 @@
     },
     {
       "name": "76th Annual Canadian Psychiatric Association Conference",
-      "acronym": "CPA",
+      "acronym": "",
       "date": "2026-11-18",
       "location": "Montreal, QC",
       "local_abroad": "CAN 🍁",
@@ -593,7 +593,7 @@
     },
     {
       "name": "40th SPER Annual Meeting",
-      "acronym": "SPER",
+      "acronym": "",
       "date": "2027-06-15",
       "location": "Detroit, MI",
       "local_abroad": "INT 🌎",
@@ -604,7 +604,7 @@
     },
     {
       "name": "77th Annual Canadian Psychiatric Association Conference",
-      "acronym": "CPA",
+      "acronym": "",
       "date": "2027-11-10",
       "location": "Toronto, ON",
       "local_abroad": "CAN 🍁",
