@@ -20,6 +20,12 @@
       {% endfor %}
     </select>
 
+    <select id="statusFilter" onchange="filterConferences()">
+      <option value="all">All Statuses</option>
+      <option value="confirmed">Confirmed</option>
+      <option value="tba">TBA</option>
+    </select>
+
     <select id="disciplineFilter" onchange="filterConferences()">
       <option value="">{{ site.data[site.active_lang].strings.list_psyc_conf.all_disciplines }}</option>
       {% assign disciplines = site.data.conferences.conferences | map: 'discipline' | uniq | sort %}
