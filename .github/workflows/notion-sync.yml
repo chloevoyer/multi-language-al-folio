@@ -38,7 +38,7 @@ jobs:
           results = notion.databases.query(
               database_id=database_id,
               sorts=[{
-                  "property": "Date",
+                  "property": "Event Date",
                   "direction": "ascending"
               }]
           ).get("results")
