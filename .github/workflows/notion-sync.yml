@@ -66,7 +66,7 @@ jobs:
               def get_date(prop_name):
                   prop = props.get(prop_name, {})
                   if prop.get("date"):
-                      return prop["date"]["start"] or ""  # Return empty string if None
+                      return prop["date"]["start"] or ""
                   return ""
 
               # Helper function to get select value
@@ -79,7 +79,7 @@ jobs:
               conference = {
                   "name": get_title("Conference Name"),
                   "acronym": get_select("Acronym"),
-                  "date": get_date("Event Date"),
+                  "event_date": get_date("Event Date"),
                   "submission_deadline": get_date("Submission Deadline"),
                   "location": get_text("Location"),
                   "local_abroad": get_select("Local vs. Abroad"),
@@ -93,6 +93,8 @@ jobs:
           # Save to JSON file with proper encoding
           with open("_data/conferences.json", "w", encoding="utf-8") as f:
               json.dump({"conferences": conferences}, f, indent=2, ensure_ascii=False)
+          EOF
+
           python fetch_notion.py
 
       - name: Commit and push if changed
