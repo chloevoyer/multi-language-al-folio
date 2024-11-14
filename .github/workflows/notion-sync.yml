@@ -34,11 +34,15 @@ jobs:
           notion = Client(auth=os.environ["NOTION_TOKEN"])
           database_id = os.environ["DATABASE_ID"]
 
-          # Query the database
+          # First, get database to check property names
+          database = notion.databases.retrieve(database_id=database_id)
+          print("Available properties:", database["properties"].keys())
+
+          # Then query with correct property name
           results = notion.databases.query(
               database_id=database_id,
               sorts=[{
-                  "property": "Event Date",
+                  "property": "Event Date",  # Make sure this matches exactly
                   "direction": "ascending"
               }]
           ).get("results")
