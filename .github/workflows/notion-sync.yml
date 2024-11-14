@@ -66,8 +66,8 @@ jobs:
               def get_date(prop_name):
                   prop = props.get(prop_name, {})
                   if prop.get("date"):
-                      return prop["date"]["start"]
-                  return None
+                      return prop["date"]["start"] or ""  # Return empty string if None
+                  return ""
 
               # Helper function to get select value
               def get_select(prop_name):
@@ -78,7 +78,7 @@ jobs:
 
               conference = {
                   "name": get_title("Conference Name"),
-                  "acronym": get_text("Acronym"),
+                  "acronym": get_select("Acronym"),
                   "date": get_date("Date"),
                   "submission_deadline": get_date("Submission Deadline"),
                   "location": get_text("Location"),
@@ -88,16 +88,11 @@ jobs:
                   "theme": get_text("Theme"),
                   "url": props.get("URL", {}).get("url", "")
               }
-
-              # Remove any None values
-              conference = {k: v for k, v in conference.items() if v is not None}
               conferences.append(conference)
 
           # Save to JSON file with proper encoding
           with open("_data/conferences.json", "w", encoding="utf-8") as f:
               json.dump({"conferences": conferences}, f, indent=2, ensure_ascii=False)
-          EOF
-
           python fetch_notion.py
 
       - name: Commit and push if changed
