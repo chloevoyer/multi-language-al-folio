@@ -22,7 +22,7 @@ jobs:
       - name: Fetch Notion data
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-          DATABASE_ID: "3ad05bf6976844ce82b360c234b3f0e0"
+          DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
         run: |
           cat > fetch_notion.py << 'EOF'
           import os
