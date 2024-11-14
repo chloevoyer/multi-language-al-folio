@@ -30,66 +30,73 @@ jobs:
           from notion_client import Client
           from datetime import datetime
 
+          # Initialize the client
           notion = Client(auth=os.environ["NOTION_TOKEN"])
           database_id = os.environ["DATABASE_ID"]
 
-          # Simple query without sorting first
-          try:
-              results = notion.databases.query(
-                  database_id=database_id
-              ).get("results")
+          # Query the database
+          results = notion.databases.query(
+              database_id=database_id,
+              sorts=[{
+                  "property": "Date",
+                  "direction": "ascending"
+              }]
+          ).get("results")
 
-              conferences = []
-              for page in results:
-                  props = page["properties"]
+          # Transform to desired format
+          conferences = []
+          for page in results:
+              props = page["properties"]
 
-                  def get_text(prop_name):
-                      prop = props.get(prop_name, {})
-                      if prop.get("rich_text") and len(prop["rich_text"]) > 0:
-                          return prop["rich_text"][0]["text"]["content"]
-                      return ""
+              # Helper function to safely get text content
+              def get_text(prop_name):
+                  prop = props.get(prop_name, {})
+                  if prop.get("rich_text") and len(prop["rich_text"]) > 0:
+                      return prop["rich_text"][0]["text"]["content"]
+                  return ""
 
-                  def get_title(prop_name):
-                      prop = props.get(prop_name, {})
-                      if prop.get("title") and len(prop["title"]) > 0:
-                          return prop["title"][0]["text"]["content"]
-                      return ""
+              # Helper function to get title
+              def get_title(prop_name):
+                  prop = props.get(prop_name, {})
+                  if prop.get("title") and len(prop["title"]) > 0:
+                      return prop["title"][0]["text"]["content"]
+                  return ""
 
-                  def get_date(prop_name):
-                      prop = props.get(prop_name, {})
-                      if prop.get("date"):
-                          return prop["date"]["start"] or ""
-                      return ""
+              # Helper function to get date
+              def get_date(prop_name):
+                  prop = props.get(prop_name, {})
+                  if prop.get("date"):
+                      return prop["date"]["start"]
+                  return None
 
-                  def get_select(prop_name):
-                      prop = props.get(prop_name, {})
-                      if prop.get("select"):
-                          return prop["select"].get("name", "")
-                      return ""
+              # Helper function to get select value
+              def get_select(prop_name):
+                  prop = props.get(prop_name, {})
+                  if prop.get("select"):
+                      return prop["select"].get("name", "")
+                  return ""
 
-                  conference = {
-                      "name": get_title("Conference Name"),
-                      "acronym": get_select("Acronym"),
-                      "event_date": get_date("Event Date"),
-                      "submission_deadline": get_date("Submission Deadline"),
-                      "location": get_text("Location"),
-                      "local_abroad": get_select("Local vs. Abroad"),
-                      "modality": get_select("Modality"),
-                      "discipline": get_select("Discipline"),
-                      "theme": get_text("Theme"),
-                      "url": props.get("URL", {}).get("url", "")
-                  }
-                  conferences.append(conference)
+              conference = {
+                  "name": get_title("Conference Name"),
+                  "acronym": get_select("Acronym"),
+                  "date": get_date("Event Date"),
+                  "submission_deadline": get_date("Submission Deadline"),
+                  "location": get_text("Location"),
+                  "local_abroad": get_select("Local vs. Abroad"),
+                  "modality": get_select("Modality"),
+                  "discipline": get_select("Discipline"),
+                  "theme": get_text("Theme"),
+                  "url": props.get("URL", {}).get("url", "")
+              }
 
-              # Sort the conferences by event date after fetching
-              conferences.sort(key=lambda x: x["event_date"] if x["event_date"] else "9999")
+              # Remove any None values
+              conference = {k: v for k, v in conference.items() if v is not None}
+              conferences.append(conference)
 
-              with open("_data/conferences.json", "w", encoding="utf-8") as f:
-                  json.dump({"conferences": conferences}, f, indent=2, ensure_ascii=False)
-
-          except Exception as e:
-              print(f"Error: {str(e)}")
-              raise
+          # Save to JSON file with proper encoding
+          with open("_data/conferences.json", "w", encoding="utf-8") as f:
+              json.dump({"conferences": conferences}, f, indent=2, ensure_ascii=False)
+          EOF
 
           python fetch_notion.py
 
