@@ -8,7 +8,7 @@ description: Seamlessly sync your Garmin fitness activities to Notion using auto
 tags: lifestyle productivity
 categories: tools
 featured: false
-thumbnail: assets/img/headers/garmin-to-notion.jpg
+thumbnail: assets/img/thumbnails/garmin-run.png
 lang: en-us
 ---
 
@@ -57,7 +57,7 @@ Here is a screenshot of what my Notion dashboard looks like:
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/life/notion-template.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/thumbnails/notion-template.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
