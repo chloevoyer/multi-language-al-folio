@@ -20,6 +20,7 @@
   --global-pubsheaddate-color: rgba(0, 0, 0, 0.261);
   --global-card-bg-color: #{$white-color};
   --global-highlight-color: #{$red-color-dark};
+  --global-highlights-color: #{$blue-color};
   --global-back-to-top-bg-color: rgba(
     #{color.channel($black-color, "red", $space: rgb)},
     #{color.channel($black-color, "green", $space: rgb)},

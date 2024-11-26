@@ -828,7 +828,7 @@ footer.sticky-bottom {
           cursor: pointer;
 
           &:hover {
-            color: var(--global-text-color);
+            color: var(--global-hover-color);
             border-bottom: 1px dashed var(--global-text-color);
           }
         }
@@ -845,27 +845,29 @@ footer.sticky-bottom {
           margin-left: 0;
 
           &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
+            color: var(--global-hover-color);
+            border-color: var(--global-hover-color);
           }
         }
 
         a.award.btn {
+          color: var(--global-highlight-color);
           border-color: var(--global-highlight-color);
           
           &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
+            color: var(--global-hover-color);
+            border-color: var(--global-hover-color);
           }
 
         }
 
         a.highlights.btn {
-          border-color: var(--global-theme-color);
+          color: var(--global-highlights-color);
+          border-color: var(--global-highlights-color);
           
           &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
+            color: var(--global-hover-color);
+            border-color: var(--global-hover-color);
           }
         }
       }
