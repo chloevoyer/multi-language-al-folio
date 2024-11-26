@@ -4,6 +4,7 @@ $(document).ready(function () {
     $(this).parent().parent().find(".abstract.hidden").toggleClass("open");
     $(this).parent().parent().find(".tldr.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
+    $(this).parent().parent().find(".highlights.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".video.hidden.open").toggleClass("open");
   });
@@ -11,6 +12,7 @@ $(document).ready(function () {
     $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".tldr.hidden").toggleClass("open");
     $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
+    $(this).parent().parent().find(".highlights.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".video.hidden.open").toggleClass("open");
   });
@@ -18,6 +20,15 @@ $(document).ready(function () {
     $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".tldr.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".award.hidden").toggleClass("open");
+    $(this).parent().parent().find(".highlights.hidden.open").toggleClass("open");
+    $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
+    $(this).parent().parent().find(".video.hidden.open").toggleClass("open");
+  });
+  $("a.highlights").click(function () {
+    $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
+    $(this).parent().parent().find(".tldr.hidden.open").toggleClass("open");
+    $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
+    $(this).parent().parent().find(".highlights.hidden").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".video.hidden.open").toggleClass("open");
   });
@@ -25,6 +36,7 @@ $(document).ready(function () {
     $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".tldr.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
+    $(this).parent().parent().find(".highlights.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden").toggleClass("open");
     $(this).parent().parent().find(".video.hidden.open").toggleClass("open");
   });
@@ -32,6 +44,7 @@ $(document).ready(function () {
     $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".tldr.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
+    $(this).parent().parent().find(".highlights.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".video.hidden").toggleClass("open");
   });
