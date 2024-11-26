@@ -223,7 +223,7 @@
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
 
-    {% comment %} Normalize entry types {% endcomment %}
+    <!-- Normalize entry types -->
     {% if entry.type == 'article' %}
       {% capture entrytype %}<em>{{ entry.journal }}</em><br>{% endcapture %}
     {% elsif proceedings contains entry.type %}
@@ -234,7 +234,7 @@
       {% capture entrytype %}{% endcapture %}
     {% endif %}
 
-    {% comment %} date {% endcomment %}
+    <!-- Date -->
     {% if entry.day %}
       {% capture entryday %}{{ " " }}{{ entry.day | replace: "-", "&ndash;" }}{% endcapture %}
     {% endif %}
@@ -245,10 +245,17 @@
       {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
     {% endif %}
 
+    <!-- For conference info in periodical/additional info section -->
     {% if entry.conference %}
       {% assign entrytype_text = entrytype | strip_html | strip %}
-      {% capture entrytype %}{{ entrytype }}{% if entrytype_text != "" %}, {% endif %}<em>{{ entry.conference }}</em><br>{% endcapture %}
+      {% capture entrytype %}
+        {{ entrytype }}
+        {% if entrytype_text != "" %}, {% endif %}
+        <em class="conference-name">{{ entry.conference }}</em>
+        <br>
+      {% endcapture %}
     {% endif %}
+
     {% comment %}
       {% if entry.location %}
         {% assign entrytype_text = entrytype | strip_html | strip %}
@@ -282,11 +289,24 @@
         <a class="highlights btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.highlights }}</a>
       {% endif %}
       {% if entry.abstract %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.abstract }}</a>
+        <a class="abstract btn btn-sm z-depth-0" 
+            role="button" 
+            data-toggle="popover"
+            data-trigger="hover"
+            data-placement="top"
+            data-content="abstract">
+        {{ site.data[site.active_lang].strings.bibliography.abstract }}</a>
       {% endif %}
       {% if entry.tldr %}
-        <a class="tldr btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.tldr }}</a>
-      {% endif %}
+        <a class="tldr btn btn-sm z-depth-0"
+           role="button" 
+           data-toggle="popover"
+           data-trigger="hover"
+           data-placement="top"
+           data-content="long story short...">
+          {{ site.data[site.active_lang].strings.bibliography.tldr }}
+        </a>
+      {% endif %}      
       {% if entry.arxiv %}
         <a href="{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.arxiv }}</a>
       {% endif %}
@@ -296,9 +316,9 @@
       {% if entry.html %}
         {% if entry.html contains '://' %}
           <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.url }}</a>
-        {% else %}
+          {% else %}
           <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">
-            {{ site.data[site.active_lang].strings.bibliography.html }}
+          {{ site.data[site.active_lang].strings.bibliography.html }}
           </a>
         {% endif %}
       {% endif %}
@@ -306,20 +326,32 @@
         {% if entry.pdf contains '://' %}
           <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">
             {{ site.data[site.active_lang].strings.bibliography.pdf }}
-          </a>
-        {% else %}
-          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">
+            </a>
+            {% else %}
+            <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">
             {{ site.data[site.active_lang].strings.bibliography.pdf }}
-          </a>
+            </a>
+          {% endif %}
         {% endif %}
-      {% endif %}
-      {% if entry.supp %}
-        {% if entry.supp contains '://' %}
-          <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">
-            {{ site.data[site.active_lang].strings.bibliography.supp }}
-          </a>
+        {% if entry.supp %}
+          {% if entry.supp contains '://' %}
+            <a href="{{ entry.supp }}" 
+                class="btn btn-sm z-depth-0" 
+                role="button"
+                data-toggle="popover"
+                data-trigger="hover"
+                data-placement="top"
+                data-content="supplementary material"> 
+              {{ site.data[site.active_lang].strings.bibliography.supp }}
+            </a>
         {% else %}
-          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">
+          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" 
+              class="btn btn-sm z-depth-0" 
+              role="button"
+              data-toggle="popover"
+              data-trigger="hover"
+              data-placement="top"
+              data-content="supplementary material">
             {{ site.data[site.active_lang].strings.bibliography.supp }}
           </a>
         {% endif %}
@@ -451,6 +483,7 @@
       {% endif %}
     {% endif %}
 
+    
     {% if entry.award %}
       <!-- Hidden Award block -->
       <div class="award hidden d-print-inline">
@@ -459,20 +492,20 @@
     {% endif %}
         
     {% if entry.highlights %}
-      <!-- Hidden highlights block -->
+      <!-- Hidden Highlights block -->
       <div class="highlights hidden d-print-inline">
-        <ul style="">
-          {% assign highlights = entry.highlights | newline_to_br | strip_newlines | split: '<br />' %}
-          {% for highlight in highlights %}
-            {% assign trimmed_highlight = highlight | strip %}
-            {% if trimmed_highlight != '' %}
-              <li>{{ trimmed_highlight | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+        <ul>
+          {% assign sentences = entry.highlights | split: '. ' %}
+          {% for sentence in sentences %}
+            {% assign trimmed_sentence = sentence | strip %}
+            {% if trimmed_sentence != '' %}
+              <li>{{ trimmed_sentence | append: '.' | markdownify | remove: '<p>' | remove: '</p>' }}</li>
             {% endif %}
           {% endfor %}
         </ul>
       </div>
     {% endif %}
-        
+
     {% if entry.abstract %}
       <!-- Hidden abstract block -->
       <div class="abstract hidden">

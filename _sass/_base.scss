@@ -930,15 +930,15 @@ footer.sticky-bottom {
       }
 
       div.award.hidden.open {
-        border-color: var(--global-highlight-color);
+        border-color: var(--global-text-color);
       }
 
       div.highlights.hidden {
-        border: dashed 1px var(--global-theme-color);
+        border: dashed 1px var(--global-bg-color);
       }
 
       div.highlights.hidden.open {
-        border-color: var(--global-theme-color);
+        border-color: var(--global-text-color);
       }
 
       div.video.hidden {
@@ -950,6 +950,16 @@ footer.sticky-bottom {
       }
     }
   }
+}
+
+/* Style for ordinal suffixes */
+.conference-name-link sup,
+.conference-name sup {
+    font-size: 0.65em;
+    line-height: 0;
+    position: relative;
+    top: -0.5em;
+    margin-left: 0.15em; /* Adjust this value to control the spacing */
 }
 
 @media (max-width: 576px) {
