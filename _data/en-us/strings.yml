@@ -36,6 +36,7 @@ bibliography:
     one: "more author"
     multiple: "more authors"
     click: "click to view"
+  spec_issue: Special issue
   types:
     symposium: Symposium
     poster: Poster

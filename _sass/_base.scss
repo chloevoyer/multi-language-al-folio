@@ -788,7 +788,12 @@ footer.sticky-bottom {
         }
 
         .award {
-          color: var(--global-theme-color) !important;
+          color: var(--global-theme-color);
+          border: 1px solid var(--global-theme-color);
+        }
+
+        .highlights {
+          color: var(--global-theme-color);
           border: 1px solid var(--global-theme-color);
         }
       }
@@ -844,10 +849,24 @@ footer.sticky-bottom {
             border-color: var(--global-theme-color);
           }
         }
+
         a.award.btn {
           border-color: var(--global-highlight-color);
+          
+          &:hover {
+            color: var(--global-theme-color);
+            border-color: var(--global-theme-color);
+          }
         }
-      }
+
+        a.highlights.btn {
+          border-color: var(--global-highlight-color);
+          
+          &:hover {
+            color: var(--global-theme-color);
+            border-color: var(--global-theme-color);
+          }
+        }
 
       .badges {
         padding-bottom: 0.5rem;
@@ -918,6 +937,14 @@ footer.sticky-bottom {
 
       div.award.hidden.open {
         border-color: var(--global-highlight-color);
+      }
+
+      div.highlights.hidden {
+        border: dashed 1px var(--global-theme-color);
+      }
+
+      div.highlights.hidden.open {
+        border-color: var(--global-theme-color);
       }
 
       div.video.hidden {
@@ -1463,4 +1490,39 @@ ninja-keys::part(ninja-input-wrapper) {
 .section-heading {
   padding-top: 40px;
   text-align: left;
+}
+
+
+
+/* Award block with automatic list formatting */
+.highlights.hidden {
+  border: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.highlights.hidden.open {
+  visibility: visible;
+  opacity: 1;
+  border: dashed 1px var(--global-bg-color);
+  padding: 1rem;
+}
+
+.highlights.hidden p {
+  text-align: left !important;
+}
+
+/* Convert newline-separated text into list items */
+.highlights.hidden.open ul {
+  list-style-position: outside;
+  padding-inline-start: 12px;
+  text-align: left;
+}
+
+.highlights.hidden.open li {
+  margin-bottom: 8px;
+}
+
+.highlights.hidden.open li:last-child {
+  margin-bottom: 0;
 }

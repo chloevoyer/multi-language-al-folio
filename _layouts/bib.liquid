@@ -49,6 +49,9 @@
     <!-- Title -->
     <div class="title">
       {{- entry.title -}}
+      {% if entry.spec_issue %}
+        <br>[{{ site.data[site.active_lang].strings.bibliography.spec_issue }}]
+      {% endif %}
       {% if entry.translated_title %}
         <br>
         <i>{{ entry.translated_title }}</i>
@@ -275,6 +278,11 @@
           {%- if entry.award_name %}{{ entry.award_name }}{% else %}{{ site.data[site.active_lang].strings.bibliography.awarded }}{% endif -%}
         </a>
       {% endif %}
+      {% if entry.highlights %}
+        <a class="highlights btn btn-sm z-depth-0" role="button">
+          {%- if entry.highlights %}{{ entry.highlights }}{% else %}{{ site.data[site.active_lang].strings.bibliography.highlights }}{% endif -%}
+        </a>
+      {% endif %}
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.abs }}</a>
       {% endif %}
@@ -451,7 +459,22 @@
         <p>{{ entry.award | markdownify }}</p>
       </div>
     {% endif %}
-
+        
+    {% if entry.highlights %}
+      <!-- Hidden highlights block -->
+      <div class="highlights hidden d-print-inline">
+        <ul style="">
+          {% assign highlights = entry.highlights | newline_to_br | strip_newlines | split: '<br />' %}
+          {% for highlight in highlights %}
+            {% assign trimmed_highlight = highlight | strip %}
+            {% if trimmed_highlight != '' %}
+              <li>{{ trimmed_highlight | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+        
     {% if entry.abstract %}
       <!-- Hidden abstract block -->
       <div class="abstract hidden">

@@ -36,6 +36,7 @@ bibliography:
     one: "autre auteur·e"
     multiple: "autres auteur·es"
     click: "cliquez pour voir"
+  spec_issue: Special issue
   types:
     symposium: symposium
     poster: affiche
