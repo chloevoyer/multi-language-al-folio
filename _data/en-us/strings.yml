@@ -12,10 +12,10 @@ bibliography:
     rct: RCT Protocol
     resilience: Resilience
     youth_psyc: Youth Psychopathology
-  abs: Abs
+  abstract: Abs
   arxiv: arXiv
   awarded: Awarded
-  bib: Bib
+  bibtex: Bib
   blog: Blog
   book_prefix: in
   symposium_prefix: in
@@ -23,6 +23,7 @@ bibliography:
   conference: Conference
   code: Code
   html: HTML
+  highlights: Highlights
   last_author_prefix: and
   slides: Slides
   pdf: PDF

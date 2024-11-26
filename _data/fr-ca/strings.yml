@@ -12,10 +12,10 @@ bibliography:
     rct: Protocol ECR
     resilience: Résilience
     youth_psyc: Psychopathologie des jeunes
-  abs: résumé
+  abstract: résumé
   arxiv: arXiv
   awarded: prix
-  bib: Bib
+  bibtex: Bib
   blog: blogue
   book_prefix: dans
   symposium_prefix: dans
@@ -23,6 +23,7 @@ bibliography:
   code: code
   conference: conférence
   html: HTML
+  highlights: Highlights
   last_author_prefix: et
   slides: diapos
   pdf: PDF

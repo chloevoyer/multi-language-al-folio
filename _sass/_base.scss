@@ -791,6 +791,7 @@ footer.sticky-bottom {
           color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
         }
+
         .highlights {
           color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
@@ -860,7 +861,7 @@ footer.sticky-bottom {
         }
 
         a.highlights.btn {
-          border-color: var(--global-highlight-color);
+          border-color: var(--global-theme-color);
           
           &:hover {
             color: var(--global-theme-color);

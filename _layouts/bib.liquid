@@ -279,12 +279,10 @@
         </a>
       {% endif %}
       {% if entry.highlights %}
-        <a class="highlights btn btn-sm z-depth-0" role="button">
-          {%- if entry.highlights %}{{ entry.highlights }}{% else %}{{ site.data[site.active_lang].strings.bibliography.highlights }}{% endif -%}
-        </a>
+        <a class="highlights btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.highlights }}</a>
       {% endif %}
       {% if entry.abstract %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.abs }}</a>
+        <a class="abstract btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.abstract }}</a>
       {% endif %}
       {% if entry.tldr %}
         <a class="tldr btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.tldr }}</a>
@@ -293,7 +291,7 @@
         <a href="{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.arxiv }}</a>
       {% endif %}
       {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.bib }}</a>
+        <a class="bibtex btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.bibtex }}</a>
       {% endif %}
       {% if entry.html %}
         {% if entry.html contains '://' %}
