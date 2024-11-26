@@ -788,12 +788,11 @@ footer.sticky-bottom {
         }
 
         .award {
-          color: var(--global-theme-color);
+          color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
         }
-
         .highlights {
-          color: var(--global-theme-color);
+          color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
         }
       }
@@ -857,6 +856,7 @@ footer.sticky-bottom {
             color: var(--global-theme-color);
             border-color: var(--global-theme-color);
           }
+
         }
 
         a.highlights.btn {
@@ -867,7 +867,8 @@ footer.sticky-bottom {
             border-color: var(--global-theme-color);
           }
         }
-
+      }
+        
       .badges {
         padding-bottom: 0.5rem;
         span {
