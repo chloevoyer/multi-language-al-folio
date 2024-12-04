@@ -11,7 +11,7 @@ lang: fr-ca
 featured: true
 related_posts: true
 suggestions_form: true
-thumbnail: assets/img/thumbnails/conference.jpg
+thumbnail: assets/img/thumbnails/rainbow-conference-mic.jpg
 ---
 
 ## Une liste non exhaustive de conférences dans le domaine de la psychologie

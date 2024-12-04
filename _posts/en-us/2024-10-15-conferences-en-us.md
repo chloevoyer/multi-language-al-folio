@@ -11,7 +11,7 @@ lang: en-us
 related_posts: true
 featured: true
 suggestions_form: true
-thumbnail: assets/img/thumbnails/conference.jpg
+thumbnail: assets/img/thumbnails/rainbow-conference-mic.jpg
 ---
 
 ## A non-exhaustive list of upcoming psychology conferences
