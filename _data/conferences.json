@@ -8,7 +8,7 @@
       "location": "Prague, Czech Republic",
       "local_abroad": "INT ✈️",
       "modality": "HYBRID 🤝💻",
-      "discipline": "PSYC",
+      "field": "PSYC",
       "theme": "",
       "url": "https://www.icp2020.com/"
     },
@@ -20,7 +20,7 @@
       "location": "Montreal, QC",
       "local_abroad": "QC ⚜️",
       "modality": "IRL 🤝",
-      "discipline": "OTHER",
+      "field": "OTHER",
       "theme": "Bringing Gender and Sex Together: Transdisciplinary Theories and Methodologies ",
       "url": "https://cogsresearch.ca/meetings/2022-call-for-abstracts/"
     },
@@ -31,7 +31,7 @@
       "location": "Montreal, QC",
       "local_abroad": "QC ⚜️",
       "modality": "HYBRID 🤝💻",
-      "discipline": "NEURO",
+      "field": "NEURO",
       "theme": "",
       "url": "https://en.neurosymposium.ca/home"
     },
@@ -42,7 +42,7 @@
       "location": "Seoul, South Korea",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "CBT",
+      "field": "CBT",
       "theme": "",
       "url": "http://wccbt2023.org/"
     },
@@ -53,7 +53,7 @@
       "location": "Toronto, ON",
       "local_abroad": "CAN 🍁",
       "modality": "IRL 🤝",
-      "discipline": "CBT",
+      "field": "CBT",
       "theme": "",
       "url": "https://cacbt.ca/en/membership/new-member-registration/"
     },
@@ -65,7 +65,7 @@
       "location": "Drummondville, QC",
       "local_abroad": "QC ⚜️",
       "modality": "IRL 🤝",
-      "discipline": "PSYC",
+      "field": "PSYC",
       "theme": "",
       "url": "https://www.sqrp.ca/"
     },
@@ -76,7 +76,7 @@
       "location": "Vancouver, BC",
       "local_abroad": "CAN 🍁",
       "modality": "IRL 🤝",
-      "discipline": "DEV",
+      "field": "DEV",
       "theme": "",
       "url": "https://perinatalchildhealthresearch.ca/registration/"
     },
@@ -87,7 +87,7 @@
       "location": "Istanbul, Turkey",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "PSYT",
+      "field": "PSYT",
       "theme": "",
       "url": "https://www.wfsbp-congress.org/"
     },
@@ -99,7 +99,7 @@
       "location": "Barcelona, Spain",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "PERINATAL",
+      "field": "PERINATAL",
       "theme": "Advancing Perinatal Mental Health: Bridging Familial, Cultural and Geographic Contexts (It’s a small world!)",
       "url": "https://marceconference2024.com/#Abstracts"
     },
@@ -111,7 +111,7 @@
       "location": "Orlando, FL",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "PEDS",
+      "field": "PEDS",
       "theme": "",
       "url": "https://aapexperience.org/"
     },
@@ -123,7 +123,7 @@
       "location": "Chicago, IL",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "BIOL",
+      "field": "BIOL",
       "theme": "",
       "url": "https://isdp.org/registration-isdp-2024/"
     },
@@ -134,7 +134,7 @@
       "location": "Chicago, IL",
       "local_abroad": "INT ✈️",
       "modality": "HYBRID 🤝💻",
-      "discipline": "NEURO",
+      "field": "NEURO",
       "theme": "",
       "url": "https://www.sfn.org/meetings/neuroscience-2024"
     },
@@ -146,7 +146,7 @@
       "location": "Seattle, WA",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "YOUTH",
+      "field": "YOUTH",
       "theme": "",
       "url": "https://aacap.confex.com/aacap/2024/cfp.cgi"
     },
@@ -158,7 +158,7 @@
       "location": "Chapel Hill, NC",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "DEV",
+      "field": "DEV",
       "theme": "Exploring Translational DOHaD Science: From Cells to Communities",
       "url": "https://www.usdohad.org/annual-meetings/"
     },
@@ -169,7 +169,7 @@
       "location": "Montreal, QC",
       "local_abroad": "QC ⚜️",
       "modality": "HYBRID 🤝💻",
-      "discipline": "WORK",
+      "field": "WORK",
       "theme": "",
       "url": "https://colloque2024.santementaletravail.ca/"
     },
@@ -180,7 +180,7 @@
       "location": "Montreal, QC",
       "local_abroad": "CAN 🍁",
       "modality": "IRL 🤝",
-      "discipline": "PSYT",
+      "field": "PSYT",
       "theme": "",
       "url": "https://www.cpa-apc.org/annual-conference/"
     },
@@ -192,7 +192,7 @@
       "location": "Mexico City, MX",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "PSYT",
+      "field": "PSYT",
       "theme": "",
       "url": "https://wcp-congress.com/"
     },
@@ -204,7 +204,7 @@
       "location": "Montreal, QC",
       "local_abroad": "QC ⚜️",
       "modality": "IRL 🤝",
-      "discipline": "PSYT",
+      "field": "PSYT",
       "theme": "",
       "url": "https://douglas.research.mcgill.ca/news/call-for-submissions-for-the-douglas-research-blitz-3/"
     },
@@ -215,7 +215,7 @@
       "location": "Montreal, QC",
       "local_abroad": "CAN 🍁",
       "modality": "IRL 🤝",
-      "discipline": "NEURO",
+      "field": "NEURO",
       "theme": "",
       "url": "https://neuroqam.uqam.ca/activites-neuroqam/conferences-mensuelles/conferences-a-venir/"
     },
@@ -227,7 +227,7 @@
       "location": "Sherbrooke, QC",
       "local_abroad": "QC ⚜️",
       "modality": "IRL 🤝",
-      "discipline": "COUNS",
+      "field": "COUNS",
       "theme": "",
       "url": "https://quariera.com/"
     },
@@ -239,7 +239,7 @@
       "location": "San Diego, CA",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "NEURO",
+      "field": "NEURO",
       "theme": "",
       "url": "https://www.mcascientificevents.eu/inbc/"
     },
@@ -251,7 +251,7 @@
       "location": "Montreal, QC",
       "local_abroad": "QC ⚜️",
       "modality": "IRL 🤝",
-      "discipline": "NEURO",
+      "field": "NEURO",
       "theme": "",
       "url": "https://www.cogsurf.org/"
     },
@@ -262,7 +262,7 @@
       "location": "Phoenix, AZ",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "PSYT",
+      "field": "PSYT",
       "theme": "Human Rights and Mental Health Advocacy for Aging Adults",
       "url": "https://aagponline.org/event/aagp-2025-annual-meeting/"
     },
@@ -274,7 +274,7 @@
       "location": "Charlotte, NC",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "DEV",
+      "field": "DEV",
       "theme": "",
       "url": "https://www.sri-online.org/events/2025/"
     },
@@ -286,7 +286,7 @@
       "location": "Boston, Massachusetts",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "NEURO",
+      "field": "NEURO",
       "theme": "",
       "url": "https://www.cogneurosociety.org/annual-meeting/"
     },
@@ -298,7 +298,7 @@
       "location": "Chicago, IL",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "SZ",
+      "field": "SZ",
       "theme": "",
       "url": "https://sirs.societyconference.com/v2/"
     },
@@ -310,7 +310,7 @@
       "location": "Madrid, ES",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "PSYT",
+      "field": "PSYT",
       "theme": "",
       "url": "https://epa-congress.org/abstract-submission/?utm_campaign=abstract&utm_medium=cpc&utm_source=Google&gclid=CjwKCAjw5p_8BRBUEiwAPpJO6zofplOHzt3pHULehbj1IM5AdPZg1wX08f9AdvBK9Pm-VZg8ZncD-hoCw1wQAvD_BwE"
     },
@@ -322,7 +322,7 @@
       "location": "Toronto, ON",
       "local_abroad": "CAN 🍁",
       "modality": "IRL 🤝",
-      "discipline": "NEURO",
+      "field": "NEURO",
       "theme": "Artificial Intelligence and Mental Health: A New Landscape for Research and Practice",
       "url": "https://sobp.societyconference.com/v2/"
     },
@@ -334,7 +334,7 @@
       "location": "Minneapolis, MN",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "DEV",
+      "field": "DEV",
       "theme": "",
       "url": "https://www.srcd.org/event/srcd-2025-biennial-meeting/call-submissions"
     },
@@ -346,7 +346,7 @@
       "location": "Barcelona, ES",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "NEURO",
+      "field": "NEURO",
       "theme": "",
       "url": "https://www.parentalbrainmeetings.com/"
     },
@@ -358,7 +358,7 @@
       "location": "Los Angeles, CA",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "PSYT",
+      "field": "PSYT",
       "theme": "",
       "url": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines"
     },
@@ -370,7 +370,7 @@
       "location": "Prague, Czech Republic",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "ADHD",
+      "field": "ADHD",
       "theme": "",
       "url": "https://can01.safelinks.protection.outlook.com/?url=https%3A%2F%2Frdir.de%2Fr.html%3Fuid%3DF.hqJfY80EIqJfbAGiX23OABLQ2aJfcs4ACMqKol9zzmcsudCiX3XOAnWEtw.WG-tSyajCRWPSDKFYZAsxnzuh2o5MaCKSfo1dJXeT1VI1co4UgeFd0Bdwod1KhCCr6gnWp24zN_CjHCiscTZdA&data=05%7C02%7Cchloe.voyer%40mail.mcgill.ca%7C8e1947c2a3e945014b9108dcff2c3330%7Ccd31967152e74a68afa9fcf8f89f09ea%7C0%7C0%7C638665812832883990%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C40000%7C%7C%7C&sdata=vf4X0Xc1gWX9s72L0EuL6EWJE18AHSHaHTe2AuMkW74%3D&reserved=0"
     },
@@ -382,7 +382,7 @@
       "location": "Los Angeles, CA",
       "local_abroad": "INT ✈️",
       "modality": "HYBRID 🤝💻",
-      "discipline": "PSYT",
+      "field": "PSYT",
       "theme": "Lifestyle for Positive Mental and Physical Health",
       "url": "https://www.psychiatry.org/psychiatrists/meetings/annual-meeting"
     },
@@ -393,7 +393,7 @@
       "location": "TBA",
       "local_abroad": "",
       "modality": "IRL 🤝",
-      "discipline": "DEV",
+      "field": "DEV",
       "theme": "",
       "url": "https://lifehistoryresearchsociety.com/"
     },
@@ -404,7 +404,7 @@
       "location": "Tampere, Finland",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "PEDS",
+      "field": "PEDS",
       "theme": "Best Care for Babies, Young Children and Their Families",
       "url": "https://waimh.org/page/waimh2024_posters"
     },
@@ -416,7 +416,7 @@
       "location": "Boston, MA",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "EPI",
+      "field": "EPI",
       "theme": "",
       "url": "https://sper.org/annual-meeting-2/future-meetings/"
     },
@@ -428,7 +428,7 @@
       "location": "St. John's, Newfoundland",
       "local_abroad": "CAN 🍁",
       "modality": "IRL 🤝",
-      "discipline": "PSYC",
+      "field": "PSYC",
       "theme": "",
       "url": "https://convention.cpa.ca/"
     },
@@ -440,7 +440,7 @@
       "location": "Vancouver, BC",
       "local_abroad": "CAN 🍁",
       "modality": "IRL 🤝",
-      "discipline": "YOUTH",
+      "field": "YOUTH",
       "theme": "Unexpected Results in Developmental Psychopathology Research",
       "url": "https://isrcap.org/"
     },
@@ -452,7 +452,7 @@
       "location": "Brisbane, Australia",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "NEURO",
+      "field": "NEURO",
       "theme": "",
       "url": "https://humanbrainmapping.org/i4a/pages/index.cfm?pageID=4235"
     },
@@ -463,7 +463,7 @@
       "location": "Denver, Colorado",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "PSYC",
+      "field": "PSYC",
       "theme": "",
       "url": "https://convention.apa.org/"
     },
@@ -475,7 +475,7 @@
       "location": "Buenos Aires, AR",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "DEV",
+      "field": "DEV",
       "theme": "DOHaD, a bridge toward the one health",
       "url": "https://dohadsoc.org/world-congress/"
     },
@@ -487,7 +487,7 @@
       "location": "Berlin, Germany",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "YOUTH",
+      "field": "YOUTH",
       "theme": "Breaking Boundaries",
       "url": "https://iepa.org.au/"
     },
@@ -498,7 +498,7 @@
       "location": "Vancouver, BC",
       "local_abroad": "CAN 🍁",
       "modality": "IRL 🤝",
-      "discipline": "PSYT",
+      "field": "PSYT",
       "theme": "",
       "url": "https://www.cpa-apc.org/annual-conference/"
     },
@@ -510,7 +510,7 @@
       "location": "San Diego, CA",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "BIOL",
+      "field": "BIOL",
       "theme": "",
       "url": "https://isdp.org/registration-isdp-2024/"
     },
@@ -521,7 +521,7 @@
       "location": "Incheon, South Korea",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "DEV",
+      "field": "DEV",
       "theme": "",
       "url": "https://issbd.org/events/28th-biennial-meeting-of-the-issbd/"
     },
@@ -532,7 +532,7 @@
       "location": "Phoenix, AZ",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "EPI",
+      "field": "EPI",
       "theme": "",
       "url": "https://sper.org/annual-meeting-2/future-meetings/"
     },
@@ -543,7 +543,7 @@
       "location": "Panama City, Panama",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "PEDS",
+      "field": "PEDS",
       "theme": "",
       "url": "https://infantstudies.org/2026-panama-city/"
     },
@@ -554,7 +554,7 @@
       "location": "Hamburg, Germany",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "YOUTH",
+      "field": "YOUTH",
       "theme": "Facing challenges in a constantly changing world: Empowering child and adolescent mental health by evidence-based approaches",
       "url": "https://www.iacapap-congress.com/"
     },
@@ -565,7 +565,7 @@
       "location": "Lausanne, Switzerland",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "SZ",
+      "field": "SZ",
       "theme": "",
       "url": "https://isps.org/events/isps-lausanne-2026/"
     },
@@ -576,7 +576,7 @@
       "location": "Toronto, ON",
       "local_abroad": "CAN 🍁",
       "modality": "IRL 🤝",
-      "discipline": "PEDS",
+      "field": "PEDS",
       "theme": "",
       "url": "https://waimh.org/page/waimh2024_posters"
     },
@@ -587,7 +587,7 @@
       "location": "Montreal, QC",
       "local_abroad": "CAN 🍁",
       "modality": "IRL 🤝",
-      "discipline": "PSYT",
+      "field": "PSYT",
       "theme": "",
       "url": "https://www.cpa-apc.org/annual-conference/"
     },
@@ -598,7 +598,7 @@
       "location": "Detroit, MI",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
-      "discipline": "EPI",
+      "field": "EPI",
       "theme": "",
       "url": "https://sper.org/annual-meeting-2/future-meetings/"
     },
@@ -609,7 +609,7 @@
       "location": "Toronto, ON",
       "local_abroad": "CAN 🍁",
       "modality": "IRL 🤝",
-      "discipline": "PSYT",
+      "field": "PSYT",
       "theme": "",
       "url": "https://www.cpa-apc.org/annual-conference/"
     }

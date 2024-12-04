@@ -9,6 +9,7 @@ bibliography:
     job_tenure: Maintien en emploi
     mavan: Cohorte MAVAN
     pred_prac: Pratiques prédatrices
+    prof_incl: Inclusion professionnelle
     rct: Protocol ECR
     resilience: Résilience
     youth_psyc: Psychopathologie des jeunes
@@ -74,7 +75,7 @@ conferences_attended:
   heading: conférences suivies
   date: date
   name: conférence
-  location: emplacement
+  location: lieu
 contact_note: Que vous souhaitiez collaborer, parler davantage de mon travail ou avoir des questions, n'hésitez pas à me contacter.
 cv:
   address: adresse
@@ -136,16 +137,25 @@ footer:
   last_updated: "Dernière mise à jour le "
 latest_posts: derniers articles
 list_psyc_conf:
-  upcoming: À venir
-  all_disciplines: Toutes les disciplines
-  all_modalities: Toutes les modalités
-  all_locations: Tous les emplacements
-  showing:
-  conferences: conférences affichées
-  event_date: "Date de l'événement:"
-  deadline: "Date limite de soumission:"
-  location: "Emplacement:"
-  theme: "Thème:"
+ all: Tout
+ all_fields: Tous les domaines
+ all_modalities: Toutes les modalités
+ all_locations: Tous les lieux
+ confirmed: Confirmé
+ conferences: conférences
+ deadline: "Date limite de soumission:"
+ event_date: "Date de l'événement:"
+ fields: Domaine
+ location: "Lieu:"
+ locations: Lieu
+ modalities: Modalité
+ noresults: Aucune conférence ne correspond à vos filtres.
+ past: Conférences passées
+ showing: Affichage de
+ status: Statut
+ tba: À confirmer
+ theme: "Thème:"
+ upcoming: À venir
 months:
   long:
     january: janvier

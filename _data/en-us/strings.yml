@@ -9,6 +9,7 @@ bibliography:
     job_tenure: Job Tenure
     mavan: MAVAN Cohort
     pred_prac: Predatory Practices
+    prof_incl: Professional Inclusion
     rct: RCT Protocol
     resilience: Resilience
     youth_psyc: Youth Psychopathology
@@ -135,17 +136,25 @@ footer:
   last_updated: "Last updated on "
 latest_posts: latest posts
 list_psyc_conf:
-  upcoming: Upcoming
-  all_disciplines: All Disciplines
+  all: All
+  all_fields: All Fields
   all_modalities: All Modalities
   all_locations: All Locations
-  showing: Showing
-  noresults: No conferences found matching your filters.
+  confirmed: Confirmed
   conferences: conferences
-  event_date: "Event Date:"
   deadline: "Submission Deadline:"
+  event_date: "Event Date:"
+  fields: Field
   location: "Location:"
+  locations: Location
+  modalities: Modality
+  noresults: No conferences found matching your filters.
+  past: Past Conferences
+  showing: Showing
+  status: Status
+  tba: TBA
   theme: "Theme:"
+  upcoming: Upcoming
 months:
   long:
     january: January

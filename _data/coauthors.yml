@@ -1,6 +1,14 @@
-"sauve":
-  - firstname: ["Geneviève", "G.", "Geneviève Sauvé"]
-    url: https://www.researchgate.net/profile/Genevieve-Sauve
+"corbiere":
+  - firstname: ["M.", "Marc", "Marc Corbière"]
+    url: https://www.researchgate.net/profile/Marc-Corbiere
+
+"laplante":
+  - firstname: ["David P. Laplante", "David P.", "D. P.", "David Laplante", "D.", "†David P."]
+    url: https://www.researchgate.net/profile/David-Laplante
+
+"lariviere":
+  - firstname: ["N.", "Nadine", "Nadine Larivière", "Nadine Lariviere"]
+    url: https://www.researchgate.net/profile/Nadine-Lariviere
 
 "lavigne":
   - firstname: ["Katie", "K.", "K. M.", "KM Lavigne", "Katie Lavigne", "Katie M. Lavigne"]
@@ -10,26 +18,22 @@
   - firstname: ["Martin Lepage", "M. L.", "M. Lepage", "Martin", "M."]
     url: https://www.researchgate.net/profile/Martin-Lepage-5
 
-"laplante":
-  - firstname: ["David P. Laplante", "David P.", "D. P.", "David Laplante", "D.", "†David P."]
-    url: https://www.researchgate.net/profile/David-Laplante
-
 "raucher-chene":
   - firstname: ["Delphine", "D."]
     url: https://www.researchgate.net/profile/Delphine-Raucher-Chene
 
-"wazana":
-  - firstname: ["†Ashley", "Ashley", "A.", "A. W.", "Ashley Wazana"]
-    url: https://www.researchgate.net/profile/Ashley-Wazana
+"sauve":
+  - firstname: ["Geneviève", "G.", "Geneviève Sauvé"]
+    url: https://www.researchgate.net/profile/Genevieve-Sauve
 
 "stamate":
   - firstname: ["A.", "A. N.", "Alina", "Alina N.", "Alina N. Stamate"]
     url: https://www.researchgate.net/profile/Alina-Stamate
 
-"corbiere":
-  - firstname: ["M.", "Marc", "Marc Corbière"]
-    url: https://www.researchgate.net/profile/Marc-Corbiere
-
 "villotti":
   - firstname: ["P.", "Patrizia", "Patrizia Villotti"]
     url: https://www.researchgate.net/profile/Patrizia-Villotti
+
+"wazana":
+  - firstname: ["†Ashley", "Ashley", "A.", "A. W.", "Ashley Wazana"]
+    url: https://www.researchgate.net/profile/Ashley-Wazana

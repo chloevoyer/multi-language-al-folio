@@ -1,5 +1,7 @@
 ---
 ---
+<script src="{{ '/assets/js/superscript_conference.js' | relative_url }}"></script>
+
 <div class="row">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
@@ -52,9 +54,9 @@
       {% if entry.spec_issue %}
         <br>[{{ site.data[site.active_lang].strings.bibliography.spec_issue }}]
       {% endif %}
-      {% if entry.trans_title %}
+      {% if entry.translated_title %}
         <br>
-        <i>{{ entry.trans_title }}</i>
+        <i>{{ entry.translated_title }}</i>
       {% endif %}
       {% if entry.chair and entry.symposium %}
         <br>
@@ -136,9 +138,9 @@
         {%- endif -%}
         {%- if forloop.length > 1 -%}
           {% if forloop.first == false %},&nbsp;{% endif %}
-          {%- if forloop.last and author_array_limit == author_array_size %}
-            {{ site.data[site.active_lang].strings.bibliography.last_author_prefix }}&nbsp;
-          {% endif -%}
+          {%- if forloop.last and author_array_limit == author_array_size -%}
+            {{- site.data[site.active_lang].strings.bibliography.last_author_prefix -}}&nbsp;
+          {%- endif -%}
         {% endif %}
         {%- if author_is_self -%}
           <em>

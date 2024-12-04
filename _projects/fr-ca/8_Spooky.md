@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Spooky 👻
-description: la vie secrète d'un chat gâté pourri
+description: La vie secrète d'un chat gâté pourri
 img: assets/img/headers/spooky.JPG
 importance: 2
 category: extra

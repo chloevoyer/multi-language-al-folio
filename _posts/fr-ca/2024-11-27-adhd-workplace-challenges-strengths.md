@@ -17,8 +17,6 @@ authors:
       name: McGill University
 ---
 
----
-
 ## Principales conclusions
 
 La revue révèle que le TDAH présente à la fois des défis et des forces uniques en milieu de travail. Bien que les travailleurs ayant un TDAH puissent éprouver des difficultés avec la gestion de l'attention et l'organisation, ils démontrent souvent une créativité exceptionnelle, des capacités de résolution de problèmes et une capacité d'hyperfocalisation.
