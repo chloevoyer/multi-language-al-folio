@@ -1,6 +1,6 @@
 ---
 page_id: blog
-layout: post
+layout: default
 permalink: /blog/
 title: blog
 blog_name: chloe-voyer
