@@ -21,16 +21,16 @@
     </select>
 
     <select id="statusFilter" onchange="filterConferences()">
-      <option value="" disabled selected>Status</option>
-      <option value="all">All</option>
-      <option value="confirmed">Confirmed</option>
-      <option value="tba">TBA</option>
+      <option value="" disabled selected>{{ site.data[site.active_lang].strings.list_psyc_conf.status }}</option>
+      <option value="all">{{ site.data[site.active_lang].strings.list_psyc_conf.all }}</option>
+      <option value="confirmed">{{ site.data[site.active_lang].strings.list_psyc_conf.confirmed }}</option>
+      <option value="tba">{{ site.data[site.active_lang].strings.list_psyc_conf.tba }}</option>
       </select>
       
     {% assign fields = site.data.conferences.conferences | map: 'field' | uniq | sort %}
     <select id="fieldFilter" onchange="filterConferences()">
-      <option value="" disabled selected>Field</option>
-      <option value="all">All</option>
+      <option value="" disabled selected>{{ site.data[site.active_lang].strings.list_psyc_conf.fields }}</option>
+      <option value="all">{{ site.data[site.active_lang].strings.list_psyc_conf.all }}</option>
       {% for field in fields %}
         {% if field != '' %}
           <option value="{{ field }}">{{ field }}</option>
@@ -40,8 +40,8 @@
 
     {% assign modalities = site.data.conferences.conferences | map: 'modality' | uniq | sort %}
     <select id="modalityFilter" onchange="filterConferences()">
-      <option value="" disabled selected>Modality</option>
-      <option value="all">All</option>
+      <option value="" disabled selected>{{ site.data[site.active_lang].strings.list_psyc_conf.modalities }}</option>
+      <option value="all">{{ site.data[site.active_lang].strings.list_psyc_conf.all }}</option>
       {% for modality in modalities %}
         {% if modality != '' %}
           <option value="{{ modality }}">{{ modality }}</option>
@@ -51,8 +51,8 @@
     
     {% assign locations = site.data.conferences.conferences | map: 'local_abroad' | uniq | sort %}
     <select id="locationFilter" onchange="filterConferences()">
-      <option value="" disabled selected>Location</option>
-      <option value="all">All</option>
+      <option value="" disabled selected>{{ site.data[site.active_lang].strings.list_psyc_conf.locations }}</option>
+      <option value="all">{{ site.data[site.active_lang].strings.list_psyc_conf.all }}</option>
       {% for location in locations %}
         {% if location != '' %}
           <option value="{{ location }}">{{ location }}</option>

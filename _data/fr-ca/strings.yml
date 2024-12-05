@@ -146,7 +146,6 @@ list_psyc_conf:
  deadline: "Date limite de soumission:"
  event_date: "Date de l'événement:"
  fields: Domaine
- location: "Lieu:"
  locations: Lieu
  modalities: Modalité
  noresults: Aucune conférence ne correspond à vos filtres.

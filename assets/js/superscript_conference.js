@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Target elements specifically on the Talks page
     const conferenceElements = document.querySelectorAll('.conference-name-link, .conference-name');
     
     conferenceElements.forEach(element => {
@@ -11,16 +12,42 @@ document.addEventListener('DOMContentLoaded', function() {
         temp.innerHTML = element.innerHTML;
         
         const walkNodes = (node) => {
-            if (node.nodeType === 3) {
+            if (node.nodeType === 3) { // Text node
                 const newText = node.textContent.replace(regex, (match, number, suffix) => {
                     return `${number}<sup class="conference-sup">${suffix}</sup>`;
                 });
+                
                 if (newText !== node.textContent) {
                     const span = document.createElement('span');
                     span.innerHTML = newText;
+                    
+                    // Check if parent or ancestor elements have italic styling
+                    let currentNode = node.parentNode;
+                    let isItalicized = false;
+                    
+                    while (currentNode && currentNode !== element) {
+                        const style = window.getComputedStyle(currentNode);
+                        if (style.fontStyle === 'italic' || 
+                            currentNode.tagName === 'I' || 
+                            currentNode.tagName === 'EM') {
+                            isItalicized = true;
+                            break;
+                        }
+                        currentNode = currentNode.parentNode;
+                    }
+                    
+                    // Apply italic styling if needed
+                    if (isItalicized) {
+                        span.style.fontStyle = 'italic';
+                        span.querySelectorAll('sup').forEach(sup => {
+                            sup.style.fontStyle = 'italic';
+                        });
+                    }
+                    
                     if (element.classList.contains('conference-name-link')) {
                         span.style.color = 'inherit';
                     }
+                    
                     node.parentNode.replaceChild(span, node);
                 }
             } else {
@@ -37,7 +64,7 @@ const style = document.createElement('style');
 style.textContent = `
     .conference-name-link sup.conference-sup,
     .conference-name sup.conference-sup {
-        font-style: normal;
+        font-style: inherit;
         display: inline;
         vertical-align: super;
         font-size: 0.7em;

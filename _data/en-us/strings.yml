@@ -75,7 +75,7 @@ conferences_attended:
   date: date
   name: conference
   location: location
-contact_note: Questions? Collaborations? Feel free to reach out!
+contact_note: "Questions? Collaborations? Feel free to reach out!"
 cv:
   address: Address
   area: Area
@@ -147,7 +147,8 @@ list_psyc_conf:
   fields: Field
   location: "Location:"
   locations: Location
-  modalities: Modality
+  modality: Modality
+  modalities: Modalities
   noresults: No conferences found matching your filters.
   past: Past Conferences
   showing: Showing
