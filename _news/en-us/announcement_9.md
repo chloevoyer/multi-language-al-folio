@@ -7,4 +7,4 @@ published: true
 lang: en-us
 ---
 
-<b>Upcoming presentation</b> at [QUARIERA-2025](https://quariera.com/programmation/): Innovative practices promoting workplace inclusion for people with ADHD and/or borderline personality disorder (BPD) 📣
+Our lab will be presenting at the <b>[QUARIERA-2025](https://quariera.com/programmation/)</b> conference: <i>Innovative practices promoting workplace inclusion for people with ADHD and/or borderline personality disorder (BPD)</i> 📣

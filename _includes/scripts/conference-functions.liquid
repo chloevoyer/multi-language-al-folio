@@ -3,7 +3,7 @@
 {% capture conference_functions %}
   function filterConferences() {
     const yearFilter = document.getElementById('yearFilter').value;
-    const disciplineFilter = document.getElementById('disciplineFilter').value;
+    const fieldFilter = document.getElementById('fieldFilter').value;
     const modalityFilter = document.getElementById('modalityFilter').value;
     const locationFilter = document.getElementById('locationFilter').value;
     const statusFilter = document.getElementById('statusFilter').value;
@@ -48,7 +48,7 @@
       const deadlineText = deadlineElement ? deadlineElement.textContent.split('Deadline')[1].trim() : '';
       const deadlineDate = deadlineText ? new Date(deadlineText) : null;
 
-      const discipline = card.dataset.discipline;
+      const field = card.dataset.field;
       const modality = card.dataset.modality;
       const location = card.dataset.location;
 
@@ -62,15 +62,16 @@
         matchesYearFilter = eventYear === yearFilter;
       }
 
-      const matchesStatus = statusFilter === 'all' || 
+      const matchesStatus = !statusFilter || 
+        statusFilter === 'all' || 
         (statusFilter === 'tba' && (!eventDateText || !deadlineText)) ||
         (statusFilter === 'confirmed' && eventDateText && deadlineText);
+                           
+      const matchesfield = !fieldFilter || fieldFilter === 'all' || field === fieldFilter;
+      const matchesModality = !modalityFilter || modalityFilter === 'all' || modality === modalityFilter;
+      const matchesLocation = !locationFilter || locationFilter === 'all' || location === locationFilter;
 
-      const matchesDiscipline = !disciplineFilter || discipline === disciplineFilter;
-      const matchesModality = !modalityFilter || modality === modalityFilter;
-      const matchesLocation = !locationFilter || location === locationFilter;
-
-      const shouldShow = matchesYearFilter && matchesDiscipline && matchesModality && 
+      const shouldShow = matchesYearFilter && matchesfield && matchesModality && 
                         matchesLocation && matchesStatus;
       card.style.display = shouldShow ? 'block' : 'none';
 
