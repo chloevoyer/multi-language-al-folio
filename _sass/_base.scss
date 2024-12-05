@@ -221,7 +221,7 @@ ul.task-list input[type="checkbox"] {
 
 .profile.float-right {
   margin-left: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .profile.float-left {
@@ -959,8 +959,7 @@ footer.sticky-bottom {
     line-height: 0;
     position: relative;
     top: -0.5em;
-    font-style: italic;
-    margin-left: 0.25em; /* Adjust this value to control the spacing */
+    margin-left: 0.15em; /* Adjust this value to control the spacing */
 }
 
 @media (max-width: 576px) {

@@ -26,17 +26,16 @@
       <option value="tba">TBA</option>
     </select>
 
-    <select id="fieldFilter" onchange="filterConferences()">
-      <option value="" disabled selected>Field</option>
-      <option value="all">All</option>
-      {% assign fields = site.data.conferences.conferences | map: 'field' | uniq | sort %}
-      {% for field in fields %}
-        {% if field != '' %}
-          <option value="{{ field }}">{{ field }}</option>
+    <select id="disciplineFilter" onchange="filterConferences()">
+      <option value="">{{ site.data[site.active_lang].strings.list_psyc_conf.all_disciplines }}</option>
+      {% assign disciplines = site.data.conferences.conferences | map: 'discipline' | uniq | sort %}
+      {% for discipline in disciplines %}
+        {% if discipline != '' %}
+          <option value="{{ discipline }}">{{ discipline }}</option>
         {% endif %}
       {% endfor %}
     </select>
-    
+
     <select id="modalityFilter" onchange="filterConferences()">
       <option value="">{{ site.data[site.active_lang].strings.list_psyc_conf.all_modalities }}</option>
       {% assign modalities = site.data.conferences.conferences | map: 'modality' | uniq | sort %}
@@ -70,20 +69,19 @@
     {% for conference in conferences %}
       {% assign conf_year = conference.date | date: '%Y' %}
       <div
-      class="conference-card"
-      data-year="{{ conference.date | slice: 0, 4 }}"
-      data-date="{{ conference.date }}"
-      data-field="{{ conference.field }}"
-      data-modality="{{ conference.modality }}"
-      data-location="{{ conference.local_abroad }}"
-      data-status="{{ conference.status }}"
-      {% if conference.date | slice: 0, 4 == "2024" and conference.date >= today_date %}
-        style="display: block;"
-      {% else %}
-        style="display: none;"
-      {% endif %}
+        class="conference-card"
+        data-year="{{ conference.date | slice: 0, 4 }}"
+        data-date="{{ conference.date }}"
+        data-discipline="{{ conference.discipline }}"
+        data-modality="{{ conference.modality }}"
+        data-location="{{ conference.local_abroad }}"
+        {% if conference.date | slice: 0, 4 == "2024" and conference.date >= today_date %}
+          style="display: block;"
+        {% else %}
+          style="display: none;"
+        {% endif %}
       >
-            <div class="conference-header">
+        <div class="conference-header">
           {% if conference.url != '' %}
             <h2>
               <a href="{{ conference.url }}" target="_blank" rel="noopener noreferrer" class="conference-name-link">

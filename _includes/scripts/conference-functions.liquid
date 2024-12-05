@@ -1,6 +1,9 @@
-function filterConferences() {
+{% assign today_date = 'now' | date: '%Y-%m-%d' %}
+
+{% capture conference_functions %}
+  function filterConferences() {
     const yearFilter = document.getElementById('yearFilter').value;
-    const fieldFilter = document.getElementById('fieldFilter').value;
+    const disciplineFilter = document.getElementById('disciplineFilter').value;
     const modalityFilter = document.getElementById('modalityFilter').value;
     const locationFilter = document.getElementById('locationFilter').value;
     const statusFilter = document.getElementById('statusFilter').value;
@@ -45,7 +48,7 @@ function filterConferences() {
       const deadlineText = deadlineElement ? deadlineElement.textContent.split('Deadline')[1].trim() : '';
       const deadlineDate = deadlineText ? new Date(deadlineText) : null;
 
-      const field = card.dataset.field;
+      const discipline = card.dataset.discipline;
       const modality = card.dataset.modality;
       const location = card.dataset.location;
 
@@ -59,16 +62,15 @@ function filterConferences() {
         matchesYearFilter = eventYear === yearFilter;
       }
 
-      const matchesStatus = !statusFilter || 
-        statusFilter === 'all' || 
+      const matchesStatus = statusFilter === 'all' || 
         (statusFilter === 'tba' && (!eventDateText || !deadlineText)) ||
         (statusFilter === 'confirmed' && eventDateText && deadlineText);
 
-      const matchesField = !fieldFilter || fieldFilter === 'all' || field === fieldFilter;
-      const matchesModality = !modalityFilter || modalityFilter === 'all' || modality === modalityFilter;
-      const matchesLocation = !locationFilter || locationFilter === 'all' || location === locationFilter;
+      const matchesDiscipline = !disciplineFilter || discipline === disciplineFilter;
+      const matchesModality = !modalityFilter || modality === modalityFilter;
+      const matchesLocation = !locationFilter || location === locationFilter;
 
-      const shouldShow = matchesYearFilter && matchesField && matchesModality && 
+      const shouldShow = matchesYearFilter && matchesDiscipline && matchesModality && 
                         matchesLocation && matchesStatus;
       card.style.display = shouldShow ? 'block' : 'none';
 
@@ -84,4 +86,12 @@ function filterConferences() {
     if (noResultsDiv) {
       noResultsDiv.style.display = visibleCount === 0 ? 'block' : 'none';
     }
-}
+  }
+
+  // Initialize with upcoming events
+  document.addEventListener('DOMContentLoaded', function() {
+    const yearFilter = document.getElementById('yearFilter');
+    yearFilter.value = "upcoming";
+    filterConferences();
+  });  
+{% endcapture %}
