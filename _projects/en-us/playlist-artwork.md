@@ -50,7 +50,7 @@ A calming blend of pastel blues and whites, with a minimal design to reflect the
         {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/romanticizing-reality.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/runner's-high.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/runners-high.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -102,9 +102,6 @@ A warm sunset gradient paired with soft brushstrokes to encapsulate the magic of
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/tswizzle.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/discover-weekly.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
