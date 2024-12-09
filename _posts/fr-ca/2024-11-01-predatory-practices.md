@@ -25,7 +25,7 @@ In today's digital age, a concerning trend has emerged in academic publishing th
 
 ## What Are Predatory Publishing Practices?
 
-At their core, predatory publishing practices are unethical activities that exploit the open-access model, prioritizing profit over quality and academic integrity. The scope of this problem is staggering - in 2014 alone, there were 420,000 articles published in approximately 8,000 predatory journals. Even more concerning, studies have shown that 62% of faculty had predatory publications, with 75% of those having more than one (averaging 4.3 publications).
+At their core, predatory publishing practices are unethical activities that exploit the open-access model, prioritizing profit over quality and academic integrity. The scope of this problem is staggering—in 2014 alone, there were 420,000 articles published in approximately 8,000 predatory journals. Even more concerning, studies have shown that 62% of faculty had predatory publications, with 75% of those having more than one (averaging 4.3 publications).
 
 ## The Real Impact
 

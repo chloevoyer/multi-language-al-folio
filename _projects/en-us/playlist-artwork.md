@@ -36,10 +36,7 @@ Crafting my own Spotify playlist covers has been an exciting and fulfilling crea
 ## My Playlist Cover Gallery
 
 Here are some of my favorite creations:  
-{% include image-slider.liquid 
-  path="assets/img/life/spotify-playlist-artwork" 
-  extension=".png" 
-%}
+{% include image-slider.liquid path="assets/img/life/spotify-playlist-artwork" extension=".png" %}
 
 ### 1. **Chill Vibes**
 
@@ -47,13 +44,13 @@ A calming blend of pastel blues and whites, with a minimal design to reflect the
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/sonic-reverie-15.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/sonic-reverie.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/romanticizing-reality-13.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/romanticizing-reality.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/runner's-high-14.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/runner's-high.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -63,16 +60,16 @@ Bright and energetic, this cover features a scenic highway with bold typography 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/rolling-right-along-12.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/rolling-right-along.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/are-you-in-or-out-1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/are-you-in-or-out.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/passenger-seat-11.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/passenger-seat.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/late-night-drive-9.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/late-night-drive.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -81,13 +78,13 @@ A warm sunset gradient paired with soft brushstrokes to encapsulate the magic of
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/bon-appetit-2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/bon-appetit.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/morning-person-10.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/morning-person.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/energetic-surge-6.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/energetic-surge.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -95,19 +92,19 @@ A warm sunset gradient paired with soft brushstrokes to encapsulate the magic of
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/echoes-of-frequency-4.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/echoes-of-frequency.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/still-in-my-head-17.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/still-in-my-head.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/the-greatest-latest-20.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/the-greatest-latest.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/tswizzle-21.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/tswizzle.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/discover-weekly-3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/discover-weekly.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
