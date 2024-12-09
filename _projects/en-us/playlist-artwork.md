@@ -1,12 +1,22 @@
 ---
-layout: page
-title: My Spotify Playlist Covers 
+layout: distill
+title: My Spotify Playlist Covers 🎵
 icon: fa-solid fa-music
+date: 2024-12-09 09:00:00
 description: My own unique playlist artworks to bring my music to life
-img: assets/img/life/spotify-playlist-artwork/still-in-my-head.png
-importance: 2
-category: fun music
+img: assets/img/headers/playlist-artwork.png
+importance: 3
+category: fun
 tags: spotify playlist covers art
+images:
+  slider: true
+toc: true
+authors:
+  - name: Chloe Voyer
+    url: "https://www.researchgate.net/profile/Chloe-Voyer"
+    affiliations:
+      name: McGill University
+thumbnail: assets/img/headers/playlist-artwork.png
 ---
 
 # Extending Creativity: My Spotify Playlist Covers  
@@ -80,8 +90,5 @@ Feel free to share your creations in the comments or tag me if you post them onl
 
 A big shoutout to Rien for sparking this creative journey. If you haven’t already, check out her original blog post [here](https://www.byrien.com/blog/spotify-playlist-covers).  
 
----
-
 Happy creating!  
-
 Chloé
