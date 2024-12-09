@@ -52,6 +52,9 @@ Here are some of my favorite creations:
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/are-you-in-or-out.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/late-night-drive.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
 </div>
 A calming blend of pastel blues and whites, with a minimal design to reflect the laid-back nature of the playlist.  
 
@@ -72,6 +75,12 @@ A warm sunset gradient paired with soft brushstrokes to encapsulate the magic of
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/the-greatest-latest.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/tswizzle.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/discover-weekly.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
