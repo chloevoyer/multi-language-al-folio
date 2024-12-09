@@ -1,19 +1,18 @@
 ---
 layout: page
 title: My Spotify Playlist Covers 
-icon: fa-solid fa-music #🎵
-description: my own unique playlist artworks to bring my music to life
+icon: fa-solid fa-music
+description: My own unique playlist artworks to bring my music to life
 img: assets/img/life/spotify-playlist-artwork/still-in-my-head.png
 importance: 2
 category: fun music
-tags: "spotify playlist covers" art
+tags: spotify playlist covers art
 ---
 
-# Extending Creativity: My Spotify Playlist Covers
-
+# Extending Creativity: My Spotify Playlist Covers  
 Inspired by Rien's wonderful blog post, [Spotify Playlist Covers](https://www.byrien.com/blog/spotify-playlist-covers), I decided to dive into creating my own unique playlist artworks. Rien's approach to curating visually stunning and meaningful playlist covers truly resonated with me, and I wanted to explore how I could add my personal touch to this creative process.  
 
-## My Journey Into Playlist Art  
+## My Journey Into Playlist Art
 
 Crafting my own Spotify playlist covers has been an exciting and fulfilling creative journey. I started by reflecting on what my playlists represent—moods, memories, or specific vibes—and aimed to bring them to life visually. Here’s a peek into my process:  
 
@@ -48,11 +47,11 @@ Here are some of my favorite creations:
 A calming blend of pastel blues and whites, with a minimal design to reflect the laid-back nature of the playlist.  
 
 ### 2. **Road Trip Anthems**  
-![Road Trip Cover](assets\img\life\spotify-playlist-artwork/rolling-right-along.png)  
+![Road Trip Cover]("assets\img\life\spotify-playlist-artwork/rolling-right-along.png")  
 Bright and energetic, this cover features a scenic highway with bold typography to evoke wanderlust.  
 
 ### 3. **Golden Hour Beats**  
-![Golden Hour Cover](link-to-image)  
+![Golden Hour Cover]("assets/img/life/spotify-playlist-artwork/morning-person-2.0.png")  
 A warm sunset gradient paired with soft brushstrokes to encapsulate the magic of twilight moments.  
 
 ### 3. **Smart Playlists**  
