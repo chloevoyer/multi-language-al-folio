@@ -4,11 +4,15 @@
 
 <div class="image-slider">
   <div class="slider-container">
-    {% for i in (1..num_slides) %}
-      <div class="slide {% if forloop.first %}active{% endif %}">
-        {% capture slide_path %}{{ image_path }}/slide-{{ i }}.{{ extension }}{% endcapture %}
-        {% include figure.liquid loading="eager" path=slide_path class="img-fluid rounded z-depth-1" %}
-      </div>
+    {% for file in filenames %}
+      {% assign match = file | split: '-' %}
+      {% if match.size > 1 %}
+        {% assign number_part = match[1] | split: '.' | first %}
+        <div class="slide {% if forloop.first %}active{% endif %}">
+          {% capture slide_path %}{{ image_path }}/{{ file }}{% endcapture %}
+          {% include figure.liquid loading="eager" path=slide_path class="img-fluid rounded z-depth-1" %}
+        </div>
+      {% endif %}
     {% endfor %}
   </div>
 
