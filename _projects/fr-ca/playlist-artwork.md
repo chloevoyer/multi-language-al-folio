@@ -1,15 +1,25 @@
 ---
-layout: page
-title: My Spotify Playlist Covers 
+layout: distill
 # icon: fa-solid fa-music
+title: My Spotify Playlist Covers 🎵
 description: My own unique playlist artworks to bring my music to life
+date: 2024-12-09 09:00:00
 img: assets/img/headers/playlist-artwork.png
 importance: 3
 category: extra
-# tags: spotify playlist covers art
+tags: spotify playlist covers art
+images:
+  slider: true
+toc: true
+authors:
+  - name: Chloe Voyer
+    url: "https://www.researchgate.net/profile/Chloe-Voyer"
+    affiliations:
+      name: McGill University
 ---
 
-# Extending Creativity: My Spotify Playlist Covers  
+# Extending Creativity: My Spotify Playlist Covers
+
 Inspired by Rien's wonderful blog post, [Spotify Playlist Covers](https://www.byrien.com/blog/spotify-playlist-covers), I decided to dive into creating my own unique playlist artworks. Rien's approach to curating visually stunning and meaningful playlist covers truly resonated with me, and I wanted to explore how I could add my personal touch to this creative process.  
 
 ## My Journey Into Playlist Art
@@ -32,7 +42,6 @@ Here are some of my favorite creations:
 {% include image-slider.liquid path="assets/img/life/spotify-playlist-artwork/" count=21 extension="png" %}
 
 ### 1. **Chill Vibes**
-![Chill Vibes Cover](link-to-image)  
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/rolling-right-along.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -47,11 +56,9 @@ Here are some of my favorite creations:
 A calming blend of pastel blues and whites, with a minimal design to reflect the laid-back nature of the playlist.  
 
 ### 2. **Road Trip Anthems**  
-![Road Trip Cover]("assets\img\life\spotify-playlist-artwork/rolling-right-along.png")  
 Bright and energetic, this cover features a scenic highway with bold typography to evoke wanderlust.  
 
 ### 3. **Golden Hour Beats**  
-![Golden Hour Cover]("assets/img/life/spotify-playlist-artwork/morning-person-2.0.png")  
 A warm sunset gradient paired with soft brushstrokes to encapsulate the magic of twilight moments.  
 
 ### 3. **Smart Playlists**  
@@ -79,8 +86,6 @@ Feel free to share your creations in the comments or tag me if you post them onl
 ## A Special Thanks  
 
 A big shoutout to Rien for sparking this creative journey. If you haven’t already, check out her original blog post [here](https://www.byrien.com/blog/spotify-playlist-covers).  
-
----
 
 Happy creating!  
 Chloé

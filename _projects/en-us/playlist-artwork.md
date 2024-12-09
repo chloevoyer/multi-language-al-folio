@@ -42,7 +42,6 @@ Here are some of my favorite creations:
 {% include image-slider.liquid path="assets/img/life/spotify-playlist-artwork/" count=21 extension="png" %}
 
 ### 1. **Chill Vibes**
-![Chill Vibes Cover](link-to-image)  
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/rolling-right-along.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -57,11 +56,9 @@ Here are some of my favorite creations:
 A calming blend of pastel blues and whites, with a minimal design to reflect the laid-back nature of the playlist.  
 
 ### 2. **Road Trip Anthems**  
-![Road Trip Cover]("assets\img\life\spotify-playlist-artwork/rolling-right-along.png")  
 Bright and energetic, this cover features a scenic highway with bold typography to evoke wanderlust.  
 
 ### 3. **Golden Hour Beats**  
-![Golden Hour Cover]("assets/img/life/spotify-playlist-artwork/morning-person-2.0.png")  
 A warm sunset gradient paired with soft brushstrokes to encapsulate the magic of twilight moments.  
 
 ### 3. **Smart Playlists**  
