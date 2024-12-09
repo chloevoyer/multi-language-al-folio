@@ -36,8 +36,10 @@ Crafting my own Spotify playlist covers has been an exciting and fulfilling crea
 ## My Playlist Cover Gallery
 
 Here are some of my favorite creations:  
-
-{% include image-slider.liquid path="assets/img/life/spotify-playlist-artwork" count=21 extension="png" %}
+{% include image-slider.liquid 
+  path="assets/img/life/spotify-playlist-artwork" 
+  extension=".png" 
+%}
 
 ### 1. **Chill Vibes**
 
