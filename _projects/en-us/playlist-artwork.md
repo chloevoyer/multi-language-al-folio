@@ -84,7 +84,8 @@ Bright and energetic, this cover features a scenic highway with bold typography 
     </div>
 </div>
 
-### 3. Golden Hour Beats  
+### 3. Golden Age
+
 A warm sunset gradient paired with soft brushstrokes to encapsulate the magic of twilight moments.  
 
 <div class="row mt-3">
@@ -92,10 +93,10 @@ A warm sunset gradient paired with soft brushstrokes to encapsulate the magic of
         {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/bon-appetit.png" class="img-fluid rounded z-depth-1" zoomable=true caption="making dinner" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/morning-person.png" class="img-fluid rounded z-depth-1" zoomable=true caption="sunday morning" %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/morning-person.png" class="img-fluid rounded z-depth-1" zoomable=true caption="monday motivation" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/energetic-surge.png" class="img-fluid rounded z-depth-1" zoomable=true caption="songs that make me want to dance" %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/pancakes-or-waffles.png" class="img-fluid rounded z-depth-1" zoomable=true caption="sunday brunch" %}
     </div>
 </div>
 
@@ -103,7 +104,7 @@ A warm sunset gradient paired with soft brushstrokes to encapsulate the magic of
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/eras-gone-by-(boosté).png" class="img-fluid rounded z-depth-1" zoomable=true caption="eras tour setlist" %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/eras-gone-by.png" class="img-fluid rounded z-depth-1" zoomable=true caption="eras tour setlist" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/tswizzle.png" class="img-fluid rounded z-depth-1" zoomable=true caption="taylor swift discography" %}
@@ -112,7 +113,7 @@ A warm sunset gradient paired with soft brushstrokes to encapsulate the magic of
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/enchanting chronicles.png" class="img-fluid rounded z-depth-1" zoomable=true caption="all songs by era" %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/enchanting-chronicles.png" class="img-fluid rounded z-depth-1" zoomable=true caption="all songs by era" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/swift-strides-through-time.png" class="img-fluid rounded z-depth-1" zoomable=true caption="eras tour workout setlist" %}
@@ -142,7 +143,7 @@ Shared playlists with my boyfriend
         {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/echoes-of-frequency.png" class="img-fluid rounded z-depth-1" zoomable=true caption="most played" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/still-in-my-head.png" class="img-fluid rounded z-depth-1" zoomable=true caption="recently played" %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/are-you-in-or-out.png" class="img-fluid rounded z-depth-1" zoomable=true caption="filter songs I outgrew" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/the-greatest-latest.png" class="img-fluid rounded z-depth-1" zoomable=true caption="recently added" %}
@@ -151,10 +152,13 @@ Shared playlists with my boyfriend
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/are-you-in-or-out.png" class="img-fluid rounded z-depth-1" zoomable=true caption="filter songs I outgrew" %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/sync-or-swim.png" class="img-fluid rounded z-depth-1" zoomable=true caption="poolside summer jams" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/sync-or-swim.png" class="img-fluid rounded z-depth-1" zoomable=true caption="poolside summer jams" %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/still-in-my-head.png" class="img-fluid rounded z-depth-1" zoomable=true caption="recently played" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/energetic-surge.png" class="img-fluid rounded z-depth-1" zoomable=true caption="songs that make me want to dance" %}
     </div>
 </div>
 
