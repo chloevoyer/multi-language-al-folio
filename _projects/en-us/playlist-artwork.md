@@ -33,10 +33,9 @@ Crafting my own Spotify playlist covers has been an exciting and fulfilling crea
 
 ## My Playlist Cover Gallery
 
-Here are some of my favorite creations:  
 {% include image-slider.liquid path="assets/img/life/spotify-playlist-artwork" extension=".png" %}
 
-Below, I’ve grouped my playlist covers into categories to make it easier to navigate through the different vibes, occasions, and inspirations.  
+Below, I’ve grouped some of my favorite creations into categories to make it easier to navigate through the different vibes, occasions, and inspirations.  
 
 ## Moods and Emotions  
 
@@ -56,13 +55,13 @@ A calming blend of pastel blues and whites, with a minimal design to reflect the
     </div>
 </div>
 
-### 2. Road Trip Anthems  
+### 2. Travel Anthems  
 
 Bright and energetic, this cover features a scenic highway with bold typography to evoke wanderlust.  
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/rolling-right-along.png" class="img-fluid rounded z-depth-1" zoomable=true caption="roadtrip songs" %}
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/rolling-right-along.png" class="img-fluid rounded z-depth-1" zoomable=true caption="road trip songs" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/are-you-in-or-out.png" class="img-fluid rounded z-depth-1" zoomable=true caption="clean up old songs" %}
