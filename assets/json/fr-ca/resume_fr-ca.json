@@ -294,16 +294,16 @@
       "level": "",
       "icon": "fa-solid fa-code",
       "keywords": [
-        "R",
-        "Python",
-        "SQL",
-        "LaTeX",
-        "Markdown",
-        "HTML",
         "CSS/SCSS",
-        "Ruby",
+        "HTML",
         "JavaScript",
-        "Liquid"
+        "LaTeX",
+        "Liquid",
+        "Markdown",
+        "Python",
+        "R",
+        "Ruby",
+        "SQL"
       ]
     },
     {
@@ -312,9 +312,9 @@
       "icon": "fa-solid fa-chart-line",
       "keywords": [
         "FreeSurfer",
-        "Statistical Package for the Social Sciences (SPSS)",
+        "NVivo",
         "REDCap",
-        "NVivo"
+        "Statistical Package for the Social Sciences (SPSS)"
       ]
     },
     {
@@ -322,10 +322,10 @@
       "level": "",
       "icon": "fa-solid fa-desktop",
       "keywords": [
-        "Linux <i class='fa-brands fa-linux'></i>",
-        "Ubuntu <i class='fa-brands fa-ubuntu'></i>",
-        "Virtual Machine",
-        "Docker <i class='fa-brands fa-docker'></i>"
+        "Docker",
+        "Linux",
+        "Ubuntu",
+        "Virtual Machine"
       ]
     },
     {
@@ -333,8 +333,8 @@
       "level": "",
       "icon": "fa-solid fa-file-word",
       "keywords": [
-        "Microsoft Office Suite (Word, Excel, PowerPoint) <i class='fa-brands fa-microsoft'></i>",
-        "Zoom <i class='fa-brands fa-zoom'></i>"
+        "Microsoft Office Suite (Word, Excel, PowerPoint)",
+        "Zoom"
       ]
     },
     {
@@ -342,11 +342,11 @@
       "level": "",
       "icon": "fa-solid fa-book",
       "keywords": [
-        "Endnote",
-        "Mendeley <i class='fa-brands fa-mendeley'></i>",
-        "Zotero",
         "CSL",
-        "CLS"
+        "CLS",
+        "Endnote",
+        "Mendeley",
+        "Zotero"
       ]
     },
     {
@@ -354,9 +354,9 @@
       "level": "",
       "icon": "fa-solid fa-book",
       "keywords": [
-        "Notion", 
+        "GitHub",
         "Jekyll", 
-        "GitHub <i class='fa-brands fa-github'></i>"
+        "Notion"
       ]
     }
   ],

@@ -11,7 +11,6 @@
             {% else %}
               <td class="list-group-category-icon"></td>
             {% endif %}
-            <!-- Calculate colspan number for category title -->
             {% assign i = 1 %}
             {% for item in content.items %}
               {% assign i = i | plus: 1 %}
@@ -20,14 +19,18 @@
           </tr>
           {% assign sorted_keywords = content.keywords | sort %}
           {% for item in sorted_keywords %}
-            {% assign skill_key = item | downcase %}
-            {% assign logo = site.data.skill_logos[skill_key] %}
+            {% assign skill_key = item | downcase | replace: "/", "" | replace: " ", "" | replace: "(", "" | replace: ")", "" | replace: ",", "" %}
+            {% assign logo = site.data.skill-logos[skill_key] %}
             <tr>
               <td></td>
               <td class="list-group-name">
                 {% if logo %}
                   <span class="list-group-name-icon">
-                    <i class="{{ logo }}"></i>
+                    {% if logo.type == "image" %}
+                      <img src="{{ site.baseurl }}/{{ logo.path }}" alt="{{ item }} icon" class="skill-custom-icon">
+                    {% else %}
+                      <i class="{{ logo.class }}"></i>
+                    {% endif %}
                   </span>
                 {% endif %}
                 <b>{{ item }}</b>

@@ -302,16 +302,16 @@
       "level": "",
       "icon": "fa-solid fa-code",
       "keywords": [
-        "R",
-        "Python",
-        "SQL",
-        "LaTeX",
-        "Markdown",
-        "HTML",
         "CSS/SCSS",
-        "Ruby",
+        "HTML",
         "JavaScript",
-        "Liquid"
+        "LaTeX",
+        "Liquid",
+        "Markdown",
+        "Python",
+        "R",
+        "Ruby",
+        "SQL"
       ]
     },
     {
@@ -320,9 +320,9 @@
       "icon": "fa-solid fa-chart-line",
       "keywords": [
         "FreeSurfer",
-        "Statistical Package for the Social Sciences (SPSS)",
+        "NVivo",
         "REDCap",
-        "NVivo"
+        "Statistical Package for the Social Sciences (SPSS)"
       ]
     },
     {
@@ -330,10 +330,10 @@
       "level": "",
       "icon": "fa-solid fa-desktop",
       "keywords": [
+        "Docker",
         "Linux",
         "Ubuntu",
-        "Virtual Machine",
-        "Docker"
+        "Virtual Machine"
       ]
     },
     {
@@ -350,11 +350,11 @@
       "level": "",
       "icon": "fa-solid fa-book",
       "keywords": [
+        "CSL",
+        "CLS",
         "Endnote",
         "Mendeley",
-        "Zotero",
-        "CSL",
-        "CLS"
+        "Zotero"
       ]
     },
     {
@@ -362,9 +362,9 @@
       "level": "",
       "icon": "fa-solid fa-book",
       "keywords": [
-        "Notion",
         "GitHub",
-        "Jekyll"
+        "Jekyll",
+        "Notion"
       ]
     }
   ],

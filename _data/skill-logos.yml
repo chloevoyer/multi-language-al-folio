@@ -1,0 +1,162 @@
+# Font Awesome icon: "fa-brands fa-python"
+# Tabler icon: "ti ti-brand-notion"
+# Custom image icon: "assets/img/icons/notion-bw.svg"
+
+# Databases
+mongodb:
+ type: "font"
+ class: "fa-solid fa-leaf"
+
+sql:
+ type: "font"
+ class: "fa-solid fa-database"
+
+# Development Tools
+docker:
+ type: "font"
+ class: "fa-brands fa-docker"
+
+git:
+ type: "font"
+ class: "fa-brands fa-git-alt"
+
+github:
+ type: "font"
+ class: "fa-brands fa-github"
+
+# Operating Systems
+linux:
+ type: "font"
+ class: "fa-brands fa-linux"
+
+ubuntu:
+ type: "font"
+ class: "fa-brands fa-ubuntu"
+
+windows:
+ type: "font"
+ class: "fa-brands fa-windows"
+
+# Programming Languages
+java:
+ type: "font"
+ class: "fa-brands fa-java"
+
+javascript:
+ type: "font"
+ class: "fa-brands fa-js"
+
+python:
+ type: "font"
+ class: "fa-brands fa-python"
+
+r:
+ type: "font"
+ class: "fa-brands fa-r-project"
+
+ruby:
+  type: "image"
+  path: "assets/img/icons/ruby.svg"
+
+typescript:
+ type: "font"
+ class: "fa-brands fa-js"
+
+# Software & Tools
+latex:
+ type: "font"
+ class: "fa-solid fa-square-root-variable"
+
+liquid:
+ type: "font"
+ class: "fa-solid fa-code"
+
+markdown:
+ type: "font"
+ class: "fa-solid fa-m"
+
+mendeley:
+ type: "font"
+ class: "fa-brands fa-mendeley"
+
+microsoft:
+ type: "font"
+ class: "fa-brands fa-microsoft"
+
+microsoft-office:
+ type: "font"
+ class: "fa-brands fa-microsoft"
+
+microsoftofficesuitewordexcelpowerpoint:
+ type: "font"
+ class: "fa-brands fa-microsoft"
+
+freesurfer:
+ type: "font"
+ class: "fa-solid fa-brain"
+
+nvivo:
+ type: "font"
+ class: "ti ti-sparkles"
+
+virtualmachine:
+ type: "font"
+ class: "fa-solid fa-server"
+
+zoom:
+ type: "font"
+ class: "fa-solid fa-video"
+
+# Web Technologies
+css:
+ type: "font"
+ class: "fa-brands fa-css3-alt"
+
+cssscss:
+ type: "font"
+ class: "fa-brands fa-css3-alt"
+
+html:
+ type: "font"
+ class: "fa-brands fa-html5"
+
+react:
+ type: "font"
+ class: "fa-brands fa-react"
+
+scss:
+ type: "font"
+ class: "fa-brands fa-sass"
+
+# Custom image icon
+cls:
+  type: "image"
+  path: "assets/img/icons/cls.svg"
+
+csl:
+  type: "image"
+  path: "assets/img/icons/csl-bw.svg"
+
+endnote:
+  type: "image"
+  path: "assets/img/icons/endnote.svg"
+
+jekyll:
+  type: "image"
+  path: "assets/img/icons/jekyll.svg"
+
+notion:
+  type: "image"
+  path: "assets/img/icons/notion.svg"
+
+redcap:
+  type: "image"
+  path: "assets/img/icons/redcap.svg"
+
+statisticalpackageforthesocialsciencesspss:
+  type: "image"
+  path: "assets/img/icons/spss.svg"
+
+zotero:
+  type: "image"
+  path: "assets/img/icons/zotero.svg"
