@@ -131,6 +131,7 @@ div.list-group {
 td.list-group-category {
   color: var(--global-theme-color);
   margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
 td.list-group-category-icon {
@@ -162,6 +163,20 @@ p.list-group-time {
 
 td.list-group-link {
   padding-left: 0.5rem;
+}
+
+/* Add this to your CSS file in the LIST_GROUPS styles section */
+span.list-group-name-icon {
+  display: inline-block;
+  font-size: 1.1em;
+  width: 1.5em;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--global-theme-color); /* This will match your theme color like other icons */
+}
+
+td.list-group-name i {
+  margin-right: 0.4rem; /* This matches your existing icon spacing */
 }
 
 /*****************************

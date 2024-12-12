@@ -1,7 +1,7 @@
 ---
 layout: distill
-title: 'My Spotify Playlist Covers'
-icon: "fa-solid fa-music"
+title: "My Playlist Covers <i class='fa-brands fa-itunes-note'></i>"
+icon: fa-music
 date: 2024-12-09 09:00:00
 description: My own unique playlist artworks to bring my music to life
 img: assets/img/headers/playlist-artwork.png
@@ -167,7 +167,7 @@ I encourage everyone to explore this creative outlet and give their Spotify play
 
 Feel free to share your creations in the comments or tag me if you post them online—I’d love to see them!  
 
-*Check out all my playlists on Spotify [here](https://open.spotify.com/user/12175073889?si=6d2d3182ac18437f)!*  
+*Check out all my playlists on Spotify [here](https://open.spotify.com/user/12175073889?si=6d2d3182ac18437f)&nbsp;&nbsp;<i class="fa-brands fa-spotify" style="color: var(--global-theme-color);"></i>*
 
 ## A Special Thanks  
 

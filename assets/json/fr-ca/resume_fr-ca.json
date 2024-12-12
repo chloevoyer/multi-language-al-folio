@@ -293,37 +293,71 @@
       "name": "Langages & outils de programmation",
       "level": "",
       "icon": "fa-solid fa-code",
-      "keywords": ["R", "Python", "SQL", "LaTeX", "Markdown", "HTML", "CSS/SCSS", "Ruby", "JavaScript", "Liquid"]
+      "keywords": [
+        "R",
+        "Python",
+        "SQL",
+        "LaTeX",
+        "Markdown",
+        "HTML",
+        "CSS/SCSS",
+        "Ruby",
+        "JavaScript",
+        "Liquid"
+      ]
     },
     {
       "name": "Analyse de données & logiciels statistiques",
       "level": "",
       "icon": "fa-solid fa-chart-line",
-      "keywords": ["FreeSurfer", "Statistical Package for the Social Sciences (SPSS)", "REDCap", "NVivo"]
+      "keywords": [
+        "FreeSurfer",
+        "Statistical Package for the Social Sciences (SPSS)",
+        "REDCap",
+        "NVivo"
+      ]
     },
     {
       "name": "Systèmes d'exploitation & environnements",
       "level": "",
       "icon": "fa-solid fa-desktop",
-      "keywords": ["Linux", "Ubuntu", "Virtual Machine", "Docker"]
+      "keywords": [
+        "Linux <i class='fa-brands fa-linux'></i>",
+        "Ubuntu <i class='fa-brands fa-ubuntu'></i>",
+        "Virtual Machine",
+        "Docker <i class='fa-brands fa-docker'></i>"
+      ]
     },
     {
       "name": "Logiciels de bureau & outils de communication",
       "level": "",
       "icon": "fa-solid fa-file-word",
-      "keywords": ["Microsoft Office Suite (Word, Excel, PowerPoint)", "Zoom"]
+      "keywords": [
+        "Microsoft Office Suite (Word, Excel, PowerPoint) <i class='fa-brands fa-microsoft'></i>",
+        "Zoom <i class='fa-brands fa-zoom'></i>"
+      ]
     },
     {
       "name": "Gestion des références",
       "level": "",
       "icon": "fa-solid fa-book",
-      "keywords": ["Endnote", "Zotero", "CSL", "CLS"]
+      "keywords": [
+        "Endnote",
+        "Mendeley <i class='fa-brands fa-mendeley'></i>",
+        "Zotero",
+        "CSL",
+        "CLS"
+      ]
     },
     {
       "name": "Autres",
       "level": "",
       "icon": "fa-solid fa-book",
-      "keywords": ["Notion", "Jekyll", "GitHub"]
+      "keywords": [
+        "Notion", 
+        "Jekyll", 
+        "GitHub <i class='fa-brands fa-github'></i>"
+      ]
     }
   ],
   "languages": [

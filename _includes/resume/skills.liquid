@@ -20,9 +20,16 @@
           </tr>
           {% assign sorted_keywords = content.keywords | sort %}
           {% for item in sorted_keywords %}
+            {% assign skill_key = item | downcase %}
+            {% assign logo = site.data.skill_logos[skill_key] %}
             <tr>
               <td></td>
               <td class="list-group-name">
+                {% if logo %}
+                  <span class="list-group-name-icon">
+                    <i class="{{ logo }}"></i>
+                  </span>
+                {% endif %}
                 <b>{{ item }}</b>
               </td>
             </tr>

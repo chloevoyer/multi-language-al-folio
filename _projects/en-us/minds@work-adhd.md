@@ -1,7 +1,7 @@
 ---
 page_id: project_1
 layout: page
-title: Quality of work life
+title: Quality of Work Life
 description: Improving quality of work life in ADHD
 img: assets/img/headers/brain-aurora.jpg
 importance: 1

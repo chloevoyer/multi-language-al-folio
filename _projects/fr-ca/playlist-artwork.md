@@ -84,13 +84,13 @@ A warm sunset gradient paired with soft brushstrokes to encapsulate the magic of
     </div>
 </div>
 
-*Check out all my playlists on Spotify [here](https://open.spotify.com/user/12175073889?si=6d2d3182ac18437f)!*  
-
 ## Join the Fun  
 
 I encourage everyone to explore this creative outlet and give their Spotify playlists a personal flair. It’s an opportunity to connect with your music on a deeper level while showcasing your personality.  
 
 Feel free to share your creations in the comments or tag me if you post them online—I’d love to see them!  
+
+*Check out all my playlists on Spotify [here](https://open.spotify.com/user/12175073889?si=6d2d3182ac18437f)&nbsp;&nbsp;<i class="fa-brands fa-spotify" style="color: var(--global-theme-color);"></i>*
 
 ## A Special Thanks  
 

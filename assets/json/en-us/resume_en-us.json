@@ -301,37 +301,71 @@
       "name": "Programming Languages & Tools",
       "level": "",
       "icon": "fa-solid fa-code",
-      "keywords": ["R", "Python", "SQL", "LaTeX", "Markdown", "HTML", "CSS/SCSS", "Ruby", "JavaScript", "Liquid"]
+      "keywords": [
+        "R",
+        "Python",
+        "SQL",
+        "LaTeX",
+        "Markdown",
+        "HTML",
+        "CSS/SCSS",
+        "Ruby",
+        "JavaScript",
+        "Liquid"
+      ]
     },
     {
       "name": "Data Analysis & Statistical Software",
       "level": "",
       "icon": "fa-solid fa-chart-line",
-      "keywords": ["FreeSurfer", "Statistical Package for the Social Sciences (SPSS)", "REDCap", "NVivo"]
+      "keywords": [
+        "FreeSurfer",
+        "Statistical Package for the Social Sciences (SPSS)",
+        "REDCap",
+        "NVivo"
+      ]
     },
     {
       "name": "Operating Systems & Environments",
       "level": "",
       "icon": "fa-solid fa-desktop",
-      "keywords": ["Linux", "Ubuntu", "Virtual Machine", "Docker"]
+      "keywords": [
+        "Linux",
+        "Ubuntu",
+        "Virtual Machine",
+        "Docker"
+      ]
     },
     {
       "name": "Office Software & Communication Tools",
       "level": "",
       "icon": "fa-solid fa-file-word",
-      "keywords": ["Microsoft Office Suite (Word, Excel, PowerPoint)", "Zoom"]
+      "keywords": [
+        "Microsoft Office Suite (Word, Excel, PowerPoint)",
+        "Zoom"
+      ]
     },
     {
       "name": "Reference Management",
       "level": "",
       "icon": "fa-solid fa-book",
-      "keywords": ["Endnote", "Zotero", "CSL", "CLS"]
+      "keywords": [
+        "Endnote",
+        "Mendeley",
+        "Zotero",
+        "CSL",
+        "CLS"
+      ]
     },
     {
       "name": "Other",
       "level": "",
       "icon": "fa-solid fa-book",
-      "keywords": ["Notion", "Github", "Jekyll"]
+      "keywords": [
+        "Notion",
+        "GitHub",
+        "Jekyll"
+      ]
     }
   ],
   "languages": [
