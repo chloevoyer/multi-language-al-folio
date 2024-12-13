@@ -27,7 +27,7 @@
                 {% if logo %}
                   <span class="list-group-name-icon">
                     {% if logo.type == "image" %}
-                      <img src="{{ site.baseurl }}/{{ logo.path }}" alt="{{ item }} icon" class="skill-custom-icon">
+                      <img src="{{ site.baseurl }}/{{ logo.path }}" alt="{{ item }} icon" class="skill-custom-icon" style="filter: var(--global-icon-filter);" >
                     {% else %}
                       <i class="{{ logo.class }}"></i>
                     {% endif %}
