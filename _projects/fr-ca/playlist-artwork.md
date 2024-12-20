@@ -1,8 +1,8 @@
 ---
 layout: distill
 # icon: fa-solid fa-music
-title: My Playlist Covers 🎵
-description: My own unique playlist artworks to bring my music to life
+title: Mes playlists 🎵
+description: Mes propres créations artistiques uniques pour donner vie à ma musique
 date: 2024-12-09 09:00:00
 img: assets/img/headers/resized/playlist-artwork.jpg
 importance: 3
