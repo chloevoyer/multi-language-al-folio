@@ -2,7 +2,7 @@
 layout: page
 title: Future Workplace Skills
 description: Psychometric tool on future workplace skills
-img: assets/img/headers/resized/future-workplace-skills.gif
+img: assets/img/headers/resized/future-workplace-skills.jpg
 importance: 3
 category: work
 related_publications: true
