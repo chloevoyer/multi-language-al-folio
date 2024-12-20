@@ -6,7 +6,7 @@ description: My own unique playlist artworks to bring my music to life
 date: 2024-12-09 09:00:00
 img: assets/img/headers/resized/playlist-artwork.jpg
 importance: 3
-category: extra
+category: fun
 tags: spotify playlist covers art
 images:
   slider: true

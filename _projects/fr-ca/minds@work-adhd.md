@@ -4,7 +4,7 @@ title: Qualité de vie au travail
 description: Améliorer la qualité de vie au travail chez les adultes vivant avec le TDA/H
 img: assets/img/headers/resized/brain-aurora.jpg
 importance: 1
-category: research
+category: work
 related_publications: true
 ---
 

@@ -67,8 +67,8 @@ blog_posts:
     tools: outils
 navigation_title: blogue
 categories:
-  fun: amusement
-  work: travail
+  fun: extra
+  work: recherche
 citation:
   bibtex: "ou comme entrée BibTeX :"
   introduction: introduction
