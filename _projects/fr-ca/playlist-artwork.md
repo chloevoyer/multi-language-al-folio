@@ -84,7 +84,7 @@ Lumineuse et énergique, cette pochette présente une route panoramique avec une
     </div>
 </div>
 
-### 3. L'Âge d'or
+### 3. L'âge d'or
 
 Un dégradé de coucher de soleil chaleureux associé à des coups de pinceau doux pour capturer la magie des moments crépusculaires.  
 
