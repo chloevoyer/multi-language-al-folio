@@ -45,6 +45,17 @@ d-article {
       color: var(--global-theme-color) !important;
     }
   }
+  p a {
+    color: var(--global-theme-color) !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid var(--global-theme-color) !important;
+    transition: all 0.2s ease !important;
+    
+    &:hover {
+      color: var(--global-hover-color) !important;
+      border-bottom-color: var(--global-hover-color) !important;
+    }
+  }
   b i {
     display: inline;
   }
@@ -169,3 +180,4 @@ d-appendix {
     }
   }
 }
+

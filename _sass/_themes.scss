@@ -32,6 +32,7 @@
   --global-newsletter-text-color: #{$black-color};
   --global-submission-bg-color: #f8f9fa;
   --global-submission-text-color: #{$white-color};
+  --global-caption-color: #{$grey-color-dark};
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -106,6 +107,7 @@ html[data-theme="dark"] {
   --global-newsletter-bg-color: #{$grey-color-light};
   --global-newsletter-text-color: #{$grey-color-dark};
   --global-submission-bg-color: #{$grey-color-dark};
+  --global-caption-color: #{$grey-color-light};
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
