@@ -4,8 +4,8 @@ title: "Protéger le monde académique : comment identifier et éviter les prati
 icon: # fa-solid fa-flag
 date: 2024-11-01 11:00:00
 description: Conseils pour naviguer les pratiques de publication prédatrices dans le milieu académique
-tags: revue-litérature stratégies
-categories: recherche
+tags: literature-review strategies
+categories: research
 lang: fr-ca
 featured: false
 thumbnail: assets/slides/predatory-practices/slide-1.jpeg

@@ -1,10 +1,12 @@
 ---
-layout: post
-title: Intégration Garmin vers Notion ⌚
+layout: distill
+title: Intégration Garmin 🡒 Notion ⌚
+toc: true
+icon: # ti-icon-brand-notion
 date: 2024-09-01 11:12:00
 description: Synchronisez automatiquement vos activités Garmin avec Notion grâce à des workflows automatisés
-tags: mode-de-vie productivité
-categories: outils
+tags: lifestyle productivity
+categories: tools
 featured: false
 thumbnail: assets/img/thumbnails/garmin-run.png
 lang: fr-ca

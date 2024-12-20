@@ -47,7 +47,7 @@ pagination:
     <ul class="p-0 m-0">
       {% for tag in page.display_tags %}
         <li>
-          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
+          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ site.data[site.active_lang].strings.blog_posts.tags[tag] | default: tag }}</a>
         </li>
         {% unless forloop.last %}
           <p>&bull;</p>
@@ -58,7 +58,7 @@ pagination:
       {% endif %}
       {% for category in page.display_categories %}
         <li>
-          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
+          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ site.data[site.active_lang].strings.blog_posts.categories[category] | default: category }}</a>
         </li>
         {% unless forloop.last %}
           <p>&bull;</p>
@@ -167,7 +167,7 @@ pagination:
           &nbsp; &middot; &nbsp;
             {% for tag in post.tags %}
             <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
-              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
+              <i class="fa-solid fa-hashtag fa-sm"></i> {{ site.data[site.active_lang].strings.blog_posts.tags[tag] | default: tag }}</a>
               {% unless forloop.last %}
                 &nbsp;
               {% endunless %}
@@ -178,7 +178,7 @@ pagination:
           &nbsp; &middot; &nbsp;
             {% for category in post.categories %}
             <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
-              <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
+              <i class="fa-solid fa-tag fa-sm"></i> {{ site.data[site.active_lang].strings.blog_posts.categories[category] | default: category }}</a>
               {% unless forloop.last %}
                 &nbsp;
               {% endunless %}
