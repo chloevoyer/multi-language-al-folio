@@ -19,11 +19,7 @@ authors:
 disqus_comments: true
 ---
 
-# Extending Creativity: My Spotify Playlist Covers
-
 Inspired by Rien's wonderful blog post, [Spotify Playlist Covers](https://www.byrien.com/blog/spotify-playlist-covers), I decided to dive into creating my own unique playlist artworks. Rien's approach to curating visually stunning and meaningful playlist covers truly resonated with me, and I wanted to explore how I could add my personal touch to this creative process.  
-
-## My Journey Into Playlist Art
 
 Crafting my own Spotify playlist covers has been an exciting and fulfilling creative journey. I started by reflecting on what my playlists represent—moods, memories, or specific vibes—and aimed to bring them to life visually. Here’s a peek into my process:  
 
@@ -31,35 +27,37 @@ Crafting my own Spotify playlist covers has been an exciting and fulfilling crea
    Each playlist cover represents the emotion or theme of the music it holds. Whether it's a soothing "Rainy Day" playlist or an energizing "Workout Beats" mix, I focused on translating sound into visuals.  
 
 2. **Design Tools:**  
-   I experimented with tools like Canva, Figma, and even Procreate to create covers that felt uniquely mine. For more abstract playlists, I leaned on bold colors and shapes; for others, I used photography or illustrations.  
+   I experimented with tools like Photoshop and Procreate to create covers that felt uniquely mine. For more abstract playlists, I leaned on bold colors and shapes; for others, I used photography or illustrations found on Pinterest or Unsplash.  
 
 3. **A Personal Touch:**  
    To make the covers even more meaningful, I incorporated snippets of my favorite lyrics or quotes that embody the playlist's spirit.  
 
 ## My Playlist Cover Gallery
 
-Here are some of my favorite creations:  
+{% include image-slider.liquid path="assets/img/life/spotify-playlist-artwork" extension=".png" %}
 
-{% include image-slider.liquid path="assets/img/life/spotify-playlist-artwork/" count=28 extension="png" %}
+Below, I’ve grouped some of my favorite creations into categories to make it easier to navigate through the different vibes, occasions, and inspirations.  
 
-### 1. **Chill Vibes**
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/rolling-right-along.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/passenger-seat.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/are-you-in-or-out.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/late-night-drive.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
+## Moods and Emotions  
+
+### 1. Chill Vibes  
+
 A calming blend of pastel blues and whites, with a minimal design to reflect the laid-back nature of the playlist.  
 
-### 2. **Road Trip Anthems**  
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/sonic-reverie.png" class="img-fluid rounded z-depth-1" zoomable=true caption="favourites that hit home" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/romanticizing-reality.png" class="img-fluid rounded z-depth-1" zoomable=true caption="romanticizing reality" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/life/spotify-playlist-artwork/runners-high.png" class="img-fluid rounded z-depth-1" zoomable=true caption="high-energy tracks for working out" %}
+    </div>
+</div>
+
+### 2. Travel Anthems  
+
 Bright and energetic, this cover features a scenic highway with bold typography to evoke wanderlust.  
 
 <div class="row mt-3">
@@ -124,7 +122,7 @@ A warm sunset gradient paired with soft brushstrokes to encapsulate the magic of
 
 ### 3. It Takes Two  
 
-Shared playlists with my boyfriend  
+Shared playlists with my partner  
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
