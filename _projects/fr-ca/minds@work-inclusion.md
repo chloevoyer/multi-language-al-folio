@@ -2,7 +2,7 @@
 layout: page
 title: Inclusion professionnelle
 description: Un programme Cerveaux@travail adapté pour faciliter l’inclusion en milieu de travail des personnes vivant avec le TDA/H
-img: assets/img/headers/collaboration.jpg
+img: assets/img/headers/resized/collaboration.jpg
 importance: 5
 category: recherche
 ---

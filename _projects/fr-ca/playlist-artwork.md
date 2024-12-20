@@ -1,10 +1,10 @@
 ---
 layout: distill
 # icon: fa-solid fa-music
-title: My Spotify Playlist Covers 🎵
+title: My Playlist Covers 🎵
 description: My own unique playlist artworks to bring my music to life
 date: 2024-12-09 09:00:00
-img: assets/img/headers/playlist-artwork.png
+img: assets/img/headers/resized/playlist-artwork.jpg
 importance: 3
 category: extra
 tags: spotify playlist covers art
@@ -16,6 +16,7 @@ authors:
     url: "https://www.researchgate.net/profile/Chloe-Voyer"
     affiliations:
       name: McGill University
+disqus_comments: true
 ---
 
 # Extending Creativity: My Spotify Playlist Covers
@@ -26,20 +27,20 @@ Inspired by Rien's wonderful blog post, [Spotify Playlist Covers](https://www.by
 
 Crafting my own Spotify playlist covers has been an exciting and fulfilling creative journey. I started by reflecting on what my playlists represent—moods, memories, or specific vibes—and aimed to bring them to life visually. Here’s a peek into my process:  
 
-1. **Mood Matching**:  
+1. **Mood Matching:**  
    Each playlist cover represents the emotion or theme of the music it holds. Whether it's a soothing "Rainy Day" playlist or an energizing "Workout Beats" mix, I focused on translating sound into visuals.  
 
-2. **Design Tools**:  
+2. **Design Tools:**  
    I experimented with tools like Canva, Figma, and even Procreate to create covers that felt uniquely mine. For more abstract playlists, I leaned on bold colors and shapes; for others, I used photography or illustrations.  
 
-3. **A Personal Touch**:  
+3. **A Personal Touch:**  
    To make the covers even more meaningful, I incorporated snippets of my favorite lyrics or quotes that embody the playlist's spirit.  
 
 ## My Playlist Cover Gallery
 
 Here are some of my favorite creations:  
 
-{% include image-slider.liquid path="assets/img/life/spotify-playlist-artwork/" count=21 extension="png" %}
+{% include image-slider.liquid path="assets/img/life/spotify-playlist-artwork/" count=28 extension="png" %}
 
 ### 1. **Chill Vibes**
 <div class="row mt-3">

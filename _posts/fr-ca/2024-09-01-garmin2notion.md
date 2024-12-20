@@ -6,7 +6,6 @@ description: Synchronisez automatiquement vos activités Garmin avec Notion grâ
 tags: mode-de-vie productivité
 categories: outils
 featured: false
-redirect: https://www.notion.so/fr/templates/fitness-tracker-738
 thumbnail: assets/img/thumbnails/garmin-run.png
 lang: fr-ca
 ---

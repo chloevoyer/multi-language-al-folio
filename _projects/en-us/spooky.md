@@ -2,7 +2,7 @@
 layout: page
 title: Spooky 👻
 description: The sweet life of a spoiled cat
-img: assets/img/headers/spooky.JPG
+img: assets/img/headers/resized/spooky.jpg
 importance: 2
 category: fun
 ---

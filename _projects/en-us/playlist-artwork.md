@@ -1,10 +1,10 @@
 ---
 layout: distill
-title: "My Playlist Covers <i class='fa-brands fa-itunes-note'></i>"
-icon: fa-music
+title: "My Playlist Covers"
+icon: fa-brands fa-itunes-note #fa-music 
 date: 2024-12-09 09:00:00
 description: My own unique playlist artworks to bring my music to life
-img: assets/img/headers/playlist-artwork.png
+img: assets/img/headers/resized/playlist-artwork.jpg
 importance: 3
 category: fun
 tags: spotify-playlist-covers art
@@ -16,6 +16,7 @@ authors:
     url: "https://www.researchgate.net/profile/Chloe-Voyer"
     affiliations:
       name: McGill University
+disqus_comments: true
 ---
 
 Inspired by Rien's wonderful blog post, [Spotify Playlist Covers](https://www.byrien.com/blog/spotify-playlist-covers), I decided to dive into creating my own unique playlist artworks. Rien's approach to curating visually stunning and meaningful playlist covers truly resonated with me, and I wanted to explore how I could add my personal touch to this creative process.  
@@ -121,7 +122,7 @@ A warm sunset gradient paired with soft brushstrokes to encapsulate the magic of
 
 ### 3. It Takes Two  
 
-Shared playlists with my boyfriend  
+Shared playlists with my partner  
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
