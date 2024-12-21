@@ -10,3 +10,4 @@ _sass/font-awesome/*.scss
 _posts/fr-ca/2024-10-15-conferences-fr-ca.md
 _posts/en-us/2024-10-15-conferences-en-us.md
 bin/**
+_includes/scripts/conference-functions.liquid
