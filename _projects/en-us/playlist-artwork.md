@@ -16,7 +16,7 @@ authors:
     url: "https://www.researchgate.net/profile/Chloe-Voyer"
     affiliations:
       name: McGill University
-disqus_comments: true
+giscus_comments: true
 ---
 
 Inspired by Rien's wonderful blog post, [Spotify Playlist Covers](https://www.byrien.com/blog/spotify-playlist-covers), I decided to dive into creating my own unique playlist artworks. Rien's approach to curating visually stunning and meaningful playlist covers truly resonated with me, and I wanted to explore how I could add my personal touch to this creative process.  
