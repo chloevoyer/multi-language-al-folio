@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: Intégration Garmin 🡒 Notion ⌚
+title: Intégration Garmin vers Notion ⌚
 toc: true
 icon: # ti-icon-brand-notion
 date: 2024-09-01 11:12:00

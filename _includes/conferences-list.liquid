@@ -103,17 +103,17 @@
 
         <div class="conference-info">
           <div class="date-info">
-            <div class="event-date">
-              <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.event_date }}</strong>
-              {{ conference.date | date: '%B %d, %Y' }}
-            </div>
-
             {% if conference.submission_deadline %}
               <div class="deadline">
                 <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.deadline }}</strong>
                 {{ conference.submission_deadline | date: '%B %d, %Y' }}
               </div>
             {% endif %}
+
+            <div class="event-date">
+              <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.event_date }}</strong>
+              {{ conference.date | date: '%B %d, %Y' }}
+            </div>
           </div>
 
           <div class="location-info">
