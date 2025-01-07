@@ -312,6 +312,9 @@
       {% if entry.arxiv %}
         <a href="{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.arxiv }}</a>
       {% endif %}
+      {% if entry.osf %}
+        <a href="{{ entry.osf }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.osf }}</a>
+      {% endif %}
       {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.bibtex }}</a>
       {% endif %}

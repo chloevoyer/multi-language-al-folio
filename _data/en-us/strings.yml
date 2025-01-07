@@ -27,9 +27,10 @@ bibliography:
   html: HTML
   highlights: Highlights
   last_author_prefix: and
-  slides: Slides
+  osf: OSF
   pdf: PDF
   poster: Poster
+  slides: Slides
   supp: Supp
   tldr: TLDR
   url: URL
