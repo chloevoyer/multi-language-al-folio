@@ -92,6 +92,18 @@
       "url": "https://perinatalchildhealthresearch.ca/registration/"
     },
     {
+      "name": "WAIMH 2024 Interim World Congress",
+      "acronym": "WAIMH",
+      "date": "2024-06-05",
+      "submission_deadline": "2023-12-15",
+      "location": "Tampere, Finland",
+      "local_abroad": "INT ✈️",
+      "modality": "IRL 🤝",
+      "field": "PEDS",
+      "theme": "Looking for the Best Care for Babies, Young Children and Their Families",
+      "url": "https://waimh.org/page/waimh2024_posters"
+    },
+    {
       "name": "World Congress of Societies of Biological Psychiatry",
       "acronym": "WSFPB",
       "date": "2024-06-05",
@@ -189,7 +201,7 @@
       "acronym": "CPA",
       "date": "2024-11-06",
       "location": "Montreal, QC",
-      "local_abroad": "CAN 🍁",
+      "local_abroad": "QC ⚜️",
       "modality": "IRL 🤝",
       "field": "PSYT",
       "theme": "",
@@ -224,11 +236,11 @@
       "acronym": "NeuroQAM",
       "date": "2024-12-06",
       "location": "Montreal, QC",
-      "local_abroad": "CAN 🍁",
+      "local_abroad": "QC ⚜️",
       "modality": "IRL 🤝",
       "field": "NEURO",
       "theme": "",
-      "url": "https://neuroqam.uqam.ca/activites-neuroqam/conferences-mensuelles/conferences-a-venir/"
+      "url": "https://neuroqam.uqam.ca/activites-neuroqam/journee-scientifique/journee-scientifique-2024/"
     },
     {
       "name": "Colloque de professionnelles et professionnels en emploi",
@@ -258,12 +270,12 @@
       "name": "Cognitive Science Undergraduate Research Forum 2025",
       "acronym": "CogSURF",
       "date": "2025-02-27",
-      "submission_deadline": "2024-11-29",
+      "submission_deadline": "2025-01-05",
       "location": "Montreal, QC",
       "local_abroad": "QC ⚜️",
       "modality": "IRL 🤝",
       "field": "NEURO",
-      "theme": "",
+      "theme": "Connecting Minds, Making Waves",
       "url": "https://www.cogsurf.org/"
     },
     {
@@ -314,10 +326,10 @@
       "url": "https://sirs.societyconference.com/v2/"
     },
     {
-      "name": "McGill’s 2025 3–Minute Thesis",
+      "name": "McGill’s 2025 3-Minute Thesis",
       "acronym": "3MT",
       "date": "2025-04-03",
-      "submission_deadline": "2024-12-01",
+      "submission_deadline": "2025-01-15",
       "location": "Montreal, QC",
       "local_abroad": "QC ⚜️",
       "modality": "HYBRID 🤝💻",
@@ -356,7 +368,7 @@
       "submission_deadline": "2025-01-31",
       "location": "Montreal, QC",
       "local_abroad": "QC ⚜️",
-      "modality": "",
+      "modality": "IRL 🤝",
       "field": "OTHER",
       "theme": "Santé et société : perspectives de la relève",
       "url": "https://iss.uqam.ca/colloque-etudiant-iss-2025/"
@@ -386,13 +398,13 @@
       "url": "https://www.acfas.ca/congres"
     },
     {
-      "name": "8th International Meeting on the Neuroscience of Parenting (Parental Brain 2025 Meeting)",
+      "name": "8th International Meeting on the Neuroscience of Parenting (Parental Brain 2025)",
       "acronym": "PB",
       "date": "2025-05-07",
       "submission_deadline": "2025-03-15",
       "location": "Barcelona, ES",
       "local_abroad": "INT ✈️",
-      "modality": "IRL 🤝",
+      "modality": "HYBRID 🤝💻",
       "field": "NEURO",
       "theme": "",
       "url": "https://www.parentalbrainmeetings.com/"
@@ -432,17 +444,6 @@
       "field": "PSYT",
       "theme": "Lifestyle for Positive Mental and Physical Health",
       "url": "https://www.psychiatry.org/psychiatrists/meetings/annual-meeting"
-    },
-    {
-      "name": "WAIMH 2024 Interim World Congress",
-      "acronym": "WAIMH",
-      "date": "2025-06-05",
-      "location": "Tampere, Finland",
-      "local_abroad": "INT ✈️",
-      "modality": "IRL 🤝",
-      "field": "PEDS",
-      "theme": "Best Care for Babies, Young Children and Their Families",
-      "url": "https://waimh.org/page/waimh2024_posters"
     },
     {
       "name": "38th SPER Annual Meeting",
@@ -496,6 +497,7 @@
       "name": "American Psychological Association Convention",
       "acronym": "APA",
       "date": "2025-08-07",
+      "submission_deadline": "2025-01-14T17:00:00.000-05:00",
       "location": "Denver, Colorado",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
@@ -519,18 +521,19 @@
       "name": "15th International Conference on Prevention and Early Intervention in Mental Health",
       "acronym": "IEPA",
       "date": "2025-09-08",
-      "submission_deadline": "2024-11-15",
+      "submission_deadline": "2024-12-15",
       "location": "Berlin, Germany",
       "local_abroad": "INT ✈️",
       "modality": "IRL 🤝",
       "field": "YOUTH",
       "theme": "Breaking Boundaries",
-      "url": "https://iepa.org.au/"
+      "url": "https://iepaconference.org/iepa15/"
     },
     {
       "name": "75th Annual Canadian Psychiatric Association Conference",
       "acronym": "CPA",
       "date": "2025-10-22",
+      "submission_deadline": "2025-01-31",
       "location": "Vancouver, BC",
       "local_abroad": "CAN 🍁",
       "modality": "IRL 🤝",
@@ -615,6 +618,17 @@
       "field": "SZ",
       "theme": "",
       "url": "https://isps.org/events/isps-lausanne-2026/"
+    },
+    {
+      "name": "WAIMH 19th World Congress",
+      "acronym": "WAIMH",
+      "date": "2026-10-02",
+      "location": "Toronto, ON",
+      "local_abroad": "CAN 🍁",
+      "modality": "IRL 🤝",
+      "field": "PEDS",
+      "theme": "Harmony in Diversity: Nurturing the Youngest Minds Around the World",
+      "url": "https://waimh.org/page/waimh2024_posters"
     },
     {
       "name": "WAIMH 2026 World Congress",
