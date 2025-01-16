@@ -1,0 +1,41 @@
+// RESEARCH DISCIPLINES/FIELDS
+// Population/Age Groups:
+// DEV - Developmental Studies
+// GER - Geriatric/Aging Research
+// PED - Pediatric Studies
+// YOUTH - Adolescent Research
+
+// Clinical Disorders:
+// ANX - Anxiety Research
+// ASD - Autism Spectrum Research
+// ADHD - Attention Deficit Studies
+// BPD - Bipolar Disorder Studies
+// DEP - Depression Studies
+// OCD - Obsessive-Compulsive Research
+// PTSD - Post-Traumatic Stress Research
+// SUD - Substance Use Disorders
+// SCZ - Schizophrenia Research
+
+// Neuroscience Areas:
+// COG - Cognitive Neuroscience
+// BEH - Behavioral Neuroscience
+// MOL - Molecular Neuroscience
+// NEU - Neuroimaging Studies
+// NEURO - Neuropsychology
+
+// Biological Areas:
+// BIOL - Biological Psychiatry
+// EPI - Epidemiology
+// GEN - Genetics Research
+// IMM - Immunology Studies
+// NUT - Nutrition Research
+// REPRO - Reproductive Health
+
+// Clinical Practice:
+// CBT - Cognitive Behavioral Therapy
+// CLIN - Clinical Psychology
+// COUNS - Counseling Studies
+// PREV - Preventive Mental Health
+// PSYC - Psychiatry Research
+// PSYT - Psychotherapy Studies
+// THRP - Therapeutic Studies
