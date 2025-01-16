@@ -16,9 +16,12 @@ This project connects your Garmin activities and personal records to your Notion
 
 ## Features ✨
 
-- Automatically sync Garmin activities to Notion.
-- Extract Garmin personal records such as fastest 1K and longest ride.
-- Easy setup with clear instructions and minimal coding required.
+🔄 Automatically sync Garmin activities to Notion in real-time
+📊 Track detailed activity metrics (distance, pace, heart rate)
+🎯 Extract and track personal records (fastest 1K, longest ride)
+🤖 Zero maintenance after setup
+📱 Compatible with all Garmin activities and devices
+🔧 Easy setup with clear instructions and minimal coding required
 
 ## Prerequisites 🛠️
 
@@ -28,26 +31,40 @@ This project connects your Garmin activities and personal records to your Notion
 
 ## Getting Started 🎯
 
-Follow these steps to set up the integration:
+A detailed step-by-step guide is provided on my Notion template [here](https://chloevoyer.notion.site/Set-up-Guide-17915ce7058880559a3ac9f8a0720046).
+For more advanced users, follow these steps to set up the integration:
 
-### 1. Set Environment Secrets
+### 1. Fork this GitHub Repository
 
-Ensure that your environment secrets are correctly configured for secure data access.
+### 2. Duplicate my [Notion Template](https://www.notion.so/templates/fitness-tracker-738)
 
-### 2. Create Notion Token
+* Save your Activities and Personal Records database ID (you will need it for step 4)
+  * Optional: Daily Steps database ID
+  * Look at the URL: notion.so/username/[string-of-characters]
+  * The database ID for this database is everything after your “username/“ and before the “?v”
 
-- Go to [Notion Integrations](https://www.notion.so/profile/integrations).
-- [Create](https://developers.notion.com/docs/create-a-notion-integration) a new integration and copy the integration token.
-- [Share](https://www.notion.so/help/add-and-manage-connections-with-the-api#enterprise-connection-settings) the integration with the target database in Notion.
+### 3. Create Notion Token
 
-### 3. Run Scripts Locally
+* Go to [Notion Integrations](https://www.notion.so/profile/integrations).
+* [Create](https://developers.notion.com/docs/create-a-notion-integration) a new integration and copy the integration token.
+* [Share](https://www.notion.so/help/add-and-manage-connections-with-the-api#enterprise-connection-settings) the integration with the target database in Notion.
 
-If you don't want to use automatically workflow:
+### 4. Set Environment Secrets
 
-- Run [garmin-activities.py](https://github.com/chloevoyer/garmin-to-notion/blob/main/garmin-activities.py) to sync your Garmin activities to Notion.
-  `python garmin-activities.py`
-- Run [person-records.py](https://github.com/chloevoyer/garmin-to-notion/blob/main/personal-records.py) to extract activity records (e.g., fastest run, longest ride).  
-   `python personal-records.py`
+* Environment secrets to define:
+  * GARMIN_EMAIL
+  * GARMIN_PASSWORD
+  * NOTION_TOKEN
+  * NOTION_DB_ID
+  * NOTION_PR_DB_ID
+  * NOTION_STEPS_DB_ID (optional)
+
+### 5. Run Scripts (if not using automatic workflow)
+
+* Run [garmin-activities.py](https://github.com/chloevoyer/garmin-to-notion/blob/main/garmin-activities.py) to sync your Garmin activities to Notion.  
+`python garmin-activities.py`
+* Run [person-records.py](https://github.com/chloevoyer/garmin-to-notion/blob/main/personal-records.py) to extract activity records (e.g., fastest run, longest ride).  
+`python personal-records.py` 
 
 ## Example Configuration 📝
 
