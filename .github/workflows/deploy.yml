@@ -14,6 +14,7 @@ on:
       - "**.liquid"
       - "Gemfile"
       - "Gemfile.lock"
+      - "_data/conferences.json"
   workflow_dispatch:
 
 permissions:
