@@ -13,12 +13,27 @@ nav_order: 4
 {% include bib_search.liquid %}
 
 <div class="publications">
+  {% capture articles %}{% bibliography --query @article %}{% endcapture %}
+  {% if articles.size > 1 %}
     <h1>{{ site.data[site.active_lang].strings.publications.articles }}</h1>
-    {% bibliography --query @article %}
+    {{ articles }}
+  {% endif %}
+
+  {% capture inproceedings %}{% bibliography --query @inproceedings %}{% endcapture %}
+  {% if inproceedings.size > 1 %}
     <h2>{{ site.data[site.active_lang].strings.publications.inproceedings }}</h2>
-    {% bibliography --query @inproceedings %}
+    {{ inproceedings }}
+  {% endif %}
+
+  {% capture preprints %}{% bibliography --query @preprint %}{% endcapture %}
+  {% if preprints.size > 1 %}
     <h1>{{ site.data[site.active_lang].strings.publications.preprints }}</h1>
-    {% bibliography --query @preprint %}
+    {{ preprints }}
+  {% endif %}
+
+  {% capture unpublished %}{% bibliography --query @unpublished %}{% endcapture %}
+  {% if unpublished.size > 1 %}
     <h1>{{ site.data[site.active_lang].strings.publications.unpublished }}</h1>
-    {% bibliography --query @unpublished %}
+    {{ unpublished }}
+  {% endif %}
 </div>

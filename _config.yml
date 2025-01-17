@@ -251,7 +251,7 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-polyglot
   - jekyll-regex-replace
-  - jekyll/scholar
+  - jekyll-scholar
   - jekyll-sitemap
   - jekyll-tabs
   - jekyll-toc
