@@ -113,7 +113,7 @@
           <div class="event-date">
             <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.event_date }}</strong>
             {% if conference.end_date %}
-              {{ conference.start_date | date: '%B %d, %Y' }} - {{ conference.end_date | date: '%B %d, %Y' }}
+              {{ conference.start_date | date: '%B %d' }}&ndash;{{ conference.end_date | date: '%d' }}{{ conference.start_date | date: ', %Y' }}
             {% else %}
               {{ conference.start_date | date: '%B %d, %Y' }}
             {% endif %}
