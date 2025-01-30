@@ -74,7 +74,7 @@ jobs:
               conference = {
                   "name": get_title("Conference Name", props),
                   "acronym": get_select("Acronym", props),
-                  "date": start_date,
+                  "start_date": start_date,
                   "end_date": end_date,  # Include end date
                   "submission_deadline": get_date("Submission Deadline", props)[0],
                   "location": get_text("Location", props),

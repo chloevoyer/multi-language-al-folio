@@ -71,16 +71,16 @@
   <div class="conferences">
     {% assign conferences = site.data.conferences.conferences | sort: 'date' %}
     {% for conference in conferences %}
-      {% assign conf_year = conference.date | date: '%Y' %}
+      {% assign conf_year = conference.start_date | date: '%Y' %}
       <div
         class="conference-card"
-        data-year="{{ conference.date | slice: 0, 4 }}"
-        data-date="{{ conference.date }}"
+        data-year="{{ conference.start_date | slice: 0, 4 }}"
+        data-date="{{ conference.start_date }}"
         data-field="{{ conference.field }}"
         data-modality="{{ conference.modality }}"
         data-location="{{ conference.local_abroad }}"
         data-status="{{ conference.status }}"
-        {% if conference.date | slice: 0, 4 == "2024" and conference.date >= today_date %}
+        {% if conference.start_date | slice: 0, 4 == "2024" and conference.start_date >= today_date %}
           style="display: block;"
         {% else %}
           style="display: none;"
@@ -110,10 +110,13 @@
               </div>
             {% endif %}
 
-            <div class="event-date">
-              <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.event_date }}</strong>
-              {{ conference.date | date: '%B %d, %Y' }}
-            </div>
+          <div class="event-date">
+            <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.event_date }}</strong>
+            {% if conference.end_date %}
+              {{ conference.start_date | date: '%B %d, %Y' }} - {{ conference.end_date | date: '%B %d, %Y' }}
+            {% else %}
+              {{ conference.start_date | date: '%B %d, %Y' }}
+            {% endif %}
           </div>
 
           <div class="location-info">
