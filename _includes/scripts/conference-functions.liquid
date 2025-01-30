@@ -12,17 +12,18 @@
     let visibleCount = 0;
     
     const cards = Array.from(document.querySelectorAll('.conference-card'));
-    
+
+    // Sort by start date
     cards.sort((a, b) => {
-      // Sort by data-date attribute which should be in YYYY-MM-DD format
-      return new Date(a.dataset.date) - new Date(b.dataset.date);
+      return new Date(a.dataset.startDate) - new Date(b.dataset.startDate);
     });
 
     const container = document.querySelector('.conferences');
     cards.forEach(card => container.appendChild(card));
 
     cards.forEach(card => {
-      const eventDate = new Date(card.dataset.date);
+      const startDate = new Date(card.dataset.startDate);
+      const endDate = card.dataset.endDate ? new Date(card.dataset.endDate) : null;
       const field = card.dataset.field;
       const modality = card.dataset.modality;
       const location = card.dataset.location;
@@ -30,9 +31,14 @@
 
       let matchesYearFilter;
       if (yearFilter === 'upcoming') {
-        matchesYearFilter = eventDate >= today && eventDate <= threeMonthsFromNow;
+        matchesYearFilter = startDate >= today && startDate <= threeMonthsFromNow;
       } else {
-        matchesYearFilter = eventDate.getFullYear().toString() === yearFilter;
+        const eventYears = new Set();
+        eventYears.add(startDate.getFullYear());
+        if (endDate) {
+          eventYears.add(endDate.getFullYear());
+        }
+        matchesYearFilter = eventYears.has(parseInt(yearFilter));
       }
 
       const matchesStatus = !statusFilter || statusFilter === 'all' || status === statusFilter;

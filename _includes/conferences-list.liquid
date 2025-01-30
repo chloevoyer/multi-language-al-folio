@@ -75,7 +75,8 @@
       <div
         class="conference-card"
         data-year="{{ conference.start_date | slice: 0, 4 }}"
-        data-date="{{ conference.start_date }}"
+        data-start-date="{{ conference.start_date }}"
+        data-end-date="{{ conference.end_date }}"
         data-field="{{ conference.field }}"
         data-modality="{{ conference.modality }}"
         data-location="{{ conference.local_abroad }}"
@@ -113,12 +114,28 @@
           <div class="event-date">
             <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.event_date }}</strong>
             {% if conference.end_date %}
-              {{ conference.start_date | date: '%B %d' }}&ndash;{{ conference.end_date | date: '%d' }}{{ conference.start_date | date: ', %Y' }}
+              {% assign start_month = conference.start_date | date: '%B' %}
+              {% assign start_day = conference.start_date | date: '%-d' %}
+              {% assign start_year = conference.start_date | date: '%Y' %}
+          
+              {% assign end_month = conference.end_date | date: '%B' %}
+              {% assign end_day = conference.end_date | date: '%-d' %}
+              {% assign end_year = conference.end_date | date: '%Y' %}
+          
+              {% if start_year == end_year %}
+                {% if start_month == end_month %}
+                  {{ start_month }} {{ start_day }}&ndash;{{ end_day }}, {{ start_year }}
+                {% else %}
+                  {{ start_month }} {{ start_day }}&ndash;{{ end_month }} {{ end_day }}, {{ start_year }}
+                {% endif %}
+              {% else %}
+                {{ start_month }} {{ start_day }}, {{ start_year }}&ndash;{{ end_month }} {{ end_day }}, {{ end_year }}
+              {% endif %}
             {% else %}
-              {{ conference.start_date | date: '%B %d, %Y' }}
+              {{ conference.start_date | date: '%B %-d, %Y' }}
             {% endif %}
           </div>
-
+            
           <div class="location-info">
             <div class="location">
               <strong>{{ site.data[site.active_lang].strings.list_psyc_conf.location }}</strong> {{ conference.location }}
