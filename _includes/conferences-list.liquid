@@ -6,7 +6,7 @@
   <div class="filters">
     <select id="yearFilter" onchange="filterConferences()">
       <option value="upcoming" selected>{{ site.data[site.active_lang].strings.list_psyc_conf.upcoming }}</option>
-      {% assign all_years = site.data.conferences.conferences | map: 'date' | sort | reverse %}
+      {% assign all_years = site.data.conferences.conferences | map: 'start_date' | sort | reverse %}
       {% assign unique_years = '' | split: '' %}
       {% for date in all_years %}
         {% assign year = date | slice: 0, 4 %}
