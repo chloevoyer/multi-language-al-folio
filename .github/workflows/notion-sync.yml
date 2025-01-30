@@ -36,7 +36,7 @@ jobs:
           # Query the Notion database
           results = notion.databases.query(
               database_id=database_id,
-              sorts=[{"property": "Event Date", "direction": "ascending"}]
+              sorts=[{"property": "Event Date", "direction": "descending"}]
           ).get("results")
 
           # Helper functions
