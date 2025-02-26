@@ -6,10 +6,12 @@ title: blog
 blog_name: chloe-voyer
 description: an open space for academic research
 display_tags:
-  - funding
+  - academia
   - communication
+  - funding
   - lifestyle
   - literature-review
+  - media
 display_categories:
   - research
 nav: true

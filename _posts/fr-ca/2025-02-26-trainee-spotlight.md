@@ -7,7 +7,7 @@ categories: research
 lang: fr-ca
 featured: false
 redirect: https://douglas.research.mcgill.ca/fr/news/chloe-voyer-etudiante-en-vedette/
-thumbnail: assets/img/thumbnails/douglas-logo.png
+thumbnail: assets/img/thumbnails/douglas-trainee-spotlight_FR.png
 ---
 
 [Étudiante en vedette](https://douglas.research.mcgill.ca/fr/news/chloe-voyer-etudiante-en-vedette/) du <i>Centre de recherche Douglas</i> ⭐

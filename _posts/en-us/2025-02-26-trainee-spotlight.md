@@ -7,7 +7,7 @@ categories: research
 lang: en-us
 featured: false
 redirect: https://douglas.research.mcgill.ca/news/chloe-voyer-trainee-spotlight/
-thumbnail: assets/img/thumbnails/douglas-logo.png
+thumbnail: assets/img/thumbnails/douglas-trainee-spotlight.png
 ---
 
 Featured in the <i>Douglas Research Centre</i> [Trainee spotlight](https://douglas.research.mcgill.ca/news/chloe-voyer-trainee-spotlight/) ⭐
