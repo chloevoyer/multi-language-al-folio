@@ -379,8 +379,7 @@
     {
       "name": "8th Annual Integrative Psychiatry Conference",
       "acronym": "AIPC",
-      "start_date": "2025-04-25T10:00:00.000-04:00",
-      "end_date": "2025-04-25T16:00:00.000-04:00",
+      "start_date": "2025-04-25",
       "submission_deadline": "2025-03-15",
       "location": "Montreal, QC",
       "local_abroad": "QC ⚜️",
@@ -467,7 +466,7 @@
       "url": "https://www.sri-online.org/events/2025/"
     },
     {
-      "name": "Future of Global Health conference",
+      "name": "Future of Global Health Conference",
       "acronym": "UNEM",
       "start_date": "2025-03-21",
       "end_date": "2025-03-23",
@@ -741,7 +740,7 @@
       "url": "https://www.conferenceboard.ca/events/better-workplace-conference/"
     },
     {
-      "name": "10th World Congress Of Cognitive and Behavioral Therapies",
+      "name": "10th World Congress of Cognitive and Behavioral Therapies",
       "acronym": "WCBCT",
       "start_date": "2023-06-01",
       "end_date": "2023-06-04",
@@ -792,7 +791,7 @@
     {
       "name": "23rd Annual CADDRA Conference",
       "acronym": "CADDRA",
-      "location": "",
+      "location": "TBA",
       "local_abroad": "CAN 🍁",
       "modality": "HYBRID 🤝💻",
       "field": "ADHD",
