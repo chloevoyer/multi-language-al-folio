@@ -1,6 +1,18 @@
 {
   "conferences": [
     {
+      "name": "24th Annual CADDRA Conference",
+      "acronym": "CADDRA",
+      "start_date": "2028-10-13",
+      "end_date": "2028-10-15",
+      "location": "Montreal, QC",
+      "local_abroad": "QC ⚜️",
+      "modality": "HYBRID 🤝💻",
+      "field": "ADHD",
+      "theme": "",
+      "url": "caddra.joynconference.com"
+    },
+    {
       "name": "77th Annual Canadian Psychiatric Association Conference",
       "acronym": "CPA",
       "start_date": "2027-11-10",
@@ -35,6 +47,18 @@
       "field": "PSYT",
       "theme": "",
       "url": "https://www.cpa-apc.org/annual-conference/"
+    },
+    {
+      "name": "22nd Annual CADDRA Conference",
+      "acronym": "CADDRA",
+      "start_date": "2026-11-06",
+      "end_date": "2026-11-08",
+      "location": "Ottawa, ON",
+      "local_abroad": "CAN 🍁",
+      "modality": "HYBRID 🤝💻",
+      "field": "ADHD",
+      "theme": "",
+      "url": "caddra.joynconference.com"
     },
     {
       "name": "WAIMH 19th World Congress",
@@ -157,6 +181,19 @@
       "field": "PSYC",
       "theme": "",
       "url": "https://www.cpa-apc.org/annual-conference/"
+    },
+    {
+      "name": "21st Annual CADDRA Conference",
+      "acronym": "CADDRA",
+      "start_date": "2025-10-17",
+      "end_date": "2025-10-19",
+      "submission_deadline": "2025-05-16",
+      "location": "Vancouver, BC",
+      "local_abroad": "CAN 🍁",
+      "modality": "HYBRID 🤝💻",
+      "field": "ADHD",
+      "theme": "",
+      "url": "caddra.joynconference.com"
     },
     {
       "name": "15th International Conference on Prevention and Early Intervention in Mental Health",
@@ -340,6 +377,19 @@
       "url": "https://www.srcd.org/event/srcd-2025-biennial-meeting/call-submissions"
     },
     {
+      "name": "8th Annual Integrative Psychiatry Conference",
+      "acronym": "AIPC",
+      "start_date": "2025-04-25T10:00:00.000-04:00",
+      "end_date": "2025-04-25T16:00:00.000-04:00",
+      "submission_deadline": "2025-03-15",
+      "location": "Montreal, QC",
+      "local_abroad": "QC ⚜️",
+      "modality": "HYBRID 🤝💻",
+      "field": "PSYT",
+      "theme": "From Stigma to Understanding",
+      "url": "https://can01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fforms.office.com%2FPages%2FResponsePage.aspx%3Fid%3DcZYxzedSaEqvqfz4-J8J6hVxaVmIAr5LtaitRdretkxURVpVQUY4V0pKVlBHWkFXSThIN1Q3RFZRMi4u&data=05%7C02%7Cchloe.voyer%40mail.mcgill.ca%7Cfd8dfca0393144f214ad08dd4fc27977%7Ccd31967152e74a68afa9fcf8f89f09ea%7C0%7C0%7C638754419138277635%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=ANR%2F9HdLkrTRsKs7Hf8Mlm61x2tfv8cAqi1uUfIwI1M%3D&reserved=0"
+    },
+    {
       "name": "Society for Biological Psychiatry",
       "acronym": "SOBP",
       "start_date": "2025-04-24",
@@ -415,6 +465,19 @@
       "field": "REPRO",
       "theme": "",
       "url": "https://www.sri-online.org/events/2025/"
+    },
+    {
+      "name": "Future of Global Health conference",
+      "acronym": "UNEM",
+      "start_date": "2025-03-21",
+      "end_date": "2025-03-23",
+      "submission_deadline": "2025-02-16",
+      "location": "Montreal, QC",
+      "local_abroad": "QC ⚜️",
+      "modality": "IRL 🤝",
+      "field": "OTHER",
+      "theme": "The Future of Global Health: Equity through Innovation",
+      "url": "https://www.uaem.org/conference-mcgill"
     },
     {
       "name": "AAGP 2025 Annual Meeting",
@@ -725,6 +788,16 @@
       "field": "PSYC",
       "theme": "",
       "url": "https://www.icp2020.com/"
+    },
+    {
+      "name": "23rd Annual CADDRA Conference",
+      "acronym": "CADDRA",
+      "location": "",
+      "local_abroad": "CAN 🍁",
+      "modality": "HYBRID 🤝💻",
+      "field": "ADHD",
+      "theme": "",
+      "url": "caddra.joynconference.com"
     }
   ]
 }
