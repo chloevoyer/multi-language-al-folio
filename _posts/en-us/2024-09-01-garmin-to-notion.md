@@ -77,3 +77,9 @@ You can customize the scripts to fit your needs by modifying environment variabl
         {% include figure.liquid loading="eager" path="assets/img/thumbnails/notion-template.png" class="img-fluid rounded z-depth-1" caption="My Notion template is available for free and can be duplicated to your Notion <a href='https://www.notion.so/templates/fitness-tracker-738'>here</a>" zoomable=true %}
     </div>
 </div>
+
+# Optional Step for Pie Chart
+
+    - Register/Sign in account  [www.rows.com](http://www.rows.com/)
+    - Setup
+        - Share integration Rows with Notion database
