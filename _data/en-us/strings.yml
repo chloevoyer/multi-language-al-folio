@@ -56,11 +56,13 @@ blog_posts:
   navigation_title: blog
   read_time: min read
   tags:
+    academia: academia
     funding: funding
     communication: communication
     conferences: conferences
     lifestyle: lifestyle
     literature-review: literature-review
+    media: media
     productivity: productivity
     strategies: strategies
   categories:
