@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Douglas Research Centre | Trainee Spotlight – Chloé Voyer"
+title: "Douglas Research Centre | Trainee Spotlight – Chloé Voyer 🌟"
 date: 2025-02-26 09:00:00
 tags: academia media
 categories: research

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Centre de recherche Douglas | Étudiante en vedette – Chloé Voyer"
+title: "Centre de recherche Douglas | Étudiante en vedette – Chloé Voyer 🌟"
 date: 2025-02-26 09:00:00
 tags: academia media
 categories: research
