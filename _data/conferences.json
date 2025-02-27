@@ -25,6 +25,18 @@
       "url": "https://www.cpa-apc.org/annual-conference/"
     },
     {
+      "name": "23rd Annual CADDRA Conference",
+      "acronym": "CADDRA",
+      "start_date": "2027-10-14",
+      "end_date": "2027-10-16",
+      "location": "TBA",
+      "local_abroad": "CAN 🍁",
+      "modality": "HYBRID 🤝💻",
+      "field": "ADHD",
+      "theme": "",
+      "url": "caddra.joynconference.com"
+    },
+    {
       "name": "40th SPER Annual Meeting",
       "acronym": "SPER",
       "start_date": "2027-06-15",
@@ -121,7 +133,7 @@
       "url": "https://www.iacapap-congress.com/"
     },
     {
-      "name": "39th SPER Annual Meeting",
+      "name": "39th SPER Annual Meeting",
       "acronym": "SPER",
       "start_date": "2026-06-22",
       "end_date": "2026-06-23",
@@ -291,7 +303,7 @@
       "acronym": "APA",
       "start_date": "2025-05-17",
       "end_date": "2025-05-21",
-      "submission_deadline": "2024-09-05T17:00:00.000-04:00",
+      "submission_deadline": "2024-09-05",
       "location": "Los Angeles, CA",
       "local_abroad": "INT ✈️",
       "modality": "HYBRID 🤝💻",
@@ -352,7 +364,7 @@
       "url": "https://www.acfas.ca/congres"
     },
     {
-      "name": "1ère édition du Colloque étudiant inter-universitaire de l'Institut Santé et Société de l'UQAM",
+      "name": "1ère édition du Colloque étudiant inter-universitaire de l'Institut Santé et Société de l'UQAM",
       "acronym": "ISS",
       "start_date": "2025-05-01",
       "submission_deadline": "2025-01-31",
@@ -360,7 +372,7 @@
       "local_abroad": "QC ⚜️",
       "modality": "IRL 🤝",
       "field": "INTER",
-      "theme": "Santé et société : perspectives de la relève",
+      "theme": "Santé et société : perspectives de la relève",
       "url": "https://iss.uqam.ca/colloque-etudiant-iss-2025/"
     },
     {
@@ -503,7 +515,7 @@
       "url": "https://www.cogsurf.org/"
     },
     {
-      "name": "16th International Newborn Brain Conference",
+      "name": "16th International Newborn Brain Conference",
       "acronym": "INBBC",
       "start_date": "2025-02-19",
       "end_date": "2025-02-21",
@@ -787,18 +799,6 @@
       "field": "PSYC",
       "theme": "",
       "url": "https://www.icp2020.com/"
-    },
-    {
-      "name": "23rd Annual CADDRA Conference",
-      "acronym": "CADDRA",
-      "start_date": "2027-10-14",
-      "end_date": "2027-10-16",
-      "location": "TBA",
-      "local_abroad": "CAN 🍁",
-      "modality": "HYBRID 🤝💻",
-      "field": "ADHD",
-      "theme": "",
-      "url": "caddra.joynconference.com"
     }
   ]
 }
