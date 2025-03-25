@@ -14,7 +14,7 @@ toc:
 ---
 
 - Shulman, K., Hannon, M., **Voyer, C.**, Gagliano, E., Hannaoui, N., Hotte-Meunier, A., Lavigne, K. M., Raucher-Chéné, D., & Sauvé, G. (2024, August 9). _Protocol for a scoping review on predictors of job tenure in people living with mental illness from a transdiagnostic perspective._ Open Science Framework. <a href="https://doi.org/10.17605/osf.io/bnjz3">https://doi.org/10.17605/osf.io/bnjz3</a>
-- Lavigne, K. M., Ph.D., Deng, J., Raucher-Chéné, D., Hotte-Meunier, A., **Voyer, C.**, Sarraf, L., … Sauvé, G. (2023, July 1). Transdiagnostic cognitive biases in psychiatric disorders: A systematic review and network meta-analysis. <a href="https://doi.org/10.31234/osf.io/te6fx">https://doi.org/10.31234/osf.io/te6fx</a>
+- Lavigne, K., Deng, J., Raucher-Chéné, D., Hotte-Meunier, A., **Voyer, C.**, Sarraf, L., … Sauvé, G. (2023, July 1). Transdiagnostic cognitive biases in psychiatric disorders: A systematic review and network meta-analysis. <a href="https://doi.org/10.31234/osf.io/te6fx">https://doi.org/10.31234/osf.io/te6fx</a>
 
 <h2 style="padding-top: 30px">{{ site.data[site.active_lang].strings.service.know_mob }}</h2>
 
