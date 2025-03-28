@@ -59,15 +59,23 @@
   color: #666;
 }
 
+.gallery-title, .gallery-subtitle, .gallery-author {
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .gallery-content {
   position: relative;
   width: 100%;
-  min-height: 400px;
-  flex: 1;
+  height: 60vh; /* Fixed height instead of flex */
+  min-height: 300px;
+  max-height: calc(80vh - 200px); /* Max height accounting for headers and controls */
+  margin: 15px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 15px 0;
+  overflow: hidden; /* Prevent content from overflowing */
 }
 
 .gallery-item {
@@ -78,9 +86,10 @@
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .gallery-item.active {
@@ -90,12 +99,14 @@
 }
 
 .gallery-item img {
-  max-width: 95%;
-  max-height: 70vh;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
   object-fit: contain;
   display: block;
+  margin: 0 auto;
   border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .gallery-item-counter {
@@ -115,6 +126,9 @@
   align-items: center;
   padding: 10px 0;
   margin-top: 10px;
+  min-height: 40px; /* Ensure minimum height for controls */
+  position: relative;
+  z-index: 10; /* Keep controls above images */
 }
 
 .gallery-prev, .gallery-next {
@@ -162,7 +176,7 @@
 @media (max-width: 768px) {
   .gallery-wrapper {
     width: 95%;
-    padding: 10px;
+    padding: 15px;
   }
   
   .gallery-title {
@@ -179,9 +193,10 @@
   }
   
   .gallery-content {
-    height: calc(80vh - 140px);
+    height: 50vh;
+    min-height: 250px;
   }
-  
+
   .gallery-prev, .gallery-next {
     width: 30px;
     height: 30px;
@@ -190,5 +205,34 @@
   
   .gallery-indicators {
     max-width: 60%;
+  }
+
+  .gallery-item {
+    padding: 5px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .gallery-wrapper {
+    width: 98%;
+    padding: 10px;
+  }
+  
+  .gallery-content {
+    height: 40vh;
+    min-height: 200px;
+  }
+  
+  .gallery-title {
+    font-size: 1rem;
+  }
+  
+  .gallery-subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .gallery-author {
+    font-size: 0.7rem;
   }
 }
