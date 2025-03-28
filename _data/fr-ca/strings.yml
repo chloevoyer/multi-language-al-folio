@@ -20,10 +20,10 @@ bibliography:
   bibtex: Bib
   blog: blogue
   book_prefix: dans
-  symposium_prefix: dans
   chair_role: "resp."
   code: code
   conference: conférence
+  gallery: Photos
   html: HTML
   highlights: Highlights
   last_author_prefix: et
@@ -32,6 +32,7 @@ bibliography:
   poster: affiche
   slides: diapos
   supp: supp
+  symposium_prefix: dans
   tldr: TLDR
   url: URL
   video: vidéo

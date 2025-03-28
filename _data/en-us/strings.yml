@@ -20,10 +20,10 @@ bibliography:
   bibtex: Bib
   blog: Blog
   book_prefix: in
-  symposium_prefix: in
   chair_role: Chair
   conference: Conference
   code: Code
+  gallery: Photos
   html: HTML
   highlights: Highlights
   last_author_prefix: and
@@ -32,6 +32,7 @@ bibliography:
   poster: Poster
   slides: Slides
   supp: Supp
+  symposium_prefix: in
   tldr: TLDR
   url: URL
   video: Video

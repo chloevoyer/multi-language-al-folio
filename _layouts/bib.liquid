@@ -399,6 +399,9 @@
           </a>
         {% endif %}
       {% endif %}
+      {% if entry.gallery %}
+        <a class="gallery btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.gallery | default: "Gallery" }}</a>
+      {% endif %}          
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">{{ site.data[site.active_lang].strings.bibliography.website }}</a>
       {% endif %}
@@ -559,5 +562,51 @@
         <div style="text-align: center">{% include video.liquid path=entry.video class="img-fluid rounded z-depth-1" controls=true %}</div>
       </div>
     {% endif %}
+
+    {% if entry.gallery %}
+      <!-- Hidden gallery block -->
+      <div class="gallery-container hidden">
+        <div class="gallery-wrapper">
+          <div class="gallery-close"></div>
+          <div class="gallery-title">
+            {% if entry.title %}{{ entry.title }}{% endif %}
+          </div>
+          <div class="gallery-subtitle">
+            {% if entry.conference %}{{ entry.conference }}{% endif %}
+            {% if entry.month and entry.year %} - {{ entry.month | capitalize }} {{ entry.year }}{% endif %}
+          </div>
+          <div class="gallery-author">
+            {% for author in entry.author_array %}
+              {% assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' %}
+              {% assign author_first_name = author.first | regex_replace: '[*∗†‡§¶‖&^]', '' %}
+              {% if forloop.first == false %}, {% endif %}
+              {% if forloop.last and forloop.length > 1 %}{{ site.data[site.active_lang].strings.bibliography.last_author_prefix | default: "and" }} {% endif %}
+              {{ author_first_name }} {{ author_last_name }}
+            {% endfor %}
+          </div>
+          <div class="gallery-content">
+            {% assign gallery_images = entry.gallery | split: "," %}
+            {% for image in gallery_images %}
+              {% assign image_path = image | strip %}
+              <div class="gallery-item{% if forloop.first %} active{% endif %}">
+                <!-- Use relative_url filter to properly resolve paths -->
+                <img src="{{ image_path | prepend: '/assets/img/conference_pictures/' | relative_url }}" alt="Gallery image {{ forloop.index }}">
+                <div class="gallery-item-counter">{{ forloop.index }} / {{ gallery_images.size }}</div>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="gallery-controls">
+            <button class="gallery-prev">&lt;</button>
+            <div class="gallery-indicators">
+              {% for image in gallery_images %}
+                <span class="gallery-indicator{% if forloop.first %} active{% endif %}" data-index="{{ forloop.index0 }}"></span>
+              {% endfor %}
+            </div>
+            <button class="gallery-next">&gt;</button>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+        
   </div>
 </div>
