@@ -567,7 +567,7 @@
       <!-- Hidden gallery block -->
       <div class="gallery-container hidden">
         <div class="gallery-wrapper">
-          <div class="gallery-close"></div>
+          <div class="gallery-close">×</div>
           <div class="gallery-title">
             {% if entry.title %}{{ entry.title }}{% endif %}
           </div>
@@ -584,17 +584,52 @@
               {{ author_first_name }} {{ author_last_name }}
             {% endfor %}
           </div>
+          
           <div class="gallery-content">
-            {% assign gallery_images = entry.gallery | split: "," %}
-            {% for image in gallery_images %}
-              {% assign image_path = image | strip %}
-              <div class="gallery-item{% if forloop.first %} active{% endif %}">
-                <!-- Use relative_url filter to properly resolve paths -->
-                <img src="{{ image_path | prepend: '/assets/img/conference_pictures/' | relative_url }}" alt="Gallery image {{ forloop.index }}">
-                <div class="gallery-item-counter">{{ forloop.index }} / {{ gallery_images.size }}</div>
+            {% comment %} Define base path for conference pictures {% endcomment %}
+            {% assign base_image_path = "/assets/img/conference_pictures/" %}
+            
+            {% if entry.gallery contains '/' or entry.gallery contains ',' %}
+              {% comment %} Path already includes the base path or is a comma-separated list {% endcomment %}
+              {% assign gallery_path = entry.gallery %}
+            {% else %}
+              {% comment %} Prepend base path to the folder name {% endcomment %}
+              {% assign gallery_path = base_image_path | append: entry.gallery %}
+            {% endif %}
+            
+            {% if gallery_path contains ',' %}
+              {% comment %} Handle comma-separated list of images {% endcomment %}
+              {% assign gallery_images = gallery_path | split: "," %}
+            {% else %}
+              {% comment %} Handle directory path by scanning all static files {% endcomment %}
+              {% assign image_dir = gallery_path | strip %}
+              {% assign gallery_images = "" | split: "" %}
+              {% for file in site.static_files %}
+                {% if file.path contains image_dir %}
+                  {% assign ext = file.path | split: '.' | last | downcase %}
+                  {% if ext == 'jpg' or ext == 'jpeg' or ext == 'png' or ext == 'gif' %}
+                    {% assign gallery_images = gallery_images | push: file.path %}
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+              {% assign gallery_images = gallery_images | sort %}
+            {% endif %}
+            
+            {% if gallery_images.size > 0 %}
+              {% for image in gallery_images %}
+                {% assign image_path = image | strip %}
+                <div class="gallery-item{% if forloop.first %} active{% endif %}">
+                  <img src="{{ image_path | relative_url }}" alt="Gallery image {{ forloop.index }}">
+                  <div class="gallery-item-counter">{{ forloop.index }} / {{ gallery_images.size }}</div>
+                </div>
+              {% endfor %}
+            {% else %}
+              <div class="gallery-empty">
+                No images found in the specified folder.
               </div>
-            {% endfor %}
+            {% endif %}
           </div>
+          
           <div class="gallery-controls">
             <button class="gallery-prev">&lt;</button>
             <div class="gallery-indicators">
@@ -606,7 +641,6 @@
           </div>
         </div>
       </div>
-    {% endif %}
-        
+    {% endif %}      
   </div>
 </div>
