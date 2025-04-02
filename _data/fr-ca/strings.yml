@@ -60,10 +60,11 @@ blog_posts:
     academia: académie
     funding: financement
     communication: communication
-    conferences: conférences
+    conference: conférence
     lifestyle: style de vie
     literature-review: revue-litérature
-    media: médias
+    media: média
+    presentation: présentation
     productivity: productivité
     strategies: stratégies
   categories:
