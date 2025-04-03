@@ -31,8 +31,8 @@ description: "Références bibliographiques de la présentation au 92<sup>e</sup
 
 <div class="bibliography-item">[5] O'Donnell, K. A., Gaudreau, H., Colalillo, S., Steiner, M., Atkinson, L., Moss, E., Goldberg, S., Karama, S., Matthews, S. G., Lydon, J. E., Silveira, P. P., Wazana, A. D., Levitan, R. D., Sokolowski, M. B., Kennedy, J. L., Fleming, A., & Meaney, M. J. (2014). The maternal adversity, vulnerability and neurodevelopment project: Theory and methodology. <i>The Canadian Journal of Psychiatry, 59</i>(9), 497–508. <a href="https://doi.org/10.1177/070674371405900906" target="_blank">https://doi.org/10.1177/070674371405900906</a></div>
 
-<div class="bibliography-item">[6] Compas, B. (2020). Responses to stress--COVID-19 version (RSQ).</div>
+<div class="bibliography-item">[6] Resilience Research Centre. (2018). <i>CYRM and ARM user manual v.2.2</i>. Resilience Research Centre, Dalhousie University.</div>
 
 <div class="bibliography-item">[7] Sixbey, M. T. (2005). <i>Development of the Family Resilience Assessment Scale to identify family resilience constructs</i> [Doctoral dissertation, University of Florida].</div>
 
-<div class="bibliography-item">[8] Resilience Research Centre. (2018). <i>CYRM and ARM user manual v.2.2</i>. Resilience Research Centre, Dalhousie University.</div>
+<div class="bibliography-item">[8] Compas, B. (2020). Responses to stress--COVID-19 version (RSQ).</div>
