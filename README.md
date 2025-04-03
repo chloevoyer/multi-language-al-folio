@@ -5,4 +5,5 @@
 - [ ] Sort bibliography by first day of range if exists
 - [ ] Change font for minds-at-work GIF copyright
 - [ ] Fix resolution/sizing of photo gallery for biliography entries
+- [ ] Set up hidden bibliographies for conference presentations
 - [ ] ...
