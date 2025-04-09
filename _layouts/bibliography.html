@@ -1,0 +1,58 @@
+---
+layout: page
+---
+
+<p class="subtitle">{{ page.subtitle }}</p>
+
+<style>
+.bibliography-item {
+  padding-left: 2em;
+  text-indent: -2em;
+  margin-bottom: 1em;
+}
+.subtitle {
+  font-style: italic;
+  margin-bottom: 2em;
+}
+a {
+  color: #0076df;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+@media print {
+  body {
+    font-size: 12pt;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}
+</style>
+
+{% assign refs = site.data.bibliographies[page.references_data] %}
+
+{% for ref in refs %}
+<div class="bibliography-item">
+  [{{ forloop.index }}] {{ ref.authors }} ({{ ref.year }}).
+  
+  {% if ref.title %}{{ ref.title }}{% endif %}
+  
+  {% if ref.journal %}
+    <i>{{ ref.journal }}</i>{% if ref.volume %}, {{ ref.volume }}{% endif %}{% if ref.number %}({{ ref.number }}){% endif %}{% if ref.pages %}, {{ ref.pages }}{% endif %}.
+  {% elsif ref.book_title %}
+    In {{ ref.book_title }}{% if ref.editors %} ({{ ref.editors }}, Eds.){% endif %}{% if ref.pages %} (pp. {{ ref.pages }}){% endif %}. {% if ref.publisher %}{{ ref.publisher }}{% endif %}.
+  {% elsif ref.publisher %}
+    <i>{{ ref.title }}</i>. {{ ref.publisher }}.
+  {% elsif ref.school %}
+    <i>{{ ref.title }}</i> [{{ ref.type }}]. {{ ref.school }}.
+  {% elsif ref.conference %}
+    {% if ref.location %}<i>{{ ref.conference }}</i>, {{ ref.location }}.{% else %}<i>{{ ref.conference }}</i>.{% endif %}
+  {% endif %}
+  
+  {% if ref.doi %} <a href="https://doi.org/{{ ref.doi }}" target="_blank">https://doi.org/{{ ref.doi }}</a>{% endif %}
+  {% if ref.url and ref.url != "" and ref.doi == nil %} <a href="{{ ref.url }}" target="_blank">{{ ref.url }}</a>{% endif %}
+</div>
+{% endfor %}

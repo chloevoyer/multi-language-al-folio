@@ -34,7 +34,7 @@ This project connects your Garmin activities and personal records to your Notion
 A detailed step-by-step guide is provided on my Notion template [here](https://chloevoyer.notion.site/Set-up-Guide-17915ce7058880559a3ac9f8a0720046)
 For more advanced users, follow these steps to set up the integration:
 
-### 1. Fork this GitHub Repository
+### 1. Fork [this](https://github.com/chloevoyer/garmin-to-notion) GitHub Repository
 
 ### 2. Duplicate my [Notion Template](https://www.notion.so/templates/fitness-tracker-738)
 

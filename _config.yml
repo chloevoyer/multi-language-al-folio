@@ -185,6 +185,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:title/
+  bibliographies:
+    output: true
+    permalink: /refs/:path/
 
 announcements:
   enabled: true
