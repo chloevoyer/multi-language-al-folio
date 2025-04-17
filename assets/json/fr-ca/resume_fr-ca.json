@@ -59,6 +59,15 @@
   ],
   "awards": [
     {
+      "title": "Bourse de voyage AÉCSUM",
+      "startDate": "2025-04-17",
+      "endDate": null,
+      "awarder": "Association étudiante des cycles supérieurs (AÉCSUM) de l'Université McGill",
+      "url": "https://pgss.mcgill.ca/en/travel-award-winners",
+      "amount": 500,
+      "summary": ""
+    },
+    {
       "title": "Prix de début de carrière en recherche",
       "startDate": "2025-03-26",
       "endDate": null,

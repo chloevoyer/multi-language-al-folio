@@ -65,6 +65,15 @@
   ],
   "awards": [
     {
+      "title": "PGSS Travel Award",
+      "startDate": "2025-04-17",
+      "endDate": null,
+      "awarder": "Post-Graduate Students’ Society (PGSS) of McGill University",
+      "url": "https://pgss.mcgill.ca/en/travel-award-winners",
+      "amount": 500,
+      "summary": ""
+    },
+    {
       "title": "Early Career Scientist Award",
       "startDate": "2025-03-26",
       "endDate": null,
