@@ -13,4 +13,3 @@ vendor
 .idea
 .vscode/
 .devcontainer/
-assets/img/QR-codes/*.png

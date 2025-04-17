@@ -21,18 +21,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
-.qr-code-container {
-  text-align: center;
-  margin: 2em 0;
-}
-.qr-code-container img {
-  max-width: 200px;
-}
-.qr-code-caption {
-  font-size: 0.9em;
-  color: #666;
-  margin-top: 0.5em;
-}
 @media print {
   body {
     font-size: 12pt;
@@ -40,9 +28,6 @@ a:hover {
   a {
     color: #000;
     text-decoration: none;
-  }
-  .qr-code-container {
-    page-break-inside: avoid;
   }
 }
 </style>
@@ -71,10 +56,3 @@ a:hover {
   {% if ref.url and ref.url != "" and ref.doi == nil %} <a href="{{ ref.url }}" target="_blank">{{ ref.url }}</a>{% endif %}
 </div>
 {% endfor %}
-
-{% if page.qr_code_path %}
-<div class="qr-code-container">
-  <img src="{{ page.qr_code_path | relative_url }}" alt="QR Code for this bibliography" />
-  <div class="qr-code-caption">Scan to access this bibliography online</div>
-</div>
-{% endif %}
