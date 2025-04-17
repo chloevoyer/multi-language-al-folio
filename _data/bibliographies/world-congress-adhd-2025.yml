@@ -19,18 +19,81 @@
   title: "Strengths and challenges to embrace attention-deficit/hyperactivity disorder in employment—A systematic review."
   journal: "Neurodiversity"
   volume: 2
-  pages: "1–13"
   doi: "10.1177/27546330241287655"
+
+- authors: "Adamou, M., Arif, M., Asherson, P., Aw, T., Bolea, B., Coghill, D., Guðjónsson, G., Halmøy, A., Hodgkins, P., Müller, U., Pitts, M., Trakoli, A., Williams, N., & Young, S."
+  title: "Occupational issues of adults with ADHD."
+  year: 2013
+  journal: "BMC Psychiatry"
+  volume: 13
+  number: 1
+  doi: "10.1186/1471-244X-13-59"
+
+- authors: "Barkley, R. A. & Murphy, K. R."
+  title: "Impairment in occupational functioning and adult ADHD: the predictive utility of executive function (EF) ratings versus ef tests."
+  year: 2010
+  journal: "Archives of Clinical Neuropsychology"
+  volume: 25
+  number: 3
+  doi: "10.1093/arclin/acq014"
+
+- authors: "Oscarsson, M., Nelson, M., Rozental, A., Ginsberg, Y., Carlbring, P., & Jönsson, F."
+  title: "Stress and work-related mental illness among working adults with ADHD: A qualitative study."
+  year: 2022
+  journal: "BMC Psychiatry"
+  volume: 22
+  number: 1
+  doi: "10.1093/arclin/acq014"
+
+- authors: "Pan, M., Dong, M., Zhang, S., Liu, L., Li, H., Wang, Y., & Qian, Q."
+  title: "One-year follow-up of the effectiveness and mediators of cognitive behavioural therapy among adults with attention-deficit/hyperactivity disorder: Secondary outcomes of a randomised controlled trial."
+  year: 2024
+  journal: "BMC Psychiatry"
+  volume: 24
+  number: 1
+  doi: "10.1186/s12888-024-05673-8"
 
 - authors: "Voyer, C., Corbière, M., Stamate, A., Villotti, P., & Sauvé, G."
   year: "under revision"
   title: "Efficacy of an occupational intervention for quality of work life in ADHD: A randomized controlled trial protocol."
 
 - authors: "Sauvé, G., Buck, G., Lepage, M., & Corbière, M."
-  year: "2022"
-  title: "Minds@Work: a new manualized intervention to improve job tenure in psychosis based on scoping review and logic model."
+  year: 2022
+  title: "Minds@Work: A new manualized intervention to improve job tenure in psychosis based on scoping review and logic model."
   journal: "Journal of Occupational Rehabilitation"
   volume: 32
   number: 3
-  pages: "515–528"
   doi: "10.1007/s10926-021-09995-2"
+
+- authors: "Kessler, R. C., Adler, L., Ames, M., Demler, O., Faraone, S., Hiripi, E., Howes, M. J., Jin, R., Secnik, K., Spencer, T., Ustun, T. B., & Walters, E. E."
+  year: 2005
+  title: "The World Health Organization Adult ADHD Self-Report Scale (ASRS): A Short Screening Scale for Use in the General Population."
+  journal: "Psychological Medicine"
+  volume: 35
+  number: 2
+  pages: "245–256"
+  doi: "10.1017/S0033291704002892"
+
+- authors: "Heikkinen, A.-L., Hänninen, T., Kuikka, P., Akila, R., Savolainen, A., Valtonen, T., Umer, A., Lötjönen, J., Hublin, C., Remes, A. M., & Paajanen, T."
+  year: 2021
+  title: "The Cognitive Function at Work Questionnaire (CFWQ): A New Scale for Measuring Cognitive Complaints in Occupational Population."
+  journal: "Applied Neuropsychology: Adult"
+  volume: 30
+  number: 6
+  pages: "649–660"
+  doi: "10.1080/23279095.2021.1970553"
+
+- authors: "Lanctôt, N., Corbière, M., & Durand, M.-J."
+  year: 2021
+  title: "Job Tenure and Quality of Work Life of People with Psychiatric Disabilities Working in Social Enterprises."
+  journal: "Journal of Vocational Rehabilitation"
+  volume: 37
+  number: 1
+  pages: "39–48"
+  doi: "10.3233/jvr-2012-0598"
+
+- authors: "Cohen, J."
+  year: 1988
+  title: "Statistical Power Analysis for the Behavioral Sciences."
+  edition: 2
+  publisher: "Lawrence Erlbaum Associates"
