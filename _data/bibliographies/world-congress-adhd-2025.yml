@@ -1,33 +1,9 @@
-- authors: "Kessler, R. C., Adler, L., Barkley, R., Biederman, J., Conners, C. K., Demler, O., Faraone, S. V., Greenhill, L. L., Howes, M. J., Secnik, K., Spencer, T., Ustun, T. B., Walters, E. E., & Zaslavsky, A. M."
-  year: 2006
-  title: "The prevalence and correlates of adult ADHD in the United States: results from the national comorbidity survey replication."
-  journal: "American Journal of Psychiatry"
-  volume: 163
-  number: 4
-
-- authors: "Cherkasova, M., Roy, A., Molina, B., Scott, G., Weiss, G., Barkley, R. A., Biederman, J., Uchida, M., Hinshaw, S. P., Owens, E. B., & Hechtman, L."
-  year: 2022
-  title: "Review: adult outcome as seen through controlled prospective follow-up studies of children with attention-deficit/hyperactivity disorder followed into adulthood."
-  journal: "Journal of the American Academy of Child & Adolescent Psychiatry"
-  volume: 61
-  number: 3
-  pages: "378–391"
-  doi: "10.1016/j.jaac.2021.05.019"
-
 - authors: "Hotte-Meunier, A., Sarraf, L., Bougeard, A., Bernier, F., Voyer, C., Deng, J., El Asmar, S., Stamate, A., Corbière, M., Villotti, P., & Sauvé, G."
   year: 2024
   title: "Strengths and challenges to embrace attention-deficit/hyperactivity disorder in employment—A systematic review."
   journal: "Neurodiversity"
   volume: 2
   doi: "10.1177/27546330241287655"
-
-- authors: "Adamou, M., Arif, M., Asherson, P., Aw, T., Bolea, B., Coghill, D., Guðjónsson, G., Halmøy, A., Hodgkins, P., Müller, U., Pitts, M., Trakoli, A., Williams, N., & Young, S."
-  title: "Occupational issues of adults with ADHD."
-  year: 2013
-  journal: "BMC Psychiatry"
-  volume: 13
-  number: 1
-  doi: "10.1186/1471-244X-13-59"
 
 - authors: "Barkley, R. A. & Murphy, K. R."
   title: "Impairment in occupational functioning and adult ADHD: the predictive utility of executive function (EF) ratings versus ef tests."
@@ -37,25 +13,89 @@
   number: 3
   doi: "10.1093/arclin/acq014"
 
-- authors: "Oscarsson, M., Nelson, M., Rozental, A., Ginsberg, Y., Carlbring, P., & Jönsson, F."
-  title: "Stress and work-related mental illness among working adults with ADHD: A qualitative study."
+- authors: "Adamou, M., Arif, M., Asherson, P., Aw, T., Bolea, B., Coghill, D., Guðjónsson, G., Halmøy, A., Hodgkins, P., Müller, U., Pitts, M., Trakoli, A., Williams, N., & Young, S."
+  title: "Occupational issues of adults with ADHD."
+  year: 2013
+  journal: "BMC Psychiatry"
+  volume: 13
+  number: 1
+  doi: "10.1186/1471-244X-13-59"
+
+- authors: "Doshi, J. A., Hodgkins, P., Kahle, J., Sikirica, V., Cangelosi, M. J., Setyawan, J., Erder, M. H., & Neumann, P. J."
+  year: 2012
+  title: "Economic impact of childhood and adult attention-deficit/hyperactivity disorder in the United States."
+  journal: "Journal of the American Academy of Child & Adolescent Psychiatry"
+  volume: 51
+  number: 10
+  pages: "990-1002"
+  doi: "10.1016/j.jaac.2012.07.008"
+
+- authors: "Kotsopoulos, N., Connolly, M. P., Sobanski, E., & Postma, M. J."
+  year: 2013
+  title: "Assessing the economic burden and benefit-cost of treating attention-deficit hyperactivity disorder in Germany."
+  journal: "Journal of Health Economics and Outcomes Research"
+  volume: 1
+  number: 3
+  pages: "212–223"
+  doi: "10.36469/9866"
+
+- authors: "Kessler, R. C., Lane, M., Stang, P. E., & Brunt, D. L. V."
+  year: 2009
+  title: "The prevalence and workplace costs of adult attention deficit hyperactivity disorder in a large manufacturing firm."
+  journal: "Psychological Medicine"
+  volume: 39
+  number: 1
+  pages: "137–147"
+  doi: "10.1017/S0033291708003309"
+
+- authors: "Armaou, M., Araviaki, E., Dutta, S., Konstantinidis, S., & Blake, H."
   year: 2022
-  journal: "BMC Psychiatry"
-  volume: 22
-  number: 1
-  doi: "10.1093/arclin/acq014"
+  title: "Effectiveness of digital interventions for deficit-oriented and asset-oriented psychological outcomes in the workplace: A systematic review and narrative synthesis."
+  journal: "European Journal of Investigation in Health, Psychology and Education"
+  volume: 12
+  number: 10
+  pages: "1471–1497"
+  doi: "10.3390/ejihpe12100102"
 
-- authors: "Pan, M., Dong, M., Zhang, S., Liu, L., Li, H., Wang, Y., & Qian, Q."
-  title: "One-year follow-up of the effectiveness and mediators of cognitive behavioural therapy among adults with attention-deficit/hyperactivity disorder: Secondary outcomes of a randomised controlled trial."
+- authors: "Le, L. K.-D., Esturas, A. C., Mihalopoulos, C., Chiotelis, O., Bucholc, J., Chatterton, M. L., & Engel, L."
+  year: 2021
+  title: "EfCost-effectiveness evidence of mental health prevention and promotion interventions: A systematic review of economic evaluations."
+  journal: "PLOS Medicine"
+  volume: 18
+  number: 5
+  doi: "10.1371/journal.pmed.1003606"
+
+- authors: "Fuermaier, A. B. M., Tucha, L., Butzbach, M., Weisbrod, M., Aschenbrenner, S., & Tucha, O."
+  year: 2021
+  title: "ADHD at the workplace: ADHD symptoms, diagnostic status, and work-related functioning."
+  journal: "Journal of Neural Transmission"
+  volume: 128
+  number: 7
+  pages: "1021–1031"
+  doi: "10.1007/s00702-021-02309-z"
+
+- authors: "Lanctôt, N., Corbière, M., & Durand, M.-J."
+  year: 2021
+  title: "Job Tenure and Quality of Work Life of People with Psychiatric Disabilities Working in Social Enterprises."
+  journal: "Journal of Vocational Rehabilitation"
+  volume: 37
+  number: 1
+  pages: "39–48"
+  doi: "10.3233/jvr-2012-0598"
+
+- authors: "Lauder, K., McDowall, A., & Tenenbaum, H. R."
   year: 2024
-  journal: "BMC Psychiatry"
-  volume: 24
-  number: 1
-  doi: "10.1186/s12888-024-05673-8"
+  title: "A meta-analysis of pharmacological and psychosocial interventions aiming to improve work-relevant outcomes for adults with ADHD."
+  journal: "Neurodiversity"
+  volume: 2
+  doi: "10.1177/27546330241292984"
 
-- authors: "Voyer, C., Corbière, M., Stamate, A., Villotti, P., & Sauvé, G."
-  year: "under revision"
-  title: "Efficacy of an occupational intervention for quality of work life in ADHD: A randomized controlled trial protocol."
+- authors: "Cameron, G., Mulvenna, M., Ennis, E., O’Neill, S., Bond, R., Cameron, D., & Bunting, A."
+  year: 2025
+  title: "Effectiveness of digital mental health interventions in the workplace: Umbrella review of systematic reviews."
+  journal: "JMIR Mental Health"
+  volume: 12
+  doi: "10.2196/67785"
 
 - authors: "Sauvé, G., Buck, G., Lepage, M., & Corbière, M."
   year: 2022
@@ -64,6 +104,10 @@
   volume: 32
   number: 3
   doi: "10.1007/s10926-021-09995-2"
+
+- authors: "Voyer, C., Corbière, M., Stamate, A., Villotti, P., & Sauvé, G."
+  year: "under revision"
+  title: "Efficacy of an occupational intervention for quality of work life in ADHD: A randomized controlled trial protocol."
 
 - authors: "Kessler, R. C., Adler, L., Ames, M., Demler, O., Faraone, S., Hiripi, E., Howes, M. J., Jin, R., Secnik, K., Spencer, T., Ustun, T. B., & Walters, E. E."
   year: 2005
@@ -82,18 +126,3 @@
   number: 6
   pages: "649–660"
   doi: "10.1080/23279095.2021.1970553"
-
-- authors: "Lanctôt, N., Corbière, M., & Durand, M.-J."
-  year: 2021
-  title: "Job Tenure and Quality of Work Life of People with Psychiatric Disabilities Working in Social Enterprises."
-  journal: "Journal of Vocational Rehabilitation"
-  volume: 37
-  number: 1
-  pages: "39–48"
-  doi: "10.3233/jvr-2012-0598"
-
-- authors: "Cohen, J."
-  year: 1988
-  title: "Statistical Power Analysis for the Behavioral Sciences."
-  edition: 2
-  publisher: "Lawrence Erlbaum Associates"
