@@ -92,7 +92,7 @@ research_gate_profile: chloe-voyer # your profile on ResearchGate
 scholar_userid: g53kVKwAAAAJ # your Google Scholar ID
 scopus_id: # your profile on Scopus
 semanticscholar_id: # your Semantic Scholar ID
-spotify_id: 12175073889 # your spotify id
+#spotify_id: 12175073889 # your spotify id
 stackoverflow_id: # your stackoverflow id
 telegram_username: # your Telegram user name
 unsplash_id: # your unsplash id
@@ -103,7 +103,7 @@ wikipedia_id: # your wikipedia id (Case sensitive)
 work_url: https://www.smart-lab.ca/fr/team-members-1#comp-lu7g24sw5 # work page URL
 x_username: # your X handle
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
-zotero_username: chloevoyer # your zotero username
+#zotero_username: chloevoyer # your zotero username
 
 contact_note: >
   Whether you're looking to collaborate, talk more about my work or have any questions, please don't hesitate to reach out.

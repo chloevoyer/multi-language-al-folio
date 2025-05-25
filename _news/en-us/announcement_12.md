@@ -7,4 +7,4 @@ published: true
 lang: en-us
 ---
 
-<b>Recipient of the</b> [2025 Rémi Quirion Excellence Award](https://douglas.research.mcgill.ca/remi-quirion-excellence-award/) 🏅
+<b>Recipient</b> of the [2025 Rémi Quirion Excellence Award](https://douglas.research.mcgill.ca/remi-quirion-excellence-award/) 🏅

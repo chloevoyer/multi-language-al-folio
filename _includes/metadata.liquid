@@ -123,14 +123,43 @@
   <!-- Schema.org -->
   {% comment %} Social links generator for "sameAs schema" {% endcomment %}
   {% assign sameaslinks = '' | split: ',' %}
+  {% if site.linkedin_username %}
+    {% capture link %}https://www.linkedin.com/in/{{ site.linkedin_username }}{% endcapture %}
+    {% assign sameaslinks = sameaslinks | push: link %}
+  {% endif %}
   {% if site.orcid_id %}
-    {% capture link %}https://orcid.org/{{ site.orcid_id }}{% endcapture %}
+  {% capture link %}https://orcid.org/{{ site.orcid_id }}{% endcapture %}
+    {% assign sameaslinks = sameaslinks | push: link %}
+  {% endif %}
+  {% if site.research_gate_profile %}
+  {% capture link %}https://www.researchgate.net/profile/{{ site.research_gate_profile }}{% endcapture %}
+    {% assign sameaslinks = sameaslinks | push: link %}
+  {% endif %}
+  {% if site.osf_id %}
+  {% capture link %}https://osf.io/{{ site.osf_id }}/{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
   {% if site.scholar_userid %}
-    {% capture link %}https://scholar.google.ca/citations?user={{ site.scholar_userid }}{% endcapture %}
+  {% capture link %}https://scholar.google.ca/citations?user={{ site.scholar_userid }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
+  {% if site.work_url %}
+  {% capture link %}{{ site.work_url }}{% endcapture %}
+    {% assign sameaslinks = sameaslinks | push: link %}
+  {% endif %}
+  {% if site.github_username %}
+    {% capture link %}https://github.com/{{ site.github_username }}{% endcapture %}
+    {% assign sameaslinks = sameaslinks | push: link %}
+  {% endif %}
+  {% if site.zotero_username %}
+    {% capture link %}https://www.zotero.org/{{ site.zotero_username }}{% endcapture %}
+      {% assign sameaslinks = sameaslinks | push: link %}
+    {% endif %}
+    
+    {% if site.spotify_id %}
+      {% capture link %}https://open.spotify.com/user/{{ site.spotify_id }}{% endcapture %}
+      {% assign sameaslinks = sameaslinks | push: link %}
+    {% endif %}
   {% if site.semanticscholar_id %}
     {% capture link %}https://www.semanticscholar.org/author/{{ site.semanticscholar_id }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
@@ -143,28 +172,12 @@
     {% capture link %}http://lattes.cnpq.br/{{ site.lattes_id }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
-  {% if site.osf_id %}
-    {% capture link %}https://osf.io/{{ site.osf_id }}/{% endcapture %}
-    {% assign sameaslinks = sameaslinks | push: link %}
-  {% endif %}
-  {% if site.research_gate_profile %}
-    {% capture link %}https://www.researchgate.net/profile/{{ site.research_gate_profile }}{% endcapture %}
-    {% assign sameaslinks = sameaslinks | push: link %}
-  {% endif %}
   {% if site.scopus_id %}
     {% capture link %}https://www.scopus.com/authid/detail.uri?authorId={{ site.scopus_id }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
-  {% if site.github_username %}
-    {% capture link %}https://github.com/{{ site.github_username }}{% endcapture %}
-    {% assign sameaslinks = sameaslinks | push: link %}
-  {% endif %}
   {% if site.telegram_username %}
     {% capture link %}https://telegram.me/{{ site.telegram_username }}{% endcapture %}
-    {% assign sameaslinks = sameaslinks | push: link %}
-  {% endif %}
-  {% if site.linkedin_username %}
-    {% capture link %}https://www.linkedin.com/in/{{ site.linkedin_username }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
   {% if site.x_username %}
@@ -185,10 +198,6 @@
   {% endif %}
   {% if site.blogger_url %}
     {% capture link %}{{ site.blogger_url }}{% endcapture %}
-    {% assign sameaslinks = sameaslinks | push: link %}
-  {% endif %}
-  {% if site.work_url %}
-    {% capture link %}{{ site.work_url }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
   {% if site.wikidata_id %}
@@ -227,10 +236,6 @@
     {% capture link %}https://www.last.fm/user/{{ site.lastfm_id }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
-  {% if site.spotify_id %}
-    {% capture link %}https://open.spotify.com/user/{{ site.spotify_id }}{% endcapture %}
-    {% assign sameaslinks = sameaslinks | push: link %}
-  {% endif %}
   {% if site.pinterest_id %}
     {% capture link %}https://www.pinterest.com/{{ site.pinterest_id }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
@@ -253,10 +258,6 @@
   {% endif %}
   {% if site.discord_id %}
     {% capture link %}https://discord.com/users/{{ site.discord_id }}{% endcapture %}
-    {% assign sameaslinks = sameaslinks | push: link %}
-  {% endif %}
-  {% if site.zotero_username %}
-    {% capture link %}https://www.zotero.org/{{ site.zotero_username }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
   {% if sameaslinks != blank %}
