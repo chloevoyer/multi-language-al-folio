@@ -1,5 +1,19 @@
 [
   {
+    "date": "2025-05-08",
+    "conference": "10th World Congress on ADHD",
+    "location": "Prague, Czech Republic",
+    "abbrv": "ADHD",
+    "url": "https://www.adhd-congress.org/"
+  },
+  {
+    "date": "2025-05-05",
+    "conference": "92e Congrès de l'Acfas",
+    "location": "Montréal, QC",
+    "abbrv": "ACFAS",
+    "url": "https://www.acfas.ca/evenements/congres"
+  },
+  {
     "date": "2024-10-16",
     "conference": "1er Colloque de la Communauté de pratiques internationale santé mentale et travail",
     "location": "Montréal, QC",

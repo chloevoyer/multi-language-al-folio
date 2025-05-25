@@ -65,10 +65,19 @@
   ],
   "awards": [
     {
+      "title": "Rémi Quirion Excellence Award",
+      "startDate": "2025-06-19",
+      "endDate": null,
+      "awarder": "Douglas Research Centre and the Douglas Foundation",
+      "url": "https://douglas.research.mcgill.ca/remi-quirion-excellence-award/",
+      "amount": 500,
+      "summary": ""
+    },
+    {
       "title": "PGSS Travel Award",
       "startDate": "2025-04-17",
       "endDate": null,
-      "awarder": "Post-Graduate Students’ Society (PGSS) of McGill University",
+      "awarder": "Post-Graduate Students' Society (PGSS) of McGill University",
       "url": "https://pgss.mcgill.ca/en/travel-award-winners",
       "amount": 500,
       "summary": ""
@@ -113,7 +122,7 @@
       "startDate": "2024-03-22",
       "endDate": "",
       "awarder": "Mental Health Research Canada (MHRC), co-funded in partnership with Mitacs and iA Financial Group",
-      "url": "https://www.mhrc.ca/studentresearchers/chloevoyer",
+      "url": "https://www.mhrc.ca/impact-profile-voyer",
       "amount": 15000,
       "summary": ""
     }
