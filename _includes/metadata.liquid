@@ -155,11 +155,10 @@
     {% capture link %}https://www.zotero.org/{{ site.zotero_username }}{% endcapture %}
       {% assign sameaslinks = sameaslinks | push: link %}
     {% endif %}
-    
-    {% if site.spotify_id %}
-      {% capture link %}https://open.spotify.com/user/{{ site.spotify_id }}{% endcapture %}
-      {% assign sameaslinks = sameaslinks | push: link %}
-    {% endif %}
+  {% if site.spotify_id %}
+    {% capture link %}https://open.spotify.com/user/{{ site.spotify_id }}{% endcapture %}
+    {% assign sameaslinks = sameaslinks | push: link %}
+  {% endif %}
   {% if site.semanticscholar_id %}
     {% capture link %}https://www.semanticscholar.org/author/{{ site.semanticscholar_id }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
