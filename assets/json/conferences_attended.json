@@ -14,6 +14,25 @@
     "url": "https://www.acfas.ca/evenements/congres"
   },
   {
+    "date": "2025-04-25",
+    "conference": "8th Annual Integrative Psychiatry Conference",
+    "location": "Montréal, QC",
+    "abbrv": "AIPC"
+  },
+  {
+    "date": "2025-03-26",
+    "conference": "Douglas Research Blitz",
+    "location": "Montréal, QC",
+    "abbrv": "BLITZ"
+  },
+  {
+    "date": "2025-02-12",
+    "conference": "10e Colloque de professionnelles et professionnels en emploi",
+    "location": "Montréal, QC",
+    "abbrv": "QUARIERA",
+    "url": "https://quariera.com/"
+  },
+  {
     "date": "2024-10-16",
     "conference": "1er Colloque de la Communauté de pratiques internationale santé mentale et travail",
     "location": "Montréal, QC",
