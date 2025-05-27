@@ -26,8 +26,8 @@
 
 <style type="text/css">
   .credit {
-    font-family: 'Kiddosy Free Outline', 'Architects Daughter', 'Handlee', 'Patrick Hand', cursive;
-    font-size: 14px;
+    font-family: 'Kiddosy Free', 'Architects Daughter', 'Handlee', 'Patrick Hand', cursive;
+    font-size: 30px;
     fill: #888888;
     opacity: 0.8;
   }

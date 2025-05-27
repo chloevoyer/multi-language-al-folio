@@ -5,7 +5,7 @@ toc: true
 icon: # ti-icon-brand-notion
 date: 2024-09-01 11:12:00
 description: Seamlessly sync your Garmin fitness activities to Notion using automated workflows
-tags: lifestyle productivity
+tags: lifestyle tech
 categories: tools
 featured: false
 thumbnail: assets/img/thumbnails/garmin-run.png

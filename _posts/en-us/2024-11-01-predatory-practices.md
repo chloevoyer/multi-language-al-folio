@@ -5,7 +5,7 @@ icon: # fa-solid fa-flag
 date: 2024-11-01 11:00:00
 last_updated: 2024-11-04 11:00:00
 description: Tips for navigating predatory publishing practices in academia
-tags: literature-review strategies
+tags: strategies
 categories: research
 lang: en-us
 featured: false

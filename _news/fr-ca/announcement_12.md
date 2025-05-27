@@ -7,4 +7,4 @@ published: true
 lang: fr-ca
 ---
 
-<b>Lauréate</b> du [Prix d'excellence Rémi Quirion 2025](https://douglas.research.mcgill.ca/remi-quirion-excellence-award/) 🏅
+<b>Lauréate</b> du [Prix d'excellence Rémi Quirion 2025](https://douglas.research.mcgill.ca/fr/news/annonce-des-recipiendaires-2025-des-prix-commemoratif-dre-holly-carsley-et-prix-dexcellence-dr-remi-quirion/) 🏅

@@ -3,7 +3,7 @@ layout: post
 title: "New Presentation: 92<sup>e</sup> Congrès de l’Acfas 🦋"
 date: 2025-04-28 09:00:00
 description: "Predictors of youth psychopathology and resilience during the pandemic"
-tags: conference presentation
+tags: conference
 categories: research
 lang: en-us
 featured: false
