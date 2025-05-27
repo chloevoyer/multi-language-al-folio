@@ -4,8 +4,8 @@ title: "Le TDAH en milieu de travail : comprendre les défis & valoriser les for
 icon: # fa-solid fa-flag
 date: 2024-11-27 11:00:00
 description: Une revue systématique examinant comment le TDAH se manifeste en milieu de travail a analysé les données de 79 études
-tags: literature-review
-categories: research
+categories: academia
+tags: publications
 lang: fr-ca
 featured: false
 thumbnail: assets/img/thumbnails/management.png

@@ -5,8 +5,8 @@ icon: # fa-solid fa-microphone fa-solid fa-presentation-screen OR fa-podium-star
 date: 2024-10-15 11:12:00
 last_updated: 2024-11-07 11:12:00
 description: Une liste non exhaustive de conférences dans le domaine de la psychologie
+categories: resources
 tags: conferences
-categories: research
 lang: fr-ca
 featured: true
 related_posts: true

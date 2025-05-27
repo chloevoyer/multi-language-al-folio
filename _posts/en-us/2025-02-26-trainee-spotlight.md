@@ -2,8 +2,8 @@
 layout: post
 title: "Douglas Research Centre | Trainee Spotlight – Chloé Voyer 🌟"
 date: 2025-02-26 09:00:00
-tags: award
-categories: blog
+categories: academia
+tags: awards
 lang: en-us
 featured: false
 redirect: https://douglas.research.mcgill.ca/news/chloe-voyer-trainee-spotlight/

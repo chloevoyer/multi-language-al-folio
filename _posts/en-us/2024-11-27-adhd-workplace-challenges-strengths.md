@@ -4,8 +4,8 @@ title: "ADHD in the Workplace: Understanding Challenges & Embracing Strengths ðŸ
 icon: # fa-solid fa-flag
 date: 2024-11-27 11:00:00
 description: A systematic review examining how ADHD manifests in workplace settings analyzed data from 79 studies covering over 68,000 individuals with ADHD across 22 countries
-tags: publication
-categories: research
+categories: academia
+tags: publications
 lang: en-us
 featured: false
 thumbnail: assets/img/thumbnails/management.png

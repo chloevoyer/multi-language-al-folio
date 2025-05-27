@@ -5,8 +5,8 @@ toc: true
 icon: # ti-icon-brand-notion
 date: 2024-09-01 11:12:00
 description: Synchronisez automatiquement vos activités Garmin avec Notion grâce à des workflows automatisés
-tags: lifestyle productivity
-categories: tools
+categories: resources
+tags: lifestyle tech
 featured: false
 thumbnail: assets/img/thumbnails/garmin-run.png
 lang: fr-ca
