@@ -5,7 +5,7 @@ icon: # fa-solid fa-flag
 date: 2024-11-01 11:00:00
 description: Conseils pour naviguer les pratiques de publication prédatrices dans le milieu académique
 categories: academia
-tags: guide
+tags: guides
 lang: fr-ca
 featured: false
 thumbnail: assets/slides/predatory-practices/slide-1.jpeg

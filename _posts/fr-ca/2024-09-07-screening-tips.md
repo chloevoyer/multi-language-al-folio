@@ -5,7 +5,7 @@ icon: # fa-brands fa-searchengin fa-solid fa-file-magnifying-glass
 date: 2024-10-07 11:12:00
 description: Conseils pour identifier rapidement les résumés à exclure et augmenter son efficacité
 categories: academia
-tags: guide
+tags: guides
 lang: fr-ca
 featured: true
 # bibliography: 2018-12-22-distill.bib

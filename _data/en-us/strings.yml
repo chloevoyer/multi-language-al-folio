@@ -57,18 +57,23 @@ blog_posts:
   navigation_title: blog
   read_time: min read
   tags:
-    academia: academia
+    awards: awards
     funding: funding
     communication: communication
-    conference: conference
+    conferences: conferences
+    guides: guides
     lifestyle: lifestyle
     literature-review: literature-review
     media: media
+    publications: publications
     presentation: presentation
     productivity: productivity
     strategies: strategies
+    tech: tech
   categories:
+    academia: academia
     research: research
+    resources: resources
     tools: tools
 categories:
   fun: extra

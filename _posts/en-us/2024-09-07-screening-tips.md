@@ -5,7 +5,7 @@ icon: fa-solid fa-flag
 date: 2024-10-07 11:12:00
 description: Tips for quickly identifying abstracts to exclude
 categories: academia
-tags: guide
+tags: guides
 lang: en-us
 featured: true
 toc: true
