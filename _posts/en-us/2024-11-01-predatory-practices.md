@@ -6,7 +6,7 @@ date: 2024-11-01 11:00:00
 last_updated: 2024-11-04 11:00:00
 description: Tips for navigating predatory publishing practices in academia
 categories: academia
-tags: guide
+tags: guides
 lang: en-us
 featured: false
 thumbnail: assets/slides/predatory-practices/slide-1.jpeg
