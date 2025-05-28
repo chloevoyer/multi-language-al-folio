@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Travel Gallery 🌍✈️
+title: Travel Gallery
+icon: fa-solid fa-earth-americas
+custom_icon: /assets/img/icons/airplane.svg
 description: Germany, Austria, Croatia, San Francisco, Nova Scotia, Prague, Greece
 img: assets/img/headers/resized/travel.jpg
 importance: 3
