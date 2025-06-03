@@ -5,6 +5,7 @@ description: Un programme Cerveaux@travail adapté pour faciliter l’inclusion 
 img: assets/img/headers/resized/collaboration.jpg
 importance: 5
 category: work
+published: false
 ---
 
 Un programme Cerveaux@travail adapté pour améliorer l'inclusion socioprofessionnelle des personnes atteintes d’un trouble déficitaire de l’attention/hyperactivité (TDAH) est actuellement en cours d’élaboration.

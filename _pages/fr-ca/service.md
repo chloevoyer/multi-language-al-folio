@@ -7,6 +7,7 @@ nav: false
 nav_order: 7
 toc:
   sidebar: left
+published: false
 ---
 
 <h2 style="padding-top: 30px">{{ site.data[site.active_lang].strings.service.open_science }}</h2>
