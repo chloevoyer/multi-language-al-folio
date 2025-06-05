@@ -3,7 +3,7 @@ page_id: service
 layout: page
 title: academic service
 permalink: /service/
-nav: false
+nav: true
 nav_order: 7
 toc:
   sidebar: left
