@@ -65,6 +65,15 @@
   ],
   "awards": [
     {
+      "title": "Marie Guigère Travel Award",
+      "startDate": "2025-06-06",
+      "endDate": null,
+      "awarder": "Douglas Research Centre",
+      "url": "https://douglas.research.mcgill.ca/giguere-travel-awards/",
+      "amount": 500,
+      "summary": ""
+    },
+    {
       "title": "Best Poster Presentation Award",
       "startDate": "2025-06-05",
       "endDate": null,
