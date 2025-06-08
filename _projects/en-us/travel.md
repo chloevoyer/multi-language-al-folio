@@ -106,6 +106,9 @@ published: false
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/life/travel/2022-austria/IMG_8147.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/life/travel/2022-austria/top-of-hill.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
 </div>
 
 <h2>Croatia <img src="/assets/img/icons/croatia.svg" width="30" alt="Croatia"/></h2>

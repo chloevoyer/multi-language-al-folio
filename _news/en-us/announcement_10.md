@@ -7,4 +7,4 @@ published: true
 lang: en-us
 ---
 
-Featured in the <i>Douglas Research Centre</i> [Trainee spotlight](https://douglas.research.mcgill.ca/news/chloe-voyer-trainee-spotlight/) ⭐
+<b>Featured</b> in the <i>Douglas Research Centre</i> [Trainee spotlight](https://douglas.research.mcgill.ca/news/chloe-voyer-trainee-spotlight/) ⭐

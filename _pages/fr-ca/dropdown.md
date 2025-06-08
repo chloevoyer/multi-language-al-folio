@@ -8,9 +8,9 @@ dropdown: true
 children:
   - title: projets
     permalink: /projects/
-  - title: divider
-  - title: service
-    permalink: /service/
+  # - title: divider
+  # - title: service
+  #   permalink: /service/
   - title: divider
   - title: repositories
     permalink: /repositories/
