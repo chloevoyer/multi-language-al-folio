@@ -1,42 +1,37 @@
-archive_category: une archive des articles de cette catégorie
-archive_tag: une archive de messages avec ce tag
-archive_year: une archive des articles de cette année
+archive:
+  prefix: une archive de
+  category_suffix: dans cette catégorie
+  tag_suffix: avec ce tag
+  year_suffix: de cette année
 bibliography:
-  abs: résumé
+  abstract: résumé
   awarded: prix
   blog: blogue
+  book_prefix: dans
   code: code
-  booktitle_prefix: dans
-  slides: diapos
+  last_author_prefix: et
   poster: affiche
+  slides: diapos
   supp: supp
-  tldr: TLDR
   video: vidéo
   website: site web
-blog: blogue
-blog_posts:
-  read_time: minutes de lecture
-  tags:
-    funding: "financement"
-    communication: "communication"
-    lifestyle: "style de vie"
-    literature-review: "revue-litérature"
-    strategies: "stratégies"
-  categories:
-    research: "recherche"
-navigation_title: blogue
+blog:
+  navigation_title: blogue
 categories:
-  fun: amusement
+  fun: extra
   work: travail
 citation:
-  bibtex: "ou comme entrée BibTeX :"
-  introduction: introduction
-contact_note: Que vous souhaitiez collaborer, parler davantage de mon travail ou avoir des questions, n'hésitez pas à me contacter.
+  bibtex: "ou comme entrée BibTeX:"
+  introduction: "Si vous avez trouvé cela utile, veuillez le citer comme suit:"
+collections:
+  books: livres
+  posts: articles
+contact_note: Vous pouvez même ajouter une petite note indiquant lequel de ces moyens est le meilleur pour vous joindre.
 cv:
   address: adresse
   area: région
-  awarder: détenteur
-  awards: prix et bourses
+  awarder: récipient(e)
+  awards: prixs
   basics: informations générales
   certificates: certificats
   city: ville
@@ -47,7 +42,7 @@ cv:
   email: courriel
   endDate: date de fin
   fluency: maîtrise
-  highlights: points forts
+  highlights: points clés
   image: image
   institution: institution
   interests: intérêts
@@ -64,7 +59,7 @@ cv:
   phone: téléphone
   position: poste
   postalCode: code postal
-  present: présent
+  present: Présent
   profiles: profils
   projects: projets
   publications: publications
@@ -72,11 +67,11 @@ cv:
   reference: référence
   references: références
   region: région
-  releaseDate: date de sortie
-  score: résultat
+  releaseDate: date de publication
+  score: score
   skills: compétences
   startDate: date de début
-  studyType: type d'étude
+  studyType: "domaine d'études"
   summary: résumé
   table_of_contents: table des matières
   title: titre
@@ -84,10 +79,13 @@ cv:
   username: nom d'utilisateur
   volunteer: bénévolat
   work: travail
-filter: Tapez pour filtrer
 footer:
-  copyright: "Tout droits réservés"
+  copyright: "Droits d'auteur"
   last_updated: "Dernière mise à jour le "
+footer_text: > # the ">" symbol means to ignore newlines until "titles:"
+  Propulsé par <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> avec le thème <a href="https://github.com/george-gca/multi-language-al-folio">multi-language-al-folio</a>.
+  Hébergé par <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Photos de <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 latest_posts: derniers articles
 months:
   long:
@@ -104,74 +102,45 @@ months:
     november: novembre
     december: décembre
   short:
-    january: janv
-    february: févr
-    march: mars
+    january: jan
+    february: fév
+    march: mar
     april: avr
     may: mai
-    june: juin
-    july: juil
-    august: août
-    september: sept
+    june: jun
+    july: jul
+    august: aoû
+    september: sep
     october: oct
     november: nov
     december: déc
-  longer:
-    1: janvier
-    2: février
-    3: mars
-    4: avril
-    5: mai
-    6: juin
-    7: juillet
-    8: août
-    9: septembre
-    10: octobre
-    11: novembre
-    12: décembre
-  shorter:
-    1: janv
-    2: févr
-    3: mars
-    4: avr
-    5: mai
-    6: juin
-    7: juil
-    8: août
-    9: sept
-    10: oct
-    11: nov
-    12: déc
 news: actualités
 newsletter:
   back: retour
   error: "Oups ! Quelque chose s'est mal passé, veuillez réessayer."
-  subscribe: s'abonner
+  subscribe: "s'abonner"
   subscribed: "Vous vous êtes abonné(e) à la newsletter avec succès."
-  subscribe_to_receive: "Abonnez-vous pour être informé(e) des prochains articles :"
+  subscribe_to_receive: "Abonnez-vous pour être informé(e) des prochains articles:"
   too_many_signups: "Trop d'inscriptions, veuillez réessayer plus tard."
   wait: "Veuillez patienter..."
-no_news: aucune actualité pour l'instant...
-no_posts: aucun article pour le moment...
+no_news: "Aucune actualité pour l'instant..."
+no_posts: "Aucun article pour le moment..."
 pagination:
-  newer: plus récents
-  older: plus anciens
   page: page
 post:
-  created_in: créé le
+  created_in: Créé le
   created_by: par
-  last_updated: "dernière mise à jour :"
+  last_updated: "Dernière mise à jour le "
 references: références
 related_posts:
   description: "Voici d'autres articles que vous pourriez aimer lire ensuite :"
   title: "Vous avez aimé lire cet article ?"
-  no_related_posts: "Aucun article connexe trouvé."
 search:
   dark_theme:
     description: changer le thème du site en sombre
     title: changer le thème en sombre
   dropdown: déroulant
-  email: envoyer un e-mail
+  email: envoyer un courriel
   footer:
     close: fermer
     navigate: naviguer
@@ -192,12 +161,4 @@ search:
     title: utiliser le thème par défaut du système
   theme: thème
 selected_publications: publications sélectionnées
-site_description: un espace ouvert pour la recherche académique
-searchbar: " "
-suggestions_form:
-  title: Suggérez une conférence
-  description: "Nous avons oublié une conférence ? Soumettez-la pour l'ajouter à la liste."
-  conference_name: Nom de la conférence
-  conference_url: URL
-  additional_info: Information supplémentaire
-  submit: Soumettre
+site_description: Un thème simple et épuré pour les académiques. Basé sur le design de [*folio](https://github.com/bogoli/-folio).

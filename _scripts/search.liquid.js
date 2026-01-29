@@ -1,6 +1,21 @@
 ---
 permalink: /assets/js/search-data.js
 ---
+{% if site.active_lang == site.default_lang %}
+{% assign lang = '' %}
+{% else %}
+{% assign lang = site.active_lang %}
+{% endif %}
+const currentUrl = window.location.href;
+const siteUrl = "{{ site.url }}";
+let updatedUrl = currentUrl.replace("{{ site.url }}{{ site.baseurl }}", "");
+if (currentUrl.length == updatedUrl.length && currentUrl.startsWith("http://127.0.0.1")) {
+  const otherSiteUrl = siteUrl.replace("localhost", "127.0.0.1");
+  updatedUrl = currentUrl.replace(otherSiteUrl + "{{ site.baseurl }}", "");
+}
+if ("{{ lang }}".length > 0) {
+  updatedUrl = updatedUrl.replace("/{{ lang }}", "");
+}
 // get the ninja-keys element
 const ninja = document.querySelector('ninja-keys');
 
@@ -12,9 +27,9 @@ ninja.data = [
   {
     id: "nav-{{ about_title | slugify }}",
     title: "{{ about_title | truncatewords: 13 }}",
-    section: "Navigation",
+    section: "{{ site.data[site.active_lang].strings.search.navigation }}",
     handler: () => {
-      window.location.href = "{{ '/' | relative_url }}";
+      window.location.href = "{{ '/' | prepend: lang | relative_url }}";
     },
   },
   {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
@@ -25,18 +40,17 @@ ninja.data = [
           {%- unless child.title == 'divider' -%}
             {
               {%- assign title = child.title | escape | strip -%}
-              {%- if child.permalink contains "/blog/" -%}{%- assign url = "/blog/" -%} {%- else -%}{%- assign url = child.url -%}{%- endif -%}
+              {%- if child.permalink contains "/blog/" -%}{%- assign url = "/blog/" -%} {%- else -%}{%- assign url = child.permalink -%}{%- endif -%}
               id: "dropdown-{{ title | slugify }}",
               title: "{{ title | truncatewords: 13 }}",
               description: "{{ child.description | strip_html | strip_newlines | escape | strip }}",
-              section: "Dropdown",
+              section: "{{ site.data[site.active_lang].strings.search.dropdown }}",
               handler: () => {
-                window.location.href = "{{ url | relative_url }}";
+                window.location.href = "{{ url | prepend: lang | relative_url }}";
               },
             },
           {%- endunless -%}
         {%- endfor -%}
-
       {%- else -%}
         {
           {%- assign title = p.title | escape | strip -%}
@@ -44,38 +58,40 @@ ninja.data = [
           id: "nav-{{ title | slugify }}",
           title: "{{ title | truncatewords: 13 }}",
           description: "{{ p.description | strip_html | strip_newlines | escape | strip }}",
-          section: "Navigation",
+          section: "{{ site.data[site.active_lang].strings.search.navigation }}",
           handler: () => {
-            window.location.href = "{{ url | relative_url }}";
+            window.location.href = "{{ url | prepend: lang | relative_url }}";
           },
         },
       {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
-  {%- for post in site.posts -%}
-    {
-      {%- assign title = post.title | escape | strip -%}
-      id: "post-{{ title | slugify }}",
-      {% if post.redirect == blank %}
-        title: "{{ title | truncatewords: 13 }}",
-      {% elsif post.redirect contains '://' %}
-        title: '{{ title | truncatewords: 13 }} <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      {% else %}
-        title: "{{ title | truncatewords: 13 }}",
-      {% endif %}
-      description: "{{ post.description | strip_html | strip_newlines | escape | strip }}",
-      section: "Posts",
-      handler: () => {
+  {%- if site.posts_in_search -%}
+    {%- for post in site.posts -%}
+      {
+        {%- assign title = post.title | escape | strip -%}
+        id: "post-{{ title | slugify }}",
         {% if post.redirect == blank %}
-          window.location.href = "{{ post.url | relative_url }}";
+          title: "{{ title | truncatewords: 13 }}",
         {% elsif post.redirect contains '://' %}
-          window.open("{{ post.redirect }}", "_blank");
+          title: '{{ title | truncatewords: 13 }} <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         {% else %}
-          window.location.href = "{{ post.redirect | relative_url }}";
+          title: "{{ title | truncatewords: 13 }}",
         {% endif %}
+        description: "{{ post.description | strip_html | strip_newlines | escape | strip }}",
+        section: "{{ site.data[site.active_lang].strings.search.posts }}",
+        handler: () => {
+          {% if post.redirect == blank %}
+            window.location.href = "{{ post.url | prepend: lang | relative_url }}";
+          {% elsif post.redirect contains '://' %}
+            window.open("{{ post.redirect }}", "_blank");
+          {% else %}
+            window.location.href = "{{ post.redirect | prepend: lang | relative_url }}";
+          {% endif %}
+        },
       },
-    },
-  {%- endfor -%}
+    {%- endfor -%}
+  {%- endif -%}
   {%- for collection in site.collections -%}
     {%- if collection.label != 'posts' -%}
       {%- for item in collection.docs -%}
@@ -88,10 +104,10 @@ ninja.data = [
           id: "{{ collection.label }}-{{ title | slugify }}",
           title: '{{ title | escape | emojify | truncatewords: 13 }}',
           description: "{{ item.description | strip_html | strip_newlines | escape | strip }}",
-          section: "{{ collection.label | capitalize }}",
+          section: "{{ site.data[site.active_lang].strings.search[collection.label] }}",
           {%- unless item.inline -%}
             handler: () => {
-              window.location.href = "{{ item.url | relative_url }}";
+              window.location.href = "{{ item.url | prepend: lang | relative_url }}";
             },
           {%- endunless -%}
         },
@@ -105,6 +121,10 @@ ninja.data = [
           {%- assign social_id = "social-acm" -%}
           {%- assign social_title = "ACM DL" -%}
           {%- capture social_url %}"https://dl.acm.org/profile/{{ social[1] }}/"{% endcapture -%}
+        {%- when "arxiv_id" -%}
+          {%- assign social_id = "social-arxiv" -%}
+          {%- assign social_title = "arXiv" -%}
+          {%- capture social_url %}"https://arxiv.org/a/{{ social[1] }}.html"{% endcapture -%}
         {%- when "blogger_url" -%}
           {%- assign social_id = "social-blogger" -%}
           {%- assign social_title = "Blogger" -%}
@@ -113,6 +133,10 @@ ninja.data = [
           {%- assign social_id = "social-bluesky" -%}
           {%- assign social_title = "Bluesky" -%}
           {%- capture social_url %}"{{ social[1] }}"{% endcapture -%}
+        {%- when "cv_pdf" -%}
+          {%- assign social_id = "social-cv" -%}
+          {%- assign social_title = "CV" -%}
+          {%- capture social_url %}{% if social[1] contains '://' %}"{{ social[1] }}"{% else %}"{{ social[1] | prepend: '/' | prepend: site.active_lang | prepend: '/assets/pdf/' | prepend: site.baseurl }}"{% endif %}{% endcapture -%}
         {%- when "dblp_url" -%}
           {%- assign social_id = "social-dblp" -%}
           {%- assign social_title = "DBLP" -%}
@@ -123,7 +147,7 @@ ninja.data = [
           {%- capture social_url %}"https://discord.com/users/{{ social[1] }}"{% endcapture -%}
         {%- when "email" -%}
           {%- assign social_id = "social-email" -%}
-          {%- assign social_title = "email" -%}
+          {%- assign social_title = site.data[site.active_lang].strings.search.email -%}
           {%- capture social_url %}"mailto:{{ social[1] | encode_email }}"{% endcapture -%}
         {%- when "facebook_id" -%}
           {%- assign social_id = "social-facebook" -%}
@@ -141,6 +165,10 @@ ninja.data = [
           {%- assign social_id = "social-gitlab" -%}
           {%- assign social_title = "GitLab" -%}
           {%- capture social_url %}"https://gitlab.com/{{ social[1] }}"{% endcapture -%}
+        {%- when "hal_id" -%}
+          {%- assign social_id = "social-hal" -%}
+          {%- assign social_title = "HAL" -%}
+          {%- capture social_url %}"https://cv.hal.science/{{ social[1] }}"{% endcapture -%}
         {%- when "ieee_id" -%}
           {%- assign social_id = "social-ieee" -%}
           {%- assign social_title = "IEEE Xplore" -%}
@@ -288,37 +316,60 @@ ninja.data = [
       {
         id: '{{ social_id }}',
         title: '{{ social_title }}',
-        section: 'Socials',
+        section: '{{ site.data[site.active_lang].strings.search.socials }}',
         handler: () => {
           window.open({{ social_url }}, "_blank");
         },
       },
     {%- endfor -%}
   {%- endif -%}
+  {%- for l in site.languages -%}
+    {%- if l != site.active_lang -%}
+      {%- if l == site.default_lang -%}
+        {
+          id: 'lang-{{ l }}',
+          title: '{{ l }}',
+          section: '{{ site.data[site.active_lang].strings.search.languages }}',
+          handler: () => {
+            window.location.href = "{{ site.baseurl }}" + updatedUrl;
+          },
+        },
+      {%- else -%}
+        {
+          id: 'lang-{{ l }}',
+          title: '{{ l }}',
+          section: '{{ site.data[site.active_lang].strings.search.languages }}',
+          handler: () => {
+            window.location.href = "{{ site.baseurl }}/{{ l }}" + updatedUrl;
+          },
+        },
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
   {%- if site.enable_darkmode -%}
     {
       id: 'light-theme',
-      title: 'Change theme to light',
-      description: 'Change the theme of the site to Light',
-      section: 'Theme',
+      title: '{{ site.data[site.active_lang].strings.search.light_theme.title }}',
+      description: '{{ site.data[site.active_lang].strings.search.light_theme.description }}',
+      section: '{{ site.data[site.active_lang].strings.search.theme }}',
       handler: () => {
         setThemeSetting("light");
       },
     },
     {
       id: 'dark-theme',
-      title: 'Change theme to dark',
-      description: 'Change the theme of the site to Dark',
-      section: 'Theme',
+      title: '{{ site.data[site.active_lang].strings.search.dark_theme.title }}',
+      description: '{{ site.data[site.active_lang].strings.search.dark_theme.description }}',
+      section: '{{ site.data[site.active_lang].strings.search.theme }}',
       handler: () => {
         setThemeSetting("dark");
       },
     },
     {
       id: 'system-theme',
-      title: 'Use system default theme',
-      description: 'Change the theme of the site to System Default',
-      section: 'Theme',
+      title: '{{ site.data[site.active_lang].strings.search.system_theme.title }}',
+      description: '{{ site.data[site.active_lang].strings.search.system_theme.description }}',
+      section: '{{ site.data[site.active_lang].strings.search.theme }}',
       handler: () => {
         setThemeSetting("system");
       },
